@@ -1,8 +1,12 @@
 name: on-schedule
+run-name: on schedule
 
 on:
   schedule:
-    - cron: "0 3 1,15 * *"   # 每月 1/15 日 03:00 UTC ≈ 每两周
+    # weekly
+    - cron: "0 0 * * 1"
+
+  # run if user manually requests it
   workflow_dispatch:
 
 permissions:
@@ -10,8 +14,10 @@ permissions:
   pull-requests: write
 
 jobs:
-  call-update:
-    uses: cais-psu/CAIS_Lab_Web/.github/workflows/update-citations.yaml@main
+  update-citations:
+    # only run on user instance of template, not template itself
+    if: github.repository != 'greenelab/lab-website-template'
+    uses: ./.github/workflows/update-citations.yaml
     secrets: inherit
     with:
-      open-pr: false   # ← 这里改为 false（或者直接删掉）
+      open-pr: true

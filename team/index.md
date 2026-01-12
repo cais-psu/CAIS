@@ -45,6 +45,7 @@ nav:
 # Alumni
 {% include list.html
    data="members"
-   component="list"
+   component="portrait"
    filter="alumni"
+   style="tiny"
 %}

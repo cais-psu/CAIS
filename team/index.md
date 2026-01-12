@@ -47,5 +47,4 @@ nav:
    data="members"
    component="portrait"
    filter="alumni"
-   style="tiny"
 %}

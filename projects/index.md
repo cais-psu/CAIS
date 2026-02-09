@@ -1,9 +1,10 @@
 ---
-title: Projects
+title: "Projects"
 nav: false
-  order: 1
-  tooltip: Software, datasets, and more
+order: 1
+tooltip: "Software, datasets, and more"
 ---
+
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 

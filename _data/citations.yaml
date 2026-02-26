@@ -720,3 +720,34 @@
   image: /images/paper/bte220230023.jpg
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.1016/j.rcim.2026.103245
+  title: Adaptive task planning and coordination in multi-agent manufacturing systems
+    using large language models
+  authors:
+  - Jonghan Lim
+  - Jiabao Zhao
+  - Ezekiel Hernandez
+  - Ilya Kovalenko
+  publisher: Robotics and Computer-Integrated Manufacturing
+  date: '2026-08-01'
+  link: https://doi.org/hbqq4q
+  image: /images/paper/103245.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/CDC57313.2025.11312935
+  title: Robust Recovery and Control of Cyber-physical Discrete Event Systems under
+    Actuator Attacks
+  authors:
+  - Samuel Oliveira
+  - Mostafa Tavakkoli Anbarani
+  - Gregory Beal
+  - Ilya Kovalenko
+  - Marcelo Teixeira
+  - André B. Leal
+  - Rômulo Meira-Góes
+  publisher: 2025 IEEE 64th Conference on Decision and Control (CDC)
+  date: '2025-12-09'
+  link: https://doi.org/hbqq4r
+  image: /images/paper/11312935.gif
+  plugin: sources.py
+  file: sources.yaml

@@ -5,7 +5,7 @@ role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "May 2024 – August 2024"
 end_date: "2024-08"
-description: Undergraduate Student, UNM ME
+description: Mechanical Engineering, UNM
 links:
   github:
   email:

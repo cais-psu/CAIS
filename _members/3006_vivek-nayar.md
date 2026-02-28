@@ -5,7 +5,7 @@ role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "March 2025 – August 2025"
 end_date: "2025-08"
-description: Undergraduate Student, PSU CE
+description: Computer Engineering, Penn State
 #aliases:
 #  - 
 links:

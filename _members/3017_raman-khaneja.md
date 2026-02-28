@@ -5,7 +5,7 @@ role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "March 2023 – May 2024"
 end_date: "2024-05"
-description: Undergraduate Student, PSU ME
+description: Mechanical Engineering, Penn State
 links:
   github:
   email:

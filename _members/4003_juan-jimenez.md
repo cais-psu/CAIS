@@ -5,7 +5,7 @@ role: visitor  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "May 2025 – August 2025"
 end_date: "2025-08"
-description: Visiting Scholar, University of Navarra
+description: University of Navarra
 links:
   github:
   email:

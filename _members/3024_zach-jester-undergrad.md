@@ -5,7 +5,7 @@ role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "May 2022 – August 2022"
 end_date: "2022-08"
-description: Undergraduate Student, WPI RE
+description: Robotics Engineering, WPI
 links:
   github: https://github.com/zpjester
   email: emailto:zpj1@psu.edu

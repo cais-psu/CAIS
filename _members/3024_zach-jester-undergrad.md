@@ -3,6 +3,7 @@ name: Zachary Jester
 image: images/team/Zach.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: true
+dates: "May 2022 – August 2022"
 description: Undergraduate Student, WPI RE
 links:
   github: https://github.com/zpjester

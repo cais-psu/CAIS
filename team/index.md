@@ -45,25 +45,25 @@ nav:
 # Alumni
 
 ## Master's Students
-{% include list.html
-   data="members"
-   component="portrait"
-   filter="alumni and role =~ /^ms$/i"
-   style="list"
-%}
+{% assign ms_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'ms'" | sort: "name" %}
+<ul>
+{% for member in ms_alumni %}
+<li>{{ member.name }}{% if member.dates %} — {{ member.dates }}{% endif %}</li>
+{% endfor %}
+</ul>
 
 ## Undergraduates
-{% include list.html
-   data="members"
-   component="portrait"
-   filter="alumni and role =~ /undergrad/i"
-   style="list"
-%}
+{% assign ug_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'undergrad'" | sort: "name" %}
+<ul>
+{% for member in ug_alumni %}
+<li>{{ member.name }}{% if member.dates %} — {{ member.dates }}{% endif %}</li>
+{% endfor %}
+</ul>
 
 ## Visiting Scholars
-{% include list.html
-   data="members"
-   component="portrait"
-   filter="alumni and role =~ /visitor/i"
-   style="list"
-%}
+{% assign vs_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'visitor'" | sort: "name" %}
+<ul>
+{% for member in vs_alumni %}
+<li>{{ member.name }}{% if member.dates %} — {{ member.dates }}{% endif %}</li>
+{% endfor %}
+</ul>

@@ -2,7 +2,8 @@
 name: Hao Liu
 image: images/team/Hao_Liu.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
-alumni: true 
+alumni: true
+dates: "March 2023 – May 2024"
 description: Undergraduate Student, PSU ME
 #aliases:
 #  - 

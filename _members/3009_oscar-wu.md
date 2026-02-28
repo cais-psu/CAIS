@@ -2,7 +2,8 @@
 name: Hang-Ling (Oscar) Wu
 image: images/team/Oscar.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
-alumni: true 
+alumni: true
+dates: "March 2022 – July 2023"
 description: Undergraduate Student, PSU ME
 #aliases:
 #  - 

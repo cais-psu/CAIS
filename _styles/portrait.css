@@ -73,6 +73,13 @@
   display: none;
 }
 
+.portrait[data-role=pi] {
+  width: auto;
+}
+.portrait[data-role=pi] .portrait-description {
+  white-space: nowrap;
+}
+
 .portrait[data-style=list] {
   flex-direction: row;
   gap: 10px;

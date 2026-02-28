@@ -4,6 +4,7 @@ image: images/team/Ryan.png
 role: ms  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "August 2023 – May 2025"
+end_date: "2025-05"
 description: M.S. Student, PSU ME
 #aliases:
 #  - 

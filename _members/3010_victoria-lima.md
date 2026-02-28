@@ -4,6 +4,7 @@ image: images/team/Victoria.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "September 2022 – May 2024"
+end_date: "2024-05"
 description: Undergraduate Student, PSU ME
 #aliases:
 #  - 

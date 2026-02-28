@@ -78,6 +78,14 @@
   }
 }
 
+.portrait[data-role="pi"] {
+  width: auto;
+
+  .portrait-description {
+    white-space: nowrap;
+  }
+}
+
 .portrait[data-style="list"] {
   flex-direction: row;
   gap: 10px;

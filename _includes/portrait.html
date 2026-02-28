@@ -16,6 +16,7 @@
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
+    data-role="{{ member.role }}"
     aria-label="{{ member.name | default: "member link" | regex_strip }}"
   >
     {% if type %}

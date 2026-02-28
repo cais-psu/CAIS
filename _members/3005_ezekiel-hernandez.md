@@ -14,5 +14,3 @@ links:
 Major: Computer Science
 
 Research interests: Machine Learning, and Multiagent-systems
-
-Email: ejh6103 (at) psu (dot) edu

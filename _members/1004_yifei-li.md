@@ -15,6 +15,6 @@ links:
 
 M.S., Mechanical Engineering, University of Wisconsin – Madison
 
-B.S., Mechanical Engineering, Florida Institute of Technology 123
+B.S., Mechanical Engineering, Florida Institute of Technology
 
 Research interests: Smart Manufacturing, Autonomous Control, and Additive Manufacturing

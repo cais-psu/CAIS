@@ -2,7 +2,9 @@
 name: Rayleen Fu 
 image: images/team/Rayleen.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
-alumni: ture 
+alumni: true
+dates: "March 2024 – December 2025"
+end_date: "2025-12"
 description: Undergraduate Student, PSU CS
 #aliases:
 #  - 

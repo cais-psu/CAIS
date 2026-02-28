@@ -1,0 +1,14 @@
+---
+name: Zachary Jester
+image: images/team/Zach.png
+role: undergrad  # pi / phd / ms / visitor / undergrad
+alumni: true
+description: Undergraduate Student, WPI RE
+links:
+  github: https://github.com/zpjester
+  email: emailto:zpj1@psu.edu
+---
+
+Major: Robotics Engineering (WPI summer intern)
+
+May 2022 – August 2022

@@ -77,3 +77,15 @@
     display: none;
   }
 }
+
+.portrait[data-style="list"] {
+  flex-direction: row;
+  gap: 10px;
+  width: unset;
+  text-align: left;
+
+  .portrait-image,
+  .icon {
+    display: none;
+  }
+}

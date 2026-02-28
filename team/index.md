@@ -43,9 +43,27 @@ nav:
 %}
 
 # Alumni
+
+## Master's Students
 {% include list.html
    data="members"
    component="portrait"
-   filter="alumni"
-   style="tiny"
+   filter="alumni and role =~ /^ms$/i"
+   style="list"
+%}
+
+## Undergraduates
+{% include list.html
+   data="members"
+   component="portrait"
+   filter="alumni and role =~ /undergrad/i"
+   style="list"
+%}
+
+## Visiting Scholars
+{% include list.html
+   data="members"
+   component="portrait"
+   filter="alumni and role =~ /visitor/i"
+   style="list"
 %}

@@ -78,6 +78,7 @@
 }
 .portrait[data-role=pi] .portrait-image {
   width: 175px;
+  max-width: 175px;
 }
 .portrait[data-role=pi] .portrait-description {
   white-space: nowrap;

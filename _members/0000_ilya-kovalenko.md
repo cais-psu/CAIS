@@ -2,7 +2,7 @@
 name: Ilya Kovalenko
 image: images/team/Ilya.png
 role: pi  # pi / phd / ms / visitor / undergrad
-description: "Assistant Professor<br>Department of Mechanical Engineering<br>Department of Industrial & <br> Manufacturing Engineering<br>Penn State University"
+description: "Assistant Professor<br>PSU ME and IME"
 links:
   home-page: https://www.linkedin.com/in/kovalenkoilya/
   orcid: 0000-0003-4764-9117

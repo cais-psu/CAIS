@@ -76,8 +76,12 @@
 .portrait[data-role=pi] {
   width: auto;
 }
+.portrait[data-role=pi] .portrait-image {
+  width: 175px;
+}
 .portrait[data-role=pi] .portrait-description {
   white-space: nowrap;
+  text-align: center;
 }
 
 .portrait[data-style=list] {

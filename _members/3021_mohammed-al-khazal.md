@@ -6,7 +6,7 @@ alumni: true
 dates: "May 2022 – August 2022"
 end_date: "2022-08"
 start_date: "2022-05"
-description: King Abdullah University of Science and Technology
+description: Penn State, KAUST summer program
 links:
   github:
   email:

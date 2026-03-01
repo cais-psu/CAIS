@@ -6,7 +6,7 @@ alumni: true
 dates: "May 2024 – August 2024"
 end_date: "2024-08"
 start_date: "2024-05"
-description: Mechanical Engineering, UNM
+description: Mechanical Engineering, University of New Mexico
 links:
   github:
   email:

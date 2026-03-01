@@ -3,7 +3,7 @@ name: Gregory Beal
 image: images/team/Gregory.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: false  
-description: Undergraduate Student, PSU ES
+description: Undergraduate Student, PSU ES<br>Schreyer Honors College
 #aliases:
 #  - 
 links:

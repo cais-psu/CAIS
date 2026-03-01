@@ -5,6 +5,7 @@ role: visitor  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "October 2024 – March 2025"
 end_date: "2025-03"
+start_date: "2024-10"
 description: Technical University of Munich
 #aliases:
 #  - 

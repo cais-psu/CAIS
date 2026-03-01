@@ -3,7 +3,7 @@ name: Cameron Clark
 image: images/team/Cameron.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: false  
-description: Undergraduate Student, PSU ME
+description: Undergraduate Student, PSU ME<br>Shuman Scholar
 #aliases:
 #  - 
 links:

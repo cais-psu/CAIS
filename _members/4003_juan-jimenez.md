@@ -5,6 +5,7 @@ role: visitor  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "May 2025 – August 2025"
 end_date: "2025-08"
+start_date: "2025-05"
 description: University of Navarra
 links:
   github:

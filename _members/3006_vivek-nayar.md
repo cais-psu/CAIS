@@ -5,6 +5,7 @@ role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "March 2025 – August 2025"
 end_date: "2025-08"
+start_date: "2025-03"
 description: Computer Engineering, Penn State
 #aliases:
 #  - 

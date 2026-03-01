@@ -5,6 +5,7 @@ role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "March 2024 – December 2025"
 end_date: "2025-12"
+start_date: "2024-03"
 description: Computer Science, Penn State
 #aliases:
 #  - 

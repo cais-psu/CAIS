@@ -3,7 +3,7 @@ name: Matthew Moyer
 image: images/team/Matthew.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: false  
-description: Undergraduate Student, PSU ME
+description: Undergraduate Student, PSU ME<br>Schreyer Honors College
 #aliases:
 #  - 
 links:

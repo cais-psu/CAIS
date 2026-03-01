@@ -3,7 +3,7 @@ name: Adelaide Orsetti
 image: images/team/Adelaide.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: false  
-description: Undergraduate Student, PSU IE
+description: Undergraduate Student, PSU IE<br>Schreyer Honors College
 #aliases:
 #  - 
 links:

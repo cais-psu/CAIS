@@ -45,26 +45,29 @@ nav:
 # Alumni
 
 ## Master's Students
-{% assign ms_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'ms'" | sort: "end_date" | reverse %}
+{% assign ms_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'ms'" | sort: "start_date" | reverse %}
+{% assign ms_alumni = ms_alumni | sort: "end_date" | reverse %}
 <ul>
 {% for member in ms_alumni %}
-<li>{{ member.name }}{% if member.description %}, {{ member.description }}{% endif %}{% if member.dates %}, {{ member.dates }}{% endif %}</li>
+<li><strong>{{ member.name }}</strong>{% if member.description %}, {{ member.description }}{% endif %}{% if member.dates %}, {{ member.dates }}{% endif %}</li>
 {% endfor %}
 </ul>
 
 ## Visiting Scholars
-{% assign vs_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'visitor'" | sort: "end_date" | reverse %}
+{% assign vs_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'visitor'" | sort: "start_date" | reverse %}
+{% assign vs_alumni = vs_alumni | sort: "end_date" | reverse %}
 <ul>
 {% for member in vs_alumni %}
-<li>{{ member.name }}{% if member.description %}, {{ member.description }}{% endif %}{% if member.dates %}, {{ member.dates }}{% endif %}</li>
+<li><strong>{{ member.name }}</strong>{% if member.description %}, {{ member.description }}{% endif %}{% if member.dates %}, {{ member.dates }}{% endif %}</li>
 {% endfor %}
 </ul>
 
 ## Undergraduates
-{% assign ug_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'undergrad'" | sort: "end_date" | reverse %}
+{% assign ug_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'undergrad'" | sort: "start_date" | reverse %}
+{% assign ug_alumni = ug_alumni | sort: "end_date" | reverse %}
 <ul>
 {% for member in ug_alumni %}
-<li>{{ member.name }}{% if member.description %}, {{ member.description }}{% endif %}{% if member.dates %}, {{ member.dates }}{% endif %}</li>
+<li><strong>{{ member.name }}</strong>{% if member.description %}, {{ member.description }}{% endif %}{% if member.dates %}, {{ member.dates }}{% endif %}</li>
 {% endfor %}
 </ul>
 

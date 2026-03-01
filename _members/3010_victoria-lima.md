@@ -5,7 +5,8 @@ role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: true
 dates: "September 2022 – May 2024"
 end_date: "2024-05"
-description: Mechanical Engineering, Penn State
+start_date: "2022-09"
+description: Mechanical Engineering, Penn State<br>Shuman Scholar
 #aliases:
 #  - 
 links:

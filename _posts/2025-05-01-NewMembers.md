@@ -2,6 +2,10 @@
 title: Welcome New Lab Members
 author: Ilya
 image: images/team/Jiabao.png
+images:
+  - images/team/Jiabao.png
+  - images/team/Juan.png
+  - images/team/Adelaide.png
 tags:
   - Welcome
 ---

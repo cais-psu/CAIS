@@ -14,7 +14,23 @@
     {% assign title = post.title %}
     {% assign image = post.image | relative_url | uri_escape %}
 
-    {% if image %}
+    {% assign post_images = post.images %}
+    {% if post_images.size > 0 %}
+      <a
+        href="{{ url }}"
+        class="post-excerpt-image post-excerpt-image-multi"
+        aria-label="{{ title | default: "excerpt link" | regex_strip }}"
+      >
+        {% for img_path in post_images %}
+          <img
+            src="{{ img_path | relative_url | uri_escape }}"
+            alt="{{ title | default: "excerpt image" | regex_strip }}"
+            loading="lazy"
+            {% include fallback.html %}
+          >
+        {% endfor %}
+      </a>
+    {% elsif image %}
       <a
         href="{{ url }}"
         class="post-excerpt-image"

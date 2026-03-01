@@ -16,16 +16,19 @@
 
     {% assign post_images = post.images %}
     {% if post_images.size > 0 %}
+      {% assign img_height = 100.0 | divided_by: post_images.size %}
       <a
         href="{{ url }}"
-        class="post-excerpt-image post-excerpt-image-multi"
+        class="post-excerpt-image"
         aria-label="{{ title | default: "excerpt link" | regex_strip }}"
       >
         {% for img_path in post_images %}
+          {% assign img_top = img_height | times: forloop.index0 %}
           <img
             src="{{ img_path | relative_url | uri_escape }}"
             alt="{{ title | default: "excerpt image" | regex_strip }}"
             loading="lazy"
+            style="position: absolute; top: {{ img_top }}%; height: {{ img_height }}%; width: 100%; object-fit: cover;"
             {% include fallback.html %}
           >
         {% endfor %}

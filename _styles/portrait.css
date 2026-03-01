@@ -73,8 +73,10 @@
   display: none;
 }
 
+.portrait[data-role=pi] {
+  min-width: 0;
+}
 .portrait[data-role=pi] .portrait-description {
-  white-space: nowrap;
   text-align: center;
 }
 

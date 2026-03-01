@@ -1,7 +1,7 @@
 ---
 title: Welcome New Undergraduate Researcher
 author: Ilya
-image: images/team/Ilya.png
+image: images/icon.png
 tags:
   - Welcome
 ---

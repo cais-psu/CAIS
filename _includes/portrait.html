@@ -18,6 +18,7 @@
     data-style="{{ include.style }}"
     data-role="{{ member.role }}"
     aria-label="{{ member.name | default: "member link" | regex_strip }}"
+    {% if member.role == "pi" %}style="width: 175px; min-width: 0; max-width: 175px;"{% endif %}
   >
     {% if type %}
       {% include icon.html icon=type.icon %}
@@ -28,6 +29,7 @@
       class="portrait-image"
       alt="member portrait"
       loading="lazy"
+      {% if member.role == "pi" %}style="width: 175px; max-width: 175px;"{% endif %}
       {% include fallback.html %}
     >
 

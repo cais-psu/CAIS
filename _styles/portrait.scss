@@ -79,8 +79,9 @@
 }
 
 .portrait[data-role="pi"] {
+  min-width: 0;
+
   .portrait-description {
-    white-space: nowrap;
     text-align: center;
   }
 }

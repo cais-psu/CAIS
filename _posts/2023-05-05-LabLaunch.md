@@ -1,7 +1,7 @@
 ---
 title: CAIS Lab Officially Launches
 author: Ilya
-image: images/icon.png
+image: images/team/Ilya.png
 tags:
   - Milestones
 ---

@@ -1,7 +1,7 @@
 ---
 title: Two Papers Accepted to IEEE CASE 2023
 author: Ilya
-image: images/icon.png
+image: images/team/Ilya.png
 tags:
   - Publications
   - Conferences

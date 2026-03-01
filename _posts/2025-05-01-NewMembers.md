@@ -1,7 +1,7 @@
 ---
 title: Welcome New Lab Members
 author: Ilya
-image: images/icon.png
+image: images/team/Jiabao.png
 tags:
   - Welcome
 ---

@@ -1,7 +1,7 @@
 ---
 title: PhD Comprehensive Exam — Mostafa
 author: Ilya
-image: images/icon.png
+image: images/team/Mostafa.png
 tags:
   - Milestones
 ---

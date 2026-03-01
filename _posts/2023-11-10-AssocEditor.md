@@ -1,7 +1,7 @@
 ---
 title: Associate Editor Appointment — IEEE T-ASE
 author: Ilya
-image: images/icon.png
+image: images/team/Ilya.png
 tags:
   - Awards
 ---

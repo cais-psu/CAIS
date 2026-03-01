@@ -1,7 +1,7 @@
 ---
 title: Paper Accepted to ACC 2023
 author: Ilya
-image: images/icon.png
+image: images/team/Ilya.png
 tags:
   - Publications
   - Conferences

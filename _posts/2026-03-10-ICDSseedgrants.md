@@ -1,5 +1,5 @@
 ---
-title: ICDS funds mid-scale seed grants
+title: ICDS Funds Mid-Scale Seed Grants
 author: Yifei
 image: images/team/Ilya.png
 tags:

@@ -1,5 +1,5 @@
 ---
-name: Idhant Gulani
+name: Idhant Gulati
 image: images/team/Idhant.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: true

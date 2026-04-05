@@ -16,7 +16,7 @@ Students should be motivated, hard-working, and interested in one or more of the
 - Dynamic systems  
 - Industrial automation  
 - Applied artificial intelligence  
-- Smart manufacturing / Industry 4.0  
+- Smart manufacturing / Industry 4.0
 - Robotics  
 
 

@@ -17,8 +17,7 @@ Students should be motivated, hard-working, and interested in one or more of the
 - Industrial automation  
 - Applied artificial intelligence  
 - Smart manufacturing / Industry 4.0
-- Robotics  
-
+- Robotics
 
 {%
   include button.html

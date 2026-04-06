@@ -12,6 +12,7 @@ links:
 ---
 
 Major: Computer Science
+
 Minor: Artificial Intelligence Engineering/Quantum Information Science
 
 Research interests: Machine Learning, Quantum Computing, and Computer Vision

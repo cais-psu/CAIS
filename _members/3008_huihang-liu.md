@@ -7,7 +7,7 @@ description: Undergraduate Student, PSU CE
 #aliases:
 #  - 
 links:
-  github:
+  github: greenaandblue
   email: emailto:hql5777@psu.edu 
 ---
 

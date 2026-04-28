@@ -10,8 +10,9 @@
   date: '2026-08-01'
   link: https://doi.org/hbqq4q
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/103245.jpg
 - id: doi:10.1109/TASE.2025.3636115
   title: Hierarchical Model Predictive Control for Energy-Aware Scheduling of Digital
     Twin-Based Batch Manufacturing Systems
@@ -55,8 +56,9 @@
   date: '2025-08-17'
   link: https://doi.org/g97zvn
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: https://arxiv.org/html/2505.22814v2/extracted/6579532/figures/figure-1-overview.png
 - id: wosuid:PPRN:124044833
   title: Web of Science
   authors: []
@@ -127,8 +129,9 @@
   date: '2025-08-17'
   link: https://doi.org/g97zvh
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: data:image/jpeg;base64,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
 - id: doi:10.1109/TASE.2025.3550678
   title: 'Guest Editorial: Engineering and Operating Digital Twins for Automated Production
     or Construction Systems'
@@ -142,8 +145,9 @@
   date: '2025-01-01'
   link: https://doi.org/g97zvp
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/TASE.png
 - id: doi:10.1115/msec2024-125413
   title: A Mobile Additive Manufacturing Robot Framework for Smart Manufacturing Systems
   authors:
@@ -192,8 +196,9 @@
   date: '2024-05-13'
   link: https://doi.org/g97zp6
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/1384235.jpg
 - id: wosuid:PPRN:89394559
   title: Web of Science
   authors: []
@@ -218,8 +223,9 @@
   date: '2024-08-28'
   link: https://doi.org/g97zp3
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: https://arxiv.org/html/2406.01915v2/extracted/5683851/figures/figure-1-framework.png
 - id: wosuid:PPRN:89399537
   title: Web of Science
   authors: []
@@ -240,8 +246,9 @@
   date: '2024-08-28'
   link: https://doi.org/g97zp4
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: https://arxiv.org/html/2406.01893v2/extracted/5683858/figures/figure-1-architecture.png
 - id: doi:10.3390/MATH12243978
   title: Method for Preprocessing Video Data for Training Deep-Learning Models for
     Identifying Behavioral Events in Bio-Objects
@@ -268,8 +275,9 @@
   date: '2024-01-01'
   link: https://doi.org/g97zvs
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/ifacol.2025.01.139.png
 - id: wosuid:PPRN:91376269
   title: Web of Science
   authors: []
@@ -290,8 +298,9 @@
   date: '2024-01-01'
   link: https://doi.org/g97zvt
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/ifacol.2024.07.029.png
 - id: doi:10.1002/bte2.20230023
   title: Multifunctional composite designs for structural energy storage
   authors:
@@ -307,9 +316,8 @@
   date: '2023-10-13'
   link: https://doi.org/gtnt8g
   orcid: 0000-0003-4764-9117
-  plugin: sources.py
-  file: sources.yaml
-  image: /images/paper/bte220230023.jpg
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/case56687.2023.10260642
   title: A System-Level Energy-Efficient Digital Twin Framework for Runtime Control
     of Batch Manufacturing Processes
@@ -486,8 +494,9 @@
   date: '2022-08-20'
   link: https://doi.org/gr9w6k
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/9926689.gif
 - id: doi:10.1109/TCST.2021.3054800
   title: Model Predictive Control of Priced Timed Automata Encoded With First-Order
     Logic
@@ -522,8 +531,9 @@
   date: '2022-01-01'
   link: https://doi.org/g97zqf
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/3165551.gif
 - id: doi:10.36227/techrxiv.17136680.v1
   title: 'Cooperative Product Agents to Improve Manufacturing System Flexibility:
     A Model-Based Decision Framework'
@@ -554,8 +564,9 @@
   date: '2021-01-01'
   link: https://doi.org/gndb9n
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/3065971.jpg
 - id: doi:10.1520/SSMS20200009
   title: 'Developing the Workforce for Next-Generation Smart Manufacturing Systems:
     A Multidisciplinary Research Team Approach'
@@ -587,8 +598,9 @@
   date: '2021-01-01'
   link: https://doi.org/gnshnb
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/ifacol.2021.11.220.png
 - id: doi:10.1109/CASE49439.2021.9551650
   title: Manufacturing Line Design Configuration with Optimized Resource Groups
   authors:
@@ -604,8 +616,9 @@
   date: '2021-08-23'
   link: https://doi.org/g97zqj
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/9551650.gif
 - id: doi:10.1109/ACCESS.2020.3000437
   title: 'A Requirements Driven Digital Twin Framework: Specification and Opportunities'
   authors:
@@ -620,8 +633,9 @@
   date: '2020-01-01'
   link: https://doi.org/gndckt
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/3000437.gif
 - id: doi:10.1016/J.IFACOL.2021.04.051
   title: Priced Timed Automata Models for Control of Intelligent Product Agents in
     Manufacturing Systems
@@ -633,8 +647,9 @@
   date: '2020-01-01'
   link: https://doi.org/g97zqk
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/ifacol.2021.04.051.png
 - id: doi:10.1109/LRA.2019.2931825
   title: A Framework for Automatic Initialization of Multi-Agent Production Systems
     Using Semantic Web Technologies
@@ -677,8 +692,9 @@
   date: '2019-06-10'
   link: https://doi.org/g59x43
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/msec2019-2966.png
 - id: doi:10.1109/LRA.2019.2921947
   title: Dynamic Resource Task Negotiation to Enable Product Agent Exploration in
     Multi-Agent Manufacturing Systems
@@ -706,8 +722,9 @@
   date: '2019-05-01'
   link: https://doi.org/g97zqp
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S0967066118305057-gr1.jpg
 - id: doi:10.1016/J.PROMFG.2018.10.053
   title: 'Integrating Human Operators into Agent-based Manufacturing Systems: A Table-top
     Demonstration'
@@ -720,8 +737,9 @@
   date: '2018-01-01'
   link: https://doi.org/g97zqq
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/2018.10.053.png
 - id: wosuid:WOS:000427812000087
   title: Web of Science
   authors: []
@@ -743,8 +761,9 @@
   date: '2017-09-01'
   link: https://doi.org/g97zqr
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/8247652.gif
 - id: wosuid:WOS:000426981500113
   title: Web of Science
   authors: []
@@ -767,8 +786,9 @@
   date: '2017-08-01'
   link: https://doi.org/g97zqs
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/8062543.gif
 - id: doi:10.1016/J.PROCIR.2017.04.014
   title: 'Manufacturing Choices for Ankle-Foot Orthoses: A Multi-objective Optimization'
   authors:
@@ -780,8 +800,9 @@
   date: '2017-01-01'
   link: https://doi.org/g97zqt
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/2017.04.014.png
 - id: doi:10.1520/SSMS20170006
   title: 'SMART: A System-Level Manufacturing and Automation Research Testbed'
   authors:
@@ -847,8 +868,9 @@
   date: '2015-10-28'
   link: https://doi.org/g97zqx
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/dscc2015-9992.png
 - id: doi:10.1115/1.4030548
   title: Design and Testing of a Pneumatic Hemiparesis Rehabilitation Device for a
     Neurofacilitation Exercise1
@@ -880,8 +902,9 @@
   date: '2015-08-02'
   link: https://doi.org/g97zq2
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/detc2015-48085.png
 - id: doi:10.1109/ARSO.2014.7020990
   title: Robotic rehabilitation exercise in hemiparetic limbs based on functional
     synchronization of voluntary and involuntary nerve impulses
@@ -897,8 +920,9 @@
   date: '2014-09-01'
   link: https://doi.org/g97zq3
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: /images/paper/7020990.gif
 - id: wosuid:WOS:000454498400020
   title: Web of Science
   authors: []
@@ -908,7 +932,7 @@
   orcid: 0000-0003-4764-9117
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/case58245.2025.11163792
+- id: doi:10.1109/CASE58245.2025.11163792
   title: A Model Predictive Control Framework to Enhance Safety and Quality in Mobile
     Additive Manufacturing Systems
   authors:

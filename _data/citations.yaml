@@ -14,23 +14,6 @@
   link: https://par.nsf.gov/servlets/purl/10188894
   citation_count: 287
   volume: '8'
-  description: Among the tenets of Smart Manufacturing (SM) or Industry 4.0 (I4. 0),
-    digital twin (DT), which represents the capabilities of virtual representations
-    of components and systems, has been cited as the biggest technology trend disrupting
-    engineering and design today. DTs have been in use for years in areas such as
-    model-based process control and predictive maintenance, however moving forward
-    a framework is needed that will support the expected pervasiveness of DT technology
-    in the evolution of SM or I4. 0. A set of requirements for a DT framework has
-    been derived from analysis of DT definitions, DTs in use today, expected DT applications
-    in the near future, and longer-term DT trends and the DT vision in SM. These requirements
-    include elements of re-usability, interoperability, interchangeability, maintainability,
-    extensibility, and autonomy across the entire DT lifecycle. A baseline framework
-    for DT technology has been developed that addresses many aspects of these requirements
-    and enables the addressing of the requirements more fully through additional specification.
-    The baseline framework includes a definition of a DT and an object-oriented (OO)
-    architecture for DTs that defines generalization, aggregation and instantiation
-    of DT classes. Case studies using and extending the baseline framework illustrate
-    its advantages in supporting DT solutions and trends in SM.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -53,18 +36,6 @@
   citation_count: 123
   volume: '9'
   pages: 44247-44265
-  description: 'Digital Twin (DT) is an emerging technology that has recently been
-    cited as an underpinning element of the digital transformation. DTs are commonly
-    defined as digital replicas of components, systems, products, and services that
-    receive data from the field to support intelligent decision-making. Although several
-    frameworks for DT application in manufacturing have been proposed, there is no
-    systematic methodology in the literature that supports the development of scalable,
-    reusable, interoperable, interchangeable, and extensible DT solutions, while taking
-    into account specific manufacturing environment needs and conditions. This paper
-    introduces a DT solution development methodology as a generic procedure for analyzing
-    and developing DTs for manufacturing systems. The methodology is based on the
-    well-known System Development Life Cycle (SDLC) process and takes into consideration:
-    (1) the specificity …'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -82,16 +53,6 @@
   citation_count: 110
   volume: '86'
   pages: 105-117
-  description: The multi-agent control strategy has been previously shown to improve
-    the flexibility of complex, dynamic manufacturing systems. One key component of
-    this strategy is the product agent. The product agent is responsible for autonomously
-    guiding a physical part in the manufacturing system based on its production goals.
-    Though the product agent has been described in previous works, a fully developed
-    software architecture for the product agent that uses a model-based optimization
-    approach has not been proposed. In this work, a product agent architecture with
-    the capabilities to explore the local environment, plan and schedule events based
-    on its knowledge, and request desired actions from the resources in the system
-    is presented and tested.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -109,15 +70,6 @@
   citation_count: 60
   volume: '65'
   pages: 145-150
-  description: Increased interest in additive manufacturing (AM) of medical devices
-    leads to a greater number of manufacturing choices, from processes to product
-    designs, with little research comparing these new techniques. This paper proposes
-    a multi-objective optimization approach for choosing the appropriate process,
-    material and thickness that minimizes production cost and time, and maximizes
-    device performance. We tested our framework with a simulated case study to choose
-    between traditional plaster casting and two AM techniques for an ankle-foot orthosis.
-    This evaluation tool provides early quantitative support for AM, and it can be
-    expanded to fit various patient, clinic and insurance provider needs.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -133,18 +85,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/10711432/
   citation_count: 53
   pages: 3940-3946
-  description: Traditional manufacturing faces challenges adapting to dynamic environments
-    and quickly responding to manufacturing changes. The use of multi-agent systems
-    has improved adaptability and coordination but requires further advancements in
-    rapid human instruction comprehension, operational adaptability, and coordination
-    through natural language integration. Large language models like GPT-3.5 and GPT-4
-    enhance multi-agent manufacturing systems by enabling agents to communicate in
-    natural language and interpret human instructions for decision-making. This research
-    introduces a novel framework where large language models enhance the capabilities
-    of agents in manufacturing, making them more adaptable, and capable of processing
-    context-specific instructions. A case study demonstrates the practical application
-    of this framework, showing how agents can effectively communicate, understand
-    tasks …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -164,18 +104,6 @@
   volume: '20'
   issue: '1'
   pages: 440-457
-  description: Due to the advancements in manufacturing system technology and the
-    ever-increasing demand for personalized products, there is a growing desire to
-    improve the flexibility of manufacturing systems. Multi-agent control is one strategy
-    that has been proposed to address this challenge. The multi-agent control strategy
-    relies on the decision making and cooperation of a number of intelligent software
-    agents to control and coordinate various components on the shop floor. One of
-    the most important agents for this control strategy is the product agent, which
-    is the decision maker for a single part in the manufacturing system. To improve
-    the flexibility and adaptability of the product agent and its control strategy,
-    this work proposes a direct and active cooperation framework for the product agent.
-    The directly and actively cooperating product agent can identify and actively
-    negotiate scheduling constraints with other agents in …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -196,17 +124,6 @@
   volume: '4'
   issue: '3'
   pages: 2854-2861
-  description: Distributed multi-agent control has been proposed to improve the flexibility
-    of manufacturing systems. Two important components of this control strategy are
-    product agents, representing physical parts in the system, and resource agents,
-    representing the system resources. Product agents request actions from resource
-    agents to guide physical parts through the manufacturing system. Before requesting
-    specific actions, a product agent must effectively communicate with the system's
-    resource agents to understand the capabilities of the resources on the plant floor.
-    In this letter, an approach to product agent exploration based on a network of
-    resource agents is described and analyzed. In addition, results and insights from
-    an implementation of the proposed exploration methodology in a manufacturing system
-    are presented.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -231,18 +148,6 @@
   citation_count: 39
   volume: '10'
   pages: 38755-38773
-  description: Manufacturers are constantly looking to enhance the performance of
-    their manufacturing systems by improving their ability to address disruptions
-    and disturbances, while reducing cost and maximizing quantity and quality. Even
-    though innovative mechanisms for adaptability and flexibility continuously contribute
-    to the smart manufacturing evolutionary process, they generally stop short of
-    providing a capability for coordinated on-line learning. This is especially true
-    when that learning requires exploration outside of established operational boundaries
-    or uses artificial intelligence (as opposed to purely human intelligence) as part
-    of the dynamic implementation of learning. In this work, we provide a vision for
-    the development of an automated learning control architecture to extend the adaptability
-    and flexibility capabilities of manufacturing systems. As part of this vision,
-    we describe a set of requirements and objectives …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -278,18 +183,6 @@
   volume: '1'
   issue: '1'
   pages: 232-261
-  description: Manufacturing testbeds are used to develop, test, and analyze technologies
-    that address some of the current challenges facing the manufacturing sector. This
-    paper provided a classification of manufacturing testbeds and categorized several
-    existing testbeds based on each category specification. In addition, this paper
-    introduced the System-level Manufacturing and Automation Research Testbed (SMART),
-    a multidisciplinary testbed used for manufacturing research and education at the
-    University of Michigan. SMART consists of a physical serial-parallel line equipped
-    with sensors to collect data at both the machine and system level. Various tools
-    were used to aggregate, analyze, and display this data in a cloud infrastructure.
-    The system setup allowed for the discovery, testing, implementation, and analysis
-    of new technologies. In addition, different simulations of SMART were developed
-    to augment and study …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -309,18 +202,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/10711843/
   citation_count: 37
   pages: 2581-2587
-  description: The development of human-robot collaboration has the ability to improve
-    manufacturing system performance by leveraging the unique strengths of both humans
-    and robots. On the shop floor, human operators contribute with their adaptability
-    and flexibility in dynamic situations, while robots provide precision and the
-    ability to perform repetitive tasks. However, the communication gap between human
-    operators and robots limits the collaboration and coordination of human-robot
-    teams in manufacturing systems. Our research presents a human-robot collaborative
-    assembly framework that utilizes a large language model for enhancing communication
-    in manufacturing environments. The framework facilitates human-robot communication
-    by integrating voice commands through natural language for task management. A
-    case study for an assembly task demonstrates the framework’s ability to process
-    natural language …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -340,17 +221,6 @@
   volume: '30'
   issue: '2'
   pages: 109-112
-  description: 'Rapid advances in artificial intelligence (AI) have the potential
-    to significantly increase productivity, quality, and profitability in future manufacturing
-    systems. (Caveat: The panel did not attempt to disentangle artificial intelligence
-    from machine learning and used the two terms loosely interchangeably during the
-    discussion.) Traditional mass production will give way to personalized production,
-    with each item made to order, at the low cost and high quality consumers have
-    come to expect. Manufacturing systems will have the intelligence to be resilient
-    to multiple disruptions, from small-scale machine breakdowns to large-scale natural
-    disasters. Products will be made with higher precision and lower variability.
-    While gains have been made toward the development of these factories of the future,
-    many challenges remain to fully realize the vision shown in .'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -372,18 +242,6 @@
   volume: '62'
   issue: '5'
   pages: 1737-1757
-  description: The COVID-19 pandemic brings many unexpected disruptions, such as frequently
-    shifting markets and limited human workforce, to manufacturers. To stay competitive,
-    flexible and real-time manufacturing decision-making strategies are needed to
-    deal with such highly dynamic manufacturing environments. One essential problem
-    is dynamic resource allocation to complete production tasks, especially when a
-    resource disruption (e.g. machine breakdown) occurs. Though multi-agent methods
-    have been proposed to solve the problem in a flexible and agile manner, the agent
-    internal decision-making process and resource uncertainties have rarely been studied.
-    This work introduces a model-based resource agent (RA) architecture that enables
-    effective agent coordination and dynamic agent decision-making. Based on the RA
-    architecture, a rescheduling strategy that incorporates risk assessment via a
-    clustering …
   gsid: secQmYUAAAAJ
   plugin: sources.py
   file: sources.yaml
@@ -410,18 +268,6 @@
   volume: '2'
   issue: '6'
   pages: '20230023'
-  description: Structural batteries have emerged as a promising alternative to address
-    the limitations inherent in conventional battery technologies. They offer the
-    potential to integrate energy storage functionalities into stationary constructions
-    as well as mobile vehicles/planes. The development of multifunctional composites
-    presents an effective avenue to realize the structural plus concept, thereby mitigating
-    inert weight while enhancing energy storage performance beyond the material level,
-    extending to cell‐ and system‐level attributes. Specifically, multifunctional
-    composites within structural batteries can serve the dual roles of functional
-    composite electrodes for charge storage and structural composites for mechanical
-    load‐bearing. However, the implementation of these multifunctional composites
-    faces a notable challenge in simultaneously realizing mechanical properties and
-    energy storage performance due to the unstable …
   gsid: secQmYUAAAAJ
   plugin: orcid.py
   file: orcid.yaml
@@ -439,17 +285,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/10260642/
   citation_count: 21
   pages: 1-6
-  description: The manufacturing sector has a substantial influence on worldwide energy
-    consumption. Therefore, improving manufacturing system energy efficiency is becoming
-    increasingly important as the world strives to move toward a more resilient and
-    sustainable energy paradigm. Batch processes are a major contributor to energy
-    consumption in manufacturing systems. In batch manufacturing, a number of parts
-    are grouped together before starting a batch process. To improve the scheduling
-    and control of batch manufacturing processes, we propose a system-level energy-efficient
-    Digital Twin framework that considers Time-of-Use (TOU) energy pricing for runtime
-    decision-making. As part of this framework, we develop a model that combines batch
-    manufacturing process dynamics and TOU-based energy cost. We also provide an optimization-based
-    decision-making algorithm that makes batch scheduling decisions during …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -468,16 +303,6 @@
   volume: '54'
   issue: '20'
   pages: 488-494
-  description: The COVID-19 pandemic brings highly dynamic effects to manufacturing
-    environments, such as frequently shifting markets and unexpected disruptions.
-    Such dynamic environments increase the demand for flexible and real-time manufacturing
-    decision-making strategies. One essential problem is dynamic resource allocation
-    to complete production tasks, especially when a resource disruption (e.g. machine
-    breakdown) occurs. Multi-agent frameworks have been proposed to improve the flexibility
-    and responsiveness of manufacturing systems in a distributed decision-making manner.
-    This work introduces a clustering method based on resource agent (RA) capabilities
-    and an RA coordination strategy that enables dynamic resource reallocation when
-    the manufacturing system is subject to resource disruptions.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -494,18 +319,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/8247652/
   citation_count: 20
   pages: 1-8
-  description: Present-day manufacturing companies encounter a variety of challenges
-    due to the dynamically changing industrial environment. Current control frameworks
-    lack the adaptability and flexibility to effectively deal with challenges such
-    as broken-down machines or altered customer orders. Multi-agent control has been
-    proposed to improve the performance of manufacturing systems in uncertain or dynamic
-    environments. Some multiagent architectures have been introduced with promising
-    results. A key component of these architectures is the product agent, which is
-    responsible for guiding a physical part through the manufacturing system based
-    on the production requirements of the part. Even though the product agent has
-    been previously used in multi-agent frameworks, a well-defined internal architecture
-    for this agent has yet to be proposed. This work specifies a product agent architecture
-    that can be utilized in multi …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -524,18 +337,6 @@
   citation_count: 17
   volume: '17'
   pages: 326-333
-  description: To stay competitive in the modern market, manufacturing systems must
-    be adaptable and flexible to deal with challenges such as machine breakdowns or
-    requests for new, customized products. A strategy proposed to improve system flexibility
-    is the integration of multi-agent control on the plant floor. The multi-agent
-    control strategy consists of a system of distributed agents (e.g. resource agents,
-    product agents) that are responsible for controlling various parts of the manufacturing
-    system through cooperation. While previous Multi-Agent Systems (MAS) implementations
-    have proposed architectures for resource and product agents, they do not specify
-    how human workers can be integrated to improve system flexibility. This work specifies
-    a Human Resource Agent (HRA) architecture that can be integrated into a manufacturing
-    system with a multi-agent control strategy. The proposed architecture is demonstrated
-    using a …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -556,18 +357,6 @@
   volume: '30'
   issue: '1'
   pages: 352-359
-  description: Priced timed automata (PTA) are discrete-event system models with temporal
-    constraints and a cost function and are used to pose optimal scheduling and routing
-    problems. To date, solutions to these problems have been found offline and executed
-    open loop.This open-loop control strategy makes it impossible to account for disturbances,
-    i.e., changes in costs or scheduling constraints over time. To address this shortcoming,
-    this work’s first contribution is a closed-loop model predictive control (MPC)
-    framework for PTA, enabling decision-making based on real-time model updates.
-    To ensure the feasibility of an MPC problem, it is often desirable to soften constraints.
-    However, the contemporary PTA theory does not consider soft constraints. Thus,
-    this work’s second contribution is to integrate constraint softening with PTA
-    control by harnessing the capabilities of new solvers enabled by the recasting
-    of the models and …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -588,18 +377,6 @@
   volume: '1'
   issue: '2'
   pages: 1028-1035
-  description: In this paper, the timing accuracy of a tapping motion is analyzed
-    for a robotic neuromodulatory rehabilitation system (RNRS). Paired associative
-    stimulation (PAS) refers to repetitive application of conditioned transcranial
-    magnetic stimulation (TMS) with peripheral stimulation at appropriate interstimulus
-    intervals. When overlapped properly, this pairing can be used for rehabilitation
-    through the rebuilding of neural pathways. Therefore in PAS, providing peripheral
-    stimulation at the right time is crucial. The common procedure of PAS in the literature
-    is to use electrical stimulation as peripheral stimulation. However, inspired
-    by the repetitive facilitation exercise (RFE), mechanical stimulation is adopted
-    in this RNRS experiment. Experiments show that RNRS can give mechanical stimulation
-    accurately within a standard deviation of 5 ms. This stimulation is accurate enough
-    when considering a 50 ms overlapping time …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -618,18 +395,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/10260621/
   citation_count: 11
   pages: 1-7
-  description: Improving the overall equipment effectiveness (OEE) of machines on
-    the shop floor is crucial to ensure the productivity and efficiency of manufacturing
-    systems. To achieve the goal of increased OEE, there is a need to develop flexible
-    runtime control strategies for the system. Decentralized strategies, such as multi-agent
-    systems, have proven effective in improving system flexibility. However, runtime
-    multi-agent control of complex manufacturing systems can be challenging as the
-    agents require extensive communication and computational efforts to coordinate
-    agent activities. One way to improve communication speed and cooperation capabilities
-    between system agents is by providing a common language between these agents to
-    represent knowledge about system behavior. The integration of ontology into multi-agent
-    systems in manufacturing provides agents with the capability to continuously update
-    and refine …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -645,18 +410,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/11163802/
   citation_count: 10
   pages: 2088-2095
-  description: Manufacturing environments are becoming more complex and unpredictable
-    due to factors such as demand variations and shorter product lifespans. This complexity
-    requires real-time decision-making and adaptation to disruptions. Traditional
-    control approaches highlight the need for advanced control strategies capable
-    of overcoming unforeseen challenges, as they demonstrate limitations in responsiveness
-    within dynamic industrial settings. Multi-agent systems address these challenges
-    through decentralization of decision-making, enabling systems to respond dynamically
-    to operational changes. However, current multi-agent systems encounter challenges
-    related to real-time adaptation, context-aware decision-making, and the dynamic
-    exploration of resource capabilities. Large language models provide the possibility
-    to overcome these limitations through context-aware decision-making capabilities.
-    This paper …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -675,16 +428,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/8062543/
   citation_count: 10
   pages: 695-701
-  description: 'Electrohydrodynamic jet printing (e-jet) is a micro additive manufacturing
-    process in which polarizable liquid inks are extracted from a microcapillary nozzle
-    by an electric field and deposited onto a substrate. This process can be broken
-    into two discrete phases: build up to jetting, and jetting of material. This decomposition
-    allows e-jet to be modeled as a hybrid dynamical system. In order to develop a
-    single model with both discrete phases, knowledge of their continuous dynamics
-    and the transition condition between them is needed. This paper proposes and empirically
-    verifies a physics-based inequality on cone angle for modeling the transitions
-    between phases. Additionally, a practical model of the continuous jetting dynamics
-    is generated from measurements taken using high speed video of the e-jet process.'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -703,18 +446,6 @@
   citation_count: 9
   volume: '88117'
   pages: V002T05A010
-  description: Recent technological innovations in the areas of additive manufacturing
-    and collaborative robotics have paved the way toward realizing the concept of
-    on-demand, personalized production on the shop floor. Additive manufacturing process
-    can provide the capability of printing highly customized parts based on various
-    customer requirements. Autonomous, mobile systems provide the flexibility to move
-    custom parts around the shop floor to various manufacturing operations, as needed
-    by product requirements. In this work, we proposed a mobile additive manufacturing
-    robot framework for merging an additive manufacturing process system with an autonomous
-    mobile base. Two case studies showcase the potential benefits of the proposed
-    mobile additive manufacturing framework. The first case study overviews the effect
-    that a mobile system can have on a fused deposition modeling process. The second
-    case …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -737,18 +468,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/9926689/
   citation_count: 8
   pages: 328-334
-  description: 'With an increase in demand for individualized and personalized products,
-    manufacturers are turning their attention to more flexible manufacturing systems
-    that can be rapidly reconfigured, based on needs. However, the existing approaches
-    primarily rely on manual reconfiguration performed or managed by subject-matter
-    experts, which is time-consuming and labor-intensive. To this end, we propose
-    an integrated framework that generates multiple feasible configurations, conducts
-    simulations to evaluate the performance of the proposed configurations, and performs
-    a multi-objective optimization to derive a set of ordered solutions from which
-    the manufacturer may select their desired option. The framework consists of three
-    core components: Digital Twin Pool, Application Plane, and Decision Maker. The
-    DT pool consists of DTs grouped together based on functionalities. The individual
-    DT request required information …'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -773,18 +492,6 @@
   volume: '5'
   issue: '2'
   pages: 4-24
-  description: As real-world systems become more complex and connected, the industrial
-    sector requires engineers who can solve problems across multiple disciplines and
-    work with people across various educational backgrounds. This is particularly
-    apparent in the manufacturing industry, as the integration of new manufacturing
-    system technology requires knowledge in a diverse set of fields, such as physics,
-    computer science, and engineering, to name a few. To properly educate the next
-    workforce in manufacturing, engineering education needs to incorporate cross-disciplinary,
-    project-driven learning that provides students with ample opportunities to work
-    with cutting-edge manufacturing technology. At the University of Michigan, the
-    Secure Cloud Manufacturing Multidisciplinary Design Program team focuses on developing
-    the next generation of manufacturing engineers through research-driven multidisciplinary
-    projects …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -803,18 +510,6 @@
   volume: '53'
   issue: '4'
   pages: 136-142
-  description: To enable product customization and incorporate customer requirements
-    during production, there is a need to integrate more flexible control strategies
-    into the shop floor. One type of strategy that has been proposed to address these
-    challenges is multi-agent control. An integral part of this control strategy is
-    the product agent, a controller for an individual part in the manufacturing system.
-    The product agent uses a continuously updated model of the local manufacturing
-    system to make decisions. However, current models used by product agents do not
-    explicitly incorporate the system’s time constraints. This work proposes a priced
-    timed automata modeling framework to represent an environment model for a product
-    agent. The proposed environment model incorporates personalized production requirements
-    and system constraints for the product agent. To make decisions, the product agent
-    solves an optimization …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -834,18 +529,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/7020990/
   citation_count: 6
   pages: 114-120
-  description: This research aims to characterize the neuromechanical mechanisms associated
-    with the facilitation techniques for functional recovery of hemiparetic limbs,
-    referred to as repetitive facilitation exercise or RFE. The research investigates
-    the facilitation exercise paradigm and re-implementation with the addition of
-    a pneumatically driven robotic device. A fully automated, functional magnetic
-    resonance imaging (fMRI) compatible rehabilitation device is to be built to help
-    validate the hypothesized mechanism of the RFE. The research will establish methodologies
-    for precise impact timing control of a pneumatic robotic hammer and multimodal
-    instruction cues to realize the robotic RFE procedure that is capable of being
-    used in MRI environment. This paper presents the authors' initial development
-    that aims to understand the mechanisms of robotic RFE and addresses challenges
-    that must be resolved.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -861,27 +544,6 @@
   link: https://pure.psu.edu/en/publications/harnessing-controls-and-robotics-for-sustainable-manufacturing/
   citation_count: 5
   pages: 'V1: 663-V1: 671'
-  description: The role of energy consumption has become an important topic as the
-    world attempts to minimize negative impacts to the environment to create a sustainable
-    future. Recent studies have shown that the world is not on pace to reach net zero
-    emissions by 2050, which would lead to an increase in global temperatures and
-    negatively impact the health of our planet. One of the major contributors of global
-    energy expenditure is the industrial sector. The industrial sector has steadily
-    increased its rate of energy usage and currently accounts for approximately one
-    quarter of the global carbon dioxide emissions. Manufacturing systems account
-    for the majority of energy consumption in the industrial sector. Therefore, improving
-    the energy efficiency of manufacturing systems has become an objective for a number
-    of companies and countries. Companies have started to recognize the need for sustainability
-    due to the financial benefits, growing societal pressures, and increased government
-    regulations.\n\nThe manufacturing sector also has a significant role in the global
-    economy and the world labor market. Manufacturing has a large multiplier effect
-    and impacts a number of other sectors of society. Therefore, it will be important
-    to try to ensure that manufacturing systems can still function and perform effectively
-    when addressing the need for sustainability and energy efficiency. One approach
-    to balance these trade-offs for manufacturing system is to enhance industrial
-    automation technology in manufacturing systems through the integration of advanced
-    control systems and robotics. In the past few years, there have been a number
-    of technological advancements …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -898,17 +560,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/10156587/
   citation_count: 5
   pages: 4332-4338
-  description: In this paper, we propose a Risk-Averse Priced Timed Automata (PTA)
-    Model Predictive Control (MPC) framework to increase flexibility of cyber-physical
-    systems. To improve flexibility in these systems, our risk-averse framework solves
-    a multi-objective optimization problem to minimize the cost and risk, simultaneously.
-    While minimizing cost ensures the least effort to achieve a task, minimizing risk
-    provides guarantees on the feasibility of the task even during uncertainty. Our
-    framework explores the trade-off between these two qualities to obtain risk-averse
-    control actions. The solution of risk-averse PTA MPC dynamic decision-making algorithm
-    reacts relatively better to PTA changes compared to PTA MPC without risk-averse
-    feature. An example from manufacturing systems is presented to show the application
-    of the proposed control strategy.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -958,18 +609,6 @@
   citation_count: 5
   volume: '57120'
   pages: V05AT08A050
-  description: This paper introduces an effective engineered rehabilitation system
-    for understanding and inducing functional recovery of hemiparetic limbs based
-    on the concept of timing-dependent induction of neural plasticity. Limb motor
-    function is commonly impaired after neurologic injury such as stroke, with hemiparesis
-    being one of the major impairments. In an emerging unique intervention for hemiparesis,
-    named repetitive facilitation exercise, or RFE, a therapist manually applies brief
-    mechanical stimuli to the peripheral target muscles (e.g., tapping, stretching
-    of tendon/muscle) immediately before a patient intends to produce a movement with
-    the muscle. The practice of this rehabilitation procedure by a skilled therapist
-    often leads to dramatic rehabilitation outcomes. However, unskilled therapists,
-    most likely due to the inaccuracy of the timing of peripheral stimulation in reference
-    to the intention of movement (i.e. motor …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -990,18 +629,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/11312935/
   citation_count: 4
   pages: 1220-1226
-  description: Critical real-world applications strongly rely on Cyber-physical systems
-    (CPS), but their dependence on communication networks introduces significant security
-    risks, as attackers can exploit vulnerabilities to compromise their integrity
-    and availability. This work explores the topic of cybersecurity in the context
-    of CPS modeled as discrete event systems (DES), focusing on recovery strategies
-    following the detection of cyberattacks. Specifically, we address actuator enablement
-    attacks and propose a method that preserves the system’s full valid behavior under
-    normal conditions. Upon detecting an attack, our proposed solution aims to guide
-    the system toward a restricted yet robust behavior, ensuring operational continuity
-    and resilience. Additionally, we introduce a property termed AE-robust recoverability,
-    which characterizes the necessary and sufficient conditions for recovering a system
-    from attacks while preventing …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1021,18 +648,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/9551650/
   citation_count: 4
   pages: 625-632
-  description: This research aims to develop methods to quickly build new manufacturing
-    lines in response to changes in product varieties and manufacturing fluctuations
-    in a factory. We propose a meta-heuristic algorithm for solving large-scale optimizations
-    of the line design process, which includes resource configuration, process design,
-    control design, and line configuration. The proposed framework improves the automation
-    and system-level interactions of the line design process as compared to conventional
-    methods that manually solve each step in the process design problem individually
-    using skilled line engineers with previous experience. This research introduces
-    the concept of a resource group or module that consists of various manufacturing
-    resources such as robots, tools, autonomous guided vehicles, and conveyors. The
-    line design process is then reconfigured for module or group configuration. To
-    demonstrate …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1049,18 +664,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/11164034/
   citation_count: 2
   pages: 2096-2102
-  description: Manufacturing industries are among the highest energy-consuming sectors,
-    facing increasing pressure to reduce energy costs. This paper presents an energy-aware
-    Model Predictive Control (MPC) framework to dynamically schedule manufacturing
-    processes in response to time-varying electricity prices without compromising
-    production goals or violating production constraints. A network-based manufacturing
-    system model is developed to capture complex material flows, batch processing,
-    and capacities of buffers and machines. The scheduling problem is formulated as
-    a Mixed-Integer Quadratic Program (MIQP) that balances energy costs, buffer levels,
-    and production requirements. A case study evaluates the proposed MPC framework
-    under four industrial electricity pricing schemes. Numerical results demonstrate
-    that the approach reduces energy usage expenses while satisfying production goals
-    and adhering …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1075,19 +678,6 @@
   date: '2025-05-28'
   link: https://arxiv.org/abs/2505.22804
   citation_count: 2
-  description: Recent manufacturing systems are increasingly adopting multi-robot
-    collaboration to handle complex and dynamic environments. While multi-agent architectures
-    support decentralized coordination among robot agents, they often face challenges
-    in enabling real-time adaptability for unexpected disruptions without predefined
-    rules. Recent advances in large language models offer new opportunities for context-aware
-    decision-making to enable adaptive responses to unexpected changes. This paper
-    presents an initial exploratory implementation of a large language model-enabled
-    control framework for dynamic task reassignment in multi-robot manufacturing systems.
-    A central controller agent leverages the large language model's ability to interpret
-    structured robot configuration data and generate valid reassignments in response
-    to robot failures. Experiments in a real-world setup demonstrate high task success
-    rates in recovering from failures, highlighting the potential of this approach
-    to improve adaptability in multi-robot manufacturing systems.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1107,17 +697,6 @@
   citation_count: 2
   volume: '1'
   pages: '2020'
-  description: 'EC Balta, I. Kovalenko, IA Spiegel, DM Tilbury, and K. Barton,“Model
-    Predictive Control of Priced Timed Automata Encoded with First-Order Logic,” IEEE
-    Transactions on Control Systems Technology, Conditionally accepted, 2020.
-
-    This text was included in the peer-reviewed and accepted manuscript submitted
-    to IEEE Transactions on Control Systems Technology, but was cut in the final version
-    to meet the page limit. This document overviews the methods used to express a
-    priced timed automaton (PTA) in first-order logic (FOL). Note that this document
-    uses the same assumptions and notation as [1]. Using the FOL representation described
-    in the rest of this document,[1] describes how to formulate a model predictive
-    control (MPC) problem using the FOL PTA representation (ie, the PTA-MPC problem).'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1140,17 +719,6 @@
   citation_count: 2
   volume: '58745'
   pages: V001T02A024
-  description: Dimensional metrology is an integral part of quality control in manufacturing
-    systems. Most existing manufacturing systems utilize contact-based metrology,
-    which is time consuming and not flexible to design changes. There have been recent
-    applications of computer vision for performing dimensional metrology in manufacturing
-    systems. Existing computer vision metrology techniques need repeated calibration
-    of the system and are not utilized with data analysis methods to improve decision
-    making. In this work, we propose a robust non-contact computer vision metrology
-    pipeline integrated with Computer Aided Design (CAD) that has the capacity to
-    enable control of smart manufacturing systems. The pipeline uses CAD data to extract
-    nominal dimensions and tolerances. The dimensions are compared to the measured
-    ones, computed using camera images and computer vision algorithms. A quality check …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1171,17 +739,6 @@
   volume: '9'
   issue: '3'
   pages: 030910
-  description: 'Background
-
-    As the age of the population in the world increases, the occurrence of age-related
-    disorders, such as stroke, also increases. One of the possible effects of stroke
-    is hemiparesis. Individuals suffering from hemiparesis, a weakness or semiparalysis
-    of one side of the body, require extensive care and rehabilitation in order to
-    gain back the functionality of their limbs. One such method, the repetitive facilitation
-    exercise (RFE), has been shown to be effective in improving the motor movements
-    of patients suffering from hemiparesis [1]. This neurofacilitation method is believed
-    to be combining a voluntary neural signal from the patient with the long latency
-    response of an induced muscle stretch via external stimuli [2].'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1200,17 +757,6 @@
   citation_count: 1
   volume: '100'
   pages: '103245'
-  description: As the demand for personalized products increases, manufacturing processes
-    are becoming more complex due to greater variety and uncertainty in product requirements.
-    Traditional manufacturing systems face challenges in adapting to product changes
-    without manual interventions, leading to an increase in product delays and operational
-    costs. Multi-agent manufacturing control systems, a decentralized framework consisting
-    of collaborative agents, have been employed to enhance flexibility and adaptability
-    in manufacturing. However, existing multi-agent system approaches are often initialized
-    with predefined capabilities, limiting their ability to handle new requirements
-    that were not modeled in advance. To address this challenge, this work proposes
-    a large language model-enabled multi-agent framework that enables adaptive matching,
-    translating new product requirements to manufacturing process control at …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1226,18 +772,6 @@
   date: '2025-11-21'
   link: https://ieeexplore.ieee.org/abstract/document/11264006/
   citation_count: 1
-  description: Driven by growing concerns over global energy consumption, improving
-    energy efficiency in the manufacturing sector is increasingly vital, especially
-    for energy-intensive batch processes. Real-time pricing (RTP) of electricity,
-    a dynamic demand-side management strategy, offers opportunities to reduce energy
-    costs by scheduling production during low-price periods. However, integrating
-    RTP into batch manufacturing scheduling introduces challenges in balancing energy
-    savings with timely customer contract fulfillment, requiring multi-timescale coordination.
-    This paper presents a hierarchical Model Predictive Control (MPC) framework integrated
-    with a System-Level Energy-Efficiency Digital Twin (SLEE-DT) for energy-aware
-    batch manufacturing scheduling. The SLEE-DT provides a unified system representation,
-    capturing the dynamic interactions between production and inventory stages. The
-    hierarchical MPC …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1256,18 +790,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/11163792/
   citation_count: 1
   pages: 1809-1815
-  description: In recent years, the demand for customized, on-demand production has
-    grown in the manufacturing sector. Additive Manufacturing (AM) has emerged as
-    a promising technology to enhance customization capabilities, enabling greater
-    flexibility, reduced lead times, and more efficient material usage. However, traditional
-    AM systems remain constrained by static setups and human worker dependencies,
-    resulting in long lead times and limited scalability. Mobile robots can improve
-    the flexibility of production systems by transporting products to designated locations
-    in a dynamic environment. By integrating AM systems with mobile robots, manufacturers
-    can optimize travel time for preparatory tasks and distributed printing operations.
-    Mobile AM robots have been deployed for on-site production of large-scale structures,
-    but often neglect critical print quality metrics like surface roughness. Additionally,
-    these systems do not …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1284,15 +806,6 @@
   date: '2024-01-01'
   link: https://repositories.lib.utexas.edu/items/f61e0e41-8394-4062-8800-616d5a98c258
   citation_count: 1
-  description: Advances in non-planar, multi-axis, and hybrid material extrusion additive
-    manufacturing techniques increasingly demand active nozzle orientation control.
-    Industrial articulated robot arms are commonly implemented for repetitive manufacturing
-    tasks and these arms are becom-ing a common choice of motion platform for additive
-    manufacturing given their ubiquity and flexibility. Here we explore the pragmatic
-    benefits and challenges of using industrial robotic arms for extrusion additive
-    manufacturing. While robotic arms from established manufacturers are highly capable,
-    recent offerings are more easily integrated and safer, while providing the same
-    or improved capabilities as the more traditional models.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1325,17 +838,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/10253433/
   citation_count: 1
   pages: 136-142
-  description: The need for control strategies that can address dynamic system uncertainty
-    is becoming increasingly important. In this work, we propose a Model Predictive
-    Control for quantifying the risk of failure in our system model. The proposed
-    control scheme uses a Priced Timed Automata representation of the manufacturing
-    system to promote the fail-safe operation of systems under uncertainties. The
-    proposed method ensures that in case of unforeseen failure(s), the optimization-based
-    control strategy can still achieve the manufacturing system objective. In addition,
-    the proposed strategy establishes a trade-off between minimizing the cost and
-    reducing failure risk to allow the manufacturing system to function effectively
-    in the presence of uncertainties. An example from manufacturing systems is presented
-    to show the application of the proposed control strategy.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1352,21 +854,6 @@
   date: '2026-04-18'
   link: https://arxiv.org/abs/2604.17142
   citation_count: null
-  description: Manufacturing industries are facing increasing product variability
-    due to the growing demand for personalized products. Under these conditions, ensuring
-    safety becomes challenging as frequent reconfigurations can lead to unintended
-    hazardous behaviors. Multi-agent control architectures have been proposed to improve
-    flexibility through decentralized decision-making and coordination. However, these
-    architectures are based on predefined task models, which limit their ability to
-    adapt task planning to new product requirements while preserving safety. Recently,
-    large language models have been introduced into manufacturing systems to enhance
-    adaptability, but reliability remains a key challenge. To address this issue,
-    we propose a control architecture that leverages the flexibility of large language
-    models while preserving safety on the manufacturing shop floor. Specifically,
-    the proposed framework verifies large language model-enabled task allocations
-    by using temporal logic and discrete event systems. The effectiveness of the proposed
-    framework is demonstrated through a case study that involves a multi-robot assembly
-    scenario, showing that unsafe tasks can be allocated safely before task execution.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1385,27 +872,6 @@
   date: '2026-03-26'
   link: https://arxiv.org/abs/2603.25688
   citation_count: null
-  description: As the demand for mass customization increases, manufacturing systems
-    must become more flexible and adaptable to produce personalized products efficiently.
-    Additive manufacturing (AM) enhances production adaptability by enabling on-demand
-    fabrication of customized components directly from digital models, but its flexibility
-    remains constrained by fixed equipment layouts. Integrating mobile robots addresses
-    this limitation by allowing manufacturing resources to move and adapt to changing
-    production requirements. Mobile AM Robots (MAMbots) combine AM with mobile robotics
-    to produce and transport components within dynamic manufacturing environments.
-    However, the dynamic manufacturing environments introduce challenges for MAMbots.
-    Disturbances such as obstacles and uneven terrain can disrupt navigation stability,
-    which in turn affects printing accuracy and surface quality. This work proposes
-    a universal mobile printing-and-delivery platform that couples navigation and
-    material deposition, addressing the limitations of earlier frameworks that treated
-    these processes separately. A real-time control framework is developed to plan
-    and control the robot's navigation, ensuring safe motion, obstacle avoidance,
-    and path stability while maintaining print quality. The closed-loop integration
-    of sensing, mobility, and manufacturing provides real-time feedback for motion
-    and process control, enabling MAMbots to make autonomous decisions in dynamic
-    environments. The framework is validated through simulations and real-world experiments
-    that test its adaptability to trajectory variations and external disturbances.
-    Coupled navigation …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1420,24 +886,6 @@
   date: '2026-03-14'
   link: https://arxiv.org/abs/2603.14060
   citation_count: null
-  description: 'Demand-side energy management, such as the real-time pricing (RTP)
-    program, offers manufacturers opportunities to reduce energy costs by shifting
-    production to low-price hours. However, this strategy is challenging to implement
-    when machine degradation is considered, as degraded machines have decreased processing
-    capacity and increased energy consumption. Proactive maintenance (PM) can restore
-    machine health but requires production downtime, creating a challenging trade-off:
-    scheduling maintenance during low-price periods sacrifices energy savings opportunities,
-    while deferring maintenance leads to capacity losses and higher energy consumption.
-    To address this challenge, we propose a hierarchical bi-level control framework
-    that jointly optimizes PM planning and runtime production scheduling, considering
-    the machine degradation. A higher-level optimization, with the lower-level model
-    predictive control (MPC) embedded as a sub-problem, determines PM plans that minimize
-    total operational costs under day-ahead RTP. At runtime, the lower-level MPC executes
-    closed-loop production scheduling to minimize energy costs under realized RTP,
-    meeting delivery targets. Simulation results from a lithium-ion battery pack assembly
-    line case study demonstrate that the framework strategically shifts PM away from
-    bottlenecks and high-price hours, meeting daily production targets while reducing
-    energy costs.'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1454,21 +902,6 @@
   date: '2026-03-12'
   link: https://arxiv.org/abs/2603.11461
   citation_count: null
-  description: With increasing demand for mass customization, traditional manufacturing
-    robots that rely on rule-based operations lack the flexibility to accommodate
-    customized or new product variants. Human-Robot Collaboration (HRC) has demonstrated
-    potential to improve system adaptability by leveraging human versatility and decision-making
-    capabilities. However, existing HRC frame- works typically depend on predefined
-    perception-manipulation pipelines, limiting their ability to autonomously generate
-    task plans for new product assembly. In this work, we propose CoViLLM, an adaptive
-    human-robot collaborative assembly frame- work that supports the assembly of customized
-    and previously unseen products. CoViLLM combines depth-camera-based localization
-    for object position estimation, human operator classification for identifying
-    new components, and an Large Language Model (LLM) for assembly task planning based
-    on natural language instructions. The framework is validated on the NIST Assembly
-    Task Board for known, customized, and new product cases. Experimental results
-    show that the proposed framework enables flexible collaborative assembly by extending
-    HRC beyond predefined product and task settings.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1486,18 +919,6 @@
   link: https://ui.adsabs.harvard.edu/abs/2026arXiv260311461Z/abstract
   citation_count: null
   pages: 'arXiv: 2603.11461'
-  description: With increasing demand for mass customization, traditional manufacturing
-    robots that rely on rule-based operations lack the flexibility to accommodate
-    customized or new product variants. Human-Robot Collaboration has demonstrated
-    potential to improve system adaptability by leveraging human versatility and decision-making
-    capabilities. However, existing Human-Robot Collaborative frameworks typically
-    depend on predefined perception-manipulation pipelines, limiting their ability
-    to autonomously generate task plans for new product assembly. In this work, we
-    propose CoViLLM, an adaptive human-robot collaborative assembly framework that
-    supports the assembly of customized and previously unseen products. CoViLLM combines
-    depth-camera-based localization for object position estimation, human operator
-    classification for identifying new components, and a Large Language Model for
-    assembly task …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1514,18 +935,6 @@
   volume: '24'
   issue: '2442362'
   pages: '42362'
-  description: Recent advances in manufacturing system technology and increasing customer
-    expectations have led to a growing interest in mass individualization-the ability
-    of manufacturing systems to create customized products on a large scale. For consumers,
-    manufacturing systems with mass individualization capabilities will create enhanced
-    customer experience and enable the development of tailored solutions based on
-    their unique requirements. For manufacturers, developing mass individualization
-    capabilities could offer significant competitive advantages over manufacturers
-    offering a single product or product family. However, since control strategies
-    for manufacturing systems have been primarily developed for mass production, there
-    is a lack of fundamental knowledge about the impact of individualized control
-    strategies and a lack of performance guarantees for these control strategies.
-    This Faculty Early Career …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1543,18 +952,6 @@
   citation_count: null
   volume: '89022'
   pages: V002T10A008
-  description: 'The rapid growth of artificial intelligence applications has intensified
-    the demand for high-performance computing (HPC) servers, driving the need for
-    more efficient and economical manufacturing processes. However, modern HPC servers
-    present significant challenges: complex architectures vulnerable to assembly damage,
-    compressed development cycles, strict cost constraints, and supply chain vulnerabilities
-    across numerous subcomponents including printed circuit board assemblies (PCBAs)
-    and processor modules. To address these challenges, we propose a Risk-Prioritized
-    Digital Twin (RPDT) framework that enables concurrent optimization of design and
-    assembly processes. The framework integrates three core components: failure modes
-    and effects analysis (FMEA), visual kinematic simulation (VKS), and tolerance
-    analysis. FMEA identifies high-risk components and processes. The combination
-    of …'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1574,18 +971,6 @@
   citation_count: null
   volume: '22'
   pages: 11288-11290
-  description: WITH the emergence of Industry 4.0/5.0, the notion of digital twins
-    has been promoted for improving the engineering and operation phases of automated
-    production and construction systems. Standardization efforts such as the Asset
-    Administration Shell (AAS) aim to provide dedicated formats, protocols, and technologies
-    for engineering and operating digital twins. Such efforts cover model representations
-    of the design as well as runtime data for reflecting the operation of systems.
-    However, many open questions remain regarding the efficient and effective engineering
-    and operation of digital twins. Currently, the realization of digital twins is
-    associated with cost-intensive processes, repetitive work, and proprietary technologies.
-    To improve the current situation, dedicated concepts, techniques, and methods
-    for engineering and operating digital twins are needed. Moreover, dedicated support
-    to manage the different life …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1604,18 +989,6 @@
   volume: '59'
   issue: '30'
   pages: 665-670
-  description: The manufacturing industry is under growing pressure to enhance sustainability
-    while preserving economic competitiveness. As a result, manufacturers have been
-    trying to determine how to integrate onsite renewable energy and real-time electricity
-    pricing into manufacturing schedules without compromising profitability. To address
-    this challenge, we propose a bi-level model predictive control framework that
-    jointly optimizes product prices and production scheduling with explicit consideration
-    of renewable energy integration. The higher level determines the product price
-    to maximize revenue and renewable energy usage. The lower level controls production
-    scheduling in runtime to minimize operational costs and respond to the product
-    demand. Market response is incorporated through price elasticity, enabling strategic
-    pricing to align the product demand with the availability of renewable energy.
-    Results from a …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1633,17 +1006,6 @@
   volume: '58'
   issue: '28'
   pages: 1073-1078
-  description: Water treatment facilities are critical infrastructure they must accommodate
-    dynamic demand patterns without system disruption. These patterns can be scheduled,
-    such as daily residential irrigation, or unexpected, such as demand spikes from
-    withdrawals for fire management. The critical necessity of clean, safe, and reliable
-    water requires water treatment control strategies that are insensitive to disturbances
-    to guarantee that demand will be met. One essential problem in achieving this
-    is the minimization of energy costs in the process of meeting water demand, especially
-    as the need for decarbonization persists. This work develops a control-oriented
-    hydraulic model of a water treatment facility with integrated pumped storage and
-    introduces a model predictive control strategy for scheduling treatment plant
-    system operations to minimize greenhouse gas emissions and safely meet water demand.
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1660,9 +1022,6 @@
   date: '2022-02-28'
   link: https://brg.engin.umich.edu/wp-content/uploads/sites/131/2022/02/DA-PA-agentResponse.pdf
   citation_count: null
-  description: 'This document overviews a deliberation methodology for product agents
-    (PAs) and resource agents (RAs) to respond to violation requests from the direct,
-    actively cooperating product agent (DA-PAs) described in:'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1681,18 +1040,6 @@
   citation_count: null
   volume: '57250'
   pages: V002T27A012
-  description: This paper analyzes the suitability of pneumatically driven, MRI-compatible
-    vane actuators for stroke rehabilitation, particularly functional recovery of
-    hemiparetic limbs. Hemiparesis patients suffer a sudden loss of motor skills in
-    the upper-limb due to brain injury, such as stroke. As an emerging physio-therapy
-    technique for hemiparesis, named repetitive facilitation exercise, or RFE, a therapist
-    manually applies brief mechanical stimuli to the peripheral target muscles (e.g.,
-    tapping, stretching of tendon/muscle) followed by wrist pronation/supination immediately
-    before a patient intends to produce a movement with the muscle. In an earlier
-    study, a robotic system that replicates the mechanical tendon stimulation part
-    of RFE procedure in MRI with the required timing precision has been developed
-    and tested by the authors to investigate the underlying principles of functional
-    recovery via RFE. This work presents the …
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml

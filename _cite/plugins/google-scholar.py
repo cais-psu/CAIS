@@ -130,13 +130,11 @@ def main(entry):
             or get_safe(work, "publication", "")
         )
         link = get_safe(details, "link", "") or get_safe(work, "link", "")
-        description = get_safe(details, "description", "")
         resource_links = [
             get_safe(resource, "link", "") for resource in get_safe(details, "resources", [])
         ]
         doi = find_doi(
             link,
-            description,
             get_safe(work, "publication", ""),
             *resource_links,
         )
@@ -170,9 +168,6 @@ def main(entry):
             source["issue"] = get_safe(details, "issue", "")
         if get_safe(details, "pages", ""):
             source["pages"] = get_safe(details, "pages", "")
-        if description:
-            source["description"] = description
-
         # copy public fields from entry to source
         for key, value in entry.items():
             if key not in ["details", "max_results", "sort", "hl"]:

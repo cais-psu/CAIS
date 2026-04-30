@@ -134,9 +134,14 @@ for index, source in enumerate(sources):
 
     # source id
     _id = get_safe(source, "id", "").strip()
+    plugin = get_safe(source, "plugin", "")
+    file = get_safe(source, "file", "")
+    google_scholar_unciteable = plugin == "google-scholar.py" and not _id.startswith("doi:")
 
     # manubot doesn't work without an id
-    if _id:
+    # google scholar citation IDs are not manubot-citeable, but DOI-backed
+    # google scholar records can still be enriched with Manubot
+    if _id and not google_scholar_unciteable:
         log("Using Manubot to generate citation", indent=1)
 
         try:
@@ -145,8 +150,6 @@ for index, source in enumerate(sources):
 
         # if manubot cannot cite source
         except Exception as e:
-            plugin = get_safe(source, "plugin", "")
-            file = get_safe(source, "file", "")
             # if regular source (id entered by user), throw error
             if plugin == "sources.py":
                 log(e, indent=3, level="ERROR")

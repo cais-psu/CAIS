@@ -18,6 +18,10 @@ nav:
 
 {% include citation-section.html type="conference" %}
 
+## ArXiv Papers
+
+{% include citation-section.html type="arxiv" %}
+
 ## Other Papers
 
 {% include citation-section.html type="other" %}

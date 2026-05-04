@@ -121,8 +121,32 @@
 - id: doi:10.1109/TASE.2025.3636115
   image: /images/paper/2025.3636115.png
 
-- id: doi:10.1002/BTE2.20230023
+- id: doi:10.1002/bte2.20230023
+  type: article-journal
   image: /images/paper/bte220230023.jpg
+
+- id: doi:10.1109/TASE.2022.3156384
+  type: article-journal
+  title: 'Cooperative Product Agents to Improve Manufacturing System Flexibility:
+    A Model-Based Decision Framework'
+  authors:
+    - Ilya Kovalenko
+    - Efe C. Balta
+    - Dawn M. Tilbury
+    - Kira Barton
+  publisher: IEEE Transactions on Automation Science and Engineering
+  date: '2022-03-17'
+  link: https://ieeexplore.ieee.org/abstract/document/9737280/
+  citation_count: 42
+
+- id: doi:10.36227/techrxiv.17136680.v1
+  remove: true
+
+- id: secQmYUAAAAJ:ldfaerwXgEUC
+  type: paper-conference
+
+- id: wosuid:WOS:000454498400020
+  remove: true
 
 - id: doi:10.1080/00207543.2023.2200567
   image: https://arxiv.org/html/2507.19043v1/figures/MAMS.png
@@ -150,4 +174,3 @@
 
 - id: doi:10.1109/CDC57313.2025.11312935
   image: /images/paper/11312935.gif
-

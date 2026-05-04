@@ -19,7 +19,7 @@
 
   {%- assign is_book = false -%}
   {%- if t contains "chapter" or t contains "book" -%}{%- assign is_book = true -%}{%- endif -%}
-  {%- if source contains "lecture notes" or source contains "encyclopedia" or source contains "handbook" or source contains "springer" or source contains "wiley" or source contains "book" or source contains "chapter" -%}{%- assign is_book = true -%}{%- endif -%}
+  {%- if source contains "lecture notes" or source contains "encyclopedia" or source contains "handbook" or source contains "springer" or source contains "book" or source contains "chapter" -%}{%- assign is_book = true -%}{%- endif -%}
 
   {%- assign is_conference = false -%}
   {%- if t contains "proceedings" or t contains "conference" or t contains "workshop" or t contains "symposium" -%}{%- assign is_conference = true -%}{%- endif -%}

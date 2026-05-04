@@ -73,6 +73,12 @@
         <span class="citation-id">
           {{- citation.id | default: "[no id info]" -}}
         </span>
+        {% if citation.citation_count != nil and citation.citation_count != "" %}
+          &nbsp;·&nbsp;
+          <span class="citation-count">
+            Cited by {{ citation.citation_count }}
+          </span>
+        {% endif %}
       </div>
 
       {% if include.style == "rich" %}

@@ -272,9 +272,11 @@
   issue: '6'
   pages: '20230023'
   gsid: secQmYUAAAAJ
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
   orcid: 0000-0003-4764-9117
+  type: article-journal
+  image: /images/paper/bte220230023.jpg
 - id: secQmYUAAAAJ:k_IJM867U9cC
   scholar_id: secQmYUAAAAJ:k_IJM867U9cC
   title: A system-level energy-efficient digital twin framework for runtime control
@@ -492,6 +494,28 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: doi:10.3389/fbuil.2024.1384235
+  title: Conditional adaptive time series compensation and control design for multi-axial
+    real-time hybrid simulation
+  authors:
+  - Andrew J Aguila
+  - Hongliang Li
+  - Alejandro Palacio-Betancur
+  - Kamal A Ahmed
+  - Ilya Kovalenko
+  - Mariantonieta Gutierrez Soto
+  publisher: Frontiers in Built Environment
+  date: '2024-05-13'
+  link: https://www.frontiersin.org/journals/built-environment/articles/10.3389/fbuil.2024.1384235/full
+  scholar_id: secQmYUAAAAJ:blknAaTinKkC
+  citation_count: 7
+  doi: 10.3389/fbuil.2024.1384235
+  DOI: 10.3389/fbuil.2024.1384235
+  volume: '10'
+  pages: '1384235'
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: secQmYUAAAAJ:qxL8FJ1GzNcC
   scholar_id: secQmYUAAAAJ:qxL8FJ1GzNcC
   title: 'Developing the workforce for next-generation smart manufacturing systems:
@@ -525,9 +549,10 @@
   - I Kovalenko
   - Y Qamsane
   - K Barton
-  publisher: 1st International Workshop on Smart Manufacturing Modeling and Analysis
-  date: '2019-04-01'
-  link: https://scholar.google.com/scholar?cluster=9661866955613867902&hl=en&oi=scholarr
+  publisher: 1st International Workshop on Smart Manufacturing Modeling and Analysis,
+    2019
+  date: '2019-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:4TOpqqG69KYC
   citation_count: 6
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
@@ -587,18 +612,19 @@
   title: Robotic neuromuscular facilitation for regaining neural activation in hemiparetic
     limbs
   authors:
-  - J Ueda
-  - L Lacey
-  - M Turkseven
-  - M Shinohara
-  - I Kovalenko
-  - E Kim
-  - '...'
-  publisher: International Design Engineering Technical Conferences and Computers
-    and …, 2015
-  date: '2015-01-01'
-  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:u-x6o8ySG0sC
+  - Jun Ueda
+  - Lauren Lacey
+  - Melih Turkseven
+  - Minoru Shinohara
+  - Ilya Kovalenko
+  - Euisun Kim
+  - Fatiesa Sulejmani
+  publisher: American Society of Mechanical Engineers
+  date: '2015-08-02'
+  link: https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2015/V05AT08A050/257082
   citation_count: 5
+  volume: '57120'
+  pages: V05AT08A050
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -607,17 +633,18 @@
   title: Robust recovery and control of cyber-physical discrete event systems under
     actuator attacks
   authors:
-  - S Oliveira
-  - MT Anbarani
-  - G Beal
-  - I Kovalenko
-  - M Teixeira
-  - AB Leal
-  - '...'
-  publisher: 2025 IEEE 64th Conference on Decision and Control (CDC), 1220-1226, 2025
-  date: '2025-01-01'
-  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:2P1L_qKh6hAC
+  - Samuel Oliveira
+  - Mostafa Tavakkoli Anbarani
+  - Gregory Beal
+  - Ilya Kovalenko
+  - Marcelo Teixeira
+  - André B Leal
+  - Rômulo Meira-Góes
+  publisher: IEEE
+  date: '2025-12-09'
+  link: https://ieeexplore.ieee.org/abstract/document/11312935/
   citation_count: 4
+  pages: 1220-1226
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -716,15 +743,18 @@
   title: Design and testing of a pneumatic hemiparesis rehabilitation device for a
     neurofacilitation exercise
   authors:
-  - I Kovalenko
-  - J Lai
-  - J Williams
-  - A Maliki
-  - J Ueda
-  publisher: Journal of Medical Devices 9 (3), 030910, 2015
-  date: '2015-01-01'
-  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:9yKSN-GCB0IC
+  - Ilya Kovalenko
+  - Jonathan Lai
+  - Johnathan Williams
+  - Arnold Maliki
+  - Jun Ueda
+  publisher: Journal of Medical Devices
+  date: '2015-09-01'
+  link: https://asmedigitalcollection.asme.org/medicaldevices/article-abstract/9/3/030910/447946
   citation_count: 2
+  volume: '9'
+  issue: '3'
+  pages: 030910
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -793,8 +823,9 @@
   link: https://repositories.lib.utexas.edu/items/f61e0e41-8394-4062-8800-616d5a98c258
   citation_count: 1
   gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources.yaml
+  type: paper-conference
 - id: secQmYUAAAAJ:YFjsv_pBGBYC
   scholar_id: secQmYUAAAAJ:YFjsv_pBGBYC
   title: Modeling and Mitigating Silent Faults in Coupled Discrete Event Systems
@@ -851,15 +882,15 @@
   title: Intelligent Navigation and Obstacle-Aware Fabrication for Mobile Additive
     Manufacturing Systems
   authors:
-  - Yifei Li
-  - Ruizhe Fu
-  - Huihang Liu
-  - Guha Manogharan
-  - Feng Ju
-  - Ilya Kovalenko
-  publisher: arXiv preprint arXiv:2603.25688
-  date: '2026-03-26'
-  link: https://arxiv.org/abs/2603.25688
+  - Y Li
+  - R Fu
+  - H Liu
+  - G Manogharan
+  - F Ju
+  - I Kovalenko
+  publisher: arXiv preprint arXiv:2603.25688, 2026
+  date: '2026-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:3s1wT3WcHBgC
   citation_count: null
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
@@ -932,14 +963,15 @@
   title: 'A Digital Twin Framework for Computer Hardware Design and Assembly: A Risk-Prioritized
     Approach'
   authors:
-  - R Elsasser
-  - H Li
-  - I Kovalenko
-  publisher: International Manufacturing Science and Engineering Conference 89022
-    …, 2025
-  date: '2025-01-01'
-  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:70eg2SAEIzsC
+  - Ryan Elsasser
+  - Hongliang Li
+  - Ilya Kovalenko
+  publisher: American Society of Mechanical Engineers
+  date: '2025-06-23'
+  link: https://asmedigitalcollection.asme.org/MSEC/proceedings-abstract/MSEC2025/89022/1223004
   citation_count: null
+  volume: '89022'
+  pages: V002T10A008
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -1215,23 +1247,6 @@
   orcid: 0000-0003-4764-9117
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.3389/FBUIL.2024.1384235
-  title: Conditional adaptive time series compensation and control design for multi-axial
-    real-time hybrid simulation
-  authors:
-  - Andrew J. Aguila
-  - Hongliang Li
-  - Alejandro Palacio-Betancur
-  - Kamal A. Ahmed
-  - Ilya Kovalenko
-  - Mariantonieta Gutierrez Soto
-  publisher: Frontiers in Built Environment
-  date: '2024-05-13'
-  link: https://doi.org/g97zp6
-  orcid: 0000-0003-4764-9117
-  plugin: sources.py
-  file: sources.yaml
-  image: /images/paper/1384235.jpg
 - id: wosuid:PPRN:89394559
   title: Web of Science
   authors: []
@@ -1436,11 +1451,13 @@
   - Dawn M. Tilbury
   - Kira Barton
   publisher: IEEE Transactions on Automation Science and Engineering
-  date: '2023-01-01'
-  link: https://doi.org/hbwvmv
+  date: '2022-03-17'
+  link: https://ieeexplore.ieee.org/abstract/document/9737280/
   orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  type: article-journal
+  citation_count: 42
 - id: wosuid:PPRN:85052345
   title: Web of Science
   authors: []
@@ -1535,20 +1552,6 @@
   plugin: sources.py
   file: sources.yaml
   image: /images/paper/3165551.gif
-- id: doi:10.36227/techrxiv.17136680.v1
-  title: 'Cooperative Product Agents to Improve Manufacturing System Flexibility:
-    A Model-Based Decision Framework'
-  authors:
-  - Ilya Kovalenko
-  - Efe Balta
-  - Dawn Tilbury
-  - Kira Barton
-  publisher: Institute of Electrical and Electronics Engineers (IEEE)
-  date: '2021-12-12'
-  link: https://doi.org/g97zqh
-  orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/ACCESS.2021.3065971
   title: A Methodology to Develop and Implement Digital Twin Solutions for Manufacturing
     Systems
@@ -1924,15 +1927,6 @@
   plugin: sources.py
   file: sources.yaml
   image: /images/paper/7020990.gif
-- id: wosuid:WOS:000454498400020
-  title: Web of Science
-  authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000454498400020
-  orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/CASE58245.2025.11163792
   title: A Model Predictive Control Framework to Enhance Safety and Quality in Mobile
     Additive Manufacturing Systems

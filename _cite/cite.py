@@ -136,7 +136,13 @@ for index, source in enumerate(sources):
     _id = get_safe(source, "id", "").strip()
     plugin = get_safe(source, "plugin", "")
     file = get_safe(source, "file", "")
-    google_scholar_unciteable = plugin == "google-scholar.py" and not _id.startswith("doi:")
+    google_scholar_unciteable = (
+        not _id.startswith("doi:")
+        and (
+            plugin == "google-scholar.py"
+            or get_safe(source, "scholar_id", "") == _id
+        )
+    )
 
     # manubot doesn't work without an id
     # google scholar citation IDs are not manubot-citeable, but DOI-backed

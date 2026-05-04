@@ -5,6 +5,7 @@ from util import *
 
 
 DOI_PATTERN = re.compile(r"\b10\.\d{4,9}/[-._;()/:A-Z0-9]+", re.IGNORECASE)
+DOI_TRAILING_PATHS = ["/full"]
 
 
 def clean_authors(authors):
@@ -36,7 +37,11 @@ def find_doi(*values):
     for value in values:
         match = DOI_PATTERN.search(str(value or ""))
         if match:
-            return match.group(0).rstrip(".,;)").lower()
+            doi = match.group(0).rstrip(".,;)").lower()
+            for suffix in DOI_TRAILING_PATHS:
+                if doi.endswith(suffix):
+                    doi = doi[: -len(suffix)]
+            return doi
     return ""
 
 

@@ -6,6 +6,9 @@ on:
     inputs:
       open-pr:
         type: boolean
+    secrets:
+      CREATE_PR_TOKEN:
+        required: false
     outputs:
       changed:
         value: ${{ jobs.update-citations.outputs.changed }}
@@ -102,6 +105,7 @@ jobs:
           inputs.open-pr == true
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.CREATE_PR_TOKEN || github.token }}
           branch: citation-update
           title: Periodic citation update
           body: |

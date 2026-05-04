@@ -12,7 +12,7 @@
   publisher: Ieee Access
   date: '2020-01-01'
   link: https://par.nsf.gov/servlets/purl/10188894
-  citation_count: 287
+  citation_count: 288
   volume: '8'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
@@ -50,7 +50,7 @@
   publisher: Control Engineering Practice
   date: '2019-05-01'
   link: https://www.sciencedirect.com/science/article/pii/S0967066118305057
-  citation_count: 110
+  citation_count: 111
   volume: '86'
   pages: 105-117
   gsid: secQmYUAAAAJ
@@ -83,8 +83,28 @@
   publisher: IEEE
   date: '2024-08-28'
   link: https://ieeexplore.ieee.org/abstract/document/10711432/
-  citation_count: 53
+  citation_count: 55
   pages: 3940-3946
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:MXK_kJrjxJIC
+  scholar_id: secQmYUAAAAJ:MXK_kJrjxJIC
+  title: Dynamic resource task negotiation to enable product agent exploration in
+    multi-agent manufacturing systems
+  authors:
+  - Ilya Kovalenko
+  - Daria Ryashentseva
+  - Birgit Vogel-Heuser
+  - Dawn Tilbury
+  - Kira Barton
+  publisher: IEEE Robotics and Automation Letters
+  date: '2019-06-10'
+  link: https://ieeexplore.ieee.org/abstract/document/8733849/
+  citation_count: 43
+  volume: '4'
+  issue: '3'
+  pages: 2854-2861
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -107,23 +127,23 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: secQmYUAAAAJ:MXK_kJrjxJIC
-  scholar_id: secQmYUAAAAJ:MXK_kJrjxJIC
-  title: Dynamic resource task negotiation to enable product agent exploration in
-    multi-agent manufacturing systems
+- id: secQmYUAAAAJ:Zph67rFs4hoC
+  scholar_id: secQmYUAAAAJ:Zph67rFs4hoC
+  title: A framework for automatic initialization of multi-agent production systems
+    using semantic web technologies
   authors:
+  - Felix Ocker
   - Ilya Kovalenko
-  - Daria Ryashentseva
-  - Birgit Vogel-Heuser
-  - Dawn Tilbury
   - Kira Barton
+  - Dawn Tilbury
+  - Birgit Vogel-Heuser
   publisher: IEEE Robotics and Automation Letters
-  date: '2019-06-10'
-  link: https://ieeexplore.ieee.org/abstract/document/8733849/
-  citation_count: 42
+  date: '2019-07-29'
+  link: https://ieeexplore.ieee.org/abstract/document/8779665/
+  citation_count: 40
   volume: '4'
-  issue: '3'
-  pages: 2854-2861
+  issue: '4'
+  pages: 4330-4337
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -151,23 +171,6 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: secQmYUAAAAJ:Zph67rFs4hoC
-  scholar_id: secQmYUAAAAJ:Zph67rFs4hoC
-  title: A framework for automatic initialization of multi-agent production systems
-    using semantic web technologies
-  authors:
-  - F Ocker
-  - I Kovalenko
-  - K Barton
-  - D Tilbury
-  - B Vogel-Heuser
-  publisher: IEEE Robotics and Automation Letters 4 (4), 4330-4337, 2019
-  date: '2019-01-01'
-  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:Zph67rFs4hoC
-  citation_count: 39
-  gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: secQmYUAAAAJ:YsMSGLbcyi4C
   scholar_id: secQmYUAAAAJ:YsMSGLbcyi4C
   title: 'SMART: A system-level manufacturing and automation research testbed'
@@ -179,7 +182,7 @@
   publisher: Smart and Sustainable Manufacturing Systems
   date: '2017-10-27'
   link: https://dl.astm.org/ssms/article-pdf/1/1/232/212964/ssms20170006.pdf
-  citation_count: 38
+  citation_count: 39
   volume: '1'
   issue: '1'
   pages: 232-261
@@ -236,7 +239,7 @@
   date: '2024-03-03'
   link: https://www.tandfonline.com/doi/abs/10.1080/00207543.2023.2200567
   scholar_id: secQmYUAAAAJ:TFP_iSt0sucC
-  citation_count: 34
+  citation_count: 35
   doi: 10.1080/00207543.2023.2200567
   DOI: 10.1080/00207543.2023.2200567
   volume: '62'
@@ -317,7 +320,7 @@
   publisher: IEEE
   date: '2017-09-12'
   link: https://ieeexplore.ieee.org/abstract/document/8247652/
-  citation_count: 20
+  citation_count: 21
   pages: 1-8
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
@@ -334,7 +337,7 @@
   publisher: Procedia manufacturing
   date: '2018-01-01'
   link: https://www.sciencedirect.com/science/article/pii/S2351978918311697
-  citation_count: 17
+  citation_count: 18
   volume: '17'
   pages: 326-333
   gsid: secQmYUAAAAJ
@@ -471,6 +474,24 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: secQmYUAAAAJ:mVmsd5A6BfQC
+  scholar_id: secQmYUAAAAJ:mVmsd5A6BfQC
+  title: Priced timed automata models for control of intelligent product agents in
+    manufacturing systems
+  authors:
+  - Ilya Kovalenko
+  - Dawn Tilbury
+  - Kira Barton
+  publisher: IFAC-PapersOnLine
+  date: '2020-01-01'
+  link: https://www.sciencedirect.com/science/article/pii/S240589632100104X
+  citation_count: 8
+  volume: '53'
+  issue: '4'
+  pages: 136-142
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: secQmYUAAAAJ:qxL8FJ1GzNcC
   scholar_id: secQmYUAAAAJ:qxL8FJ1GzNcC
   title: 'Developing the workforce for next-generation smart manufacturing systems:
@@ -495,21 +516,19 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: secQmYUAAAAJ:mVmsd5A6BfQC
-  scholar_id: secQmYUAAAAJ:mVmsd5A6BfQC
-  title: Priced timed automata models for control of intelligent product agents in
-    manufacturing systems
+- id: secQmYUAAAAJ:4TOpqqG69KYC
+  scholar_id: secQmYUAAAAJ:4TOpqqG69KYC
+  title: The digital twin in the manufacturing ecosystem of the future
   authors:
-  - Ilya Kovalenko
-  - Dawn Tilbury
-  - Kira Barton
-  publisher: IFAC-PapersOnLine
-  date: '2020-01-01'
-  link: https://www.sciencedirect.com/science/article/pii/S240589632100104X
-  citation_count: 7
-  volume: '53'
-  issue: '4'
-  pages: 136-142
+  - J Moyne
+  - E Balta
+  - I Kovalenko
+  - Y Qamsane
+  - K Barton
+  publisher: 1st International Workshop on Smart Manufacturing Modeling and Analysis
+  date: '2019-04-01'
+  link: https://scholar.google.com/scholar?cluster=9661866955613867902&hl=en&oi=scholarr
+  citation_count: 6
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -563,52 +582,23 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: secQmYUAAAAJ:aqlVkmm33-oC
-  scholar_id: secQmYUAAAAJ:aqlVkmm33-oC
-  title: Intelligent Product Agents for Multi-Agent Control of Manufacturing Systems
-  authors:
-  - I Kovalenko
-  publisher: University of Michigan, 2020
-  date: '2020-01-01'
-  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:aqlVkmm33-oC
-  citation_count: 5
-  gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: secQmYUAAAAJ:4TOpqqG69KYC
-  scholar_id: secQmYUAAAAJ:4TOpqqG69KYC
-  title: The digital twin in the manufacturing ecosystem of the future
-  authors:
-  - J Moyne
-  - E Balta
-  - I Kovalenko
-  - Y Qamsane
-  - K Barton
-  publisher: 1st International Workshop on Smart Manufacturing Modeling and Analysis
-  date: '2019-04-01'
-  link: https://scholar.google.com/scholar?cluster=9661866955613867902&hl=en&oi=scholarr
-  citation_count: 5
-  gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: secQmYUAAAAJ:u-x6o8ySG0sC
   scholar_id: secQmYUAAAAJ:u-x6o8ySG0sC
   title: Robotic neuromuscular facilitation for regaining neural activation in hemiparetic
     limbs
   authors:
-  - Jun Ueda
-  - Lauren Lacey
-  - Melih Turkseven
-  - Minoru Shinohara
-  - Ilya Kovalenko
-  - Euisun Kim
-  - Fatiesa Sulejmani
-  publisher: American Society of Mechanical Engineers
-  date: '2015-08-02'
-  link: https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2015/V05AT08A050/257082
+  - J Ueda
+  - L Lacey
+  - M Turkseven
+  - M Shinohara
+  - I Kovalenko
+  - E Kim
+  - '...'
+  publisher: International Design Engineering Technical Conferences and Computers
+    and …, 2015
+  date: '2015-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:u-x6o8ySG0sC
   citation_count: 5
-  volume: '57120'
-  pages: V05AT08A050
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -617,18 +607,17 @@
   title: Robust recovery and control of cyber-physical discrete event systems under
     actuator attacks
   authors:
-  - Samuel Oliveira
-  - Mostafa Tavakkoli Anbarani
-  - Gregory Beal
-  - Ilya Kovalenko
-  - Marcelo Teixeira
-  - André B Leal
-  - Rômulo Meira-Góes
-  publisher: IEEE
-  date: '2025-12-09'
-  link: https://ieeexplore.ieee.org/abstract/document/11312935/
+  - S Oliveira
+  - MT Anbarani
+  - G Beal
+  - I Kovalenko
+  - M Teixeira
+  - AB Leal
+  - '...'
+  publisher: 2025 IEEE 64th Conference on Decision and Control (CDC), 1220-1226, 2025
+  date: '2025-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:2P1L_qKh6hAC
   citation_count: 4
-  pages: 1220-1226
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -727,18 +716,15 @@
   title: Design and testing of a pneumatic hemiparesis rehabilitation device for a
     neurofacilitation exercise
   authors:
-  - Ilya Kovalenko
-  - Jonathan Lai
-  - Johnathan Williams
-  - Arnold Maliki
-  - Jun Ueda
-  publisher: Journal of Medical Devices
-  date: '2015-09-01'
-  link: https://asmedigitalcollection.asme.org/medicaldevices/article-abstract/9/3/030910/447946
+  - I Kovalenko
+  - J Lai
+  - J Williams
+  - A Maliki
+  - J Ueda
+  publisher: Journal of Medical Devices 9 (3), 030910, 2015
+  date: '2015-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:9yKSN-GCB0IC
   citation_count: 2
-  volume: '9'
-  issue: '3'
-  pages: 030910
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -813,14 +799,17 @@
   scholar_id: secQmYUAAAAJ:YFjsv_pBGBYC
   title: Modeling and Mitigating Silent Faults in Coupled Discrete Event Systems
   authors:
-  - MT Anbarani
-  - J Lim
-  - R Meira-Góes
-  - I Kovalenko
-  publisher: IFAC-PapersOnLine 58 (1), 168-173, 2024
+  - Mostafa Tavakkoli Anbarani
+  - Jonghan Lim
+  - Rômulo Meira-Góes
+  - Ilya Kovalenko
+  publisher: IFAC-PapersOnLine
   date: '2024-01-01'
-  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:YFjsv_pBGBYC
+  link: https://www.sciencedirect.com/science/article/pii/S2405896324001071
   citation_count: 1
+  volume: '58'
+  issue: '1'
+  pages: 168-173
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -943,15 +932,14 @@
   title: 'A Digital Twin Framework for Computer Hardware Design and Assembly: A Risk-Prioritized
     Approach'
   authors:
-  - Ryan Elsasser
-  - Hongliang Li
-  - Ilya Kovalenko
-  publisher: American Society of Mechanical Engineers
-  date: '2025-06-23'
-  link: https://asmedigitalcollection.asme.org/MSEC/proceedings-abstract/MSEC2025/89022/1223004
+  - R Elsasser
+  - H Li
+  - I Kovalenko
+  publisher: International Manufacturing Science and Engineering Conference 89022
+    …, 2025
+  date: '2025-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=secQmYUAAAAJ&pagesize=100&citation_for_view=secQmYUAAAAJ:70eg2SAEIzsC
   citation_count: null
-  volume: '89022'
-  pages: V002T10A008
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml

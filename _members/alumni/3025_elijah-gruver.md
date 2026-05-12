@@ -2,7 +2,7 @@
 name: Elijah Gruver
 image: images/team/Elijah.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
-alumni: false  
+alumni: true
 description: Undergraduate Student, PSU ME
 #aliases:
 #  - 

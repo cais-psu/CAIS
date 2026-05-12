@@ -2,7 +2,7 @@
 name: Zach Jester
 image: images/team/Zach.png
 role: ms  # pi / phd / ms / visitor / undergrad
-alumni: false  
+alumni: true 
 description: M.S. Student, PSU ME
 #aliases:
 #  - 

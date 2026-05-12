@@ -142,7 +142,7 @@
 - id: doi:10.36227/techrxiv.17136680.v1
   remove: true
 
-- id: secQmYUAAAAJ:ldfaerwXgEUC
+- id: doi:10.26153/tsw/58287
   type: paper-conference
 
 - id: wosuid:WOS:000454498400020

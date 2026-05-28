@@ -84,7 +84,7 @@ jobs:
 
       - name: Check if citations changed
         id: changed
-        uses: tj-actions/verify-changed-files@v18
+        uses: tj-actions/verify-changed-files@v20
         with:
           files: |
             _data/citations.yaml
@@ -103,7 +103,7 @@ jobs:
         if: |
           steps.changed.outputs.files_changed == 'true' &&
           inputs.open-pr == true
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.CREATE_PR_TOKEN || github.token }}
           branch: citation-update

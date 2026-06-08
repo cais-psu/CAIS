@@ -106,7 +106,10 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.CREATE_PR_TOKEN || github.token }}
-          branch: citation-update
+          branch: citation-data-update
+          commit-message: Update citations
+          add-paths: |
+            _data/citations.yaml
           title: Periodic citation update
           body: |
             Auto update citations.

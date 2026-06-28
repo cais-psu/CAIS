@@ -1,3 +1,1080 @@
+- id: secQmYUAAAAJ:M3ejUd6NZC8C
+  scholar_id: secQmYUAAAAJ:M3ejUd6NZC8C
+  title: 'A requirements driven digital twin framework: Specification and opportunities'
+  authors:
+  - James Moyne
+  - Yassine Qamsane
+  - Efe C Balta
+  - Ilya Kovalenko
+  - John Faris
+  - Kira Barton
+  - Dawn M Tilbury
+  publisher: Ieee Access
+  date: '2020-01-01'
+  link: https://par.nsf.gov/servlets/purl/10188894
+  citation_count: 293
+  volume: '8'
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:Wp0gIr-vW9MC
+  scholar_id: secQmYUAAAAJ:Wp0gIr-vW9MC
+  title: A methodology to develop and implement digital twin solutions for manufacturing
+    systems
+  authors:
+  - Yassine Qamsane
+  - James Moyne
+  - Maxwell Toothman
+  - Ilya Kovalenko
+  - Efe C Balta
+  - John Faris
+  - Dawn M Tilbury
+  - Kira Barton
+  publisher: Ieee Access
+  date: '2021-03-15'
+  link: https://ieeexplore.ieee.org/abstract/document/9378543/
+  citation_count: 122
+  volume: '9'
+  pages: 44247-44265
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:_FxGoFyzp5QC
+  scholar_id: secQmYUAAAAJ:_FxGoFyzp5QC
+  title: 'The model-based product agent: A control oriented architecture for intelligent
+    products in multi-agent manufacturing systems'
+  authors:
+  - Ilya Kovalenko
+  - Dawn Tilbury
+  - Kira Barton
+  publisher: Control Engineering Practice
+  date: '2019-05-01'
+  link: https://www.sciencedirect.com/science/article/pii/S0967066118305057
+  citation_count: 109
+  volume: '86'
+  pages: 105-117
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:NMxIlDl6LWMC
+  scholar_id: secQmYUAAAAJ:NMxIlDl6LWMC
+  title: Large language model-enabled multi-agent manufacturing systems
+  authors:
+  - Jonghan Lim
+  - Birgit Vogel-Heuser
+  - Ilya Kovalenko
+  publisher: IEEE
+  date: '2024-08-28'
+  link: https://ieeexplore.ieee.org/abstract/document/10711432/
+  citation_count: 66
+  pages: 3940-3946
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:Tyk-4Ss8FVUC
+  scholar_id: secQmYUAAAAJ:Tyk-4Ss8FVUC
+  title: 'Manufacturing choices for ankle-foot orthoses: a multi-objective optimization'
+  authors:
+  - Deema Totah
+  - Ilya Kovalenko
+  - Miguel Saez
+  - Kira Barton
+  publisher: Procedia Cirp
+  date: '2017-01-01'
+  link: https://www.sciencedirect.com/science/article/pii/S221282711730522X
+  citation_count: 62
+  volume: '65'
+  pages: 145-150
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:hMod-77fHWUC
+  scholar_id: secQmYUAAAAJ:hMod-77fHWUC
+  title: Enhancing human-robot collaborative assembly in manufacturing systems using
+    large language models
+  authors:
+  - Jonghan Lim
+  - Sujani Patel
+  - Alex Evans
+  - John Pimley
+  - Yifei Li
+  - Ilya Kovalenko
+  publisher: IEEE
+  date: '2024-08-28'
+  link: https://ieeexplore.ieee.org/abstract/document/10711843/
+  citation_count: 45
+  pages: 2581-2587
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:7PzlFSSx8tAC
+  scholar_id: secQmYUAAAAJ:7PzlFSSx8tAC
+  title: 'Cooperative product agents to improve manufacturing system flexibility:
+    A model-based decision framework'
+  authors:
+  - Ilya Kovalenko
+  - Efe C Balta
+  - Dawn M Tilbury
+  - Kira Barton
+  publisher: IEEE Transactions on Automation Science and Engineering
+  date: '2022-03-17'
+  link: https://ieeexplore.ieee.org/abstract/document/9737280/
+  citation_count: 43
+  volume: '20'
+  issue: '1'
+  pages: 440-457
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:MXK_kJrjxJIC
+  scholar_id: secQmYUAAAAJ:MXK_kJrjxJIC
+  title: Dynamic resource task negotiation to enable product agent exploration in
+    multi-agent manufacturing systems
+  authors:
+  - Ilya Kovalenko
+  - Daria Ryashentseva
+  - Birgit Vogel-Heuser
+  - Dawn Tilbury
+  - Kira Barton
+  publisher: IEEE Robotics and Automation Letters
+  date: '2019-06-10'
+  link: https://ieeexplore.ieee.org/abstract/document/8733849/
+  citation_count: 42
+  volume: '4'
+  issue: '3'
+  pages: 2854-2861
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1080/00207543.2023.2200567
+  title: Dynamic distributed decision-making for resilient resource reallocation in
+    disrupted manufacturing systems
+  authors:
+  - Mingjie Bi
+  - Ilya Kovalenko
+  - Dawn M Tilbury
+  - Kira Barton
+  publisher: International Journal of Production Research
+  date: '2024-03-03'
+  link: https://www.tandfonline.com/doi/abs/10.1080/00207543.2023.2200567
+  scholar_id: secQmYUAAAAJ:TFP_iSt0sucC
+  citation_count: 41
+  doi: 10.1080/00207543.2023.2200567
+  DOI: 10.1080/00207543.2023.2200567
+  volume: '62'
+  issue: '5'
+  pages: 1737-1757
+  gsid: secQmYUAAAAJ
+  plugin: sources.py
+  file: sources.yaml
+  orcid: 0000-0003-4764-9117
+  image: https://arxiv.org/html/2507.19043v1/figures/MAMS.png
+- id: secQmYUAAAAJ:HDshCWvjkbEC
+  scholar_id: secQmYUAAAAJ:HDshCWvjkbEC
+  title: Toward an automated learning control architecture for cyber-physical manufacturing
+    systems
+  authors:
+  - Ilya Kovalenko
+  - James Moyne
+  - Mingjie Bi
+  - Efe C Balta
+  - Wenyuan Ma
+  - Yassine Qamsane
+  - Xiao Zhu
+  - Z Morley Mao
+  - Dawn M Tilbury
+  - Kira Barton
+  publisher: IEEE Access
+  date: '2022-04-07'
+  link: https://ieeexplore.ieee.org/abstract/document/9751037/
+  citation_count: 40
+  volume: '10'
+  pages: 38755-38773
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:Zph67rFs4hoC
+  scholar_id: secQmYUAAAAJ:Zph67rFs4hoC
+  title: A framework for automatic initialization of multi-agent production systems
+    using semantic web technologies
+  authors:
+  - Felix Ocker
+  - Ilya Kovalenko
+  - Kira Barton
+  - Dawn Tilbury
+  - Birgit Vogel-Heuser
+  publisher: IEEE Robotics and Automation Letters
+  date: '2019-07-29'
+  link: https://ieeexplore.ieee.org/abstract/document/8779665/
+  citation_count: 39
+  volume: '4'
+  issue: '4'
+  pages: 4330-4337
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:iH-uZ7U-co4C
+  scholar_id: secQmYUAAAAJ:iH-uZ7U-co4C
+  title: 'Opportunities and challenges to integrate artificial intelligence into manufacturing
+    systems: Thoughts from a panel discussion [opinion]'
+  authors:
+  - Ilya Kovalenko
+  - Kira Barton
+  - James Moyne
+  - Dawn M Tilbury
+  publisher: IEEE
+  date: '2023-04-12'
+  link: https://ieeexplore.ieee.org/abstract/document/10100942/
+  citation_count: 37
+  volume: '30'
+  issue: '2'
+  pages: 109-112
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:YsMSGLbcyi4C
+  scholar_id: secQmYUAAAAJ:YsMSGLbcyi4C
+  title: 'SMART: A system-level manufacturing and automation research testbed'
+  authors:
+  - Ilya Kovalenko
+  - Miguel Saez
+  - Kira Barton
+  - Dawn Tilbury
+  publisher: Smart and Sustainable Manufacturing Systems
+  date: '2017-10-27'
+  link: https://dl.astm.org/ssms/article-pdf/1/1/232/212964/ssms20170006.pdf
+  citation_count: 37
+  volume: '1'
+  issue: '1'
+  pages: 232-261
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1002/bte2.20230023
+  title: Multifunctional composite designs for structural energy storage
+  authors:
+  - Bo Nie
+  - Jonghan Lim
+  - Tengxiao Liu
+  - Ilya Kovalenko
+  - Kaixuan Guo
+  - Junfei Liang
+  - Jian Zhu
+  - Hongtao Sun
+  publisher: Battery Energy 2 (6), 20230023, 2023
+  date: '2023-11-01'
+  link: https://onlinelibrary.wiley.com/doi/abs/10.1002/bte2.20230023
+  scholar_id: secQmYUAAAAJ:isC4tDSrTZIC
+  citation_count: 24
+  doi: 10.1002/bte2.20230023
+  DOI: 10.1002/bte2.20230023
+  volume: '2'
+  issue: '6'
+  pages: '20230023'
+  gsid: secQmYUAAAAJ
+  plugin: sources.py
+  file: sources.yaml
+  orcid: 0000-0003-4764-9117
+  type: article-journal
+  image: /images/paper/bte220230023.jpg
+- id: secQmYUAAAAJ:k_IJM867U9cC
+  scholar_id: secQmYUAAAAJ:k_IJM867U9cC
+  title: A system-level energy-efficient digital twin framework for runtime control
+    of batch manufacturing processes
+  authors:
+  - Hongliang Li
+  - Herschel C Pangborn
+  - Ilya Kovalenko
+  publisher: IEEE
+  date: '2023-08-26'
+  link: https://ieeexplore.ieee.org/abstract/document/10260642/
+  citation_count: 24
+  pages: 1-6
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:dhFuZR0502QC
+  scholar_id: secQmYUAAAAJ:dhFuZR0502QC
+  title: Dynamic resource allocation using multi-agent control for manufacturing systems
+  authors:
+  - Mingjie Bi
+  - Ilya Kovalenko
+  - Dawn M Tilbury
+  - Kira Barton
+  publisher: IFAC-PapersOnLine
+  date: '2021-01-01'
+  link: https://www.sciencedirect.com/science/article/pii/S2405896321022643
+  citation_count: 22
+  volume: '54'
+  issue: '20'
+  pages: 488-494
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:eQOLeE2rZwMC
+  scholar_id: secQmYUAAAAJ:eQOLeE2rZwMC
+  title: Design and implementation of an intelligent product agent architecture in
+    manufacturing systems
+  authors:
+  - Ilya Kovalenko
+  - Kira Barton
+  - Dawn Tilbury
+  publisher: IEEE
+  date: '2017-09-12'
+  link: https://ieeexplore.ieee.org/abstract/document/8247652/
+  citation_count: 20
+  pages: 1-8
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:WF5omc3nYNoC
+  scholar_id: secQmYUAAAAJ:WF5omc3nYNoC
+  title: 'Integrating human operators into agent-based manufacturing systems: A table-top
+    demonstration'
+  authors:
+  - Gary Zheng
+  - Ilya Kovalenko
+  - Kira Barton
+  - Dawn Tilbury
+  publisher: Procedia manufacturing
+  date: '2018-01-01'
+  link: https://www.sciencedirect.com/science/article/pii/S2351978918311697
+  citation_count: 17
+  volume: '17'
+  pages: 326-333
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:4DMP91E08xMC
+  scholar_id: secQmYUAAAAJ:4DMP91E08xMC
+  title: Model predictive control of priced timed automata encoded with first-order
+    logic
+  authors:
+  - Efe C Balta
+  - Ilya Kovalenko
+  - Isaac A Spiegel
+  - Dawn M Tilbury
+  - Kira Barton
+  publisher: IEEE Transactions on Control Systems Technology
+  date: '2021-02-15'
+  link: https://ieeexplore.ieee.org/abstract/document/9354443/
+  citation_count: 16
+  volume: '30'
+  issue: '1'
+  pages: 352-359
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:UeHWp8X0CEIC
+  scholar_id: secQmYUAAAAJ:UeHWp8X0CEIC
+  title: Timing analysis of robotic neuromodulatory rehabilitation system for paired
+    associative stimulation
+  authors:
+  - Euisun Kim
+  - Ilya Kovalenko
+  - Lauren Lacey
+  - Minoru Shinohara
+  - Jun Ueda
+  publisher: IEEE Robotics and Automation Letters
+  date: '2016-02-18'
+  link: https://ieeexplore.ieee.org/abstract/document/7409975/
+  citation_count: 14
+  volume: '1'
+  issue: '2'
+  pages: 1028-1035
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:maZDTaKrznsC
+  scholar_id: secQmYUAAAAJ:maZDTaKrznsC
+  title: Ontology-based feedback to improve runtime control for multi-agent manufacturing
+    systems
+  authors:
+  - Jonghan Lim
+  - Leander Pfeiffer
+  - Felix Ocker
+  - Birgit Vogel-Heuser
+  - Ilya Kovalenko
+  publisher: IEEE
+  date: '2023-08-26'
+  link: https://ieeexplore.ieee.org/abstract/document/10260621/
+  citation_count: 13
+  pages: 1-7
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:NaGl4SEjCO4C
+  scholar_id: secQmYUAAAAJ:NaGl4SEjCO4C
+  title: A large language model-enabled control architecture for dynamic resource
+    capability exploration in multi-agent manufacturing systems
+  authors:
+  - Jonghan Lim
+  - Ilya Kovalenko
+  publisher: IEEE
+  date: '2025-08-17'
+  link: https://ieeexplore.ieee.org/abstract/document/11163802/
+  citation_count: 11
+  pages: 2088-2095
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:JV2RwH3_ST0C
+  scholar_id: secQmYUAAAAJ:JV2RwH3_ST0C
+  title: A mobile additive manufacturing robot framework for smart manufacturing systems
+  authors:
+  - Yifei Li
+  - Jeongwon Park
+  - Guha Manogharan
+  - Feng Ju
+  - Ilya Kovalenko
+  publisher: American Society of Mechanical Engineers
+  date: '2024-06-17'
+  link: https://asmedigitalcollection.asme.org/MSEC/proceedings-abstract/MSEC2024/88117/1203191
+  citation_count: 9
+  volume: '88117'
+  pages: V002T05A010
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:Y0pCki6q_DkC
+  scholar_id: secQmYUAAAAJ:Y0pCki6q_DkC
+  title: Hybrid modeling and identification of jetting dynamics in electrohydrodynamic
+    jet printing
+  authors:
+  - Isaac Spiegel
+  - Ilya Kovalenko
+  - David Hoelzle
+  - Patrick M Sammons
+  - Kira L Barton
+  publisher: IEEE
+  date: '2017-08-27'
+  link: https://ieeexplore.ieee.org/abstract/document/8062543/
+  citation_count: 9
+  pages: 695-701
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:_Qo2XoVZTnwC
+  scholar_id: secQmYUAAAAJ:_Qo2XoVZTnwC
+  title: An integrated framework for dynamic manufacturing planning to obtain new
+    line configurations
+  authors:
+  - Laxmi Poudel
+  - Ilya Kovalenko
+  - Ruijie Geng
+  - Matsui Takaharu
+  - Youichi Nonaka
+  - Nakano Takahiro
+  - Umeda Shota
+  - Dawn M Tilbury
+  - Kira Barton
+  publisher: IEEE
+  date: '2022-08-20'
+  link: https://ieeexplore.ieee.org/abstract/document/9926689/
+  citation_count: 8
+  pages: 328-334
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.3389/fbuil.2024.1384235
+  title: Conditional adaptive time series compensation and control design for multi-axial
+    real-time hybrid simulation
+  authors:
+  - Andrew J Aguila
+  - Hongliang Li
+  - Alejandro Palacio-Betancur
+  - Kamal A Ahmed
+  - Ilya Kovalenko
+  - Mariantonieta Gutierrez Soto
+  publisher: Frontiers in Built Environment
+  date: '2024-05-13'
+  link: https://www.frontiersin.org/journals/built-environment/articles/10.3389/fbuil.2024.1384235/full
+  scholar_id: secQmYUAAAAJ:blknAaTinKkC
+  citation_count: 7
+  doi: 10.3389/fbuil.2024.1384235
+  DOI: 10.3389/fbuil.2024.1384235
+  volume: '10'
+  pages: '1384235'
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:qxL8FJ1GzNcC
+  scholar_id: secQmYUAAAAJ:qxL8FJ1GzNcC
+  title: 'Developing the workforce for next-generation smart manufacturing systems:
+    a multidisciplinary research team approach'
+  authors:
+  - Ilya Kovalenko
+  - Efe C Balta
+  - Yassine Qamsane
+  - Patricia D Koman
+  - Xiao Zhu
+  - Yikai Lin
+  - Dawn M Tilbury
+  - Z Morley Mao
+  - Kira Barton
+  publisher: Smart and Sustainable Manufacturing Systems
+  date: '2021-05-27'
+  link: https://dl.astm.org/ssms/article/5/2/4/17314
+  citation_count: 7
+  volume: '5'
+  issue: '2'
+  pages: 4-24
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:e5wmG9Sq2KIC
+  scholar_id: secQmYUAAAAJ:e5wmG9Sq2KIC
+  title: Risk-averse model predictive control for priced timed automata
+  authors:
+  - Mostafa Tavakkoli Anbarani
+  - Efe C Balta
+  - Rômulo Meira-Góes
+  - Ilya Kovalenko
+  publisher: IEEE
+  date: '2023-05-31'
+  link: https://ieeexplore.ieee.org/abstract/document/10156587/
+  citation_count: 6
+  pages: 4332-4338
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:mVmsd5A6BfQC
+  scholar_id: secQmYUAAAAJ:mVmsd5A6BfQC
+  title: Priced timed automata models for control of intelligent product agents in
+    manufacturing systems
+  authors:
+  - Ilya Kovalenko
+  - Dawn Tilbury
+  - Kira Barton
+  publisher: IFAC-PapersOnLine
+  date: '2020-01-01'
+  link: https://www.sciencedirect.com/science/article/pii/S240589632100104X
+  citation_count: 6
+  volume: '53'
+  issue: '4'
+  pages: 136-142
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:d1gkVwhDpl0C
+  scholar_id: secQmYUAAAAJ:d1gkVwhDpl0C
+  title: Robotic rehabilitation exercise in hemiparetic limbs based on functional
+    synchronization of voluntary and involuntary nerve impulses
+  authors:
+  - Jun Ueda
+  - Lauren Lacey
+  - Melih Turkseven
+  - Minoru Shinohara
+  - Arnold Maliki
+  - Ilya Kovalenko
+  publisher: IEEE
+  date: '2014-09-11'
+  link: https://ieeexplore.ieee.org/abstract/document/7020990/
+  citation_count: 6
+  pages: 114-120
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:GnPB-g6toBAC
+  scholar_id: secQmYUAAAAJ:GnPB-g6toBAC
+  title: Harnessing controls and robotics for sustainable manufacturing
+  authors:
+  - Ilya Kovalenko
+  - Hongliang Li
+  - Yifei Li
+  publisher: Elsevier
+  date: '2024-01-01'
+  link: https://pure.psu.edu/en/publications/harnessing-controls-and-robotics-for-sustainable-manufacturing/
+  citation_count: 5
+  pages: 'V1: 663-V1: 671'
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:4TOpqqG69KYC
+  scholar_id: secQmYUAAAAJ:4TOpqqG69KYC
+  title: The digital twin in the manufacturing ecosystem of the future
+  authors:
+  - J Moyne
+  - E Balta
+  - I Kovalenko
+  - Y Qamsane
+  - K Barton
+  publisher: 1st International Workshop on Smart Manufacturing Modeling and Analysis
+  date: '2019-04-01'
+  link: https://scholar.google.com/scholar?cluster=9661866955613867902&hl=en&oi=scholarr
+  citation_count: 5
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:u-x6o8ySG0sC
+  scholar_id: secQmYUAAAAJ:u-x6o8ySG0sC
+  title: Robotic neuromuscular facilitation for regaining neural activation in hemiparetic
+    limbs
+  authors:
+  - Jun Ueda
+  - Lauren Lacey
+  - Melih Turkseven
+  - Minoru Shinohara
+  - Ilya Kovalenko
+  - Euisun Kim
+  - Fatiesa Sulejmani
+  publisher: American Society of Mechanical Engineers
+  date: '2015-08-02'
+  link: https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2015/V05AT08A050/257082
+  citation_count: 5
+  volume: '57120'
+  pages: V05AT08A050
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:2P1L_qKh6hAC
+  scholar_id: secQmYUAAAAJ:2P1L_qKh6hAC
+  title: Robust recovery and control of cyber-physical discrete event systems under
+    actuator attacks
+  authors:
+  - Samuel Oliveira
+  - Mostafa Tavakkoli Anbarani
+  - Gregory Beal
+  - Ilya Kovalenko
+  - Marcelo Teixeira
+  - André B Leal
+  - Rômulo Meira-Góes
+  publisher: IEEE
+  date: '2025-12-09'
+  link: https://ieeexplore.ieee.org/abstract/document/11312935/
+  citation_count: 4
+  pages: 1220-1226
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:M05iB0D1s5AC
+  scholar_id: secQmYUAAAAJ:M05iB0D1s5AC
+  title: Hierarchical Model Predictive Control for Energy-Aware Scheduling of Digital
+    Twin-Based Batch Manufacturing Systems
+  authors:
+  - Hongliang Li
+  - Herschel C Pangborn
+  - Ilya Kovalenko
+  publisher: IEEE Transactions on Automation Science and Engineering
+  date: '2025-11-21'
+  link: https://ieeexplore.ieee.org/abstract/document/11264006/
+  citation_count: 4
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:QIV2ME_5wuYC
+  scholar_id: secQmYUAAAAJ:QIV2ME_5wuYC
+  title: Manufacturing line design configuration with optimized resource groups
+  authors:
+  - Takahiro Nakano
+  - Kajita Daiki
+  - Heming Chen
+  - Ilya Kovalenko
+  - Efe Balta
+  - Yassine Qamsane
+  - Kira Barton
+  publisher: IEEE
+  date: '2021-08-23'
+  link: https://ieeexplore.ieee.org/abstract/document/9551650/
+  citation_count: 4
+  pages: 625-632
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:vV6vV6tmYwMC
+  scholar_id: secQmYUAAAAJ:vV6vV6tmYwMC
+  title: Energy-Aware Model Predictive Control for Batch Manufacturing System Scheduling
+    Under Different Electricity Pricing Strategies
+  authors:
+  - Hongliang Li
+  - Herschel C Pangborn
+  - Ilya Kovalenko
+  publisher: IEEE
+  date: '2025-08-17'
+  link: https://ieeexplore.ieee.org/abstract/document/11164034/
+  citation_count: 3
+  pages: 2096-2102
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:pqnbT2bcN3wC
+  scholar_id: secQmYUAAAAJ:pqnbT2bcN3wC
+  title: Adaptive task planning and coordination in multi-agent manufacturing systems
+    using large language models
+  authors:
+  - Jonghan Lim
+  - Jiabao Zhao
+  - Ezekiel Hernandez
+  - Ilya Kovalenko
+  publisher: Robotics and Computer-Integrated Manufacturing
+  date: '2026-08-01'
+  link: https://www.sciencedirect.com/science/article/pii/S0736584526000244
+  citation_count: 2
+  volume: '100'
+  pages: '103245'
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:J_g5lzvAfSwC
+  scholar_id: secQmYUAAAAJ:J_g5lzvAfSwC
+  title: Dynamic Task Adaptation for Multi-Robot Manufacturing Systems with Large
+    Language Models
+  authors:
+  - Jonghan Lim
+  - Ilya Kovalenko
+  publisher: arXiv preprint arXiv:2505.22804
+  date: '2025-05-28'
+  link: https://arxiv.org/abs/2505.22804
+  citation_count: 2
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:4JMBOYKVnBMC
+  scholar_id: secQmYUAAAAJ:4JMBOYKVnBMC
+  title: A model predictive control framework for improving risk-tolerance of manufacturing
+    systems
+  authors:
+  - Mostafa Tavakkoli Anbarani
+  - Efe C Balta
+  - Rômulo Meira-Góes
+  - Ilya Kovalenko
+  publisher: IEEE
+  date: '2023-08-16'
+  link: https://ieeexplore.ieee.org/abstract/document/10253433/
+  citation_count: 2
+  pages: 136-142
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:_kc_bZDykSQC
+  scholar_id: secQmYUAAAAJ:_kc_bZDykSQC
+  title: A Vision-Based Framework for Enhanced Quality Control in a Smart Manufacturing
+    System
+  authors:
+  - Zixuan Yang
+  - Huaiyuan Teng
+  - Jeremy Goldhawk
+  - Ilya Kovalenko
+  - Efe C Balta
+  - Felipe Lopez
+  - Dawn Tilbury
+  - Kira Barton
+  publisher: American Society of Mechanical Engineers
+  date: '2019-06-10'
+  link: https://asmedigitalcollection.asme.org/MSEC/proceedings-abstract/MSEC2019/V001T02A024/1070798
+  citation_count: 2
+  volume: '58745'
+  pages: V001T02A024
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:9yKSN-GCB0IC
+  scholar_id: secQmYUAAAAJ:9yKSN-GCB0IC
+  title: Design and testing of a pneumatic hemiparesis rehabilitation device for a
+    neurofacilitation exercise
+  authors:
+  - Ilya Kovalenko
+  - Jonathan Lai
+  - Johnathan Williams
+  - Arnold Maliki
+  - Jun Ueda
+  publisher: Journal of Medical Devices
+  date: '2015-09-01'
+  link: https://asmedigitalcollection.asme.org/medicaldevices/article-abstract/9/3/030910/447946
+  citation_count: 2
+  volume: '9'
+  issue: '3'
+  pages: 030910
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:lSLTfruPkqcC
+  scholar_id: secQmYUAAAAJ:lSLTfruPkqcC
+  title: A Model Predictive Control Framework to Enhance Safety and Quality in Mobile
+    Additive Manufacturing Systems
+  authors:
+  - Yifei Li
+  - Joshua A Robbins
+  - Guha Manogharan
+  - Herschel C Pangborn
+  - Ilya Kovalenko
+  publisher: IEEE
+  date: '2025-08-17'
+  link: https://ieeexplore.ieee.org/abstract/document/11163792/
+  citation_count: 1
+  pages: 1809-1815
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:ns9cj8rnVeAC
+  scholar_id: secQmYUAAAAJ:ns9cj8rnVeAC
+  title: 'Guest Editorial: Engineering and Operating Digital Twins for Automated Production
+    or Construction Systems'
+  authors:
+  - Birgit Vogel-Heuser
+  - Min-Hsiung Hung
+  - Manuel Wimmer
+  - Ilya Kovalenko
+  - Xun Xu
+  publisher: IEEE Transactions on Automation Science and Engineering
+  date: '2025-04-08'
+  link: https://ieeexplore.ieee.org/abstract/document/10955559/
+  citation_count: 1
+  volume: '22'
+  pages: 11288-11290
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:ldfaerwXgEUC
+  scholar_id: secQmYUAAAAJ:ldfaerwXgEUC
+  title: Pros and Cons of Industrial Robots in Additive Manufacturing
+  authors:
+  - Michael Geuy
+  - Lance Streuber
+  - Yifei Li
+  - Ilya Kovalenko
+  - Jay Martin
+  publisher: University of Texas at Austin
+  date: '2024-01-01'
+  link: https://repositories.lib.utexas.edu/items/f61e0e41-8394-4062-8800-616d5a98c258
+  citation_count: 1
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:YFjsv_pBGBYC
+  scholar_id: secQmYUAAAAJ:YFjsv_pBGBYC
+  title: Modeling and Mitigating Silent Faults in Coupled Discrete Event Systems
+  authors:
+  - Mostafa Tavakkoli Anbarani
+  - Jonghan Lim
+  - Rômulo Meira-Góes
+  - Ilya Kovalenko
+  publisher: IFAC-PapersOnLine
+  date: '2024-01-01'
+  link: https://www.sciencedirect.com/science/article/pii/S2405896324001071
+  citation_count: 1
+  volume: '58'
+  issue: '1'
+  pages: 168-173
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:hFOr9nPyWt4C
+  scholar_id: secQmYUAAAAJ:hFOr9nPyWt4C
+  title: Details of the first-order logic representation in ‘model predictive control
+    of priced timed automata encoded with first-order logic
+  authors:
+  - Efe C Balta
+  - Ilya Kovalenko
+  - Isaac A Spiegel
+  - Dawn M Tilbury
+  - Kira Barton
+  publisher: Univ. Michigan Barton Res. Group, Ann Arbor, MI, USA, Tech. Rep
+  date: '2020-01-01'
+  link: https://brg.engin.umich.edu/wp-content/uploads/sites/131/2020/10/FOLDetails-MPCofPTA.pdf
+  citation_count: 1
+  volume: '1'
+  pages: '2020'
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:4OULZ7Gr8RgC
+  scholar_id: secQmYUAAAAJ:4OULZ7Gr8RgC
+  title: NeuroSymbolic Robustness Analysis for Discrete Systems with Respect to Transition
+    Deviations
+  authors:
+  - Shih-Jie Shih
+  - Jonghan Lim
+  - Ilya Kovalenko
+  - Rômulo Meira-Góes
+  publisher: arXiv preprint arXiv:2606.03872
+  date: '2026-06-02'
+  link: https://arxiv.org/abs/2606.03872
+  citation_count: null
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:fPk4N6BV_jEC
+  scholar_id: secQmYUAAAAJ:fPk4N6BV_jEC
+  title: Online Model-Based Fault-Tolerant Control Using Finite State Automata
+  authors:
+  - Mostafa Tavakkoli Anbarani
+  - Efe C Balta
+  - Rômulo Meira-Góes
+  - Ilya Kovalenko
+  publisher: IEEE Transactions on Automation Science and Engineering
+  date: '2026-05-22'
+  link: https://ieeexplore.ieee.org/abstract/document/11534318/
+  citation_count: null
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:u_35RYKgDlwC
+  scholar_id: secQmYUAAAAJ:u_35RYKgDlwC
+  title: Logic-Based Verification of Task Allocation for LLM-Enabled Multi-Agent Manufacturing
+    Systems
+  authors:
+  - Jonghan Lim
+  - Mostafa Tavakkoli Anbarani
+  - Rômulo Meira-Góes
+  - Ilya Kovalenko
+  publisher: arXiv preprint arXiv:2604.17142
+  date: '2026-04-18'
+  link: https://arxiv.org/abs/2604.17142
+  citation_count: null
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:3s1wT3WcHBgC
+  scholar_id: secQmYUAAAAJ:3s1wT3WcHBgC
+  title: Intelligent Navigation and Obstacle-Aware Fabrication for Mobile Additive
+    Manufacturing Systems
+  authors:
+  - Yifei Li
+  - Ruizhe Fu
+  - Huihang Liu
+  - Guha Manogharan
+  - Feng Ju
+  - Ilya Kovalenko
+  publisher: arXiv preprint arXiv:2603.25688
+  date: '2026-03-26'
+  link: https://arxiv.org/abs/2603.25688
+  citation_count: null
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:SeFeTyx0c_EC
+  scholar_id: secQmYUAAAAJ:SeFeTyx0c_EC
+  title: Energy-Aware Integrated Proactive Maintenance Planning and Production Scheduling
+  authors:
+  - Hongliang Li
+  - Herschel C Pangborn
+  - Ilya Kovalenko
+  publisher: arXiv preprint arXiv:2603.14060
+  date: '2026-03-14'
+  link: https://arxiv.org/abs/2603.14060
+  citation_count: null
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:HoB7MX3m0LUC
+  scholar_id: secQmYUAAAAJ:HoB7MX3m0LUC
+  title: 'CoViLLM: An Adaptive Human-Robot Collaborative Assembly Framework Using
+    Large Language Models'
+  authors:
+  - Jiabao Zhao
+  - Jonghan Lim
+  - Hongliang Li
+  - Ilya Kovalenko
+  publisher: arXiv preprint arXiv:2603.11461
+  date: '2026-03-12'
+  link: https://arxiv.org/abs/2603.11461
+  citation_count: null
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:RGFaLdJalmkC
+  scholar_id: secQmYUAAAAJ:RGFaLdJalmkC
+  title: 'CAREER: Intelligent Products for Mass Individualization in Manufacturing
+    Systems'
+  authors:
+  - Ilya Kovalenko
+  publisher: NSF Award Number 2442362. Directorate for Engineering
+  date: '2025-08-01'
+  link: https://ui.adsabs.harvard.edu/abs/2025nsf....2442362K/abstract
+  citation_count: null
+  volume: '24'
+  issue: '2442362'
+  pages: '42362'
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:70eg2SAEIzsC
+  scholar_id: secQmYUAAAAJ:70eg2SAEIzsC
+  title: 'A Digital Twin Framework for Computer Hardware Design and Assembly: A Risk-Prioritized
+    Approach'
+  authors:
+  - Ryan Elsasser
+  - Hongliang Li
+  - Ilya Kovalenko
+  publisher: American Society of Mechanical Engineers
+  date: '2025-06-23'
+  link: https://asmedigitalcollection.asme.org/MSEC/proceedings-abstract/MSEC2025/89022/1223004
+  citation_count: null
+  volume: '89022'
+  pages: V002T10A008
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:35N4QoGY0k4C
+  scholar_id: secQmYUAAAAJ:35N4QoGY0k4C
+  title: Bi-level Model Predictive Control for Energy-aware Integrated Product Pricing
+    and Production Scheduling
+  authors:
+  - Hongliang Li
+  - Herschel C Pangborn
+  - Ilya Kovalenko
+  publisher: IFAC-PapersOnLine
+  date: '2025-01-01'
+  link: https://www.sciencedirect.com/science/article/pii/S2405896325030241
+  citation_count: null
+  volume: '59'
+  issue: '30'
+  pages: 665-670
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:BqipwSGYUEgC
+  scholar_id: secQmYUAAAAJ:BqipwSGYUEgC
+  title: Model-Based Control of Water Treatment with Pumped Water Storage
+  authors:
+  - Ryan Mauery
+  - Margaret Busse
+  - Ilya Kovalenko
+  publisher: IFAC-PapersOnLine
+  date: '2024-01-01'
+  link: https://www.sciencedirect.com/science/article/pii/S2405896325001399
+  citation_count: null
+  volume: '58'
+  issue: '28'
+  pages: 1073-1078
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:RYcK_YlVTxYC
+  scholar_id: secQmYUAAAAJ:RYcK_YlVTxYC
+  title: 'Details About Agent Response in “Cooperative Product Agents to Improve Manufacturing
+    System Flexibility: A Model-Based Decision Framework”'
+  authors:
+  - Ilya Kovalenko
+  - Efe C Balta
+  - Dawn M Tilbury
+  - Kira Barton
+  publisher: ''
+  date: '2022-02-28'
+  link: https://brg.engin.umich.edu/wp-content/uploads/sites/131/2022/02/DA-PA-agentResponse.pdf
+  citation_count: null
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:qjMakFHDy7sC
+  scholar_id: secQmYUAAAAJ:qjMakFHDy7sC
+  title: Analysis of a Tele-Operated MRI-Compatible Vane Actuator for Neuromuscular
+    Facilitation in Hemiparetic Limbs
+  authors:
+  - Melih Turkseven
+  - Ilya Kovalenko
+  - Euisun Kim
+  - Jun Ueda
+  publisher: American Society of Mechanical Engineers
+  date: '2015-10-28'
+  link: https://asmedigitalcollection.asme.org/DSCC/proceedings-abstract/DSCC2015/57250/230563
+  citation_count: null
+  volume: '57250'
+  pages: V002T27A012
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1016/J.RCIM.2026.103245
   title: Adaptive task planning and coordination in multi-agent manufacturing systems
     using large language models
@@ -195,23 +1272,6 @@
   orcid: 0000-0003-4764-9117
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.3389/FBUIL.2024.1384235
-  title: Conditional adaptive time series compensation and control design for multi-axial
-    real-time hybrid simulation
-  authors:
-  - Andrew J. Aguila
-  - Hongliang Li
-  - Alejandro Palacio-Betancur
-  - Kamal A. Ahmed
-  - Ilya Kovalenko
-  - Mariantonieta Gutierrez Soto
-  publisher: Frontiers in Built Environment
-  date: '2024-05-13'
-  link: https://doi.org/g97zp6
-  orcid: 0000-0003-4764-9117
-  plugin: sources.py
-  file: sources.yaml
-  image: /images/paper/1384235.jpg
 - id: wosuid:PPRN:89394559
   title: Web of Science
   authors: []
@@ -314,25 +1374,6 @@
   plugin: sources.py
   file: sources.yaml
   image: /images/paper/ifacol.2024.07.029.png
-- id: doi:10.1002/bte2.20230023
-  title: Multifunctional composite designs for structural energy storage
-  authors:
-  - Bo Nie
-  - Jonghan Lim
-  - Tengxiao Liu
-  - Ilya Kovalenko
-  - Kaixuan Guo
-  - Junfei Liang
-  - Jian Zhu
-  - Hongtao Sun
-  publisher: Battery Energy
-  date: '2023-10-13'
-  link: https://doi.org/gtnt8g
-  orcid: 0000-0003-4764-9117
-  plugin: sources.py
-  file: sources.yaml
-  type: article-journal
-  image: /images/paper/bte220230023.jpg
 - id: doi:10.1109/case56687.2023.10260642
   title: A System-Level Energy-Efficient Digital Twin Framework for Runtime Control
     of Batch Manufacturing Processes
@@ -442,21 +1483,6 @@
   file: sources.yaml
   type: article-journal
   citation_count: 42
-- id: doi:10.1080/00207543.2023.2200567
-  title: Dynamic distributed decision-making for resilient resource reallocation in
-    disrupted manufacturing systems
-  authors:
-  - Mingjie Bi
-  - Ilya Kovalenko
-  - Dawn M. Tilbury
-  - Kira Barton
-  publisher: International Journal of Production Research
-  date: '2023-04-18'
-  link: https://doi.org/g97zp7
-  orcid: 0000-0003-4764-9117
-  plugin: sources.py
-  file: sources.yaml
-  image: https://arxiv.org/html/2507.19043v1/figures/MAMS.png
 - id: wosuid:PPRN:85052345
   title: Web of Science
   authors: []

@@ -20,4 +20,6 @@ jobs:
     uses: ./.github/workflows/update-citations.yaml
     secrets: inherit
     with:
-      open-pr: true
+      # The repository does not allow GITHUB_TOKEN to create pull requests.
+      # Commit citation updates directly instead of failing after pushing a PR branch.
+      open-pr: false

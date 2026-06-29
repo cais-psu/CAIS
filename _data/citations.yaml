@@ -12,7 +12,7 @@
   publisher: Ieee Access
   date: '2020-01-01'
   link: https://par.nsf.gov/servlets/purl/10188894
-  citation_count: 293
+  citation_count: 296
   volume: '8'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
@@ -33,7 +33,7 @@
   publisher: Ieee Access
   date: '2021-03-15'
   link: https://ieeexplore.ieee.org/abstract/document/9378543/
-  citation_count: 122
+  citation_count: 124
   volume: '9'
   pages: 44247-44265
   gsid: secQmYUAAAAJ
@@ -187,7 +187,7 @@
   publisher: IEEE Access
   date: '2022-04-07'
   link: https://ieeexplore.ieee.org/abstract/document/9751037/
-  citation_count: 40
+  citation_count: 41
   volume: '10'
   pages: 38755-38773
   gsid: secQmYUAAAAJ
@@ -225,7 +225,7 @@
   publisher: IEEE
   date: '2023-04-12'
   link: https://ieeexplore.ieee.org/abstract/document/10100942/
-  citation_count: 37
+  citation_count: 38
   volume: '30'
   issue: '2'
   pages: 109-112
@@ -243,7 +243,7 @@
   publisher: Smart and Sustainable Manufacturing Systems
   date: '2017-10-27'
   link: https://dl.astm.org/ssms/article-pdf/1/1/232/212964/ssms20170006.pdf
-  citation_count: 37
+  citation_count: 38
   volume: '1'
   issue: '1'
   pages: 232-261
@@ -265,7 +265,7 @@
   date: '2023-11-01'
   link: https://onlinelibrary.wiley.com/doi/abs/10.1002/bte2.20230023
   scholar_id: secQmYUAAAAJ:isC4tDSrTZIC
-  citation_count: 24
+  citation_count: 25
   doi: 10.1002/bte2.20230023
   DOI: 10.1002/bte2.20230023
   volume: '2'
@@ -627,26 +627,6 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: secQmYUAAAAJ:2P1L_qKh6hAC
-  scholar_id: secQmYUAAAAJ:2P1L_qKh6hAC
-  title: Robust recovery and control of cyber-physical discrete event systems under
-    actuator attacks
-  authors:
-  - Samuel Oliveira
-  - Mostafa Tavakkoli Anbarani
-  - Gregory Beal
-  - Ilya Kovalenko
-  - Marcelo Teixeira
-  - André B Leal
-  - Rômulo Meira-Góes
-  publisher: IEEE
-  date: '2025-12-09'
-  link: https://ieeexplore.ieee.org/abstract/document/11312935/
-  citation_count: 4
-  pages: 1220-1226
-  gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: secQmYUAAAAJ:M05iB0D1s5AC
   scholar_id: secQmYUAAAAJ:M05iB0D1s5AC
   title: Hierarchical Model Predictive Control for Energy-Aware Scheduling of Digital
@@ -681,6 +661,26 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: secQmYUAAAAJ:2P1L_qKh6hAC
+  scholar_id: secQmYUAAAAJ:2P1L_qKh6hAC
+  title: Robust recovery and control of cyber-physical discrete event systems under
+    actuator attacks
+  authors:
+  - Samuel Oliveira
+  - Mostafa Tavakkoli Anbarani
+  - Gregory Beal
+  - Ilya Kovalenko
+  - Marcelo Teixeira
+  - André B Leal
+  - Rômulo Meira-Góes
+  publisher: IEEE
+  date: '2025-12-09'
+  link: https://ieeexplore.ieee.org/abstract/document/11312935/
+  citation_count: 3
+  pages: 1220-1226
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: secQmYUAAAAJ:vV6vV6tmYwMC
   scholar_id: secQmYUAAAAJ:vV6vV6tmYwMC
   title: Energy-Aware Model Predictive Control for Batch Manufacturing System Scheduling
@@ -694,6 +694,20 @@
   link: https://ieeexplore.ieee.org/abstract/document/11164034/
   citation_count: 3
   pages: 2096-2102
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:J_g5lzvAfSwC
+  scholar_id: secQmYUAAAAJ:J_g5lzvAfSwC
+  title: Dynamic Task Adaptation for Multi-Robot Manufacturing Systems with Large
+    Language Models
+  authors:
+  - Jonghan Lim
+  - Ilya Kovalenko
+  publisher: arXiv preprint arXiv:2505.22804
+  date: '2025-05-28'
+  link: https://arxiv.org/abs/2505.22804
+  citation_count: 3
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -712,20 +726,6 @@
   citation_count: 2
   volume: '100'
   pages: '103245'
-  gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: secQmYUAAAAJ:J_g5lzvAfSwC
-  scholar_id: secQmYUAAAAJ:J_g5lzvAfSwC
-  title: Dynamic Task Adaptation for Multi-Robot Manufacturing Systems with Large
-    Language Models
-  authors:
-  - Jonghan Lim
-  - Ilya Kovalenko
-  publisher: arXiv preprint arXiv:2505.22804
-  date: '2025-05-28'
-  link: https://arxiv.org/abs/2505.22804
-  citation_count: 2
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -785,6 +785,22 @@
   volume: '9'
   issue: '3'
   pages: 030910
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:HoB7MX3m0LUC
+  scholar_id: secQmYUAAAAJ:HoB7MX3m0LUC
+  title: 'CoViLLM: An Adaptive Human-Robot Collaborative Assembly Framework Using
+    Large Language Models'
+  authors:
+  - Jiabao Zhao
+  - Jonghan Lim
+  - Hongliang Li
+  - Ilya Kovalenko
+  publisher: arXiv preprint arXiv:2603.11461
+  date: '2026-03-12'
+  link: https://arxiv.org/abs/2603.11461
+  citation_count: 1
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -953,22 +969,6 @@
   publisher: arXiv preprint arXiv:2603.14060
   date: '2026-03-14'
   link: https://arxiv.org/abs/2603.14060
-  citation_count: null
-  gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: secQmYUAAAAJ:HoB7MX3m0LUC
-  scholar_id: secQmYUAAAAJ:HoB7MX3m0LUC
-  title: 'CoViLLM: An Adaptive Human-Robot Collaborative Assembly Framework Using
-    Large Language Models'
-  authors:
-  - Jiabao Zhao
-  - Jonghan Lim
-  - Hongliang Li
-  - Ilya Kovalenko
-  publisher: arXiv preprint arXiv:2603.11461
-  date: '2026-03-12'
-  link: https://arxiv.org/abs/2603.11461
   citation_count: null
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py

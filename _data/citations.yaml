@@ -107,29 +107,6 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1080/00207543.2023.2200567
-  title: Dynamic distributed decision-making for resilient resource reallocation in
-    disrupted manufacturing systems
-  authors:
-  - Mingjie Bi
-  - Ilya Kovalenko
-  - Dawn M Tilbury
-  - Kira Barton
-  publisher: International Journal of Production Research
-  date: '2024-03-03'
-  link: https://www.tandfonline.com/doi/abs/10.1080/00207543.2023.2200567
-  scholar_id: secQmYUAAAAJ:TFP_iSt0sucC
-  citation_count: 43
-  doi: 10.1080/00207543.2023.2200567
-  DOI: 10.1080/00207543.2023.2200567
-  volume: '62'
-  issue: '5'
-  pages: 1737-1757
-  gsid: secQmYUAAAAJ
-  plugin: sources.py
-  file: sources.yaml
-  orcid: 0000-0003-4764-9117
-  image: https://arxiv.org/html/2507.19043v1/figures/MAMS.png
 - id: secQmYUAAAAJ:7PzlFSSx8tAC
   scholar_id: secQmYUAAAAJ:7PzlFSSx8tAC
   title: 'Cooperative product agents to improve manufacturing system flexibility:
@@ -149,6 +126,29 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: doi:10.1080/00207543.2023.2200567
+  title: Dynamic distributed decision-making for resilient resource reallocation in
+    disrupted manufacturing systems
+  authors:
+  - Mingjie Bi
+  - Ilya Kovalenko
+  - Dawn M Tilbury
+  - Kira Barton
+  publisher: International Journal of Production Research
+  date: '2024-03-03'
+  link: https://www.tandfonline.com/doi/abs/10.1080/00207543.2023.2200567
+  scholar_id: secQmYUAAAAJ:TFP_iSt0sucC
+  citation_count: 42
+  doi: 10.1080/00207543.2023.2200567
+  DOI: 10.1080/00207543.2023.2200567
+  volume: '62'
+  issue: '5'
+  pages: 1737-1757
+  gsid: secQmYUAAAAJ
+  plugin: sources.py
+  file: sources.yaml
+  orcid: 0000-0003-4764-9117
+  image: https://arxiv.org/html/2507.19043v1/figures/MAMS.png
 - id: secQmYUAAAAJ:MXK_kJrjxJIC
   scholar_id: secQmYUAAAAJ:MXK_kJrjxJIC
   title: Dynamic resource task negotiation to enable product agent exploration in
@@ -206,7 +206,7 @@
   publisher: IEEE Robotics and Automation Letters
   date: '2019-07-29'
   link: https://ieeexplore.ieee.org/abstract/document/8779665/
-  citation_count: 39
+  citation_count: 40
   volume: '4'
   issue: '4'
   pages: 4330-4337
@@ -288,7 +288,7 @@
   publisher: IEEE
   date: '2023-08-26'
   link: https://ieeexplore.ieee.org/abstract/document/10260642/
-  citation_count: 24
+  citation_count: 25
   pages: 1-6
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
@@ -304,7 +304,7 @@
   publisher: IFAC-PapersOnLine
   date: '2021-01-01'
   link: https://www.sciencedirect.com/science/article/pii/S2405896321022643
-  citation_count: 22
+  citation_count: 21
   volume: '54'
   issue: '20'
   pages: 488-494
@@ -645,26 +645,6 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: secQmYUAAAAJ:2P1L_qKh6hAC
-  scholar_id: secQmYUAAAAJ:2P1L_qKh6hAC
-  title: Robust recovery and control of cyber-physical discrete event systems under
-    actuator attacks
-  authors:
-  - Samuel Oliveira
-  - Mostafa Tavakkoli Anbarani
-  - Gregory Beal
-  - Ilya Kovalenko
-  - Marcelo Teixeira
-  - André B Leal
-  - Rômulo Meira-Góes
-  publisher: IEEE
-  date: '2025-12-09'
-  link: https://ieeexplore.ieee.org/abstract/document/11312935/
-  citation_count: 4
-  pages: 1220-1226
-  gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: secQmYUAAAAJ:M05iB0D1s5AC
   scholar_id: secQmYUAAAAJ:M05iB0D1s5AC
   title: Hierarchical Model Predictive Control for Energy-Aware Scheduling of Digital
@@ -699,6 +679,26 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: secQmYUAAAAJ:2P1L_qKh6hAC
+  scholar_id: secQmYUAAAAJ:2P1L_qKh6hAC
+  title: Robust recovery and control of cyber-physical discrete event systems under
+    actuator attacks
+  authors:
+  - Samuel Oliveira
+  - Mostafa Tavakkoli Anbarani
+  - Gregory Beal
+  - Ilya Kovalenko
+  - Marcelo Teixeira
+  - André B Leal
+  - Rômulo Meira-Góes
+  publisher: IEEE
+  date: '2025-12-09'
+  link: https://ieeexplore.ieee.org/abstract/document/11312935/
+  citation_count: 3
+  pages: 1220-1226
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: secQmYUAAAAJ:vV6vV6tmYwMC
   scholar_id: secQmYUAAAAJ:vV6vV6tmYwMC
   title: Energy-Aware Model Predictive Control for Batch Manufacturing System Scheduling
@@ -725,7 +725,7 @@
   publisher: arXiv preprint arXiv:2505.22804
   date: '2025-05-28'
   link: https://arxiv.org/abs/2505.22804
-  citation_count: 3
+  citation_count: 2
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml

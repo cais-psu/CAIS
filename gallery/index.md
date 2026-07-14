@@ -13,6 +13,10 @@ Welcome to the CAIS Lab gallery!
 Here we share photos from our lab activities, field demonstrations, and conference participation.
 
 <p align="center">
+  <img src="{{ '/images/gallery/10.JPG' | relative_url }}" alt="Lab Gallery" width="300">
+  <img src="{{ '/images/gallery/11.jpg' | relative_url }}" alt="Lab Gallery" width="300">
+</p>
+<p align="center">
   <img src="{{ '/images/gallery/1.jpg' | relative_url }}" alt="Lab Gallery" width="300">
   <img src="{{ '/images/gallery/2.jpg' | relative_url }}" alt="Lab Gallery" width="300">
   <img src="{{ '/images/gallery/3.jpg' | relative_url }}" alt="Lab Gallery" width="300">

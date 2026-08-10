@@ -262,22 +262,6 @@
   plugin: sources.py
   file: sources.yaml
   image: https://arxiv.org/html/2406.01893v2/extracted/5683858/figures/figure-1-architecture.png
-- id: doi:10.3390/MATH12243978
-  title: Method for Preprocessing Video Data for Training Deep-Learning Models for
-    Identifying Behavioral Events in Bio-Objects
-  authors:
-  - Marina Barulina
-  - Alexander Andreev
-  - Ilya Kovalenko
-  - Ilya Barmin
-  - Eduard Titov
-  - Danil Kirillov
-  publisher: Mathematics
-  date: '2024-12-18'
-  link: https://doi.org/hbwvmt
-  orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1016/J.IFACOL.2025.01.139
   title: Model-Based Control of Water Treatment with Pumped Water Storage
   authors:
@@ -472,24 +456,6 @@
   publisher: ''
   date: ''
   link: https://www.webofscience.com/wos/woscc/full-record/WOS:PPRN:46940151
-  orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/J.JDERMSCI.2023.08.007
-  title: Painting and dissecting Epidermolysis Bullosa Simplex-associated keratin
-    aggregates
-  authors:
-  - Katrin Rietscher
-  - Melanie Homberg
-  - Ilya Kovalenko
-  - Jonathan Z. Sexton
-  - Robert H. Rice
-  - Cristina Has
-  - M. Bishr Omary
-  - Thomas M. Magin
-  publisher: Journal of Dermatological Science
-  date: '2023-11-01'
-  link: https://doi.org/hbwvmw
   orcid: 0000-0003-4764-9117
   plugin: orcid.py
   file: orcid.yaml
@@ -767,15 +733,6 @@
   plugin: sources.py
   file: sources.yaml
   image: /images/paper/8247652.gif
-- id: wosuid:WOS:000426981500113
-  title: Web of Science
-  authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000426981500113
-  orcid: 0000-0003-4764-9117
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/CCTA.2017.8062543
   title: Hybrid modeling and identification of jetting dynamics in electrohydrodynamic
     jet printing

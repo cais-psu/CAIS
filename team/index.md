@@ -44,6 +44,15 @@ nav:
 
 # Alumni
 
+## PhD Alumni
+{% assign phd_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'phd'" | sort: "start_date" | reverse %}
+{% assign phd_alumni = phd_alumni | sort: "end_date" | reverse %}
+<ul>
+{% for member in phd_alumni %}
+<li><strong>{{ member.name }}</strong>{% if member.description %}, {{ member.description }}{% endif %}{% if member.dates %}, {{ member.dates }}{% endif %}</li>
+{% endfor %}
+</ul>
+
 ## Master's Students
 {% assign ms_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'ms'" | sort: "start_date" | reverse %}
 {% assign ms_alumni = ms_alumni | sort: "end_date" | reverse %}
@@ -70,5 +79,3 @@ nav:
 <li><strong>{{ member.name }}</strong>{% if member.description %}, {{ member.description }}{% endif %}{% if member.dates %}, {{ member.dates }}{% endif %}</li>
 {% endfor %}
 </ul>
-
-

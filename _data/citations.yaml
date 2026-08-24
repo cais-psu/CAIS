@@ -34,7 +34,7 @@
   publisher: Ieee Access
   date: '2021-03-15'
   link: https://ieeexplore.ieee.org/abstract/document/9378543/
-  citation_count: 128
+  citation_count: 129
   volume: '9'
   pages: 44247-44265
   gsid: secQmYUAAAAJ
@@ -67,7 +67,7 @@
   publisher: IEEE
   date: '2024-08-28'
   link: https://ieeexplore.ieee.org/abstract/document/10711432/
-  citation_count: 69
+  citation_count: 70
   pages: 3940-3946
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
@@ -103,7 +103,7 @@
   publisher: IEEE
   date: '2024-08-28'
   link: https://ieeexplore.ieee.org/abstract/document/10711843/
-  citation_count: 49
+  citation_count: 50
   pages: 2581-2587
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
@@ -120,7 +120,7 @@
   date: '2024-03-03'
   link: https://www.tandfonline.com/doi/abs/10.1080/00207543.2023.2200567
   scholar_id: secQmYUAAAAJ:TFP_iSt0sucC
-  citation_count: 47
+  citation_count: 50
   doi: 10.1080/00207543.2023.2200567
   DOI: 10.1080/00207543.2023.2200567
   volume: '62'
@@ -266,7 +266,7 @@
   date: '2023-11-01'
   link: https://onlinelibrary.wiley.com/doi/abs/10.1002/bte2.20230023
   scholar_id: secQmYUAAAAJ:isC4tDSrTZIC
-  citation_count: 30
+  citation_count: 31
   doi: 10.1002/bte2.20230023
   DOI: 10.1002/bte2.20230023
   volume: '2'
@@ -289,7 +289,7 @@
   publisher: IEEE
   date: '2023-08-26'
   link: https://ieeexplore.ieee.org/abstract/document/10260642/
-  citation_count: 23
+  citation_count: 24
   pages: 1-6
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
@@ -323,7 +323,7 @@
   publisher: IEEE
   date: '2017-09-12'
   link: https://ieeexplore.ieee.org/abstract/document/8247652/
-  citation_count: 21
+  citation_count: 22
   pages: 1-8
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
@@ -366,6 +366,21 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: secQmYUAAAAJ:NaGl4SEjCO4C
+  scholar_id: secQmYUAAAAJ:NaGl4SEjCO4C
+  title: A large language model-enabled control architecture for dynamic resource
+    capability exploration in multi-agent manufacturing systems
+  authors:
+  - Jonghan Lim
+  - Ilya Kovalenko
+  publisher: IEEE
+  date: '2025-08-17'
+  link: https://ieeexplore.ieee.org/abstract/document/11163802/
+  citation_count: 14
+  pages: 2088-2095
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: secQmYUAAAAJ:maZDTaKrznsC
   scholar_id: secQmYUAAAAJ:maZDTaKrznsC
   title: Ontology-based feedback to improve runtime control for multi-agent manufacturing
@@ -404,21 +419,6 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: secQmYUAAAAJ:NaGl4SEjCO4C
-  scholar_id: secQmYUAAAAJ:NaGl4SEjCO4C
-  title: A large language model-enabled control architecture for dynamic resource
-    capability exploration in multi-agent manufacturing systems
-  authors:
-  - Jonghan Lim
-  - Ilya Kovalenko
-  publisher: IEEE
-  date: '2025-08-17'
-  link: https://ieeexplore.ieee.org/abstract/document/11163802/
-  citation_count: 13
-  pages: 2088-2095
-  gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: secQmYUAAAAJ:JV2RwH3_ST0C
   scholar_id: secQmYUAAAAJ:JV2RwH3_ST0C
   title: A mobile additive manufacturing robot framework for smart manufacturing systems
@@ -452,6 +452,30 @@
   link: https://ieeexplore.ieee.org/abstract/document/8062543/
   citation_count: 10
   pages: 695-701
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:qxL8FJ1GzNcC
+  scholar_id: secQmYUAAAAJ:qxL8FJ1GzNcC
+  title: 'Developing the workforce for next-generation smart manufacturing systems:
+    a multidisciplinary research team approach'
+  authors:
+  - Ilya Kovalenko
+  - Efe C Balta
+  - Yassine Qamsane
+  - Patricia D Koman
+  - Xiao Zhu
+  - Yikai Lin
+  - Dawn M Tilbury
+  - Z Morley Mao
+  - Kira Barton
+  publisher: Smart and Sustainable Manufacturing Systems
+  date: '2021-05-27'
+  link: https://dl.astm.org/ssms/article/5/2/4/17314
+  citation_count: 9
+  volume: '5'
+  issue: '2'
+  pages: 4-24
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -499,30 +523,6 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: secQmYUAAAAJ:qxL8FJ1GzNcC
-  scholar_id: secQmYUAAAAJ:qxL8FJ1GzNcC
-  title: 'Developing the workforce for next-generation smart manufacturing systems:
-    a multidisciplinary research team approach'
-  authors:
-  - Ilya Kovalenko
-  - Efe C Balta
-  - Yassine Qamsane
-  - Patricia D Koman
-  - Xiao Zhu
-  - Yikai Lin
-  - Dawn M Tilbury
-  - Z Morley Mao
-  - Kira Barton
-  publisher: Smart and Sustainable Manufacturing Systems
-  date: '2021-05-27'
-  link: https://dl.astm.org/ssms/article/5/2/4/17314
-  citation_count: 8
-  volume: '5'
-  issue: '2'
-  pages: 4-24
-  gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: secQmYUAAAAJ:mVmsd5A6BfQC
   scholar_id: secQmYUAAAAJ:mVmsd5A6BfQC
   title: Priced timed automata models for control of intelligent product agents in
@@ -554,6 +554,24 @@
   link: https://ieeexplore.ieee.org/abstract/document/10156587/
   citation_count: 7
   pages: 4332-4338
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:pqnbT2bcN3wC
+  scholar_id: secQmYUAAAAJ:pqnbT2bcN3wC
+  title: Adaptive task planning and coordination in multi-agent manufacturing systems
+    using large language models
+  authors:
+  - Jonghan Lim
+  - Jiabao Zhao
+  - Ezekiel Hernandez
+  - Ilya Kovalenko
+  publisher: Robotics and Computer-Integrated Manufacturing
+  date: '2026-08-01'
+  link: https://www.sciencedirect.com/science/article/pii/S0736584526000244
+  citation_count: 6
+  volume: '100'
+  pages: '103245'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -621,24 +639,6 @@
   link: https://ieeexplore.ieee.org/abstract/document/7020990/
   citation_count: 6
   pages: 114-120
-  gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: secQmYUAAAAJ:pqnbT2bcN3wC
-  scholar_id: secQmYUAAAAJ:pqnbT2bcN3wC
-  title: Adaptive task planning and coordination in multi-agent manufacturing systems
-    using large language models
-  authors:
-  - Jonghan Lim
-  - Jiabao Zhao
-  - Ezekiel Hernandez
-  - Ilya Kovalenko
-  publisher: Robotics and Computer-Integrated Manufacturing
-  date: '2026-08-01'
-  link: https://www.sciencedirect.com/science/article/pii/S0736584526000244
-  citation_count: 5
-  volume: '100'
-  pages: '103245'
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
@@ -936,6 +936,22 @@
   date: '2024-01-01'
   link: https://repositories.lib.utexas.edu/items/f61e0e41-8394-4062-8800-616d5a98c258
   citation_count: 1
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: secQmYUAAAAJ:cFHS6HbyZ2cC
+  scholar_id: secQmYUAAAAJ:cFHS6HbyZ2cC
+  title: Leveraging Digital Twins for Industrial Automation and Robotics Education
+  authors:
+  - Zachary Jester
+  - Katie Fitzsimons
+  - Ilya Kovalenko
+  - Hongliang Li
+  - Brian Zajac
+  publisher: 2026 ASEE Annual Conference & Exposition, 2026
+  date: '2026-06-21'
+  link: https://peer.asee.org/leveraging-digital-twins-for-industrial-automation-and-robotics-education
+  citation_count: null
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml

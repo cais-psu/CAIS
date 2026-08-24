@@ -44,7 +44,7 @@ nav:
 
 # Alumni
 
-## PhD Alumni
+## PhD
 {% assign phd_alumni = site.members | where_exp: "m", "m.alumni and m.role == 'phd'" | sort: "start_date" | reverse %}
 {% assign phd_alumni = phd_alumni | sort: "end_date" | reverse %}
 <ul>

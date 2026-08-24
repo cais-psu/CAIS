@@ -2,8 +2,11 @@
 name: Mostafa Tavakkoli Anbarani
 image: images/team/Mostafa.png
 role: phd  # pi / phd / ms / visitor / undergrad
-alumni: false  
-description: PhD Candidate, PSU ME
+alumni: true
+description: PhD, PSU ME
+dates: "September 2022 – August 2026"
+end_date: "2026-08"
+start_date: "2022-09"
 #aliases:
 #  - 
 links:

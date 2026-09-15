@@ -1,0 +1,249 @@
+"""Offline regression tests: no API keys, network or production-cache writes."""
+import importlib
+import json
+import os
+from pathlib import Path
+import sys
+import tempfile
+import unittest
+from unittest.mock import patch
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+CACHE = tempfile.TemporaryDirectory()
+os.environ['CITE_CACHE_DIR'] = CACHE.name
+import cite
+import util
+from records import find_doi, normalize_record, reconcile, reconcile_update
+scholar = importlib.import_module('plugins.google-scholar')
+orcid = importlib.import_module('plugins.orcid')
+
+
+def paper(identifier='doi:10.1234/example', **fields):
+    return dict(id=identifier, title='Control of manufacturing systems', date='2025-08-17', authors=['Ilya Kovalenko'], publisher='IEEE Conference', **fields)
+
+
+class RecordsTests(unittest.TestCase):
+    def test_doi_url_case_encoding(self):
+        result = reconcile([paper('DOI:10.1234/EXAMPLE'), {'id': 'https://doi.org/10.1234%2Fexample', 'image': 'manual.png'}])
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]['id'], 'doi:10.1234/example')
+        self.assertEqual(result[0]['DOI'], '10.1234/example')
+        self.assertEqual(result[0]['image'], 'manual.png')
+
+    def test_doi_parentheses_and_routes(self):
+        self.assertEqual(find_doi('https://publisher.org/doi/10.1002/(SICI)123/full?x=1'), '10.1002/(sici)123')
+        self.assertEqual(find_doi('(doi:10.1234/abc(foo)).'), '10.1234/abc(foo)')
+        self.assertEqual(find_doi('https://x.org/doi/pdf/10.1234/ABC%282%29'), '10.1234/abc(2)')
+
+    def test_conflicting_fields_rejected(self):
+        with self.assertRaises(ValueError):
+            normalize_record({'id': 'doi:10.1234/a', 'DOI': '10.1234/b'})
+
+    def test_scholar_orcid_title_match_keeps_fields(self):
+        a = paper('author:abc', scholar_id='author:abc', citation_count=7)
+        a['authors'] = ['I Kovalenko']
+        a['title'] = 'Control of Manufacturing Systems.'
+        b = paper(orcid='0000-test')
+        result = reconcile([a, b, {'id': 'doi:10.1234/EXAMPLE', 'image': 'image.png'}])
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]['citation_count'], 7)
+        self.assertEqual(result[0]['image'], 'image.png')
+        self.assertIn('author:abc', result[0]['aliases'])
+
+    def test_same_title_different_dois_not_merged(self):
+        self.assertEqual(len(reconcile([paper('doi:10.1234/a'), paper('doi:10.1234/b')])), 2)
+
+    def test_title_match_requires_metadata(self):
+        self.assertEqual(len(reconcile([paper(), {'id': 'other', 'title': 'Control of manufacturing systems'}])), 2)
+        b = paper('other'); b['authors'] = ['Someone Else']
+        self.assertEqual(len(reconcile([paper(), b])), 2)
+
+    def test_ambiguous_scholar_cannot_bridge_two_dois(self):
+        rows = [paper('author:abc'), paper('doi:10.1234/a'), paper('doi:10.1234/b')]
+        self.assertEqual(len(reconcile(rows)), 3)
+
+    def test_preprint_and_published_version_kept(self):
+        a = paper('author:abc', link='https://arxiv.org/abs/2501.12345')
+        self.assertEqual(len(reconcile([a, paper()])), 2)
+
+    def test_upstream_doi_conflict_reported(self):
+        messages = []
+        rows = [paper('doi:10.1234/a', scholar_id='author:abc'), paper('doi:10.1234/b', scholar_id='author:abc')]
+        self.assertEqual(len(reconcile(rows, messages.append)), 2)
+        self.assertTrue(messages)
+
+    def test_id_only_record_cannot_bridge_conflicting_dois(self):
+        rows = [paper('doi:10.1234/a', scholar_id='author:abc'), paper('doi:10.1234/b', scholar_id='author:abc'), paper('author:abc', scholar_id='author:abc')]
+        self.assertEqual(len(reconcile(rows)), 3)
+
+    def test_explicit_manual_alias_can_resolve_doi_conflict(self):
+        result = reconcile([paper('doi:10.1234/a'), paper('doi:10.1234/b'), {'id': 'doi:10.1234/a', 'aliases': ['DOI:10.1234/B'], 'plugin': 'sources.py'}])
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]['id'], 'doi:10.1234/a')
+        self.assertEqual(reconcile_update(result, [], []), result)
+
+    def test_overlapping_title_candidates_do_not_duplicate_records(self):
+        a, b, c = paper('a'), paper('b'), paper('c')
+        a['date'], b['date'], c['date'] = '2023-01-01', '2024-01-01', '2025-01-01'
+        self.assertEqual(len(reconcile([a, b, c])), 3)
+
+    def test_missing_record_retained_and_remove_respected(self):
+        old = [paper(), paper('doi:10.1234/old')]
+        messages = []
+        result = reconcile_update(old, [paper(citation_count=10)], [], messages.append)
+        self.assertEqual(len(result), 2)
+        self.assertEqual(result[0]['citation_count'], 10)
+        self.assertTrue(messages)
+        result = reconcile_update(result, [], [{'id': 'DOI:10.1234/OLD', 'remove': True}])
+        self.assertEqual(len(result), 1)
+
+    def test_duplicate_removal_does_not_remove_canonical_doi(self):
+        old = reconcile([paper('author:abc', scholar_id='author:abc'), paper()])
+        self.assertEqual(len(reconcile_update(old, [], [{'id': 'author:abc', 'remove': True}])), 1)
+        self.assertEqual(reconcile_update(old, [], [{'id': 'doi:10.1234/example', 'remove': True}]), [])
+
+    def test_idempotent_update(self):
+        current = [paper('author:abc', scholar_id='author:abc'), paper()]
+        once = reconcile_update([], current, [])
+        self.assertEqual(reconcile_update(once, current, []), once)
+
+
+class ScholarTests(unittest.TestCase):
+    def setUp(self):
+        util.cache.clear()
+        self.env = patch.dict(os.environ, {'GOOGLE_SCHOLAR_API_KEY': 'test-only', 'GOOGLE_SCHOLAR_DETAILS': ''})
+        self.env.start()
+        self.sleep = patch('util.time.sleep'); self.sleep.start()
+    def tearDown(self):
+        self.env.stop(); self.sleep.stop()
+
+    def article(self, suffix):
+        return {'citation_id': f'author:{suffix}', 'title': f'Paper {suffix}', 'year': '2025'}
+
+    def test_short_page_with_next_is_followed_and_duplicates_removed(self):
+        responses = [{'articles': [self.article('a'), self.article('b')], 'serpapi_pagination': {'next': 'https://serpapi.com/search?start=2'}}, {'articles': [self.article('b'), self.article('c')]}]
+        with patch.object(scholar, 'GoogleSearch') as search:
+            search.return_value.get_dict.side_effect = responses
+            result = scholar.main({'gsid': 'author'})
+            self.assertEqual(len(result), 3)
+            self.assertEqual(search.call_args_list[1].args[0]['start'], 2)
+
+    def test_api_error_not_cached_as_empty(self):
+        with patch.object(scholar, 'GoogleSearch') as search:
+            search.return_value.get_dict.return_value = {'error': 'quota exceeded'}
+            with self.assertRaises(RuntimeError): scholar.main({'gsid': 'author'})
+            search.return_value.get_dict.return_value = {'articles': [self.article('a')]}
+            self.assertEqual(len(scholar.main({'gsid': 'author'})), 1)
+            self.assertEqual(search.call_count, 4)
+
+    def test_repeated_page_fails(self):
+        payload = {'articles': [self.article('a')], 'serpapi_pagination': {'next': 'https://serpapi.com/search?start=1'}}
+        with patch.object(scholar, 'GoogleSearch') as search:
+            search.return_value.get_dict.return_value = payload
+            with self.assertRaises(RuntimeError): scholar.main({'gsid': 'author'})
+
+    def test_detail_failure_preserves_article(self):
+        with patch.object(scholar, 'GoogleSearch') as search:
+            search.return_value.get_dict.side_effect = [{'articles': [self.article('a')]}, {'error': 'temporary'}, {'error': 'temporary'}, {'error': 'temporary'}]
+            result = scholar.main({'gsid': 'author', 'details': True})
+            self.assertEqual(result[0]['title'], 'Paper a')
+            self.assertTrue(result[0]['_warnings'])
+
+    def test_sort_and_language_are_part_of_cache_key(self):
+        with patch.object(scholar, 'GoogleSearch') as search:
+            search.return_value.get_dict.return_value = {'articles': [self.article('a')]}
+            scholar.main({'gsid': 'author'})
+            scholar.main({'gsid': 'author', 'sort': 'pubdate'})
+            scholar.main({'gsid': 'author', 'hl': 'zh'})
+            self.assertEqual(search.call_count, 3)
+
+    def test_missing_articles_is_error(self):
+        with patch.object(scholar, 'GoogleSearch') as search:
+            search.return_value.get_dict.return_value = {'search_metadata': {'status': 'Success'}}
+            with self.assertRaises(RuntimeError): scholar.main({'gsid': 'author'})
+
+
+class OrcidTests(unittest.TestCase):
+    def summary(self, identifier, relationship='self', rank='1'):
+        return {'put-code': rank, 'display-index': rank, 'title': {'title': {'value': 'Actual paper'}}, 'publication-date': {'year': {'value': '2020'}, 'month': {'value': '3'}}, 'external-ids': {'external-id': [{'external-id-type': 'doi', 'external-id-value': identifier, 'external-id-relationship': relationship}]}}
+
+    def test_preferred_self_identifier_and_publication_date(self):
+        summaries = [self.summary('10.1234/unpreferred'), self.summary('https://doi.org/10.1234/PREFERRED', rank='10')]
+        with patch.object(orcid, 'query', return_value=[{'work-summary': summaries}]):
+            result = orcid.main({'orcid': 'test'})[0]
+        self.assertEqual(result['id'], 'doi:10.1234/preferred')
+        self.assertEqual(result['date'], '2020-03-01')
+        self.assertEqual(result['title'], 'Actual paper')
+
+    def test_parent_and_version_doi_not_used(self):
+        for relationship in ['part-of', 'version-of']:
+            with patch.object(orcid, 'query', return_value=[{'work-summary': [self.summary('10.1234/parent', relationship)]}]):
+                result = orcid.main({'orcid': 'test'})[0]
+            self.assertEqual(result['id'], 'orcid:test/1')
+            self.assertEqual(result['aliases'], [])
+
+    def test_missing_date_does_not_use_record_modified_date(self):
+        summary = self.summary('10.1234/abc'); summary['publication-date'] = None
+        with patch.object(orcid, 'query', return_value=[{'work-summary': [summary], 'last-modified-date': {'value': 1700000000000}}]):
+            self.assertEqual(orcid.main({'orcid': 'test'})[0]['date'], '')
+
+
+class PipelineTests(unittest.TestCase):
+    def test_resolver_failure_keeps_metadata(self):
+        with patch.object(cite, 'cite_with_manubot', side_effect=RuntimeError('offline')):
+            result = cite.enrich(paper(plugin='orcid.py'), [], lambda _: None)
+        self.assertEqual(result['title'], 'Control of manufacturing systems')
+
+    def test_wos_uses_summary_without_resolver(self):
+        with patch.object(cite, 'cite_with_manubot') as resolver:
+            result = cite.enrich(paper('wosuid:WOS:123', plugin='orcid.py'), [], lambda _: None)
+            resolver.assert_not_called()
+        self.assertNotEqual(result['title'], 'Web of Science')
+
+    def test_wrong_inferred_doi_rejected(self):
+        row = paper(scholar_id='author:abc', plugin='google-scholar.py', _doi_inferred=True)
+        with patch.object(cite, 'cite_with_manubot', return_value={'title': 'Unrelated economics article'}):
+            result = cite.enrich(row, [], lambda _: None)
+        self.assertEqual(result['id'], 'author:abc')
+        self.assertNotIn('doi', result)
+
+    def test_metadata_priority_and_empty_fields(self):
+        row = paper(plugin='google-scholar.py'); row['authors'] = []; row['date'] = '2025-01-01'
+        with patch.object(cite, 'cite_with_manubot', return_value=paper()):
+            result = cite.enrich(row, [], lambda _: None)
+        self.assertEqual(result['authors'], ['Ilya Kovalenko'])
+        self.assertEqual(result['date'], '2025-08-17')
+        row['plugin'] = 'sources.py'; row['title'] = 'Manual corrected title'
+        with patch.object(cite, 'cite_with_manubot', return_value=paper()):
+            self.assertEqual(cite.enrich(row, [], lambda _: None)['title'], row['title'])
+
+    def test_failed_provider_does_not_write_output(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); (root / '_data').mkdir()
+            output = root / '_data/citations.yaml'
+            util.save_data(output, [paper()]); before = output.read_bytes()
+            (root / '_data/google-scholar.yaml').write_text('- gsid: author\n')
+            with patch.object(scholar, 'main', side_effect=RuntimeError('quota')):
+                self.assertEqual(cite.run(root), 1)
+            self.assertEqual(output.read_bytes(), before)
+
+    def test_partial_fetch_preserves_previous_and_manual_fields(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); (root / '_data').mkdir()
+            output = root / '_data/citations.yaml'
+            util.save_data(output, [paper(), paper('doi:10.1234/older')])
+            (root / '_data/sources.yaml').write_text('- id: doi:10.1234/EXAMPLE\n  title: Manual title\n- id: doi:10.1234/example\n  image: test.png\n')
+            with patch.object(cite, 'cite_with_manubot', return_value=paper()):
+                self.assertEqual(cite.run(root), 0)
+                once = output.read_bytes()
+                self.assertEqual(cite.run(root), 0)
+            self.assertEqual(output.read_bytes(), once)
+            rows = util.load_data(output)
+            self.assertEqual(len(rows), 2)
+            manual = next(row for row in rows if row['id'] == 'doi:10.1234/example')
+            self.assertEqual(manual['title'], 'Manual title')
+            self.assertEqual(manual['image'], 'test.png')
+
+
+if __name__ == '__main__':
+    unittest.main()

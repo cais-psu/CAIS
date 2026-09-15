@@ -12,6 +12,8 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  pages: write
+  id-token: write
 
 jobs:
   update-citations:
@@ -23,3 +25,9 @@ jobs:
       # The repository does not allow GITHUB_TOKEN to create pull requests.
       # Commit citation updates directly instead of failing after pushing a PR branch.
       open-pr: false
+
+  build-site:
+    needs: update-citations
+    if: needs.update-citations.outputs.changed == 'true'
+    uses: ./.github/workflows/build-site.yaml
+    secrets: inherit

@@ -1,11 +1,6 @@
 {%- assign sorted = site.data.citations | sort: "date" | reverse -%}
-{%- assign seen_titles = "" -%}
-{%- assign bar = "|" -%}
 
 {%- for c in sorted -%}
-  {%- assign title = c.title | default: c.id | strip -%}
-  {%- assign title_key = title | downcase | replace: ".", "" | replace: ",", "" | replace: ";", "" | replace: ":", "" | replace: "-", " " | replace: "(", "" | replace: ")", "" | replace: "[", "" | replace: "]", "" | replace: "{", "" | replace: "}", "" | replace: "  ", " " | replace: "  ", " " | strip -%}
-  {%- assign pad = bar | append: title_key | append: bar -%}
 
   {%- assign t = c.type | default: c.genre | default: "" | downcase -%}
   {%- assign venue = c["container-title"] | default: c.venue | default: c.publisher | default: "" | downcase -%}
@@ -46,9 +41,6 @@
   {%- endif -%}
 
   {%- if show -%}
-    {%- unless seen_titles contains pad -%}
-      {% include citation.html citation=c style="rich" %}
-      {%- assign seen_titles = seen_titles | append: pad -%}
-    {%- endunless -%}
+    {% include citation.html citation=c style="rich" %}
   {%- endif -%}
 {%- endfor -%}

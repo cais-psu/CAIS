@@ -26,6 +26,9 @@ jobs:
 
       - name: Checkout branch contents
         uses: actions/checkout@v4
+        with:
+          # Include the citation commit made by the preceding reusable workflow.
+          ref: ${{ github.ref_name }}
 
       - name: Install Ruby packages
         uses: ruby/setup-ruby@v1

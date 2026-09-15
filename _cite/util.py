@@ -5,6 +5,9 @@ utility functions for cite process and plugins
 import subprocess
 import json
 import yaml
+import os
+import tempfile
+import time
 from yaml.loader import SafeLoader
 from pathlib import Path
 from datetime import date, datetime
@@ -13,7 +16,7 @@ from diskcache import Cache
 
 
 # cache for time-consuming network requests
-cache = Cache("./_cite/.cache")
+cache = Cache(os.environ.get("CITE_CACHE_DIR", "./_cite/.cache"))
 
 
 # clear expired items from cache
@@ -114,7 +117,9 @@ def format_date(_date):
     if isinstance(_date, (date, datetime)):
         return _date.strftime("%Y-%m-%d")
     try:
-        return datetime.strptime(_date, "%Y-%m-%d").strftime("%Y-%m-%d")
+        parts = str(_date).replace("/", "-").split("-")
+        parts += ["1"] * (3 - len(parts))
+        return date(*[int(part) for part in parts]).isoformat()
     except Exception:
         return ""
 
@@ -156,35 +161,36 @@ def save_data(path, data):
     # convert to path object
     path = Path(path)
 
-    # try to open file
-    try:
-        file = open(path, mode="w")
-    except Exception:
-        raise Exception("Can't open file for writing")
+    class Dumper(yaml.SafeDumper):
+        def ignore_aliases(self, data):
+            return True
 
-    # prevent yaml anchors/aliases (pointers)
-    yaml.Dumper.ignore_aliases = lambda *args: True
-
-    # try to save data as yaml
+    content = "# DO NOT EDIT, GENERATED AUTOMATICALLY\n\n"
+    content += yaml.dump(data, Dumper=Dumper, sort_keys=False, allow_unicode=True)
+    temporary = None
     try:
-        with file:
-            yaml.dump(data, file, default_flow_style=False, sort_keys=False)
-    except Exception:
-        raise Exception("Can't save YAML to file")
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf8", dir=path.parent, delete=False) as file:
+            temporary = file.name
+            file.write(content)
+        os.replace(temporary, path)
+    finally:
+        if temporary and os.path.exists(temporary):
+            os.unlink(temporary)
 
-    # write warning note to top of file
-    note = "# DO NOT EDIT, GENERATED AUTOMATICALLY"
-    try:
-        with open(path, "r") as file:
-            data = file.read()
-        with open(path, "w") as file:
-            file.write(f"{note}\n\n{data}")
-    except Exception:
-        raise Exception("Can't write to file")
+
+def retry_request(request, attempts=3):
+    """Bounded backoff. Callers validate inside request so errors are not cached."""
+    for attempt in range(attempts):
+        try:
+            return request()
+        except Exception:
+            if attempt == attempts - 1:
+                raise
+            time.sleep(2 ** attempt)
 
 
 @log_cache
-@cache.memoize(name="manubot", expire=90 * (60 * 60 * 24))
+@cache.memoize(name="manubot:v2", expire=7 * (60 * 60 * 24))
 def cite_with_manubot(_id):
     """
     generate citation data for source id with Manubot
@@ -193,14 +199,14 @@ def cite_with_manubot(_id):
     # run manubot
     try:
         commands = ["manubot", "cite", _id, "--log-level=WARNING"]
-        output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
+        output = subprocess.run(commands, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, timeout=60)
     except Exception as e:
         log(e, indent=3)
         raise Exception("Manubot could not generate citation")
 
     # parse results as json
     try:
-        manubot = json.loads(output[0])[0]
+        manubot = json.loads(output.stdout)[0]
     except Exception:
         raise Exception("Couldn't parse Manubot response")
 
@@ -247,6 +253,8 @@ def cite_with_manubot(_id):
 
     # link
     citation["link"] = get_safe(manubot, "URL", "").strip()
+    if manubot.get("type"):
+        citation["type"] = manubot["type"]
 
     # return citation data
     return citation

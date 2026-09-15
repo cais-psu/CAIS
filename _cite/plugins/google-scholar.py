@@ -1,48 +1,22 @@
 import os
-import re
+from urllib.parse import parse_qs, urlsplit
 from serpapi import GoogleSearch
 from util import *
-
-
-DOI_PATTERN = re.compile(r"\b10\.\d{4,9}/[-._;()/:A-Z0-9]+", re.IGNORECASE)
-DOI_TRAILING_PATHS = ["/full"]
+from records import find_doi
 
 
 def clean_authors(authors):
     """
     convert scholar author strings into a list
     """
-    return [author.strip() for author in authors.split(",") if author.strip()]
+    return [author.strip() for author in str(authors or "").split(",") if author.strip()]
 
 
 def format_publication_date(value):
     """
     convert scholar date strings like YYYY/MM/DD or YYYY/MM to YYYY-MM-DD
     """
-    if not value:
-        return ""
-    parts = str(value).replace("-", "/").split("/")
-    if not parts[0]:
-        return ""
-    year = parts[0]
-    month = parts[1] if len(parts) > 1 and parts[1] else "1"
-    day = parts[2] if len(parts) > 2 and parts[2] else "1"
-    return f"{year}-{month}-{day}"
-
-
-def find_doi(*values):
-    """
-    find a DOI in Scholar-provided text fields and links
-    """
-    for value in values:
-        match = DOI_PATTERN.search(str(value or ""))
-        if match:
-            doi = match.group(0).rstrip(".,;)").lower()
-            for suffix in DOI_TRAILING_PATHS:
-                if doi.endswith(suffix):
-                    doi = doi[: -len(suffix)]
-            return doi
-    return ""
+    return format_date(value) if value else ""
 
 
 def truthy(value):
@@ -50,6 +24,24 @@ def truthy(value):
     parse YAML/env truthy values
     """
     return str(value).lower() in ["1", "true", "yes", "on"]
+
+
+def request_scholar(params, field):
+    def request():
+        try:
+            response = GoogleSearch(params.copy(), timeout=30).get_dict()
+        except Exception:
+            # HTTP exceptions may contain the API key in their request URL.
+            raise RuntimeError("Google Scholar request failed or timed out") from None
+        if response.get("error") or get_safe(response, "search_metadata.status", "Success") != "Success":
+            message = str(response.get("error") or "Search did not complete")
+            raise RuntimeError(f"Google Scholar API: {message.replace(params['api_key'], '[redacted]')}")
+        value = response.get(field)
+        valid = list_of_dicts(value) if field == "articles" else isinstance(value, dict) and bool(value.get("title"))
+        if not valid:
+            raise RuntimeError(f"Google Scholar response missing valid {field}")
+        return response
+    return retry_request(request)
 
 
 def main(entry):
@@ -81,17 +73,17 @@ def main(entry):
 
     # query author articles api
     @log_cache
-    @cache.memoize(name=__file__, expire=1 * (60 * 60 * 24))
-    def query_articles(_id, start):
+    @cache.memoize(name="scholar:articles:v2", expire=1 * (60 * 60 * 24))
+    def query_articles(_id, start, sort, language):
         query_params = params.copy()
         query_params["author_id"] = _id
         query_params["start"] = start
-        return get_safe(GoogleSearch(query_params).get_dict(), "articles", [])
+        return request_scholar(query_params, "articles")
 
     # query individual article details api
     @log_cache
-    @cache.memoize(name=f"{__file__}:citation", expire=7 * (60 * 60 * 24))
-    def query_citation(citation_id):
+    @cache.memoize(name="scholar:citation:v2", expire=7 * (60 * 60 * 24))
+    def query_citation(citation_id, language):
         query_params = {
             "engine": "google_scholar_author",
             "api_key": api_key,
@@ -99,22 +91,44 @@ def main(entry):
             "view_op": "view_citation",
             "citation_id": citation_id,
         }
-        return get_safe(GoogleSearch(query_params).get_dict(), "citation", {})
+        return request_scholar(query_params, "citation")["citation"]
 
     # get all pages of articles
     response = []
     start = 0
     page_size = params["num"]
     max_results = get_safe(entry, "max_results", None)
+    if max_results is not None and int(max_results) <= 0:
+        raise ValueError("max_results must be a positive integer")
+    seen = set()
     while True:
-        page = query_articles(_id, start)
-        response.extend(page)
+        payload = query_articles(_id, start, sort, params["hl"])
+        page = payload["articles"]
+        added = 0
+        for article in page:
+            key = article.get("citation_id")
+            if not key or not article.get("title"):
+                raise RuntimeError("Google Scholar returned an article without citation_id or title")
+            if key not in seen:
+                seen.add(key)
+                response.append(article)
+                added += 1
+        if page and not added:
+            raise RuntimeError("Google Scholar repeated a page; refusing a partial update")
         if max_results and len(response) >= int(max_results):
             response = response[: int(max_results)]
             break
-        if len(page) < page_size:
+        next_url = get_safe(payload, "serpapi_pagination.next", "")
+        if next_url:
+            query = parse_qs(urlsplit(next_url).query)
+            next_start = int((query.get("start") or query.get("cstart") or [start + len(page)])[0])
+            if next_start <= start or not page:
+                raise RuntimeError("Google Scholar returned invalid pagination")
+            start = next_start
+        elif len(page) < page_size:
             break
-        start += page_size
+        else:
+            start += len(page)
 
     fetch_details = truthy(get_safe(entry, "details", os.environ.get("GOOGLE_SCHOLAR_DETAILS", "")))
 
@@ -124,13 +138,20 @@ def main(entry):
     # go through response and format sources
     for work in response:
         citation_id = get_safe(work, "citation_id", "")
-        details = query_citation(citation_id) if fetch_details and citation_id else {}
+        details = {}
+        detail_warning = ""
+        if fetch_details and citation_id:
+            try:
+                details = query_citation(citation_id, params["hl"])
+            except Exception as error:
+                detail_warning = f"{citation_id}: {error}; using article-list metadata"
 
         # get details from article endpoint first, with list endpoint fallbacks
         title = get_safe(details, "title", "") or get_safe(work, "title", "")
         authors = clean_authors(get_safe(details, "authors", "") or get_safe(work, "authors", ""))
         publisher = (
             get_safe(details, "journal", "")
+            or get_safe(details, "conference", "")
             or get_safe(details, "publisher", "")
             or get_safe(work, "publication", "")
         )
@@ -138,11 +159,11 @@ def main(entry):
         resource_links = [
             get_safe(resource, "link", "") for resource in get_safe(details, "resources", [])
         ]
-        doi = find_doi(
-            link,
-            get_safe(work, "publication", ""),
-            *resource_links,
-        )
+        doi = find_doi(link, details.get("doi"), details.get("DOI"), work.get("doi"))
+        if not doi:
+            candidates = {find_doi(value) for value in resource_links} - {""}
+            if len(candidates) == 1:
+                doi = candidates.pop()
         year = get_safe(work, "year", "")
         date = format_publication_date(get_safe(details, "publication_date", ""))
         if not date and year:
@@ -167,6 +188,9 @@ def main(entry):
         if doi:
             source["doi"] = doi
             source["DOI"] = doi
+            source["_doi_inferred"] = True
+        if detail_warning:
+            source["_warnings"] = [detail_warning]
         if get_safe(details, "volume", ""):
             source["volume"] = get_safe(details, "volume", "")
         if get_safe(details, "issue", ""):

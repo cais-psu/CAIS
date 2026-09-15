@@ -1,140 +1,66 @@
 import json
 from urllib.request import Request, urlopen
-from util import *
+
 from manubot.cite.handlers import prefix_to_handler as manubot_citable
+from records import normalize_id
+from util import cache, format_date, get_safe, list_of_dicts, log_cache, retry_request
+
+
+@log_cache
+@cache.memoize(name="orcid:works:v2", expire=24 * 60 * 60)
+def query(orcid):
+    def request():
+        req = Request(f"https://pub.orcid.org/v3.0/{orcid}/works", headers={"Accept": "application/json"})
+        with urlopen(req, timeout=30) as response:
+            data = json.load(response)
+        if not list_of_dicts(data.get("group")):
+            raise RuntimeError("ORCID response missing valid work groups")
+        return data["group"]
+    return retry_request(request)
+
+
+def self_ids(summary):
+    return [
+        item for item in get_safe(summary, "external-ids.external-id", []) or []
+        if item.get("external-id-relationship") == "self" and item.get("external-id-value")
+    ]
 
 
 def main(entry):
-    """
-    receives single list entry from orcid data file
-    returns list of sources to cite
-    """
-
-    # orcid api
-    endpoint = "https://pub.orcid.org/v3.0/$ORCID/works"
-    headers = {"Accept": "application/json"}
-
-    # get id from entry
-    _id = get_safe(entry, "orcid", "")
-    if not _id:
-        raise Exception('No "orcid" key')
-
-    # query api
-    @log_cache
-    @cache.memoize(name=__file__, expire=1 * (60 * 60 * 24))
-    def query(_id):
-        url = endpoint.replace("$ORCID", _id)
-        request = Request(url=url, headers=headers)
-        response = json.loads(urlopen(request).read())
-        return get_safe(response, "group", [])
-
-    response = query(_id)
-
-    # list of sources to return
+    orcid = entry.get("orcid")
+    if not orcid:
+        raise ValueError('No "orcid" key')
     sources = []
-
-    # filter id by some criteria. return true to accept, false to reject.
-    def filter_id(_id):
-        # is id of certain "relationship" type
-        relationships = ["self", "version-of", "part-of"]
-        if not get_safe(_id, "external-id-relationship", "") in relationships:
-            return False
-
-        id_type = get_safe(_id, "external-id-type", "")
-
-        # is id of certain type
-        # types = ["doi"]
-        # if id_type not in types:
-        #     return False
-
-        # is id citable by manubot
-        if id_type not in manubot_citable:
-            return False
-
-        return True
-
-    # prefer some ids over others by some criteria. return lower number to prefer more.
-    def sort_id(_id):
-        id_type = get_safe(_id, "external-id-type", "")
-        types = [
-            "doi",
-            # "arxiv",
-            # "url",
-        ]
-        return index_of(types, id_type)
-
-    # go through each source
-    for work in response:
-        # list of ids in source
-        ids = []
-
-        # use "work-summary" field instead of top-level "external-ids" to reflect author-selected preferred sources
-        for summary in get_safe(work, "work-summary", []):
-            ids = ids + get_safe(summary, "external-ids.external-id", [])
-
-        # filter ids by criteria
-        ids = list(filter(filter_id, ids))
-        # sort ids by criteria
-        ids.sort(key=sort_id)
-
-        # pick first available id
-        _id = ids[0] if len(ids) > 0 else None
-
-        # id parts
-        id_type = get_safe(_id, "external-id-type", "")
-        id_value = get_safe(_id, "external-id-value", "")
-
-        # create source
-        source = {}
-
-        # if id citable by manubot
-        if id_type and id_value and id_type in manubot_citable:
-            # id to cite with manubot
-            source = {"id": f"{id_type}:{id_value}"}
-
-        # if not citable by manubot, keep citation details from orcid
-        else:
-            # get summaries
-            summaries = get_safe(work, "work-summary", [])
-
-            # get first summary with defined sub-value
-            def first(get_func):
-                return next(
-                    (value for value in map(get_func, summaries) if value), None
-                )
-
-            # get title
-            title = first(lambda s: get_safe(s, "title.title.value", ""))
-
-            # get publisher
-            publisher = first(lambda s: get_safe(s, "journal-title.value", ""))
-
-            # get date
-            date = (
-                get_safe(work, "last-modified-date.value")
-                or first(lambda s: get_safe(s, "last-modified-date.value"))
-                or get_safe(work, "created-date.value")
-                or first(lambda s: get_safe(s, "created-date.value"))
-                or 0
-            )
-
-            # get link
-            link = first(lambda s: get_safe(s, "url.value", ""))
-
-            # keep available details
-            if title:
-                source["title"] = title
-            if publisher:
-                source["publisher"] = publisher
-            if date:
-                source["date"] = format_date(date)
-            if link:
-                source["link"] = link
-
-        # copy fields from entry to source
+    for work in query(orcid):
+        summaries = sorted(work.get("work-summary") or [], key=lambda s: int(s.get("display-index") or 0), reverse=True)
+        if not summaries:
+            raise RuntimeError("ORCID returned a group without work summaries")
+        # Parent and version-of identifiers do not identify this exact paper.
+        selected = summaries[0]
+        ids = self_ids(selected)
+        citable = [item for item in ids if item.get("external-id-type", "").lower() in manubot_citable]
+        citable.sort(key=lambda item: item.get("external-id-type", "").lower() != "doi")
+        work_id = f"orcid:{orcid}/{selected['put-code']}"
+        source = {"id": work_id, "orcid_work_id": work_id}
+        if citable:
+            item = citable[0]
+            source["id"] = normalize_id(f"{item['external-id-type']}:{item['external-id-value']}")
+        # Preserve metadata even for resolvable IDs: WOS may return a login page.
+        source["title"] = get_safe(selected, "title.title.value", "") or ""
+        source["publisher"] = get_safe(selected, "journal-title.value", "") or ""
+        source["link"] = get_safe(selected, "url.value", "") or ""
+        source["type"] = selected.get("type", "")
+        year = get_safe(selected, "publication-date.year.value", "")
+        month = get_safe(selected, "publication-date.month.value", "") or "1"
+        day = get_safe(selected, "publication-date.day.value", "") or "1"
+        source["date"] = format_date(f"{year}-{month}-{day}") if year else ""
+        # Only use aliases from this summary; a group can include other versions.
+        source["aliases"] = sorted({
+            normalize_id(f"{item['external-id-type']}:{item['external-id-value']}")
+            for item in ids if item.get("external-id-type")
+        } - {source["id"]})
+        if not source["link"]:
+            source["link"] = next((get_safe(item, "external-id-url.value", "") for item in ids if get_safe(item, "external-id-url.value", "")), "")
         source.update(entry)
-
-        # add source to list
         sources.append(source)
-
     return sources

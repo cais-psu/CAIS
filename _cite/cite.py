@@ -1,215 +1,129 @@
-"""
-cite process to convert sources and metasources into full citations
-"""
+"""Compile, enrich and reconcile publications without deleting missing records."""
 
-import traceback
+from difflib import SequenceMatcher
 from importlib import import_module
 from pathlib import Path
+
 from dotenv import load_dotenv
-from util import *
+from records import normalize_record, reconcile, reconcile_update, title_key, useful_title
+from util import cite_with_manubot, format_date, list_of_dicts, load_data, log, save_data
 
 
-# load environment variables
-load_dotenv()
+PLUGINS = ["google-scholar", "pubmed", "orcid", "sources"]
 
 
-# save errors/warnings for reporting at end
-errors = []
-warnings = []
-
-# output citations file
-output_file = "_data/citations.yaml"
-
-
-log()
-
-log("Compiling sources")
-
-# compiled list of sources
-sources = []
-
-# in-order list of plugins to run
-plugins = ["google-scholar", "pubmed", "orcid", "sources"]
-
-# loop through plugins
-for plugin in plugins:
-    # convert into path object
-    plugin = Path(f"plugins/{plugin}.py")
-
-    log(f"Running {plugin.stem} plugin")
-
-    # get all data files to process with current plugin
-    files = Path.cwd().glob(f"_data/{plugin.stem}*.*")
-    files = list(filter(lambda p: p.suffix in [".yaml", ".yml", ".json"], files))
-
-    log(f"Found {len(files)} {plugin.stem}* data file(s)", indent=1)
-
-    # loop through data files
-    for file in files:
-        log(f"Processing data file {file.name}", indent=1)
-
-        # load data from file
-        try:
-            data = load_data(file)
-            # check if file in correct format
-            if not list_of_dicts(data):
-                raise Exception(f"{file.name} data file not a list of dicts")
-        except Exception as e:
-            log(e, indent=2, level="ERROR")
-            errors.append(e)
-            continue
-
-        # loop through data entries
-        for index, entry in enumerate(data):
-            log(f"Processing entry {index + 1} of {len(data)}, {label(entry)}", level=2)
-
-            # run plugin on data entry to expand into multiple sources
-            try:
-                expanded = import_module(f"plugins.{plugin.stem}").main(entry)
-                # check that plugin returned correct format
-                if not list_of_dicts(expanded):
-                    raise Exception(f"{plugin.stem} plugin didn't return list of dicts")
-            # catch any plugin error
-            except Exception as e:
-                # log detailed pre-formatted/colored trace
-                print(traceback.format_exc())
-                # log high-level error
-                log(e, indent=3, level="ERROR")
-                errors.append(e)
-                continue
-
-            # loop through sources
-            for source in expanded:
-                if plugin.stem != "sources":
-                    log(label(source), level=3)
-
-                # include meta info about source
-                source["plugin"] = plugin.name
-                source["file"] = file.name
-
-                # add source to compiled list
-                sources.append(source)
-
-            if plugin.stem != "sources":
-                log(f"{len(expanded)} source(s)", indent=3)
-
-
-log("Merging sources by id")
-
-# merge sources with matching (non-blank) ids
-for a in range(0, len(sources)):
-    a_id = get_safe(sources, f"{a}.id", "")
-    if not a_id:
-        continue
-    for b in range(a + 1, len(sources)):
-        b_id = get_safe(sources, f"{b}.id", "")
-        if b_id == a_id:
-            log(f"Found duplicate {b_id}", indent=2)
-            sources[a].update(sources[b])
-            sources[b] = {}
-sources = [entry for entry in sources if entry]
-
-
-log(f"{len(sources)} total source(s) to cite")
-
-
-log()
-
-log("Generating citations")
-
-# list of new citations
-citations = []
-
-
-# loop through compiled sources
-for index, source in enumerate(sources):
-    log(f"Processing source {index + 1} of {len(sources)}, {label(source)}")
-
-    # if explicitly flagged, remove/ignore entry
-    if get_safe(source, "remove", False) == True:
-        continue
-
-    # new citation data for source
+def enrich(source, previous, warn):
+    source = normalize_record(source)
+    for message in source.pop("_warnings", []):
+        warn(message)
+    inferred = source.pop("_doi_inferred", False)
+    identifier = source.get("id", "")
+    plugin = source.get("plugin")
     citation = {}
-
-    # source id
-    _id = get_safe(source, "id", "").strip()
-    plugin = get_safe(source, "plugin", "")
-    file = get_safe(source, "file", "")
-    google_scholar_unciteable = (
-        not _id.startswith("doi:")
-        and (
-            plugin == "google-scholar.py"
-            or get_safe(source, "scholar_id", "") == _id
-        )
-    )
-
-    # manubot doesn't work without an id
-    # google scholar citation IDs are not manubot-citeable, but DOI-backed
-    # google scholar records can still be enriched with Manubot
-    if _id and not google_scholar_unciteable:
-        log("Using Manubot to generate citation", indent=1)
-
+    # These identifiers have local summary metadata, but no reliable resolver.
+    resolvable = identifier and not identifier.startswith(("orcid:", "wosuid:"))
+    resolvable = resolvable and not (source.get("scholar_id") == identifier or (plugin == "google-scholar.py" and not identifier.startswith("doi:")))
+    if resolvable:
         try:
-            # run manubot and set citation
-            citation = cite_with_manubot(_id)
-
-        # if manubot cannot cite source
-        except Exception as e:
-            # if regular source (id entered by user), throw error
-            if plugin == "sources.py":
-                log(e, indent=3, level="ERROR")
-                errors.append(f"Manubot could not generate citation for source {_id}")
-            # otherwise, if from metasource (id retrieved from some third-party api), just warn
-            else:
-                log(e, indent=3, level="WARNING")
-                warnings.append(
-                    f"Manubot could not generate citation for source {_id} (from {file} with {plugin})"
-                )
-                # discard source from citations
-                continue
-
-    # preserve fields from input source, overriding existing fields
-    citation.update(source)
-
-    # ensure date in proper format for correct date sorting
-    if get_safe(citation, "date", ""):
-        citation["date"] = format_date(get_safe(citation, "date", ""))
-
-    # add new citation to list
-    citations.append(citation)
-
-
-log()
-
-log("Saving updated citations")
+            citation = dict(cite_with_manubot(identifier))
+            if not useful_title(citation.get("title")):
+                raise ValueError("Resolver returned no usable paper title")
+            if inferred and useful_title(source.get("title")):
+                similarity = SequenceMatcher(None, title_key(source["title"]), title_key(citation["title"])).ratio()
+                if similarity < 0.8:
+                    warn(f"DOI title disagrees with Scholar; retained Scholar record without inferred DOI: {identifier}")
+                    source["id"] = source["scholar_id"]
+                    source.pop("doi", None)
+                    source.pop("DOI", None)
+                    citation = {}
+        except Exception:
+            # The existing citation and source metadata remain usable offline.
+            citation = {}
+            warn(f"Could not enrich {identifier}; retaining available metadata")
+    populated = {k: v for k, v in source.items() if v is not None and v != "" and v != []}
+    if plugin == "sources.py":
+        citation.update(populated)
+    else:
+        # DOI metadata supplies full authors/date; Scholar supplies citation count.
+        citation = {**populated, **{k: v for k, v in citation.items() if v is not None and v != "" and v != []}}
+    citation = normalize_record(citation)
+    citation["date"] = format_date(citation.get("date", ""))
+    if not useful_title(citation.get("title")):
+        from records import identity_keys
+        if not any(identity_keys(citation) & identity_keys(old) and useful_title(old.get("title")) for old in previous):
+            raise ValueError(f"No usable title or previous metadata for {identifier}; refusing incomplete output")
+    return citation
 
 
-# save new citations
-try:
-    save_data(output_file, citations)
-except Exception as e:
-    log(e, level="ERROR")
-    errors.append(e)
+def run(root=Path.cwd()):
+    output = root / "_data/citations.yaml"
+    errors, warnings, sources = [], [], []
+
+    def warn(message):
+        warnings.append(message)
+        log(message, level="WARNING")
+
+    previous = load_data(output) if output.exists() else []
+    if not list_of_dicts(previous):
+        raise ValueError("Existing citations must be a list of records")
+    previous = [normalize_record(row) for row in previous]
+    for plugin in PLUGINS:
+        files = sorted(path for path in (root / "_data").glob(f"{plugin}*.*") if path.suffix in (".yaml", ".yml", ".json"))
+        for file in files:
+            try:
+                entries = load_data(file)
+                if not list_of_dicts(entries):
+                    raise ValueError(f"{file.name} must contain a list of records")
+                for entry in entries:
+                    expanded = import_module(f"plugins.{plugin}").main(entry)
+                    if not list_of_dicts(expanded):
+                        raise ValueError(f"{plugin} returned invalid records")
+                    for row in expanded:
+                        sources.append({**row, "plugin": f"{plugin}.py", "file": file.name})
+                    log(f"{file.name}: fetched {len(expanded)} records")
+            except Exception as error:
+                # Stop publication, but collect errors from remaining providers.
+                errors.append(f"{file.name}: {error}")
+                log(errors[-1], level="ERROR")
+
+    if errors:
+        log(f"{len(errors)} error(s). Existing citations were not changed.", level="ERROR")
+        return 1
+
+    # Combine manual field overrides before enrichment, so a later image-only
+    # entry cannot undo an earlier hand-corrected title or author list.
+    sources = [row for row in sources if row['plugin'] != 'sources.py'] + reconcile(
+        [row for row in sources if row['plugin'] == 'sources.py'], warn
+    )
+    current, removals = [], []
+    for source in sources:
+        if source.get("remove") is True:
+            removals.append(normalize_record(source))
+            continue
+        try:
+            current.append(enrich(source, previous, warn))
+        except Exception as error:
+            errors.append(str(error))
+            log(error, level="ERROR")
+
+    if errors:
+        log(f"{len(errors)} error(s). Existing citations were not changed.", level="ERROR")
+        return 1
+    current = reconcile(current, warn)
+    citations = reconcile_update(previous, current, removals, warn)
+    # Detect different-DOI versions without silently hiding or discarding them.
+    titles = {}
+    for row in citations:
+        key = title_key(row.get("title"))
+        if key in titles and row.get("doi") != titles[key].get("doi"):
+            warn(f"Same title has different identifiers; review versions: {titles[key].get('id')} / {row.get('id')}")
+        titles[key] = row
+    citations.sort(key=lambda row: (str(row.get("date") or ""), title_key(row.get("title")), row.get("id", "")), reverse=True)
+    save_data(output, citations)
+    log(f"Saved {len(citations)} citations; {len(warnings)} warning(s)", level="SUCCESS")
+    return 0
 
 
-log()
-
-
-# exit at end, so user can see all errors/warnings in one run
-if len(warnings):
-    log(f"{len(warnings)} warning(s) occurred above", level="WARNING")
-    for warning in warnings:
-        log(warning, indent=1, level="WARNING")
-
-if len(errors):
-    log(f"{len(errors)} error(s) occurred above", level="ERROR")
-    for error in errors:
-        log(error, indent=1, level="ERROR")
-    log()
-    exit(1)
-
-else:
-    log("All done!", level="SUCCESS")
-
-log()
+if __name__ == "__main__":
+    load_dotenv()
+    raise SystemExit(run())

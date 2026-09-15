@@ -23,7 +23,7 @@
   doi: 10.1016/j.rcim.2026.103245
   DOI: 10.1016/j.rcim.2026.103245
   orcid_work_id: orcid:0000-0003-4764-9117/211331686
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331686
   - secQmYUAAAAJ:pqnbT2bcN3wC
@@ -37,7 +37,7 @@
   - Ilya Kovalenko
   - Hongliang Li
   - Brian Zajac
-  publisher: 2026 ASEE Annual Conference & Exposition, 2026
+  publisher: 2026 ASEE Annual Conference & Exposition
   date: '2026-06-21'
   link: https://peer.asee.org/leveraging-digital-twins-for-industrial-automation-and-robotics-education
   citation_count: null
@@ -53,7 +53,7 @@
   - Jonghan Lim
   - Ilya Kovalenko
   - Rômulo Meira-Góes
-  publisher: IEEE
+  publisher: 2026 18th International Workshop on Discrete Event Systems (WODES)
   date: '2026-06-08'
   link: https://ieeexplore.ieee.org/abstract/document/11598211/
   citation_count: 2
@@ -70,7 +70,7 @@
   - Mostafa Tavakkoli Anbarani
   - Rômulo Meira-Góes
   - Ilya Kovalenko
-  publisher: IEEE
+  publisher: 2026 18th International Workshop on Discrete Event Systems (WODES)
   date: '2026-06-08'
   link: https://ieeexplore.ieee.org/abstract/document/11598152/
   citation_count: null
@@ -87,7 +87,7 @@
   - Jonghan Lim
   - Rômulo Meira-Góes
   - Ilya Kovalenko
-  publisher: IEEE
+  publisher: 2026 18th International Workshop on Discrete Event Systems (WODES)
   date: '2026-06-08'
   link: https://ieeexplore.ieee.org/abstract/document/11598126/
   citation_count: 1
@@ -163,7 +163,7 @@
   doi: 10.1109/tase.2026.3696221
   DOI: 10.1109/tase.2026.3696221
   orcid_work_id: orcid:0000-0003-4764-9117/215499939
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/215499939
   - secQmYUAAAAJ:fPk4N6BV_jEC
@@ -187,7 +187,7 @@
   doi: 10.1109/tase.2025.3636115
   DOI: 10.1109/tase.2025.3636115
   orcid_work_id: orcid:0000-0003-4764-9117/197596120
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/197596120
   - secQmYUAAAAJ:M05iB0D1s5AC
@@ -216,6 +216,7 @@
   DOI: 10.1109/cdc57313.2025.11312935
   aliases:
   - secQmYUAAAAJ:2P1L_qKh6hAC
+  type: paper-conference
 - id: doi:10.1109/case58245.2025.11164034
   scholar_id: secQmYUAAAAJ:vV6vV6tmYwMC
   title: Energy-Aware Model Predictive Control for Batch Manufacturing System Scheduling
@@ -238,7 +239,7 @@
   doi: 10.1109/case58245.2025.11164034
   DOI: 10.1109/case58245.2025.11164034
   orcid_work_id: orcid:0000-0003-4764-9117/211331701
-  type: journal-article
+  type: paper-conference
   aliases:
   - orcid:0000-0003-4764-9117/211331701
   - secQmYUAAAAJ:vV6vV6tmYwMC
@@ -267,6 +268,7 @@
   DOI: 10.1109/case58245.2025.11163792
   aliases:
   - secQmYUAAAAJ:lSLTfruPkqcC
+  type: paper-conference
 - id: doi:10.1109/case58245.2025.11163802
   scholar_id: secQmYUAAAAJ:NaGl4SEjCO4C
   title: A Large Language Model-Enabled Control Architecture for Dynamic Resource
@@ -288,7 +290,7 @@
   doi: 10.1109/case58245.2025.11163802
   DOI: 10.1109/case58245.2025.11163802
   orcid_work_id: orcid:0000-0003-4764-9117/211331703
-  type: journal-article
+  type: paper-conference
   aliases:
   - orcid:0000-0003-4764-9117/211331703
   - secQmYUAAAAJ:NaGl4SEjCO4C
@@ -341,7 +343,7 @@
   - secQmYUAAAAJ:70eg2SAEIzsC
   - wosuid:WOS:001611950500014
   orcid_work_id: orcid:0000-0003-4764-9117/211331706
-  type: journal-article
+  type: paper-conference
 - id: doi:10.1109/tase.2025.3550678
   scholar_id: secQmYUAAAAJ:ns9cj8rnVeAC
   title: 'Guest Editorial: Engineering and Operating Digital Twins for Automated Production
@@ -366,7 +368,7 @@
   doi: 10.1109/tase.2025.3550678
   DOI: 10.1109/tase.2025.3550678
   orcid_work_id: orcid:0000-0003-4764-9117/211331709
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331709
   - secQmYUAAAAJ:ns9cj8rnVeAC
@@ -455,7 +457,7 @@
   doi: 10.1016/j.ifacol.2025.12.314
   DOI: 10.1016/j.ifacol.2025.12.314
   orcid_work_id: orcid:0000-0003-4764-9117/211331705
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331705
   - secQmYUAAAAJ:35N4QoGY0k4C
@@ -509,7 +511,7 @@
   doi: 10.1109/case59546.2024.10711432
   DOI: 10.1109/case59546.2024.10711432
   orcid_work_id: orcid:0000-0003-4764-9117/211331729
-  type: journal-article
+  type: paper-conference
   aliases:
   - orcid:0000-0003-4764-9117/211331729
   - secQmYUAAAAJ:NMxIlDl6LWMC
@@ -539,7 +541,7 @@
   doi: 10.1109/case59546.2024.10711843
   DOI: 10.1109/case59546.2024.10711843
   orcid_work_id: orcid:0000-0003-4764-9117/211331732
-  type: journal-article
+  type: paper-conference
   aliases:
   - orcid:0000-0003-4764-9117/211331732
   - secQmYUAAAAJ:hMod-77fHWUC
@@ -557,7 +559,7 @@
     Manufacturing Systems; Nano/Micro/Meso Manufacturing; Quality &amp; Reliability'
   date: '2024-06-17'
   link: https://doi.org/g97zp5
-  citation_count: 10
+  citation_count: 11
   volume: '88117'
   pages: V002T05A010
   gsid: secQmYUAAAAJ
@@ -573,7 +575,7 @@
   - secQmYUAAAAJ:JV2RwH3_ST0C
   - wosuid:WOS:001303775100010
   orcid_work_id: orcid:0000-0003-4764-9117/211331733
-  type: conference-paper
+  type: paper-conference
 - id: doi:10.3389/fbuil.2024.1384235
   title: Conditional adaptive time series compensation and control design for multi-axial
     real-time hybrid simulation
@@ -599,7 +601,7 @@
   orcid: 0000-0003-4764-9117
   image: /images/paper/1384235.jpg
   orcid_work_id: orcid:0000-0003-4764-9117/211331723
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331723
   - secQmYUAAAAJ:blknAaTinKkC
@@ -648,7 +650,7 @@
   doi: 10.1016/j.ifacol.2024.07.029
   DOI: 10.1016/j.ifacol.2024.07.029
   orcid_work_id: orcid:0000-0003-4764-9117/211331717
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331717
   - secQmYUAAAAJ:YFjsv_pBGBYC
@@ -688,7 +690,7 @@
   doi: 10.1016/j.ifacol.2025.01.139
   DOI: 10.1016/j.ifacol.2025.01.139
   orcid_work_id: orcid:0000-0003-4764-9117/211331699
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331699
   - secQmYUAAAAJ:BqipwSGYUEgC
@@ -726,6 +728,7 @@
   DOI: 10.1016/b978-0-323-90386-8.00131-5
   aliases:
   - secQmYUAAAAJ:GnPB-g6toBAC
+  type: chapter
 - id: wosuid:PPRN:89394559
   title: Enhancing Human-Robot Collaborative Assembly in Manufacturing Systems Using
     Large Language Models
@@ -808,7 +811,7 @@
   doi: 10.1109/case56687.2023.10260621
   DOI: 10.1109/case56687.2023.10260621
   orcid_work_id: orcid:0000-0003-4764-9117/163677744
-  type: conference-paper
+  type: paper-conference
   aliases:
   - orcid:0000-0003-4764-9117/163677744
   - secQmYUAAAAJ:maZDTaKrznsC
@@ -834,7 +837,7 @@
   doi: 10.1109/case56687.2023.10260642
   DOI: 10.1109/case56687.2023.10260642
   orcid_work_id: orcid:0000-0003-4764-9117/163677739
-  type: conference-paper
+  type: paper-conference
   aliases:
   - orcid:0000-0003-4764-9117/163677739
   - secQmYUAAAAJ:k_IJM867U9cC
@@ -860,7 +863,7 @@
   doi: 10.1109/ccta54093.2023.10253433
   DOI: 10.1109/ccta54093.2023.10253433
   orcid_work_id: orcid:0000-0003-4764-9117/163677728
-  type: conference-paper
+  type: paper-conference
   aliases:
   - orcid:0000-0003-4764-9117/163677728
   - secQmYUAAAAJ:4JMBOYKVnBMC
@@ -882,6 +885,7 @@
   file: sources.yaml
   doi: 10.22541/au.168787448.81156855/v1
   DOI: 10.22541/au.168787448.81156855/v1
+  type: manuscript
 - id: doi:10.1109/mra.2023.3262464
   scholar_id: secQmYUAAAAJ:iH-uZ7U-co4C
   title: 'Opportunities and Challenges to Integrate Artificial Intelligence Into Manufacturing
@@ -906,7 +910,7 @@
   doi: 10.1109/mra.2023.3262464
   DOI: 10.1109/mra.2023.3262464
   orcid_work_id: orcid:0000-0003-4764-9117/138490918
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/138490918
   - secQmYUAAAAJ:iH-uZ7U-co4C
@@ -930,7 +934,7 @@
   doi: 10.23919/acc55779.2023.10156587
   DOI: 10.23919/acc55779.2023.10156587
   orcid_work_id: orcid:0000-0003-4764-9117/138490906
-  type: conference-paper
+  type: paper-conference
   aliases:
   - orcid:0000-0003-4764-9117/138490906
   - secQmYUAAAAJ:e5wmG9Sq2KIC
@@ -958,7 +962,7 @@
   orcid: 0000-0003-4764-9117
   image: https://arxiv.org/html/2507.19043v1/figures/MAMS.png
   orcid_work_id: orcid:0000-0003-4764-9117/211331745
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331745
   - secQmYUAAAAJ:TFP_iSt0sucC
@@ -1047,7 +1051,7 @@
   doi: 10.1109/case49997.2022.9926689
   DOI: 10.1109/case49997.2022.9926689
   orcid_work_id: orcid:0000-0003-4764-9117/211331760
-  type: journal-article
+  type: paper-conference
   aliases:
   - orcid:0000-0003-4764-9117/211331760
   - secQmYUAAAAJ:_Qo2XoVZTnwC
@@ -1125,7 +1129,7 @@
   doi: 10.1109/access.2022.3165551
   DOI: 10.1109/access.2022.3165551
   orcid_work_id: orcid:0000-0003-4764-9117/211331763
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331763
   - secQmYUAAAAJ:HDshCWvjkbEC
@@ -1155,7 +1159,7 @@
   doi: 10.1109/tcst.2021.3054800
   DOI: 10.1109/tcst.2021.3054800
   orcid_work_id: orcid:0000-0003-4764-9117/211331766
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331766
   - secQmYUAAAAJ:4DMP91E08xMC
@@ -1185,7 +1189,7 @@
   doi: 10.1109/case49439.2021.9551650
   DOI: 10.1109/case49439.2021.9551650
   orcid_work_id: orcid:0000-0003-4764-9117/211331770
-  type: journal-article
+  type: paper-conference
   aliases:
   - orcid:0000-0003-4764-9117/211331770
   - secQmYUAAAAJ:QIV2ME_5wuYC
@@ -1213,7 +1217,7 @@
   doi: 10.1016/j.ifacol.2021.11.220
   DOI: 10.1016/j.ifacol.2021.11.220
   orcid_work_id: orcid:0000-0003-4764-9117/211331768
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331768
   - secQmYUAAAAJ:dhFuZR0502QC
@@ -1245,7 +1249,7 @@
   doi: 10.1109/access.2021.3065971
   DOI: 10.1109/access.2021.3065971
   orcid_work_id: orcid:0000-0003-4764-9117/211331775
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331775
   - secQmYUAAAAJ:Wp0gIr-vW9MC
@@ -1279,7 +1283,7 @@
   doi: 10.1520/ssms20200009
   DOI: 10.1520/ssms20200009
   orcid_work_id: orcid:0000-0003-4764-9117/211331772
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331772
   - secQmYUAAAAJ:qxL8FJ1GzNcC
@@ -1307,7 +1311,7 @@
   doi: 10.1016/j.ifacol.2021.04.051
   DOI: 10.1016/j.ifacol.2021.04.051
   orcid_work_id: orcid:0000-0003-4764-9117/211331778
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331778
   - secQmYUAAAAJ:mVmsd5A6BfQC
@@ -1368,7 +1372,7 @@
   doi: 10.1109/access.2020.3000437
   DOI: 10.1109/access.2020.3000437
   orcid_work_id: orcid:0000-0003-4764-9117/211331780
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331780
   - secQmYUAAAAJ:M3ejUd6NZC8C
@@ -1398,7 +1402,7 @@
   doi: 10.1109/lra.2019.2931825
   DOI: 10.1109/lra.2019.2931825
   orcid_work_id: orcid:0000-0003-4764-9117/211331782
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331782
   - secQmYUAAAAJ:Zph67rFs4hoC
@@ -1428,7 +1432,7 @@
   doi: 10.1109/lra.2019.2921947
   DOI: 10.1109/lra.2019.2921947
   orcid_work_id: orcid:0000-0003-4764-9117/211331783
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331783
   - secQmYUAAAAJ:MXK_kJrjxJIC
@@ -1467,7 +1471,7 @@
   - secQmYUAAAAJ:_kc_bZDykSQC
   - wosuid:WOS:000505633900063
   orcid_work_id: orcid:0000-0003-4764-9117/116963054
-  type: conference-paper
+  type: paper-conference
 - id: doi:10.1016/j.conengprac.2019.03.009
   scholar_id: secQmYUAAAAJ:_FxGoFyzp5QC
   title: 'The model-based product agent: A control oriented architecture for intelligent
@@ -1490,7 +1494,7 @@
   doi: 10.1016/j.conengprac.2019.03.009
   DOI: 10.1016/j.conengprac.2019.03.009
   orcid_work_id: orcid:0000-0003-4764-9117/211331789
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331789
   - secQmYUAAAAJ:_FxGoFyzp5QC
@@ -1534,7 +1538,7 @@
   doi: 10.1016/j.promfg.2018.10.053
   DOI: 10.1016/j.promfg.2018.10.053
   orcid_work_id: orcid:0000-0003-4764-9117/211331792
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331792
   - secQmYUAAAAJ:WF5omc3nYNoC
@@ -1562,7 +1566,7 @@
   doi: 10.1520/ssms20170006
   DOI: 10.1520/ssms20170006
   orcid_work_id: orcid:0000-0003-4764-9117/211331795
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331795
   - secQmYUAAAAJ:YsMSGLbcyi4C
@@ -1595,7 +1599,7 @@
   - secQmYUAAAAJ:eQOLeE2rZwMC
   - wosuid:WOS:000427812000087
   orcid_work_id: orcid:0000-0003-4764-9117/116963049
-  type: conference-paper
+  type: paper-conference
 - id: doi:10.1109/ccta.2017.8062543
   scholar_id: secQmYUAAAAJ:Y0pCki6q_DkC
   title: Hybrid modeling and identification of jetting dynamics in electrohydrodynamic
@@ -1619,7 +1623,7 @@
   doi: 10.1109/ccta.2017.8062543
   DOI: 10.1109/ccta.2017.8062543
   orcid_work_id: orcid:0000-0003-4764-9117/116963028
-  type: conference-paper
+  type: paper-conference
   aliases:
   - eid:2-s2.0-85047610275
   - orcid:0000-0003-4764-9117/116963028
@@ -1646,7 +1650,7 @@
   doi: 10.1016/j.procir.2017.04.014
   DOI: 10.1016/j.procir.2017.04.014
   orcid_work_id: orcid:0000-0003-4764-9117/211331798
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331798
   - secQmYUAAAAJ:Tyk-4Ss8FVUC
@@ -1676,7 +1680,7 @@
   doi: 10.1109/lra.2016.2530866
   DOI: 10.1109/lra.2016.2530866
   orcid_work_id: orcid:0000-0003-4764-9117/211331801
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331801
   - secQmYUAAAAJ:UeHWp8X0CEIC
@@ -1715,7 +1719,7 @@
   - secQmYUAAAAJ:qjMakFHDy7sC
   - wosuid:WOS:000377639100050
   orcid_work_id: orcid:0000-0003-4764-9117/116963055
-  type: conference-paper
+  type: paper-conference
 - id: doi:10.1115/1.4030548
   title: Design and Testing of a Pneumatic Hemiparesis Rehabilitation Device for a
     Neurofacilitation Exercise1
@@ -1735,7 +1739,7 @@
   doi: 10.1115/1.4030548
   DOI: 10.1115/1.4030548
   orcid_work_id: orcid:0000-0003-4764-9117/211331808
-  type: journal-article
+  type: article-journal
   aliases:
   - orcid:0000-0003-4764-9117/211331808
   - wosuid:WOS:000370684800011
@@ -1791,7 +1795,7 @@
   - secQmYUAAAAJ:u-x6o8ySG0sC
   - wosuid:WOS:000380412700050
   orcid_work_id: orcid:0000-0003-4764-9117/116963057
-  type: conference-paper
+  type: paper-conference
 - id: doi:10.1109/arso.2014.7020990
   scholar_id: secQmYUAAAAJ:d1gkVwhDpl0C
   title: Robotic rehabilitation exercise in hemiparetic limbs based on functional
@@ -1817,7 +1821,7 @@
   doi: 10.1109/arso.2014.7020990
   DOI: 10.1109/arso.2014.7020990
   orcid_work_id: orcid:0000-0003-4764-9117/211331809
-  type: conference-paper
+  type: paper-conference
   aliases:
   - eid:2-s2.0-84937408547
   - orcid:0000-0003-4764-9117/116963030

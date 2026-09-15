@@ -50,6 +50,9 @@ jobs:
           python -m pip install --upgrade --requirement ./_cite/requirements.txt
           python -m pip install --upgrade pyyaml
 
+      - name: Test citation integration
+        run: python -m unittest discover -s _cite/tests -v
+
       - name: Build updated citations
         env:
           GOOGLE_SCHOLAR_API_KEY: ${{ secrets.GOOGLE_SCHOLAR_API_KEY }}

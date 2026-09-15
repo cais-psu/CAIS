@@ -29,10 +29,15 @@ def truthy(value):
 def request_scholar(params, field):
     def request():
         try:
-            response = GoogleSearch(params.copy(), timeout=30).get_dict()
-        except Exception:
+            # google-search-results 2.4 accepts only params_dict here. Its base
+            # client reads the timeout attribute when issuing the HTTP request.
+            client = GoogleSearch(params.copy())
+            client.timeout = 30
+            response = client.get_dict()
+        except Exception as error:
             # HTTP exceptions may contain the API key in their request URL.
-            raise RuntimeError("Google Scholar request failed or timed out") from None
+            # Report the exception type without exposing that URL or its key.
+            raise RuntimeError(f"Google Scholar request failed ({type(error).__name__})") from None
         if response.get("error") or get_safe(response, "search_metadata.status", "Success") != "Success":
             message = str(response.get("error") or "Search did not complete")
             raise RuntimeError(f"Google Scholar API: {message.replace(params['api_key'], '[redacted]')}")

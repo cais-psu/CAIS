@@ -7,6 +7,9 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
+from types import SimpleNamespace
+
+from requests.exceptions import Timeout
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 CACHE = tempfile.TemporaryDirectory()
@@ -120,16 +123,45 @@ class ScholarTests(unittest.TestCase):
     def article(self, suffix):
         return {'citation_id': f'author:{suffix}', 'title': f'Paper {suffix}', 'year': '2025'}
 
+    def test_real_client_fetches_articles_and_details_with_timeout(self):
+        # Keep the installed SerpApi constructor and JSON parsing in the test;
+        # mock only HTTP so unsupported client arguments cannot slip through.
+        payloads = [
+            {'articles': [self.article('a')]},
+            {'citation': {'title': 'Paper a', 'authors': 'Ilya Kovalenko', 'publication_date': '2025/08/17'}},
+        ]
+        with patch('serpapi.serp_api_client.requests.get') as http:
+            http.side_effect = [SimpleNamespace(text=json.dumps(payload)) for payload in payloads]
+            result = scholar.main({'gsid': 'author', 'details': True})
+        self.assertEqual(result[0]['authors'], ['Ilya Kovalenko'])
+        self.assertEqual(result[0]['date'], '2025-08-17')
+        self.assertNotIn('_warnings', result[0])
+        self.assertEqual(http.call_count, 2)
+        for call in http.call_args_list:
+            self.assertEqual(call.kwargs['timeout'], 30)
+            self.assertEqual(call.args[1]['engine'], 'google_scholar_author')
+            self.assertNotIn('timeout', call.args[1])
+        self.assertEqual(http.call_args_list[0].args[1]['author_id'], 'author')
+        self.assertEqual(http.call_args_list[1].args[1]['view_op'], 'view_citation')
+
+    def test_real_timeout_is_identified_without_exposing_api_key(self):
+        with patch('serpapi.serp_api_client.requests.get', side_effect=Timeout('request URL contains api_key=test-only')) as http:
+            with self.assertRaises(RuntimeError) as caught:
+                scholar.main({'gsid': 'author'})
+        self.assertIn('Timeout', str(caught.exception))
+        self.assertNotIn('test-only', str(caught.exception))
+        self.assertEqual(http.call_count, 3)
+
     def test_short_page_with_next_is_followed_and_duplicates_removed(self):
         responses = [{'articles': [self.article('a'), self.article('b')], 'serpapi_pagination': {'next': 'https://serpapi.com/search?start=2'}}, {'articles': [self.article('b'), self.article('c')]}]
-        with patch.object(scholar, 'GoogleSearch') as search:
+        with patch.object(scholar, 'GoogleSearch', autospec=True) as search:
             search.return_value.get_dict.side_effect = responses
             result = scholar.main({'gsid': 'author'})
             self.assertEqual(len(result), 3)
             self.assertEqual(search.call_args_list[1].args[0]['start'], 2)
 
     def test_api_error_not_cached_as_empty(self):
-        with patch.object(scholar, 'GoogleSearch') as search:
+        with patch.object(scholar, 'GoogleSearch', autospec=True) as search:
             search.return_value.get_dict.return_value = {'error': 'quota exceeded'}
             with self.assertRaises(RuntimeError): scholar.main({'gsid': 'author'})
             search.return_value.get_dict.return_value = {'articles': [self.article('a')]}
@@ -138,19 +170,19 @@ class ScholarTests(unittest.TestCase):
 
     def test_repeated_page_fails(self):
         payload = {'articles': [self.article('a')], 'serpapi_pagination': {'next': 'https://serpapi.com/search?start=1'}}
-        with patch.object(scholar, 'GoogleSearch') as search:
+        with patch.object(scholar, 'GoogleSearch', autospec=True) as search:
             search.return_value.get_dict.return_value = payload
             with self.assertRaises(RuntimeError): scholar.main({'gsid': 'author'})
 
     def test_detail_failure_preserves_article(self):
-        with patch.object(scholar, 'GoogleSearch') as search:
+        with patch.object(scholar, 'GoogleSearch', autospec=True) as search:
             search.return_value.get_dict.side_effect = [{'articles': [self.article('a')]}, {'error': 'temporary'}, {'error': 'temporary'}, {'error': 'temporary'}]
             result = scholar.main({'gsid': 'author', 'details': True})
             self.assertEqual(result[0]['title'], 'Paper a')
             self.assertTrue(result[0]['_warnings'])
 
     def test_sort_and_language_are_part_of_cache_key(self):
-        with patch.object(scholar, 'GoogleSearch') as search:
+        with patch.object(scholar, 'GoogleSearch', autospec=True) as search:
             search.return_value.get_dict.return_value = {'articles': [self.article('a')]}
             scholar.main({'gsid': 'author'})
             scholar.main({'gsid': 'author', 'sort': 'pubdate'})
@@ -158,7 +190,7 @@ class ScholarTests(unittest.TestCase):
             self.assertEqual(search.call_count, 3)
 
     def test_missing_articles_is_error(self):
-        with patch.object(scholar, 'GoogleSearch') as search:
+        with patch.object(scholar, 'GoogleSearch', autospec=True) as search:
             search.return_value.get_dict.return_value = {'search_metadata': {'status': 'Success'}}
             with self.assertRaises(RuntimeError): scholar.main({'gsid': 'author'})
 

@@ -471,13 +471,13 @@
 -->
 
 <div class="search-box">
-  <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
+  <input type="search" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page" aria-label="Search items on this page">
   <button disabled data-tooltip="Clear search" aria-label="clear search" onclick="onSearchClear()">
     <i class="icon fa-solid fa-magnifying-glass"></i>
   </button>
 </div>
 
-<div class="tags">
+<div class="tags" data-link="/news/">
     
       <a href="/news/?search=%22tag:%20publications%22" class="tag" data-tooltip='Show items with the tag "publications"'>
         publications
@@ -533,7 +533,7 @@
     
   </div>
 
-<div class="search-info"></div>
+<div class="search-info" role="status" aria-live="polite" aria-atomic="true"></div>
 
 <h3 id="2026">2026</h3>
 
@@ -572,7 +572,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -629,7 +629,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -686,7 +686,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -755,7 +755,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -824,7 +824,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20exams%22" class="tag" data-tooltip='Show items with the tag "exams"'>
         exams
@@ -881,7 +881,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -938,7 +938,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -995,7 +995,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -1052,7 +1052,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -1117,7 +1117,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -1186,7 +1186,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20exams%22" class="tag" data-tooltip='Show items with the tag "exams"'>
         exams
@@ -1243,7 +1243,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -1312,7 +1312,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -1369,7 +1369,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -1426,7 +1426,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20manufacturing%22" class="tag" data-tooltip='Show items with the tag "manufacturing"'>
         manufacturing
@@ -1487,7 +1487,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20awards%22" class="tag" data-tooltip='Show items with the tag "awards"'>
         awards
@@ -1544,7 +1544,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20awards%22" class="tag" data-tooltip='Show items with the tag "awards"'>
         awards
@@ -1605,7 +1605,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20outreach%22" class="tag" data-tooltip='Show items with the tag "outreach"'>
         outreach
@@ -1662,7 +1662,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -1719,7 +1719,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -1776,7 +1776,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -1845,7 +1845,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20publications%22" class="tag" data-tooltip='Show items with the tag "publications"'>
         publications
@@ -1906,7 +1906,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20awards%22" class="tag" data-tooltip='Show items with the tag "awards"'>
         awards
@@ -1971,7 +1971,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -2028,7 +2028,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20publications%22" class="tag" data-tooltip='Show items with the tag "publications"'>
         publications
@@ -2089,7 +2089,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20publications%22" class="tag" data-tooltip='Show items with the tag "publications"'>
         publications
@@ -2152,7 +2152,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -2209,7 +2209,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20publications%22" class="tag" data-tooltip='Show items with the tag "publications"'>
         publications
@@ -2270,7 +2270,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -2327,7 +2327,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -2399,7 +2399,7 @@ Ilya provided an overview of his recent CAREER award.
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -2456,7 +2456,7 @@ Ilya provided an overview of his recent CAREER award.
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -2525,7 +2525,7 @@ Ilya provided an overview of his recent CAREER award.
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20exams%22" class="tag" data-tooltip='Show items with the tag "exams"'>
         exams
@@ -2582,7 +2582,7 @@ Ilya provided an overview of his recent CAREER award.
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -2648,7 +2648,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -2705,7 +2705,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -2770,7 +2770,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -2836,7 +2836,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -2901,7 +2901,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -2966,7 +2966,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -3023,7 +3023,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20outreach%22" class="tag" data-tooltip='Show items with the tag "outreach"'>
         outreach
@@ -3080,7 +3080,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -3137,7 +3137,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20awards%22" class="tag" data-tooltip='Show items with the tag "awards"'>
         awards
@@ -3198,7 +3198,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20awards%22" class="tag" data-tooltip='Show items with the tag "awards"'>
         awards
@@ -3265,7 +3265,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -3322,7 +3322,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -3391,7 +3391,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -3460,7 +3460,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -3517,7 +3517,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -3574,7 +3574,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -3643,7 +3643,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20exams%22" class="tag" data-tooltip='Show items with the tag "exams"'>
         exams
@@ -3700,7 +3700,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -3769,7 +3769,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -3826,7 +3826,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -3895,7 +3895,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -3964,7 +3964,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -4021,7 +4021,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -4090,7 +4090,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -4147,7 +4147,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -4216,7 +4216,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -4273,7 +4273,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20ai%22" class="tag" data-tooltip='Show items with the tag "ai"'>
         ai
@@ -4342,7 +4342,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -4399,7 +4399,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20exams%22" class="tag" data-tooltip='Show items with the tag "exams"'>
         exams
@@ -4456,7 +4456,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -4513,7 +4513,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -4572,7 +4572,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -4629,7 +4629,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20milestones%22" class="tag" data-tooltip='Show items with the tag "milestones"'>
         milestones
@@ -4686,7 +4686,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20outreach%22" class="tag" data-tooltip='Show items with the tag "outreach"'>
         outreach
@@ -4747,7 +4747,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20awards%22" class="tag" data-tooltip='Show items with the tag "awards"'>
         awards
@@ -4804,7 +4804,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20outreach%22" class="tag" data-tooltip='Show items with the tag "outreach"'>
         outreach
@@ -4861,7 +4861,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -4918,7 +4918,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20conferences%22" class="tag" data-tooltip='Show items with the tag "conferences"'>
         conferences
@@ -4983,7 +4983,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20milestones%22" class="tag" data-tooltip='Show items with the tag "milestones"'>
         milestones
@@ -5040,7 +5040,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20conferences%22" class="tag" data-tooltip='Show items with the tag "conferences"'>
         conferences
@@ -5101,7 +5101,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20conferences%22" class="tag" data-tooltip='Show items with the tag "conferences"'>
         conferences
@@ -5166,7 +5166,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20activities%22" class="tag" data-tooltip='Show items with the tag "activities"'>
         activities
@@ -5223,7 +5223,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20conferences%22" class="tag" data-tooltip='Show items with the tag "conferences"'>
         conferences
@@ -5284,7 +5284,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20publications%22" class="tag" data-tooltip='Show items with the tag "publications"'>
         publications
@@ -5345,7 +5345,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -5402,7 +5402,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20milestones%22" class="tag" data-tooltip='Show items with the tag "milestones"'>
         milestones
@@ -5459,7 +5459,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20milestones%22" class="tag" data-tooltip='Show items with the tag "milestones"'>
         milestones
@@ -5516,7 +5516,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20publications%22" class="tag" data-tooltip='Show items with the tag "publications"'>
         publications
@@ -5577,7 +5577,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20welcome%22" class="tag" data-tooltip='Show items with the tag "welcome"'>
         welcome
@@ -5634,7 +5634,7 @@ Excited to keep collaborating with DMI Companies through Pennsylvania’s Manufa
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/blog">
     
       <a href="/blog?search=%22tag:%20publications%22" class="tag" data-tooltip='Show items with the tag "publications"'>
         publications

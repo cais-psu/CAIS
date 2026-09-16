@@ -12,7 +12,7 @@
     for (const row of rows) {
       // get props from tag row
       const repo = row.dataset.repo.trim();
-      const link = row.dataset.link.trim();
+      const link = (row.dataset.link || window.location.pathname).trim();
 
       // get tags from github
       if (!repo) continue;
@@ -28,8 +28,10 @@
       for (const tag of tags) {
         const a = document.createElement("a");
         a.classList.add("tag");
-        a.innerHTML = tag;
-        a.href = `${link}?search="tag: ${tag}"`;
+        a.textContent = tag;
+        const url = new URL(link, window.location.href);
+        url.searchParams.set("search", `tag:"${tag}"`);
+        a.href = url.href;
         a.dataset.tooltip = `Show items with the tag "${tag}"`;
         row.append(a);
       }

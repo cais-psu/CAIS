@@ -3,8 +3,7 @@ title: Pittsburgh Robotics Discovery Day 2023
 author: Ilya
 image: images/news/2023/20231116DiscoveryDay1.jpg
 tags:
-  - Outreach
-  - Robotics
+  - outreach
 ---
 
 Jonghan, Alex, Oscar, and Dr. Kovalenko attended Pittsburgh Robotics Discovery Day and showcased robotic assembly research.

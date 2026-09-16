@@ -3,7 +3,7 @@ title: Master's Graduation — Sujani Patel
 author: Ilya
 image: images/news/2023/20230801Sujani.jpg
 tags:
-  - Milestones
+  - people
 ---
 
 Congratulations to [Sujani Patel]({{ '/members/2006_sujani-patel.html' | relative_url }}) on graduating with her M.S. in Mechanical Engineering!

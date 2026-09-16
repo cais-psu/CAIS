@@ -3,7 +3,7 @@ title: Basketball game!
 author: Yifei
 image: images/news/2024/20240512Basketball.jpg
 tags:
-  - Activities
+  - lab-life
 ---
 
 The CAIS Lab vs. Dr. Derek Hall’s Lab Basketball Game: What a game!

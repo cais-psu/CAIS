@@ -485,8 +485,8 @@
   file: google-scholar.yaml
   category: other
   classification:
-    basis: insufficient-metadata
-    needs_review: true
+    basis: manual
+    needs_review: false
   search_terms:
   - other publications
   - 其他出版物
@@ -1686,8 +1686,8 @@
   file: google-scholar.yaml
   category: other
   classification:
-    basis: insufficient-metadata
-    needs_review: true
+    basis: manual
+    needs_review: false
   search_terms:
   - other publications
   - 其他出版物
@@ -1986,8 +1986,8 @@
   file: google-scholar.yaml
   category: other
   classification:
-    basis: insufficient-metadata
-    needs_review: true
+    basis: manual
+    needs_review: false
   search_terms:
   - multi agent
   - multi-agent
@@ -2016,8 +2016,8 @@
   file: google-scholar.yaml
   category: other
   classification:
-    basis: insufficient-metadata
-    needs_review: true
+    basis: manual
+    needs_review: false
   search_terms:
   - model predictive control
   - MPC

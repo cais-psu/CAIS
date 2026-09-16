@@ -3,8 +3,7 @@ title: Two Papers Accepted to IEEE CASE 2023
 author: Ilya
 image: images/team/Ilya.png
 tags:
-  - Publications
-  - Conferences
+  - publications
 ---
 
 Two papers have been accepted for the 2023 IEEE International Conference on Automation Science and Engineering (CASE 2023):

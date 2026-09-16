@@ -2,10 +2,8 @@
 title: "2025 IndustryXchange"
 image: images/news/2025/20250528.png
 author: Yifei
-tags: 
-  - Ai
-  - Robotics
-  - Conferences
+tags:
+  - awards
 ---
 
 Congratulations to Hongliang, winner of the poster competition at the 2025 industryXchange!

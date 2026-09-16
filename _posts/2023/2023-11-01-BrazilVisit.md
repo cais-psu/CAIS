@@ -3,7 +3,7 @@ title: Visit to ITA Brazil
 author: Ilya
 image: images/news/2023/20231101Brazil1.jpg
 tags:
-  - Outreach
+  - outreach
 ---
 
 Dr. Kovalenko visited the Competence Center in Manufacturing at Instituto Tecnológico de Aeronáutica (ITA) in São José dos Campos, Brazil. He presented lab research and conducted a 3-day workshop on software tools.

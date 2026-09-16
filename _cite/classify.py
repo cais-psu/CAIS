@@ -126,7 +126,7 @@ def search_terms(record):
             terms.add("arxiv")
     if record.get("type") in {"book", "chapter", "book-chapter", "book-section"}:
         terms.update(("book", "book chapter", "书籍", "书籍章节"))
-    return sorted(terms, key=str.casefold)
+    return sorted(terms, key=lambda term: (term.casefold(), term))
 
 
 def classify_citations(citations, sources=(), warn=lambda message: None):

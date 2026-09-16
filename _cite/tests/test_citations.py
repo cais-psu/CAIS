@@ -221,6 +221,28 @@ class OrcidTests(unittest.TestCase):
 
 
 class PipelineTests(unittest.TestCase):
+    def test_manual_category_on_scholar_record_uses_saved_metadata(self):
+        old = paper('author:abc', scholar_id='author:abc', plugin='google-scholar.py')
+        with patch.object(cite, 'cite_with_manubot') as resolver:
+            result = cite.enrich({'id': 'author:abc', 'category': 'other', 'plugin': 'sources.py'}, [old], lambda _: None)
+            resolver.assert_not_called()
+        self.assertEqual(result['category'], 'other')
+
+    def test_category_override_is_applied_after_reconciliation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); (root / '_data').mkdir()
+            output = root / '_data/citations.yaml'
+            old = paper('author:abc', scholar_id='author:abc', plugin='google-scholar.py')
+            util.save_data(output, [old])
+            (root / '_data/sources-categories.yaml').write_text('- id: author:abc\n  category: other\n')
+            with patch.object(cite, 'cite_with_manubot') as resolver:
+                self.assertEqual(cite.run(root), 0)
+                resolver.assert_not_called()
+            rows = util.load_data(output)
+            self.assertEqual(rows[0]['category'], 'other')
+            self.assertEqual(rows[0]['classification']['basis'], 'manual')
+            self.assertEqual(rows[0]['title'], old['title'])
+
     def test_resolver_failure_keeps_metadata(self):
         with patch.object(cite, 'cite_with_manubot', side_effect=RuntimeError('offline')):
             result = cite.enrich(paper(plugin='orcid.py'), [], lambda _: None)

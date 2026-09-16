@@ -12,7 +12,8 @@ nav:
 
 {% include search-box.html %}
 
-{% include tags.html tags=site.tags %}
+{% assign news_tags = site.tags | object_items | sort %}
+{% include tags.html tags=news_tags %}
 
 {% include search-info.html %}
 

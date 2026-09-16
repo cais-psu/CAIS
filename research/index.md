@@ -9,8 +9,6 @@ nav:
 
 {% include search-box.html placeholder="Search title, author, DOI, or keyword (e.g. LLM, MPC)" label="Search publications" %}
 
-<p class="search-help">Combine keywords to narrow results, or use quotation marks for an exact phrase. Common research abbreviations are supported.</p>
-
 {% include search-info.html %}
 
 <div class="publication-group" data-publication-group="journal" role="region" aria-labelledby="journal-papers">

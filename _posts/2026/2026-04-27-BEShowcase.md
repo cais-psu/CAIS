@@ -3,8 +3,7 @@ title: 2026 Built Environment Showcase
 author: Yifei
 image: images/news/2026/20260427Hongliang.jpg
 tags:
-  - Manufacturing
-  - Conferences
+  - outreach
 ---
 
 Ilya and Hongliang attended the 2026 Built Environment Showcase at Penn State, an interactive event that invites our community to engage with innovators, ask questions, and explore what’s next.

@@ -23,7 +23,10 @@ def enrich(source, previous, warn):
     citation = {}
     # These identifiers have local summary metadata, but no reliable resolver.
     resolvable = identifier and not identifier.startswith(("orcid:", "wosuid:"))
-    resolvable = resolvable and not (source.get("scholar_id") == identifier or (plugin == "google-scholar.py" and not identifier.startswith("doi:")))
+    scholar_identifier = source.get("scholar_id") == identifier or any(
+        old.get("scholar_id") == identifier for old in previous
+    )
+    resolvable = resolvable and not (scholar_identifier or (plugin == "google-scholar.py" and not identifier.startswith("doi:")))
     if resolvable:
         try:
             citation = dict(cite_with_manubot(identifier))

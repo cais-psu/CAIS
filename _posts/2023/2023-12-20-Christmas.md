@@ -3,7 +3,7 @@ title: White Elephant and Holiday Party
 author: Ilya
 image: images/news/2023/20231201Christmas.jpg
 tags:
-  - Activities
+  - lab-life
 ---
 
 The lab celebrated the holidays with a White Elephant gift exchange and Christmas dinner with Dr. Fitzsimons's and Dr. Meira-Goes's labs.

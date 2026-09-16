@@ -3,9 +3,7 @@ title: ICDS Funds Mid-Scale Seed Grants
 author: Yifei
 image: images/team/Ilya.png
 tags:
-  - Awards
-  - Manufacturing
-  - Grants
+  - funding
 ---
 
 Dr. Kovalenko has received support through the Penn State Institute for Computational and Data Sciences (ICDS) Mid-Scale Seed Grant Program.

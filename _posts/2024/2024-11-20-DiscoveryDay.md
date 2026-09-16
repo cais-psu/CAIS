@@ -3,10 +3,7 @@ title: Pittsburgh Robotics Discovery Day
 author: Yifei
 image: images/news/2024/202411120DiscoveryDay.png
 tags:
-  - Ai
-  - Manufacturing
-  - Robotics
-  - Conferences
+  - outreach
 ---
 
 The CAIS Lab attended [the Pittsburgh Robotics Discovery Day](https://www.robopgh.org/robotics-ai-discovery-day){:target="_blank" rel="noopener noreferrer"} to showcase research projects and network with academic and industry professionals in the robotics space.

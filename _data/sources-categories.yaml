@@ -1,0 +1,19 @@
+# Reviewed records whose source metadata does not identify a publication type.
+# category is a website grouping override; it does not change citation metadata.
+
+# NSF project record imported by Scholar; keep it under Other.
+- id: secQmYUAAAAJ:RGFaLdJalmkC
+  category: other
+
+# Supplement to the Cooperative Product Agents paper.
+- id: secQmYUAAAAJ:RYcK_YlVTxYC
+  category: other
+
+# PhD dissertation (University of Michigan, 2020).
+# https://sites.google.com/view/ilya-kovalenko/publications
+- id: secQmYUAAAAJ:aqlVkmm33-oC
+  category: other
+
+# Technical report with details of the first-order logic representation.
+- id: secQmYUAAAAJ:hFOr9nPyWt4C
+  category: other

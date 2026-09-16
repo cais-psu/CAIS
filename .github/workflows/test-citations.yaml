@@ -1,9 +1,9 @@
 name: test-citations
 on:
   push:
-    paths: ["_cite/**", ".github/workflows/test-citations.yaml"]
+    paths: ["_cite/**", "_scripts/search.js", "_scripts/fetch-tags.js", "_includes/**", "_data/**", "research/**", ".github/workflows/test-citations.yaml"]
   pull_request:
-    paths: ["_cite/**", ".github/workflows/test-citations.yaml"]
+    paths: ["_cite/**", "_scripts/search.js", "_scripts/fetch-tags.js", "_includes/**", "_data/**", "research/**", ".github/workflows/test-citations.yaml"]
 permissions:
   contents: read
 jobs:
@@ -18,3 +18,12 @@ jobs:
           cache-dependency-path: _cite/requirements.txt
       - run: python -m pip install -r _cite/requirements.txt
       - run: python -m unittest discover -s _cite/tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install search test dependencies
+        run: npm install --prefix "$RUNNER_TEMP/cais-search-tests" jsdom@26 liquidjs@10 --no-audit --no-fund
+      - name: Test rendered publication search
+        env:
+          NODE_PATH: ${{ runner.temp }}/cais-search-tests/node_modules
+        run: node --test _cite/tests/search.test.cjs

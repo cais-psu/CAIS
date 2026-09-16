@@ -2,7 +2,8 @@
 title: "Mostafa's Ph.D. Defense"
 author: Mostafa
 image: images/team/Mostafa.png
-tags: Exams
+tags:
+  - people
 ---
 
 A big congratulations to Mostafa on passing his ME Ph.D. defense! This achievement marks the culmination of years of hard work and commitment. 

@@ -28,6 +28,22 @@
   - orcid:0000-0003-4764-9117/211331686
   - secQmYUAAAAJ:pqnbT2bcN3wC
   - wosuid:WOS:001682560100001
+  category: journal
+  classification:
+    basis: journal-venue
+    needs_review: false
+  search_terms:
+  - journal
+  - large language model
+  - large language models
+  - LLM
+  - multi agent
+  - multi-agent
+  - multiagent
+  - 多智能体
+  - 大型语言模型
+  - 大语言模型
+  - 期刊论文
 - id: secQmYUAAAAJ:cFHS6HbyZ2cC
   scholar_id: secQmYUAAAAJ:cFHS6HbyZ2cC
   title: Leveraging Digital Twins for Industrial Automation and Robotics Education
@@ -44,6 +60,16 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: conference
+  classification:
+    basis: conference-venue
+    needs_review: false
+  search_terms:
+  - conference
+  - digital twin
+  - digital twins
+  - 会议论文
+  - 数字孪生
 - id: secQmYUAAAAJ:4OULZ7Gr8RgC
   scholar_id: secQmYUAAAAJ:4OULZ7Gr8RgC
   title: NeuroSymbolic robustness analysis for discrete systems with respect to transition
@@ -61,6 +87,13 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: conference
+  classification:
+    basis: conference-venue
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: secQmYUAAAAJ:u_35RYKgDlwC
   scholar_id: secQmYUAAAAJ:u_35RYKgDlwC
   title: Logic-Based Verification of Task Allocation for LLM-Enabled Multi-Agent Manufacturing
@@ -78,6 +111,22 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: conference
+  classification:
+    basis: conference-venue
+    needs_review: false
+  search_terms:
+  - conference
+  - large language model
+  - large language models
+  - LLM
+  - multi agent
+  - multi-agent
+  - multiagent
+  - 会议论文
+  - 多智能体
+  - 大型语言模型
+  - 大语言模型
 - id: secQmYUAAAAJ:dfsIfKJdRG4C
   scholar_id: secQmYUAAAAJ:dfsIfKJdRG4C
   title: Attack-Resilient Control of Finite-State Cyber-Physical Systems via Inspection
@@ -95,6 +144,13 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: conference
+  classification:
+    basis: conference-venue
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: secQmYUAAAAJ:3s1wT3WcHBgC
   scholar_id: secQmYUAAAAJ:3s1wT3WcHBgC
   title: Intelligent Navigation and Obstacle-Aware Fabrication for Mobile Additive
@@ -113,6 +169,20 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: other
+  classification:
+    basis: preprint-venue
+    needs_review: false
+  search_terms:
+  - 3D printing
+  - 3D打印
+  - additive manufacturing
+  - arxiv
+  - other publications
+  - preprint
+  - 其他出版物
+  - 增材制造
+  - 预印本
 - id: secQmYUAAAAJ:SeFeTyx0c_EC
   scholar_id: secQmYUAAAAJ:SeFeTyx0c_EC
   title: Energy-Aware Integrated Proactive Maintenance Planning and Production Scheduling
@@ -127,6 +197,16 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: other
+  classification:
+    basis: preprint-venue
+    needs_review: false
+  search_terms:
+  - arxiv
+  - other publications
+  - preprint
+  - 其他出版物
+  - 预印本
 - id: secQmYUAAAAJ:HoB7MX3m0LUC
   scholar_id: secQmYUAAAAJ:HoB7MX3m0LUC
   title: 'CoViLLM: An Adaptive Human-Robot Collaborative Assembly Framework Using
@@ -143,6 +223,24 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: other
+  classification:
+    basis: preprint-venue
+    needs_review: false
+  search_terms:
+  - arxiv
+  - human robot
+  - human-robot
+  - large language model
+  - large language models
+  - LLM
+  - other publications
+  - preprint
+  - 人机协作
+  - 其他出版物
+  - 大型语言模型
+  - 大语言模型
+  - 预印本
 - id: doi:10.1109/tase.2026.3696221
   scholar_id: secQmYUAAAAJ:fPk4N6BV_jEC
   title: Online Model-Based Fault-Tolerant Control Using Finite State Automata
@@ -167,6 +265,16 @@
   aliases:
   - orcid:0000-0003-4764-9117/215499939
   - secQmYUAAAAJ:fPk4N6BV_jEC
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - fault tolerant
+  - fault-tolerant
+  - journal
+  - 容错控制
+  - 期刊论文
 - id: doi:10.1109/tase.2025.3636115
   scholar_id: secQmYUAAAAJ:M05iB0D1s5AC
   title: Hierarchical Model Predictive Control for Energy-Aware Scheduling of Digital
@@ -191,6 +299,19 @@
   aliases:
   - orcid:0000-0003-4764-9117/197596120
   - secQmYUAAAAJ:M05iB0D1s5AC
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - digital twin
+  - digital twins
+  - journal
+  - model predictive control
+  - MPC
+  - 数字孪生
+  - 期刊论文
+  - 模型预测控制
 - id: doi:10.1109/cdc57313.2025.11312935
   scholar_id: secQmYUAAAAJ:2P1L_qKh6hAC
   title: Robust Recovery and Control of Cyber-physical Discrete Event Systems under
@@ -217,6 +338,17 @@
   aliases:
   - secQmYUAAAAJ:2P1L_qKh6hAC
   type: paper-conference
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - DES
+  - discrete event system
+  - discrete event systems
+  - 会议论文
+  - 离散事件系统
 - id: doi:10.1109/case58245.2025.11164034
   scholar_id: secQmYUAAAAJ:vV6vV6tmYwMC
   title: Energy-Aware Model Predictive Control for Batch Manufacturing System Scheduling
@@ -244,6 +376,16 @@
   - orcid:0000-0003-4764-9117/211331701
   - secQmYUAAAAJ:vV6vV6tmYwMC
   - wosuid:WOS:001701272600252
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - model predictive control
+  - MPC
+  - 会议论文
+  - 模型预测控制
 - id: doi:10.1109/case58245.2025.11163792
   scholar_id: secQmYUAAAAJ:lSLTfruPkqcC
   title: A Model Predictive Control Framework to Enhance Safety and Quality in Mobile
@@ -269,6 +411,20 @@
   aliases:
   - secQmYUAAAAJ:lSLTfruPkqcC
   type: paper-conference
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - 3D printing
+  - 3D打印
+  - additive manufacturing
+  - conference
+  - model predictive control
+  - MPC
+  - 会议论文
+  - 增材制造
+  - 模型预测控制
 - id: doi:10.1109/case58245.2025.11163802
   scholar_id: secQmYUAAAAJ:NaGl4SEjCO4C
   title: A Large Language Model-Enabled Control Architecture for Dynamic Resource
@@ -295,6 +451,22 @@
   - orcid:0000-0003-4764-9117/211331703
   - secQmYUAAAAJ:NaGl4SEjCO4C
   - wosuid:WOS:001701272600251
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - large language model
+  - large language models
+  - LLM
+  - multi agent
+  - multi-agent
+  - multiagent
+  - 会议论文
+  - 多智能体
+  - 大型语言模型
+  - 大语言模型
 - id: secQmYUAAAAJ:RGFaLdJalmkC
   scholar_id: secQmYUAAAAJ:RGFaLdJalmkC
   title: 'CAREER: Intelligent Products for Mass Individualization in Manufacturing
@@ -311,6 +483,13 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: other
+  classification:
+    basis: insufficient-metadata
+    needs_review: true
+  search_terms:
+  - other publications
+  - 其他出版物
 - id: doi:10.1115/msec2025-155848
   scholar_id: secQmYUAAAAJ:70eg2SAEIzsC
   title: 'A Digital Twin Framework for Computer Hardware Design and Assembly: A Risk-Prioritized
@@ -344,6 +523,16 @@
   - wosuid:WOS:001611950500014
   orcid_work_id: orcid:0000-0003-4764-9117/211331706
   type: paper-conference
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - digital twin
+  - digital twins
+  - 会议论文
+  - 数字孪生
 - id: doi:10.1109/tase.2025.3550678
   scholar_id: secQmYUAAAAJ:ns9cj8rnVeAC
   title: 'Guest Editorial: Engineering and Operating Digital Twins for Automated Production
@@ -373,6 +562,16 @@
   - orcid:0000-0003-4764-9117/211331709
   - secQmYUAAAAJ:ns9cj8rnVeAC
   - wosuid:WOS:001463453100008
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - digital twin
+  - digital twins
+  - journal
+  - 数字孪生
+  - 期刊论文
 - id: wosuid:PPRN:124047727
   title: Energy-Aware Model Predictive Control for Batch Manufacturing System Scheduling
     Under Different Electricity Pricing Strategies
@@ -387,6 +586,19 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331693
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - model predictive control
+  - MPC
+  - other publications
+  - preprint
+  - 其他出版物
+  - 模型预测控制
+  - 预印本
 - id: wosuid:PPRN:123612420
   scholar_id: secQmYUAAAAJ:J_g5lzvAfSwC
   title: Dynamic Task Adaptation for Multi-Robot Manufacturing Systems with Large
@@ -407,6 +619,21 @@
   aliases:
   - orcid:0000-0003-4764-9117/211331696
   - secQmYUAAAAJ:J_g5lzvAfSwC
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - large language model
+  - large language models
+  - LLM
+  - other publications
+  - preprint
+  - 其他出版物
+  - 大型语言模型
+  - 大语言模型
+  - 预印本
 - id: wosuid:PPRN:157002010
   title: Dynamic distributed decision-making for resilient resource reallocation in
     disrupted manufacturing systems
@@ -421,6 +648,16 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331689
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - other publications
+  - preprint
+  - 其他出版物
+  - 预印本
 - id: wosuid:PPRN:156925989
   title: Bi-level Model Predictive Control for Energy-aware Integrated Product Pricing
     and Production Scheduling
@@ -435,6 +672,19 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331690
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - model predictive control
+  - MPC
+  - other publications
+  - preprint
+  - 其他出版物
+  - 模型预测控制
+  - 预印本
 - id: doi:10.1016/j.ifacol.2025.12.314
   scholar_id: secQmYUAAAAJ:35N4QoGY0k4C
   title: Bi-level Model Predictive Control for Energy-aware Integrated Product Pricing
@@ -462,6 +712,16 @@
   - orcid:0000-0003-4764-9117/211331705
   - secQmYUAAAAJ:35N4QoGY0k4C
   - wosuid:WOS:001645703800113
+  category: conference
+  classification:
+    basis: proceedings-series
+    needs_review: false
+  search_terms:
+  - conference
+  - model predictive control
+  - MPC
+  - 会议论文
+  - 模型预测控制
 - id: wosuid:PPRN:124044833
   title: A Model Predictive Control Framework to Enhance Safety and Quality in Mobile
     Additive Manufacturing Systems
@@ -476,6 +736,23 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331692
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - 3D printing
+  - 3D打印
+  - additive manufacturing
+  - arxiv
+  - model predictive control
+  - MPC
+  - other publications
+  - preprint
+  - 其他出版物
+  - 增材制造
+  - 模型预测控制
+  - 预印本
 - id: wosuid:PPRN:124045772
   title: A Large Language Model-Enabled Control Architecture for Dynamic Resource
     Capability Exploration in Multi-Agent Manufacturing Systems
@@ -490,6 +767,25 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331694
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - large language model
+  - large language models
+  - LLM
+  - multi agent
+  - multi-agent
+  - multiagent
+  - other publications
+  - preprint
+  - 其他出版物
+  - 多智能体
+  - 大型语言模型
+  - 大语言模型
+  - 预印本
 - id: doi:10.1109/case59546.2024.10711432
   scholar_id: secQmYUAAAAJ:NMxIlDl6LWMC
   title: Large Language Model-Enabled Multi-Agent Manufacturing Systems
@@ -516,6 +812,22 @@
   - orcid:0000-0003-4764-9117/211331729
   - secQmYUAAAAJ:NMxIlDl6LWMC
   - wosuid:WOS:001361783103049
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - large language model
+  - large language models
+  - LLM
+  - multi agent
+  - multi-agent
+  - multiagent
+  - 会议论文
+  - 多智能体
+  - 大型语言模型
+  - 大语言模型
 - id: doi:10.1109/case59546.2024.10711843
   scholar_id: secQmYUAAAAJ:hMod-77fHWUC
   title: Enhancing Human-Robot Collaborative Assembly in Manufacturing Systems Using
@@ -546,6 +858,21 @@
   - orcid:0000-0003-4764-9117/211331732
   - secQmYUAAAAJ:hMod-77fHWUC
   - wosuid:WOS:001361783102034
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - human robot
+  - human-robot
+  - large language model
+  - large language models
+  - LLM
+  - 人机协作
+  - 会议论文
+  - 大型语言模型
+  - 大语言模型
 - id: doi:10.1115/msec2024-125413
   scholar_id: secQmYUAAAAJ:JV2RwH3_ST0C
   title: A Mobile Additive Manufacturing Robot Framework for Smart Manufacturing Systems
@@ -576,6 +903,17 @@
   - wosuid:WOS:001303775100010
   orcid_work_id: orcid:0000-0003-4764-9117/211331733
   type: paper-conference
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - 3D printing
+  - 3D打印
+  - additive manufacturing
+  - conference
+  - 会议论文
+  - 增材制造
 - id: doi:10.3389/fbuil.2024.1384235
   title: Conditional adaptive time series compensation and control design for multi-axial
     real-time hybrid simulation
@@ -606,6 +944,13 @@
   - orcid:0000-0003-4764-9117/211331723
   - secQmYUAAAAJ:blknAaTinKkC
   - wosuid:WOS:001235685700001
+  category: journal
+  classification:
+    basis: journal-venue
+    needs_review: false
+  search_terms:
+  - journal
+  - 期刊论文
 - id: doi:10.26153/tsw/58287
   scholar_id: secQmYUAAAAJ:ldfaerwXgEUC
   title: Pros and Cons of Industrial Robots in Additive Manufacturing
@@ -627,6 +972,17 @@
   DOI: 10.26153/tsw/58287
   aliases:
   - secQmYUAAAAJ:ldfaerwXgEUC
+  category: conference
+  classification:
+    basis: publication-type
+    needs_review: false
+  search_terms:
+  - 3D printing
+  - 3D打印
+  - additive manufacturing
+  - conference
+  - 会议论文
+  - 增材制造
 - id: doi:10.1016/j.ifacol.2024.07.029
   scholar_id: secQmYUAAAAJ:YFjsv_pBGBYC
   title: Modeling and Mitigating Silent Faults in Coupled Discrete Event Systems
@@ -655,6 +1011,17 @@
   - orcid:0000-0003-4764-9117/211331717
   - secQmYUAAAAJ:YFjsv_pBGBYC
   - wosuid:WOS:001278103000029
+  category: conference
+  classification:
+    basis: proceedings-series
+    needs_review: false
+  search_terms:
+  - conference
+  - DES
+  - discrete event system
+  - discrete event systems
+  - 会议论文
+  - 离散事件系统
 - id: wosuid:PPRN:91376269
   title: Model-Based Control of Water Treatment with Pumped Water Storage
   authors: []
@@ -668,6 +1035,16 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331714
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - other publications
+  - preprint
+  - 其他出版物
+  - 预印本
 - id: doi:10.1016/j.ifacol.2025.01.139
   scholar_id: secQmYUAAAAJ:BqipwSGYUEgC
   title: Model-Based Control of Water Treatment with Pumped Water Storage
@@ -695,6 +1072,13 @@
   - orcid:0000-0003-4764-9117/211331699
   - secQmYUAAAAJ:BqipwSGYUEgC
   - wosuid:WOS:001403376200180
+  category: conference
+  classification:
+    basis: proceedings-series
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: wosuid:PPRN:89399537
   title: Large Language Model-Enabled Multi-Agent Manufacturing Systems
   authors: []
@@ -708,6 +1092,25 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331719
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - large language model
+  - large language models
+  - LLM
+  - multi agent
+  - multi-agent
+  - multiagent
+  - other publications
+  - preprint
+  - 其他出版物
+  - 多智能体
+  - 大型语言模型
+  - 大语言模型
+  - 预印本
 - id: doi:10.1016/b978-0-323-90386-8.00131-5
   scholar_id: secQmYUAAAAJ:GnPB-g6toBAC
   title: Harnessing Controls and Robotics for Sustainable Manufacturing
@@ -729,6 +1132,17 @@
   aliases:
   - secQmYUAAAAJ:GnPB-g6toBAC
   type: chapter
+  category: other
+  classification:
+    basis: publication-type
+    needs_review: false
+  search_terms:
+  - book
+  - book chapter
+  - other publications
+  - 书籍
+  - 书籍章节
+  - 其他出版物
 - id: wosuid:PPRN:89394559
   title: Enhancing Human-Robot Collaborative Assembly in Manufacturing Systems Using
     Large Language Models
@@ -743,6 +1157,24 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331720
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - human robot
+  - human-robot
+  - large language model
+  - large language models
+  - LLM
+  - other publications
+  - preprint
+  - 人机协作
+  - 其他出版物
+  - 大型语言模型
+  - 大语言模型
+  - 预印本
 - id: wosuid:PPRN:88590417
   title: A Mobile Additive Manufacturing Robot Framework for Smart Manufacturing Systems
   authors: []
@@ -756,6 +1188,20 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331725
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - 3D printing
+  - 3D打印
+  - additive manufacturing
+  - arxiv
+  - other publications
+  - preprint
+  - 其他出版物
+  - 增材制造
+  - 预印本
 - id: doi:10.1002/bte2.20230023
   title: Multifunctional composite designs for structural energy storage
   authors:
@@ -787,6 +1233,13 @@
   aliases:
   - orcid:0000-0003-4764-9117/146009303
   - secQmYUAAAAJ:isC4tDSrTZIC
+  category: journal
+  classification:
+    basis: journal-venue
+    needs_review: false
+  search_terms:
+  - journal
+  - 期刊论文
 - id: doi:10.1109/case56687.2023.10260621
   scholar_id: secQmYUAAAAJ:maZDTaKrznsC
   title: Ontology-Based Feedback to Improve Runtime Control for Multi-Agent Manufacturing
@@ -815,6 +1268,17 @@
   aliases:
   - orcid:0000-0003-4764-9117/163677744
   - secQmYUAAAAJ:maZDTaKrznsC
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - multi agent
+  - multi-agent
+  - multiagent
+  - 会议论文
+  - 多智能体
 - id: doi:10.1109/case56687.2023.10260642
   scholar_id: secQmYUAAAAJ:k_IJM867U9cC
   title: A System-Level Energy-Efficient Digital Twin Framework for Runtime Control
@@ -841,6 +1305,16 @@
   aliases:
   - orcid:0000-0003-4764-9117/163677739
   - secQmYUAAAAJ:k_IJM867U9cC
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - digital twin
+  - digital twins
+  - 会议论文
+  - 数字孪生
 - id: doi:10.1109/ccta54093.2023.10253433
   scholar_id: secQmYUAAAAJ:4JMBOYKVnBMC
   title: A Model Predictive Control Framework for Improving Risk-Tolerance of Manufacturing
@@ -867,6 +1341,16 @@
   aliases:
   - orcid:0000-0003-4764-9117/163677728
   - secQmYUAAAAJ:4JMBOYKVnBMC
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - model predictive control
+  - MPC
+  - 会议论文
+  - 模型预测控制
 - id: doi:10.22541/au.168787448.81156855/v1
   title: Multifunctional Composite Designs for Structural Energy Storage
   authors:
@@ -886,6 +1370,15 @@
   doi: 10.22541/au.168787448.81156855/v1
   DOI: 10.22541/au.168787448.81156855/v1
   type: manuscript
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - other publications
+  - preprint
+  - 其他出版物
+  - 预印本
 - id: doi:10.1109/mra.2023.3262464
   scholar_id: secQmYUAAAAJ:iH-uZ7U-co4C
   title: 'Opportunities and Challenges to Integrate Artificial Intelligence Into Manufacturing
@@ -914,6 +1407,13 @@
   aliases:
   - orcid:0000-0003-4764-9117/138490918
   - secQmYUAAAAJ:iH-uZ7U-co4C
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - journal
+  - 期刊论文
 - id: doi:10.23919/acc55779.2023.10156587
   scholar_id: secQmYUAAAAJ:e5wmG9Sq2KIC
   title: Risk-Averse Model Predictive Control for Priced Timed Automata
@@ -938,6 +1438,19 @@
   aliases:
   - orcid:0000-0003-4764-9117/138490906
   - secQmYUAAAAJ:e5wmG9Sq2KIC
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - model predictive control
+  - MPC
+  - priced timed automata
+  - PTA
+  - 会议论文
+  - 定价时间自动机
+  - 模型预测控制
 - id: doi:10.1080/00207543.2023.2200567
   title: Dynamic distributed decision-making for resilient resource reallocation in
     disrupted manufacturing systems
@@ -967,6 +1480,13 @@
   - orcid:0000-0003-4764-9117/211331745
   - secQmYUAAAAJ:TFP_iSt0sucC
   - wosuid:WOS:000971212200001
+  category: journal
+  classification:
+    basis: publication-type
+    needs_review: false
+  search_terms:
+  - journal
+  - 期刊论文
 - id: wosuid:PPRN:46940151
   title: 'Opportunities and Challenges to Integrate Artificial Intelligence into Manufacturing
     Systems: Thoughts from a Panel Discussion'
@@ -981,6 +1501,16 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331750
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - other publications
+  - preprint
+  - 其他出版物
+  - 预印本
 - id: wosuid:PPRN:85052345
   title: Ontology-Based Feedback to Improve Runtime Control for Multi-Agent Manufacturing
     Systems
@@ -995,6 +1525,20 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331742
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - multi agent
+  - multi-agent
+  - multiagent
+  - other publications
+  - preprint
+  - 其他出版物
+  - 多智能体
+  - 预印本
 - id: wosuid:PPRN:85054234
   title: A System-Level Energy-Efficient Digital Twin Framework for Runtime Control
     of Batch Manufacturing Processes
@@ -1009,6 +1553,19 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331741
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - digital twin
+  - digital twins
+  - other publications
+  - preprint
+  - 其他出版物
+  - 数字孪生
+  - 预印本
 - id: wosuid:PPRN:38485281
   title: A Model Predictive Control Framework for Improving Risk-Tolerance of Manufacturing
     Systems
@@ -1023,6 +1580,19 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331751
+  category: other
+  classification:
+    basis: preprint-identifier
+    needs_review: false
+  search_terms:
+  - arxiv
+  - model predictive control
+  - MPC
+  - other publications
+  - preprint
+  - 其他出版物
+  - 模型预测控制
+  - 预印本
 - id: doi:10.1109/case49997.2022.9926689
   scholar_id: secQmYUAAAAJ:_Qo2XoVZTnwC
   title: An Integrated Framework for Dynamic Manufacturing Planning to Obtain New
@@ -1056,6 +1626,13 @@
   - orcid:0000-0003-4764-9117/211331760
   - secQmYUAAAAJ:_Qo2XoVZTnwC
   - wosuid:WOS:000927622400035
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: doi:10.1109/tase.2022.3156384
   scholar_id: secQmYUAAAAJ:7PzlFSSx8tAC
   title: 'Cooperative Product Agents to Improve Manufacturing System Flexibility:
@@ -1084,6 +1661,13 @@
   - orcid:0000-0003-4764-9117/211331757
   - secQmYUAAAAJ:7PzlFSSx8tAC
   - wosuid:WOS:000773308000001
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - journal
+  - 期刊论文
 - id: secQmYUAAAAJ:RYcK_YlVTxYC
   scholar_id: secQmYUAAAAJ:RYcK_YlVTxYC
   title: 'Details About Agent Response in “Cooperative Product Agents to Improve Manufacturing
@@ -1100,6 +1684,13 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: other
+  classification:
+    basis: insufficient-metadata
+    needs_review: true
+  search_terms:
+  - other publications
+  - 其他出版物
 - id: doi:10.1109/access.2022.3165551
   scholar_id: secQmYUAAAAJ:HDshCWvjkbEC
   title: Toward an Automated Learning Control Architecture for Cyber-Physical Manufacturing
@@ -1134,6 +1725,13 @@
   - orcid:0000-0003-4764-9117/211331763
   - secQmYUAAAAJ:HDshCWvjkbEC
   - wosuid:WOS:000838387300001
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - journal
+  - 期刊论文
 - id: doi:10.1109/tcst.2021.3054800
   scholar_id: secQmYUAAAAJ:4DMP91E08xMC
   title: Model Predictive Control of Priced Timed Automata Encoded With First-Order
@@ -1164,6 +1762,19 @@
   - orcid:0000-0003-4764-9117/211331766
   - secQmYUAAAAJ:4DMP91E08xMC
   - wosuid:WOS:000730508400029
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - journal
+  - model predictive control
+  - MPC
+  - priced timed automata
+  - PTA
+  - 定价时间自动机
+  - 期刊论文
+  - 模型预测控制
 - id: doi:10.1109/case49439.2021.9551650
   scholar_id: secQmYUAAAAJ:QIV2ME_5wuYC
   title: Manufacturing Line Design Configuration with Optimized Resource Groups
@@ -1194,6 +1805,13 @@
   - orcid:0000-0003-4764-9117/211331770
   - secQmYUAAAAJ:QIV2ME_5wuYC
   - wosuid:WOS:000878693200083
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: doi:10.1016/j.ifacol.2021.11.220
   scholar_id: secQmYUAAAAJ:dhFuZR0502QC
   title: Dynamic Resource Allocation Using Multi-Agent Control for Manufacturing Systems
@@ -1222,6 +1840,17 @@
   - orcid:0000-0003-4764-9117/211331768
   - secQmYUAAAAJ:dhFuZR0502QC
   - wosuid:WOS:000730606300077
+  category: conference
+  classification:
+    basis: proceedings-series
+    needs_review: false
+  search_terms:
+  - conference
+  - multi agent
+  - multi-agent
+  - multiagent
+  - 会议论文
+  - 多智能体
 - id: doi:10.1109/access.2021.3065971
   scholar_id: secQmYUAAAAJ:Wp0gIr-vW9MC
   title: A Methodology to Develop and Implement Digital Twin Solutions for Manufacturing
@@ -1254,6 +1883,16 @@
   - orcid:0000-0003-4764-9117/211331775
   - secQmYUAAAAJ:Wp0gIr-vW9MC
   - wosuid:WOS:000633390400001
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - digital twin
+  - digital twins
+  - journal
+  - 数字孪生
+  - 期刊论文
 - id: doi:10.1520/ssms20200009
   scholar_id: secQmYUAAAAJ:qxL8FJ1GzNcC
   title: 'Developing the Workforce for Next-Generation Smart Manufacturing Systems:
@@ -1288,6 +1927,13 @@
   - orcid:0000-0003-4764-9117/211331772
   - secQmYUAAAAJ:qxL8FJ1GzNcC
   - wosuid:WOS:000653645800002
+  category: journal
+  classification:
+    basis: journal-venue
+    needs_review: false
+  search_terms:
+  - journal
+  - 期刊论文
 - id: doi:10.1016/j.ifacol.2021.04.051
   scholar_id: secQmYUAAAAJ:mVmsd5A6BfQC
   title: Priced Timed Automata Models for Control of Intelligent Product Agents in
@@ -1316,6 +1962,16 @@
   - orcid:0000-0003-4764-9117/211331778
   - secQmYUAAAAJ:mVmsd5A6BfQC
   - wosuid:WOS:000651644000021
+  category: conference
+  classification:
+    basis: proceedings-series
+    needs_review: false
+  search_terms:
+  - conference
+  - priced timed automata
+  - PTA
+  - 会议论文
+  - 定价时间自动机
 - id: secQmYUAAAAJ:aqlVkmm33-oC
   scholar_id: secQmYUAAAAJ:aqlVkmm33-oC
   title: Intelligent Product Agents for Multi-Agent Control of Manufacturing Systems
@@ -1328,6 +1984,17 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: other
+  classification:
+    basis: insufficient-metadata
+    needs_review: true
+  search_terms:
+  - multi agent
+  - multi-agent
+  - multiagent
+  - other publications
+  - 其他出版物
+  - 多智能体
 - id: secQmYUAAAAJ:hFOr9nPyWt4C
   scholar_id: secQmYUAAAAJ:hFOr9nPyWt4C
   title: Details of the first-order logic representation in ‘model predictive control
@@ -1347,6 +2014,19 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: other
+  classification:
+    basis: insufficient-metadata
+    needs_review: true
+  search_terms:
+  - model predictive control
+  - MPC
+  - other publications
+  - priced timed automata
+  - PTA
+  - 其他出版物
+  - 定价时间自动机
+  - 模型预测控制
 - id: doi:10.1109/access.2020.3000437
   scholar_id: secQmYUAAAAJ:M3ejUd6NZC8C
   title: 'A Requirements Driven Digital Twin Framework: Specification and Opportunities'
@@ -1377,6 +2057,16 @@
   - orcid:0000-0003-4764-9117/211331780
   - secQmYUAAAAJ:M3ejUd6NZC8C
   - wosuid:WOS:000544042700013
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - digital twin
+  - digital twins
+  - journal
+  - 数字孪生
+  - 期刊论文
 - id: doi:10.1109/lra.2019.2931825
   scholar_id: secQmYUAAAAJ:Zph67rFs4hoC
   title: A Framework for Automatic Initialization of Multi-Agent Production Systems
@@ -1407,6 +2097,17 @@
   - orcid:0000-0003-4764-9117/211331782
   - secQmYUAAAAJ:Zph67rFs4hoC
   - wosuid:WOS:000482561300018
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - journal
+  - multi agent
+  - multi-agent
+  - multiagent
+  - 多智能体
+  - 期刊论文
 - id: doi:10.1109/lra.2019.2921947
   scholar_id: secQmYUAAAAJ:MXK_kJrjxJIC
   title: Dynamic Resource Task Negotiation to Enable Product Agent Exploration in
@@ -1437,6 +2138,17 @@
   - orcid:0000-0003-4764-9117/211331783
   - secQmYUAAAAJ:MXK_kJrjxJIC
   - wosuid:WOS:000473190100003
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - journal
+  - multi agent
+  - multi-agent
+  - multiagent
+  - 多智能体
+  - 期刊论文
 - id: doi:10.1115/msec2019-2966
   scholar_id: secQmYUAAAAJ:_kc_bZDykSQC
   title: A Vision-Based Framework for Enhanced Quality Control in a Smart Manufacturing
@@ -1472,6 +2184,13 @@
   - wosuid:WOS:000505633900063
   orcid_work_id: orcid:0000-0003-4764-9117/116963054
   type: paper-conference
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: doi:10.1016/j.conengprac.2019.03.009
   scholar_id: secQmYUAAAAJ:_FxGoFyzp5QC
   title: 'The model-based product agent: A control oriented architecture for intelligent
@@ -1499,6 +2218,17 @@
   - orcid:0000-0003-4764-9117/211331789
   - secQmYUAAAAJ:_FxGoFyzp5QC
   - wosuid:WOS:000467000000010
+  category: journal
+  classification:
+    basis: journal-venue
+    needs_review: false
+  search_terms:
+  - journal
+  - multi agent
+  - multi-agent
+  - multiagent
+  - 多智能体
+  - 期刊论文
 - id: secQmYUAAAAJ:4TOpqqG69KYC
   scholar_id: secQmYUAAAAJ:4TOpqqG69KYC
   title: The digital twin in the manufacturing ecosystem of the future
@@ -1515,6 +2245,16 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: conference
+  classification:
+    basis: conference-venue
+    needs_review: false
+  search_terms:
+  - conference
+  - digital twin
+  - digital twins
+  - 会议论文
+  - 数字孪生
 - id: doi:10.1016/j.promfg.2018.10.053
   scholar_id: secQmYUAAAAJ:WF5omc3nYNoC
   title: 'Integrating Human Operators into Agent-based Manufacturing Systems: A Table-top
@@ -1543,6 +2283,13 @@
   - orcid:0000-0003-4764-9117/211331792
   - secQmYUAAAAJ:WF5omc3nYNoC
   - wosuid:WOS:000471035200041
+  category: conference
+  classification:
+    basis: proceedings-series
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: doi:10.1520/ssms20170006
   scholar_id: secQmYUAAAAJ:YsMSGLbcyi4C
   title: 'SMART: A System-Level Manufacturing and Automation Research Testbed'
@@ -1571,6 +2318,13 @@
   - orcid:0000-0003-4764-9117/211331795
   - secQmYUAAAAJ:YsMSGLbcyi4C
   - wosuid:WOS:000425149100011
+  category: journal
+  classification:
+    basis: journal-venue
+    needs_review: false
+  search_terms:
+  - journal
+  - 期刊论文
 - id: doi:10.1109/etfa.2017.8247652
   scholar_id: secQmYUAAAAJ:eQOLeE2rZwMC
   title: Design and implementation of an intelligent product agent architecture in
@@ -1600,6 +2354,13 @@
   - wosuid:WOS:000427812000087
   orcid_work_id: orcid:0000-0003-4764-9117/116963049
   type: paper-conference
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: doi:10.1109/ccta.2017.8062543
   scholar_id: secQmYUAAAAJ:Y0pCki6q_DkC
   title: Hybrid modeling and identification of jetting dynamics in electrohydrodynamic
@@ -1628,6 +2389,13 @@
   - eid:2-s2.0-85047610275
   - orcid:0000-0003-4764-9117/116963028
   - secQmYUAAAAJ:Y0pCki6q_DkC
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: doi:10.1016/j.procir.2017.04.014
   scholar_id: secQmYUAAAAJ:Tyk-4Ss8FVUC
   title: 'Manufacturing Choices for Ankle-Foot Orthoses: A Multi-objective Optimization'
@@ -1655,6 +2423,13 @@
   - orcid:0000-0003-4764-9117/211331798
   - secQmYUAAAAJ:Tyk-4Ss8FVUC
   - wosuid:WOS:000418465700025
+  category: conference
+  classification:
+    basis: proceedings-series
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: doi:10.1109/lra.2016.2530866
   scholar_id: secQmYUAAAAJ:UeHWp8X0CEIC
   title: Timing Analysis of Robotic Neuromodulatory Rehabilitation System for Paired
@@ -1685,6 +2460,13 @@
   - orcid:0000-0003-4764-9117/211331801
   - secQmYUAAAAJ:UeHWp8X0CEIC
   - wosuid:WOS:000413726900057
+  category: journal
+  classification:
+    basis: journal-doi
+    needs_review: false
+  search_terms:
+  - journal
+  - 期刊论文
 - id: doi:10.1115/dscc2015-9992
   scholar_id: secQmYUAAAAJ:qjMakFHDy7sC
   title: Analysis of a Tele-Operated MRI-Compatible Vane Actuator for Neuromuscular
@@ -1720,6 +2502,13 @@
   - wosuid:WOS:000377639100050
   orcid_work_id: orcid:0000-0003-4764-9117/116963055
   type: paper-conference
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: doi:10.1115/1.4030548
   title: Design and Testing of a Pneumatic Hemiparesis Rehabilitation Device for a
     Neurofacilitation Exercise1
@@ -1743,6 +2532,13 @@
   aliases:
   - orcid:0000-0003-4764-9117/211331808
   - wosuid:WOS:000370684800011
+  category: journal
+  classification:
+    basis: publication-type
+    needs_review: false
+  search_terms:
+  - journal
+  - 期刊论文
 - id: secQmYUAAAAJ:9yKSN-GCB0IC
   scholar_id: secQmYUAAAAJ:9yKSN-GCB0IC
   title: Design and testing of a pneumatic hemiparesis rehabilitation device for a
@@ -1763,6 +2559,13 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+  category: journal
+  classification:
+    basis: journal-venue
+    needs_review: false
+  search_terms:
+  - journal
+  - 期刊论文
 - id: doi:10.1115/detc2015-48085
   scholar_id: secQmYUAAAAJ:u-x6o8ySG0sC
   title: Robotic Neuromuscular Facilitation for Regaining Neural Activation in Hemiparetic
@@ -1796,6 +2599,13 @@
   - wosuid:WOS:000380412700050
   orcid_work_id: orcid:0000-0003-4764-9117/116963057
   type: paper-conference
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文
 - id: doi:10.1109/arso.2014.7020990
   scholar_id: secQmYUAAAAJ:d1gkVwhDpl0C
   title: Robotic rehabilitation exercise in hemiparetic limbs based on functional
@@ -1828,3 +2638,10 @@
   - orcid:0000-0003-4764-9117/211331809
   - secQmYUAAAAJ:d1gkVwhDpl0C
   - wosuid:WOS:000454498400020
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - 会议论文

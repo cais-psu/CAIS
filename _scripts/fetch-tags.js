@@ -20,7 +20,7 @@
 
       // filter out tags already present in row
       let existing = [...row.querySelectorAll(".tag")].map((tag) =>
-        window.normalizeTag(tag.innerText)
+        window.normalizeTag(tag.textContent)
       );
       tags = tags.filter((tag) => !existing.includes(normalizeTag(tag)));
 
@@ -37,7 +37,7 @@
       }
 
       // delete tags container if empty
-      if (!row.innerText.trim()) row.remove();
+      if (!row.textContent.trim()) row.remove();
     }
 
     // emit "tags done" event for other scripts to listen for

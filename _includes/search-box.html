@@ -1,9 +1,10 @@
 <div class="search-box">
   <input
-    type="text"
+    type="search"
     class="search-input"
     oninput="onSearchInput(this)"
-    placeholder="Search items on this page"
+    placeholder="{{ include.placeholder | default: 'Search items on this page' | xml_escape }}"
+    aria-label="{{ include.label | default: 'Search items on this page' | xml_escape }}"
   />
   <button
     disabled

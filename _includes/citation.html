@@ -10,8 +10,17 @@
   {% assign citation = include %}
 {% endif %}
 
+{% capture search_text %}
+  {{ citation.title | strip_html }}
+  {{ citation.authors | join: " " }}
+  {{ citation.publisher | strip_html }}
+  {{ citation.date }} {{ citation.id }} {{ citation.doi }} {{ citation.DOI }}
+  {{ citation.aliases | join: " " }}
+  {{ citation.tags | join: " " }} {{ citation.keywords | join: " " }}
+  {{ citation.search_terms | join: " " }}
+{% endcapture %}
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-search="{{ search_text | strip_newlines | xml_escape }}">
     {% if include.style == "rich" %}
       <a
         {% if citation.link %}

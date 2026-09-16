@@ -5,6 +5,7 @@ from importlib import import_module
 from pathlib import Path
 
 from dotenv import load_dotenv
+from classify import classify_citations
 from records import normalize_record, reconcile, reconcile_update, title_key, useful_title
 from util import cite_with_manubot, format_date, list_of_dicts, load_data, log, save_data
 
@@ -111,6 +112,7 @@ def run(root=Path.cwd()):
         return 1
     current = reconcile(current, warn)
     citations = reconcile_update(previous, current, removals, warn)
+    citations = classify_citations(citations, [row for row in sources if row["plugin"] == "sources.py"], warn)
     # Detect different-DOI versions without silently hiding or discarding them.
     titles = {}
     for row in citations:

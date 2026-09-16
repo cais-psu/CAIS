@@ -1,46 +1,7 @@
 {%- assign sorted = site.data.citations | sort: "date" | reverse -%}
-
 {%- for c in sorted -%}
-
-  {%- assign t = c.type | default: c.genre | default: "" | downcase -%}
-  {%- assign venue = c["container-title"] | default: c.venue | default: c.publisher | default: "" | downcase -%}
-  {%- assign link_lc = c.link | default: "" | downcase -%}
-  {%- assign doi_lc = c.DOI | default: c.doi | default: c.id | default: "" | downcase -%}
-  {%- assign source = venue | append: " " | append: link_lc | append: " " | append: doi_lc | downcase -%}
-
-  {%- assign is_arxiv = false -%}
-  {%- if c.id and c.id contains "arxiv:" -%}{%- assign is_arxiv = true -%}{%- endif -%}
-  {%- if source contains "arxiv" or source contains "10.48550/arxiv" -%}{%- assign is_arxiv = true -%}{%- endif -%}
-
-  {%- assign is_book = false -%}
-  {%- if t contains "chapter" or t contains "book" -%}{%- assign is_book = true -%}{%- endif -%}
-  {%- if source contains "lecture notes" or source contains "encyclopedia" or source contains "handbook" or source contains "springer" or source contains "book" or source contains "chapter" -%}{%- assign is_book = true -%}{%- endif -%}
-
-  {%- assign is_conference = false -%}
-  {%- if t contains "proceedings" or t contains "conference" or t contains "workshop" or t contains "symposium" -%}{%- assign is_conference = true -%}{%- endif -%}
-  {%- if source contains "conference" or source contains "proceedings" or source contains "workshop" or source contains "symposium" or source contains "ifac-papersonline" or source contains "procedia" or source contains "msec" or source contains "idetc" or source contains "detc" or source contains "dscc" or source contains "case" or source contains "ccta" or source contains "american control conference" or source contains "(acc)" or source contains "/acc" or source contains "decision and control" or source contains "(cdc)" or source contains "/cdc" or source contains "etfa" or source contains "arso" or source contains "volume " -%}{%- assign is_conference = true -%}{%- endif -%}
-  {%- if venue == "ieee" and link_lc contains "ieeexplore.ieee.org" -%}{%- assign is_conference = true -%}{%- endif -%}
-
-  {%- assign is_journal = false -%}
-  {%- if t contains "journal" or t contains "article" -%}{%- assign is_journal = true -%}{%- endif -%}
-  {%- if source contains "journal" or source contains "letters" or source contains "transactions" or source contains "magazine" or source contains "frontiers" or source contains "nature" or source contains "ieee access" or source contains "international journal" or source contains "control engineering practice" or source contains "robotics and automation letters" or source contains "robotics and computer-integrated manufacturing" or source contains "smart and sustainable manufacturing systems" or source contains "journal of medical devices" or source contains "battery energy" or source contains "mathematics" -%}{%- assign is_journal = true -%}{%- endif -%}
-
-  {%- assign show = false -%}
-  {%- if include.type == "journal" and is_journal and is_conference == false and is_book == false and is_arxiv == false -%}
-    {%- assign show = true -%}
-  {%- elsif include.type == "conference" and is_conference and is_book == false and is_arxiv == false -%}
-    {%- assign show = true -%}
-  {%- elsif include.type == "arxiv" and is_arxiv -%}
-    {%- assign show = true -%}
-  {%- elsif include.type == "other" -%}
-    {%- assign journal_only = false -%}
-    {%- if is_journal and is_conference == false and is_book == false and is_arxiv == false -%}{%- assign journal_only = true -%}{%- endif -%}
-    {%- assign conference_only = false -%}
-    {%- if is_conference and is_book == false and is_arxiv == false -%}{%- assign conference_only = true -%}{%- endif -%}
-    {%- if journal_only == false and conference_only == false and is_arxiv == false -%}{%- assign show = true -%}{%- endif -%}
-  {%- endif -%}
-
-  {%- if show -%}
+  {%- assign category = c.category | default: "other" -%}
+  {%- if category == include.type -%}
     {% include citation.html citation=c style="rich" %}
   {%- endif -%}
 {%- endfor -%}

@@ -7,3 +7,21 @@
   font-style: italic;
   line-height: var(--spacing);
 }
+
+.search-help {
+  color: var(--gray);
+  font-size: 0.9em;
+}
+
+.publication-count {
+  color: var(--gray);
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+.publication-group[hidden],
+.citation-container[hidden],
+.card[hidden],
+.post-excerpt[hidden] {
+  display: none !important;
+}

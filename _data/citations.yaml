@@ -481,8 +481,8 @@
   issue: '2442362'
   pages: '42362'
   gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources-categories.yaml
   category: other
   classification:
     basis: manual
@@ -1682,8 +1682,8 @@
   link: https://brg.engin.umich.edu/wp-content/uploads/sites/131/2022/02/DA-PA-agentResponse.pdf
   citation_count: null
   gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources-categories.yaml
   category: other
   classification:
     basis: manual
@@ -1982,8 +1982,8 @@
   link: https://deepblue.lib.umich.edu/items/de919e93-bc79-45dd-af9c-6ebe22b00f35
   citation_count: 6
   gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources-categories.yaml
   category: other
   classification:
     basis: manual
@@ -2012,8 +2012,8 @@
   volume: '1'
   pages: '2020'
   gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources-categories.yaml
   category: other
   classification:
     basis: manual

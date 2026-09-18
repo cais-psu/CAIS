@@ -655,7 +655,7 @@
     (CASE)
   date: '2024-08-28'
   link: https://doi.org/g97zp4
-  citation_count: 76
+  citation_count: 77
   pages: 3940-3946
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -1135,7 +1135,7 @@
   publisher: IEEE Robotics &amp; Automation Magazine
   date: '2023-06-01'
   link: https://doi.org/g97zqc
-  citation_count: 39
+  citation_count: 40
   volume: '30'
   issue: '2'
   pages: 109-112
@@ -1703,7 +1703,7 @@
   publisher: IEEE Access
   date: '2020-01-01'
   link: https://doi.org/gndckt
-  citation_count: 313
+  citation_count: 314
   volume: '8'
   pages: 107781-107801
   gsid: secQmYUAAAAJ

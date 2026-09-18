@@ -27,8 +27,17 @@ cache for troubleshooting without changing the existing cache.
 - DOI metadata supplies bibliographic fields; Scholar supplies citation counts.
   Explicit `_data/sources.yaml` fields take precedence. Empty upstream values do
   not erase populated fields. Images and identifiers survive merging.
-- Different DOIs with the same title stay separate and generate a warning. The
-  page renders the reconciled records; it does not hide papers by title.
+- After reconciliation and classification, remove an arXiv record when a
+  `journal` or `conference` record has the same normalized title (ignoring case,
+  whitespace and punctuation). This runs on every successful update, including
+  records retained from previous fetches, so reimported duplicates are removed.
+  arXiv IDs/DOIs, arXiv venues (including ORCID/WOS summaries), and arXiv links
+  on records classified as preprints identify eligible records. A journal or
+  conference paper linking to an arXiv copy is kept. No fuzzy title matching,
+  author/year restriction, cross-version metadata merging or ID aliasing is used.
+- arXiv-only papers, different-title versions and non-arXiv preprints remain.
+  Other different-DOI records with the same title stay separate and generate a
+  warning. Each removed arXiv ID and the retained publication ID(s) are logged.
 
 ORCID uses the summary with the highest `display-index` and only `self`
 identifiers. `part-of` may identify an entire book/proceedings, and `version-of`
@@ -42,7 +51,8 @@ Provider errors and malformed/repeated pages fail the run without changing
 `_data/citations.yaml`. Individual detail/DOI lookup failures retain available
 metadata and generate warnings. Previously published records missing from a
 successful fetch are also retained with warnings: upstream absence does not
-automatically delete a paper. Output is written atomically only after validation.
+automatically delete a paper. The same-title arXiv rule above is then applied.
+Output is written atomically only after validation.
 
 Make corrections in `_data/sources.yaml`, not the generated citations file:
 
@@ -106,8 +116,8 @@ manual overrides. Removing the override restores automatic classification.
 To review or update the existing data without API calls:
 
 ```sh
-python _cite/classify.py          # print counts and records needing review
-python _cite/classify.py --write  # update the generated data
+python _cite/classify.py          # report categories, review items and arXiv removals
+python _cite/classify.py --write  # apply categories and arXiv cleanup to saved data
 ```
 
 The proceedings exceptions follow the publication series, rather than simply

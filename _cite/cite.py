@@ -5,7 +5,7 @@ from importlib import import_module
 from pathlib import Path
 
 from dotenv import load_dotenv
-from classify import classify_citations
+from classify import classify_citations, remove_superseded_arxiv
 from records import normalize_record, reconcile, reconcile_update, title_key, useful_title
 from util import cite_with_manubot, format_date, list_of_dicts, load_data, log, save_data
 
@@ -116,7 +116,10 @@ def run(root=Path.cwd()):
     current = reconcile(current, warn)
     citations = reconcile_update(previous, current, removals, warn)
     citations = classify_citations(citations, [row for row in sources if row["plugin"] == "sources.py"], warn)
-    # Detect different-DOI versions without silently hiding or discarding them.
+    # Apply after retaining previous records so upstream imports cannot restore
+    # same-title arXiv versions when a journal/conference version is available.
+    citations = remove_superseded_arxiv(citations, lambda message: log(message, level="INFO"))
+    # Other different-DOI versions still need review.
     titles = {}
     for row in citations:
         key = title_key(row.get("title"))

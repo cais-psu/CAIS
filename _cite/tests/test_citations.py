@@ -221,6 +221,28 @@ class OrcidTests(unittest.TestCase):
 
 
 class PipelineTests(unittest.TestCase):
+    def test_reimported_arxiv_is_removed_after_retaining_published_version(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); (root / '_data').mkdir()
+            output = root / '_data/citations.yaml'
+            published = paper(image='manual.png', citation_count=42)
+            preprint = {**paper('author:arxiv'), 'publisher': 'arXiv',
+                        'scholar_id': 'author:arxiv', 'type': 'journal-article'}
+            util.save_data(output, [published, preprint])
+            (root / '_data/google-scholar.yaml').write_text('- gsid: author\n')
+            with patch.object(scholar, 'main', return_value=[preprint]), patch.object(cite, 'cite_with_manubot') as resolver:
+                self.assertEqual(cite.run(root), 0)
+                once = output.read_bytes()
+                self.assertEqual(cite.run(root), 0)
+                self.assertEqual(output.read_bytes(), once)
+                resolver.assert_not_called()
+            rows = util.load_data(output)
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0]['id'], published['id'])
+            self.assertEqual(rows[0]['image'], 'manual.png')
+            self.assertEqual(rows[0]['citation_count'], 42)
+            self.assertNotIn(preprint['id'], rows[0].get('aliases', []))
+
     def test_manual_category_on_scholar_record_uses_saved_metadata(self):
         old = paper('author:abc', scholar_id='author:abc', plugin='google-scholar.py')
         with patch.object(cite, 'cite_with_manubot') as resolver:

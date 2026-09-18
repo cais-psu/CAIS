@@ -1,4 +1,4 @@
-"""Assign one publication category after reconciliation; no network is needed."""
+"""Classify reconciled publications and select versions without network access."""
 
 import argparse
 import html
@@ -8,7 +8,7 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from records import identity_keys, normalize_record
+from records import identity_keys, normalize_record, title_key, useful_title
 
 
 CATEGORIES = {"journal", "conference", "other"}
@@ -150,9 +150,44 @@ def classify_citations(citations, sources=(), warn=lambda message: None):
     return output
 
 
+def remove_superseded_arxiv(citations, report=lambda message: None):
+    """Remove arXiv rows with an exact normalized title already published.
+
+    Call after reconciliation and classification, including retained old rows.
+    Keep the published records intact; different versions are not ID aliases.
+    """
+    published = {}
+    for row in citations:
+        if row.get("category") in {"journal", "conference"} and useful_title(row.get("title")):
+            published.setdefault(title_key(row["title"]), []).append(str(row.get("id") or row["title"]))
+
+    output = []
+    for row in citations:
+        matches = published.get(title_key(row.get("title")), [])
+        if row.get("category") == "other" and matches:
+            normalized = normalize_record(row)
+            identifier = normalized["id"].lower()
+            venue = words(row.get("container-title") or row.get("venue") or row.get("publisher"))
+            host = urlsplit(str(row.get("link") or "")).hostname or ""
+            arxiv = (
+                identifier.startswith("arxiv:")
+                or normalized.get("doi", "").startswith("10.48550/arxiv.")
+                or bool(re.search(r"\barxiv\b", venue))
+                or (host in {"arxiv.org", "www.arxiv.org", "export.arxiv.org"}
+                    and (row.get("classification", {}).get("basis") == "preprint-link"
+                         or str(row.get("type") or row.get("genre") or "").lower().strip()
+                         in {"preprint", "posted-content", "manuscript"}))
+            )
+            if arxiv:
+                report(f"Removed same-title arXiv version: {row.get('id')}; kept published version(s): {', '.join(matches)}")
+                continue
+        output.append(row)
+    return output
+
+
 def main():
     from util import load_data, save_data
-    parser = argparse.ArgumentParser(description="Reclassify saved citations without fetching APIs")
+    parser = argparse.ArgumentParser(description="Reclassify saved citations and remove superseded arXiv versions without fetching APIs")
     parser.add_argument("--write", action="store_true", help="Update the generated citations file")
     args = parser.parse_args()
     sources = []
@@ -160,6 +195,7 @@ def main():
         if path.suffix in {".yaml", ".yml", ".json"}:
             sources.extend(load_data(path))
     rows = classify_citations(load_data("_data/citations.yaml"), sources, print)
+    rows = remove_superseded_arxiv(rows, print)
     print(dict(Counter(row["category"] for row in rows)))
     if args.write:
         save_data("_data/citations.yaml", rows)

@@ -12,9 +12,18 @@ Google Scholar requires `GOOGLE_SCHOLAR_API_KEY` (SerpApi), supplied through the
 environment or a local `.env` file. GitHub Actions uses the repository secret of
 the same name. Never commit the key. `_data/google-scholar.yaml` controls profile,
 language (`hl`), sort order, detail fetching, and optional `max_results`. Leave
-`max_results` unset for a complete bibliography. Article pages cache for one day;
-details and DOI metadata cache for seven days. `CITE_CACHE_DIR` can select a fresh
-cache for troubleshooting without changing the existing cache.
+`max_results` unset for a complete bibliography. Article pages cache for one day,
+Scholar details for 30 days, and DOI metadata for seven days. Citation counts
+prefer the current article list over older cached details. GitHub Actions restores
+and saves `_cite/.cache` between runs. `CITE_CACHE_DIR` can select a fresh cache
+for troubleshooting without changing the existing cache.
+
+Routine pushes reuse saved Scholar records and still process ORCID and manual
+sources. Weekly scheduled runs and manually dispatched workflows refresh Scholar.
+A newly configured Scholar profile without saved records is fetched even on a
+push. Local `python _cite/cite.py` also refreshes Scholar by default; set
+`CITE_SKIP_GOOGLE_SCHOLAR=true` to reuse saved profiles. The reusable workflow's
+`refresh-scholar` input controls this behavior for automatic callers.
 
 ## How matching works
 
@@ -47,12 +56,22 @@ metadata instead of trying to cite a Web of Science login page.
 
 ## Failure handling and corrections
 
-Provider errors and malformed/repeated pages fail the run without changing
-`_data/citations.yaml`. Individual detail/DOI lookup failures retain available
-metadata and generate warnings. Previously published records missing from a
-successful fetch are also retained with warnings: upstream absence does not
-automatically delete a paper. The same-title arXiv rule above is then applied.
-Output is written atomically only after validation.
+An explicit SerpApi search-quota error is not retried. If saved records exist for
+the affected Scholar profile, keep those records and citation counts, log a
+warning, and continue updating ORCID and manual sources. Scholar-only new papers
+and fresh citation counts cannot be obtained until the account has searches
+available again. A quota failure without saved records for that profile still
+fails the update, so missing coverage is not silently accepted.
+
+If the complete article list was fetched before quota exhaustion during detail
+lookups, stop further detail requests for that profile and use article-list
+metadata. Other detail/DOI lookup failures retain available metadata and generate
+warnings. Other provider errors (including invalid credentials and timeouts) and
+malformed/repeated pages still fail the run without changing `_data/citations.yaml`.
+
+Previously published records missing from a successful fetch are retained with
+warnings: upstream absence does not automatically delete a paper. The same-title
+arXiv rule above is then applied. Output is written atomically only after validation.
 
 Make corrections in `_data/sources.yaml`, not the generated citations file:
 
@@ -79,6 +98,8 @@ Scheduled updates rebuild the site after committing changed citations. Site
 builds check out the latest branch contents to include the generated commit.
 
 References: [SerpApi author API](https://serpapi.com/google-scholar-author-api),
+[SerpApi quota/error codes](https://serpapi.com/api-status-and-error-codes),
+[GitHub Actions cache behavior](https://docs.github.com/en/actions/reference/workflows-and-actions/dependency-caching),
 [ORCID grouping and preferred sources](https://info.orcid.org/ufaqs/how-are-items-grouped-together-in-an-orcid-record/).
 
 ## Publication categories

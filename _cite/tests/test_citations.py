@@ -16,6 +16,7 @@ CACHE = tempfile.TemporaryDirectory()
 os.environ['CITE_CACHE_DIR'] = CACHE.name
 import cite
 import util
+from errors import ScholarQuotaError
 from records import find_doi, normalize_record, reconcile, reconcile_update
 scholar = importlib.import_module('plugins.google-scholar')
 orcid = importlib.import_module('plugins.orcid')
@@ -166,7 +167,54 @@ class ScholarTests(unittest.TestCase):
             with self.assertRaises(RuntimeError): scholar.main({'gsid': 'author'})
             search.return_value.get_dict.return_value = {'articles': [self.article('a')]}
             self.assertEqual(len(scholar.main({'gsid': 'author'})), 1)
-            self.assertEqual(search.call_count, 4)
+            self.assertEqual(search.call_count, 2)
+
+    def test_quota_is_decoded_redacted_and_not_retried(self):
+        with patch.object(scholar, 'GoogleSearch', autospec=True) as search:
+            search.return_value.get_dict.return_value = {'error': 'Your account has run out of&#x20;\nsearches. key=test-only'}
+            with self.assertRaises(ScholarQuotaError) as caught:
+                scholar.main({'gsid': 'author'})
+        self.assertEqual(search.call_count, 1)
+        self.assertIn('run out of searches', str(caught.exception))
+        self.assertNotIn('test-only', str(caught.exception))
+        self.assertIn('[redacted]', str(caught.exception))
+
+    def test_pagination_quota_does_not_return_partial_profile(self):
+        with patch.object(scholar, 'GoogleSearch', autospec=True) as search:
+            search.return_value.get_dict.side_effect = [
+                {'articles': [self.article('a')], 'serpapi_pagination': {'next': 'https://serpapi.com/search?start=1'}},
+                {'error': 'Your account has run out of searches.'},
+            ]
+            with self.assertRaises(ScholarQuotaError):
+                scholar.main({'gsid': 'author'})
+        self.assertEqual(search.call_count, 2)
+
+    def test_detail_quota_stops_remaining_detail_requests(self):
+        with patch.object(scholar, 'GoogleSearch', autospec=True) as search:
+            search.return_value.get_dict.side_effect = [
+                {'articles': [self.article('a'), self.article('b')]},
+                {'error': 'Your account has run out of searches.'},
+            ]
+            result = scholar.main({'gsid': 'author', 'details': True})
+        self.assertEqual(search.call_count, 2)
+        self.assertEqual([row['title'] for row in result], ['Paper a', 'Paper b'])
+        self.assertIn('stopped detail requests', result[0]['_warnings'][0])
+
+    def test_cached_details_do_not_override_newer_list_citation_count(self):
+        with patch.object(scholar, 'GoogleSearch', autospec=True) as search:
+            search.return_value.get_dict.side_effect = [
+                {'articles': [{**self.article('a'), 'cited_by': {'value': 8}}]},
+                {'citation': {'title': 'Paper a', 'journal': 'IEEE Access', 'total_citations': {'cited_by': {'total': 7}}}},
+                {'articles': [{**self.article('a'), 'cited_by': {'value': 10}}]},
+            ]
+            first = scholar.main({'gsid': 'author', 'details': True})
+            self.assertEqual(scholar.main({'gsid': 'author', 'details': True}), first)
+            # Another sort requires a fresh list but can reuse the same details.
+            second = scholar.main({'gsid': 'author', 'sort': 'pubdate', 'details': True})
+        self.assertEqual(search.call_count, 3)
+        self.assertEqual(first[0]['citation_count'], 8)
+        self.assertEqual(second[0]['citation_count'], 10)
+        self.assertEqual(second[0]['publisher'], 'IEEE Access')
 
     def test_repeated_page_fails(self):
         payload = {'articles': [self.article('a')], 'serpapi_pagination': {'next': 'https://serpapi.com/search?start=1'}}
@@ -221,6 +269,61 @@ class OrcidTests(unittest.TestCase):
 
 
 class PipelineTests(unittest.TestCase):
+    def test_quota_preserves_scholar_and_updates_orcid_and_manual_sources(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); (root / '_data').mkdir()
+            output = root / '_data/citations.yaml'
+            old = paper(scholar_id='author:old', citation_count=42, image='old.png')
+            orphan = {**paper('author:only'), 'scholar_id': 'author:only', 'title': 'Scholar-only research'}
+            new = {**paper('doi:10.1234/new'), 'title': 'New ORCID research'}
+            util.save_data(output, [old, orphan])
+            (root / '_data/google-scholar.yaml').write_text('- gsid: author\n')
+            (root / '_data/orcid.yaml').write_text('- orcid: test\n')
+            (root / '_data/sources.yaml').write_text('- id: doi:10.1234/example\n  image: updated.png\n')
+            with patch.object(scholar, 'main', side_effect=ScholarQuotaError('search credits exhausted')), \
+                    patch.object(orcid, 'main', return_value=[new]), \
+                    patch.object(cite, 'cite_with_manubot', side_effect=lambda identifier: new if identifier == new['id'] else paper()), \
+                    patch.object(cite, 'log') as log:
+                self.assertEqual(cite.run(root), 0)
+            rows = {row['id']: row for row in util.load_data(output)}
+            self.assertEqual(set(rows), {old['id'], orphan['id'], new['id']})
+            self.assertEqual(rows[old['id']]['citation_count'], 42)
+            self.assertEqual(rows[old['id']]['image'], 'updated.png')
+            self.assertEqual(rows[orphan['id']]['title'], orphan['title'])
+            self.assertTrue(any('retaining saved Scholar records' in str(call) for call in log.call_args_list))
+
+    def test_quota_without_saved_profile_still_fails_atomically(self):
+        for previous in ([], [paper(scholar_id='different-author:old')]):
+            with self.subTest(previous=previous), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory); (root / '_data').mkdir()
+                output = root / '_data/citations.yaml'
+                util.save_data(output, previous); before = output.read_bytes()
+                (root / '_data/google-scholar.yaml').write_text('- gsid: author\n')
+                with patch.object(scholar, 'main', side_effect=ScholarQuotaError('search credits exhausted')):
+                    self.assertEqual(cite.run(root), 1)
+                self.assertEqual(output.read_bytes(), before)
+
+    def test_push_mode_uses_saved_profile_and_bootstraps_missing_profiles(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); (root / '_data').mkdir()
+            output = root / '_data/citations.yaml'
+            util.save_data(output, [paper(scholar_id='author:old', citation_count=42)])
+            (root / '_data/google-scholar.yaml').write_text('- gsid: author\n- gsid: new-author\n')
+            imported = {**paper('new-author:new'), 'title': 'New author research', 'scholar_id': 'new-author:new'}
+            with patch.object(scholar, 'main', return_value=[imported]) as fetch:
+                self.assertEqual(cite.run(root, skip_scholar=True), 0)
+                fetch.assert_called_once_with({'gsid': 'new-author'})
+            rows = util.load_data(output)
+            self.assertEqual(len(rows), 2)
+            with patch.object(scholar, 'main', return_value=[]) as fetch:
+                self.assertEqual(cite.run(root), 0)
+                self.assertEqual(fetch.call_count, 2)
+
+    def test_saved_profile_can_be_identified_after_alias_merge(self):
+        self.assertTrue(cite.has_saved_scholar([paper(aliases=['author:old'])], {'gsid': 'author'}))
+        self.assertTrue(cite.has_saved_scholar([paper(gsid='author')], {'gsid': 'author'}))
+        self.assertFalse(cite.has_saved_scholar([paper(aliases=['another:old'])], {'gsid': 'author'}))
+
     def test_reimported_arxiv_is_removed_after_retaining_published_version(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory); (root / '_data').mkdir()

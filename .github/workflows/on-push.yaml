@@ -20,6 +20,8 @@ jobs:
     secrets: inherit                 # ✅ 关键：把仓库 secrets 传递给被调用工作流
     with:
       open-pr: false                 # 直接提交到 main
+      # Routine website edits reuse Scholar data; scheduled/manual runs refresh it.
+      refresh-scholar: ${{ github.event_name != 'push' }}
 
   build-site:
     needs: update-citations          # 等 citations 更新完再构建

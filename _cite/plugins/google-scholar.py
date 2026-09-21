@@ -1,8 +1,10 @@
+import html
 import os
 from urllib.parse import parse_qs, urlsplit
 from serpapi import GoogleSearch
 from util import *
 from records import find_doi
+from errors import ScholarQuotaError
 
 
 def clean_authors(authors):
@@ -39,14 +41,20 @@ def request_scholar(params, field):
             # Report the exception type without exposing that URL or its key.
             raise RuntimeError(f"Google Scholar request failed ({type(error).__name__})") from None
         if response.get("error") or get_safe(response, "search_metadata.status", "Success") != "Success":
-            message = str(response.get("error") or "Search did not complete")
-            raise RuntimeError(f"Google Scholar API: {message.replace(params['api_key'], '[redacted]')}")
+            message = " ".join(html.unescape(str(response.get("error") or "Search did not complete")).split())
+            message = message.replace(params['api_key'], '[redacted]')
+            quota = any(text in message.lower() for text in (
+                "run out of searches", "quota exceeded", "search quota",
+                "search credits exhausted", "insufficient search credits",
+            ))
+            error = ScholarQuotaError if quota else RuntimeError
+            raise error(f"Google Scholar API: {message}")
         value = response.get(field)
         valid = list_of_dicts(value) if field == "articles" else isinstance(value, dict) and bool(value.get("title"))
         if not valid:
             raise RuntimeError(f"Google Scholar response missing valid {field}")
         return response
-    return retry_request(request)
+    return retry_request(request, non_retryable=(ScholarQuotaError,))
 
 
 def main(entry):
@@ -78,16 +86,18 @@ def main(entry):
 
     # query author articles api
     @log_cache
-    @cache.memoize(name="scholar:articles:v2", expire=1 * (60 * 60 * 24))
+    @cache.memoize(name="scholar:articles:v3", expire=1 * (60 * 60 * 24))
     def query_articles(_id, start, sort, language):
         query_params = params.copy()
         query_params["author_id"] = _id
         query_params["start"] = start
-        return request_scholar(query_params, "articles")
+        payload = request_scholar(query_params, "articles")
+        # Persist only publication data and pagination, not search/account metadata.
+        return {key: payload[key] for key in ("articles", "serpapi_pagination") if key in payload}
 
     # query individual article details api
     @log_cache
-    @cache.memoize(name="scholar:citation:v2", expire=7 * (60 * 60 * 24))
+    @cache.memoize(name="scholar:citation:v3", expire=30 * (60 * 60 * 24))
     def query_citation(citation_id, language):
         query_params = {
             "engine": "google_scholar_author",
@@ -139,15 +149,19 @@ def main(entry):
 
     # list of sources to return
     sources = []
+    details_exhausted = False
 
     # go through response and format sources
     for work in response:
         citation_id = get_safe(work, "citation_id", "")
         details = {}
         detail_warning = ""
-        if fetch_details and citation_id:
+        if fetch_details and citation_id and not details_exhausted:
             try:
                 details = query_citation(citation_id, params["hl"])
+            except ScholarQuotaError as error:
+                details_exhausted = True
+                detail_warning = f"{citation_id}: {error}; stopped detail requests for this profile; using article-list metadata"
             except Exception as error:
                 detail_warning = f"{citation_id}: {error}; using article-list metadata"
 
@@ -185,9 +199,9 @@ def main(entry):
             "date": date,
             "link": link,
             "citation_count": get_safe(
-                details,
-                "total_citations.cited_by.total",
-                get_safe(work, "cited_by.value", ""),
+                work,
+                "cited_by.value",
+                get_safe(details, "total_citations.cited_by.total", ""),
             ),
         }
         if doi:

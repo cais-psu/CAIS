@@ -6,6 +6,9 @@ on:
     inputs:
       open-pr:
         type: boolean
+      refresh-scholar:
+        type: boolean
+        default: true
     secrets:
       CREATE_PR_TOKEN:
         required: false
@@ -53,10 +56,20 @@ jobs:
       - name: Test citation integration
         run: python -m unittest discover -s _cite/tests -v
 
+      - name: Restore citation response cache
+        uses: actions/cache@v4
+        with:
+          path: _cite/.cache
+          key: citations-v1-${{ runner.os }}-${{ hashFiles('_cite/requirements.txt') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            citations-v1-${{ runner.os }}-${{ hashFiles('_cite/requirements.txt') }}-
+
       - name: Build updated citations
         env:
           GOOGLE_SCHOLAR_API_KEY: ${{ secrets.GOOGLE_SCHOLAR_API_KEY }}
           GOOGLE_SCHOLAR_DETAILS: "true"
+          # Direct manual runs refresh Scholar; push callers opt out explicitly.
+          CITE_SKIP_GOOGLE_SCHOLAR: ${{ github.event_name != 'workflow_dispatch' && inputs.refresh-scholar == false }}
         run: python _cite/cite.py
         timeout-minutes: 30
 

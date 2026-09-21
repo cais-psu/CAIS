@@ -3,10 +3,12 @@
 from difflib import SequenceMatcher
 from importlib import import_module
 from pathlib import Path
+import os
 
 from dotenv import load_dotenv
 from classify import classify_citations, remove_superseded_arxiv
-from records import normalize_record, reconcile, reconcile_update, title_key, useful_title
+from errors import ScholarQuotaError
+from records import identity_keys, normalize_record, reconcile, reconcile_update, title_key, useful_title
 from util import cite_with_manubot, format_date, list_of_dicts, load_data, log, save_data
 
 
@@ -59,7 +61,17 @@ def enrich(source, previous, warn):
     return citation
 
 
-def run(root=Path.cwd()):
+def has_saved_scholar(previous, entry):
+    profile = entry.get("gsid")
+    return bool(profile) and any(
+        useful_title(row.get("title")) and (
+            row.get("gsid") == profile
+            or any(key.startswith(f"{profile}:") for key in identity_keys(row))
+        ) for row in previous
+    )
+
+
+def run(root=Path.cwd(), skip_scholar=False):
     output = root / "_data/citations.yaml"
     errors, warnings, sources = [], [], []
 
@@ -79,7 +91,17 @@ def run(root=Path.cwd()):
                 if not list_of_dicts(entries):
                     raise ValueError(f"{file.name} must contain a list of records")
                 for entry in entries:
-                    expanded = import_module(f"plugins.{plugin}").main(entry)
+                    saved_scholar = plugin == "google-scholar" and has_saved_scholar(previous, entry)
+                    if saved_scholar and skip_scholar:
+                        log(f"{file.name}: using saved Scholar records for {entry['gsid']}; refresh runs on schedule or manual request", level="INFO")
+                        continue
+                    try:
+                        expanded = import_module(f"plugins.{plugin}").main(entry)
+                    except ScholarQuotaError as error:
+                        if not saved_scholar:
+                            raise
+                        warn(f"{file.name}: {error}; retaining saved Scholar records and citation counts for {entry['gsid']}; continuing other sources")
+                        continue
                     if not list_of_dicts(expanded):
                         raise ValueError(f"{plugin} returned invalid records")
                     for row in expanded:
@@ -134,4 +156,4 @@ def run(root=Path.cwd()):
 
 if __name__ == "__main__":
     load_dotenv()
-    raise SystemExit(run())
+    raise SystemExit(run(skip_scholar=os.environ.get("CITE_SKIP_GOOGLE_SCHOLAR", "").strip().lower() in {"1", "true", "yes", "on"}))

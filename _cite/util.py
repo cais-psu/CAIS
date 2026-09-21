@@ -178,11 +178,13 @@ def save_data(path, data):
             os.unlink(temporary)
 
 
-def retry_request(request, attempts=3):
+def retry_request(request, attempts=3, non_retryable=()):
     """Bounded backoff. Callers validate inside request so errors are not cached."""
     for attempt in range(attempts):
         try:
             return request()
+        except non_retryable:
+            raise
         except Exception:
             if attempt == attempts - 1:
                 raise

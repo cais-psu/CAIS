@@ -55,7 +55,7 @@ test('LLM and MPC abbreviations find full-name titles', async (t) => {
     query(w, short);
     assert.ok(visible(w).some((row) => row.querySelector('.citation-title').textContent.toLowerCase().includes(full.toLowerCase())));
   }
-  query(w, '数字孪生');
+  query(w, 'digital twin');
   assert.ok(visible(w).some((row) => /digital twin/i.test(row.textContent)));
 });
 

@@ -1,3 +1,23 @@
+# Keep this publication available while Scholar's SerpApi quota is exhausted.
+# Metadata: https://api.crossref.org/works/10.1109/ccta62090.2026.11684322
+- id: doi:10.1109/ccta62090.2026.11684322
+  scholar_id: secQmYUAAAAJ:yD5IFk8b50cC
+  aliases:
+    - secQmYUAAAAJ:yD5IFk8b50cC
+  title: Exploration and Navigation in a Partially Observable Cluttered Environment using Model Predictive Control and Heat Equation Driven Area Coverage
+  authors:
+    - Evan Watts
+    - Jonathon E. Slightam
+    - Herschel C. Pangborn
+    - Kathleen Fitzsimons
+    - Ilya Kovalenko
+  publisher: 2026 IEEE Conference on Control Technology and Applications (CCTA)
+  type: paper-conference
+  # Crossref supplies year/month only; the generator fills the missing day.
+  date: '2026-08'
+  pages: 544-549
+  link: https://doi.org/10.1109/CCTA62090.2026.11684322
+
 - id: doi:10.1016/J.CONENGPRAC.2019.03.009
   image: https://ars.els-cdn.com/content/image/1-s2.0-S0967066118305057-gr1.jpg
 

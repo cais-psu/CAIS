@@ -70,9 +70,9 @@ class ClassificationTests(unittest.TestCase):
             {"title": "Robotic Assembly", "publisher": "Volume 2: Model Predictive Control; Large Language Models"},
         ])
         self.assertIn("LLM", rows[0]["search_terms"])
-        self.assertIn("多智能体", rows[0]["search_terms"])
+        self.assertIn("multi agent", rows[0]["search_terms"])
         self.assertIn("model predictive control", rows[1]["search_terms"])
-        self.assertIn("数字孪生", rows[1]["search_terms"])
+        self.assertIn("digital twin", rows[1]["search_terms"])
         self.assertNotIn("MPC", rows[2]["search_terms"])
         self.assertNotIn("LLM", rows[2]["search_terms"])
 

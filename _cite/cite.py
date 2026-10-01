@@ -1,6 +1,7 @@
 """Compile, enrich and reconcile publications without deleting missing records."""
 
 from difflib import SequenceMatcher
+from html import escape
 from importlib import import_module
 from pathlib import Path
 import os
@@ -71,9 +72,30 @@ def has_saved_scholar(previous, entry):
     )
 
 
+def report_scholar_quota_skips(profiles):
+    """Make an incomplete refresh visible without failing other source updates."""
+    if not profiles or os.environ.get("GITHUB_ACTIONS") != "true":
+        return
+    profiles = ", ".join(dict.fromkeys(profiles))
+    message = (
+        f"SerpApi search quota exhausted for Scholar profile(s): {profiles}. "
+        "Saved records and citation counts were retained; new Scholar-only papers "
+        "and fresh citation counts could not be fetched. Other sources still run. "
+        "Restore SerpApi search quota, then rerun the citation workflow with Scholar refresh enabled."
+    )
+    # A workflow command must occupy its own line, with untrusted data escaped.
+    escaped = message.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+    print(f"\n::warning title=Google Scholar refresh skipped::{escaped}", flush=True)
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        with open(summary, "a", encoding="utf-8") as handle:
+            handle.write(f"\n### Google Scholar refresh skipped\n\n{escape(message)}\n")
+
+
 def run(root=Path.cwd(), skip_scholar=False):
     output = root / "_data/citations.yaml"
     errors, warnings, sources = [], [], []
+    quota_skipped_profiles = []
 
     def warn(message):
         warnings.append(message)
@@ -101,6 +123,7 @@ def run(root=Path.cwd(), skip_scholar=False):
                         if not saved_scholar:
                             raise
                         warn(f"{file.name}: {error}; retaining saved Scholar records and citation counts for {entry['gsid']}; continuing other sources")
+                        quota_skipped_profiles.append(entry["gsid"])
                         continue
                     if not list_of_dicts(expanded):
                         raise ValueError(f"{plugin} returned invalid records")
@@ -112,6 +135,7 @@ def run(root=Path.cwd(), skip_scholar=False):
                 errors.append(f"{file.name}: {error}")
                 log(errors[-1], level="ERROR")
 
+    report_scholar_quota_skips(quota_skipped_profiles)
     if errors:
         log(f"{len(errors)} error(s). Existing citations were not changed.", level="ERROR")
         return 1

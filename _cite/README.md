@@ -63,6 +63,15 @@ and fresh citation counts cannot be obtained until the account has searches
 available again. A quota failure without saved records for that profile still
 fails the update, so missing coverage is not silently accepted.
 
+When a profile refresh falls back to saved records because of quota, GitHub
+Actions shows a `Google Scholar refresh skipped` warning and a step summary
+listing the affected profiles. The job can still succeed after processing the
+other sources; success does not mean Scholar was refreshed. Restore the SerpApi
+account's search quota, then manually run `on-schedule` to refresh Scholar and
+rebuild the site when citations change.
+Intentional push-mode reuse and ordinary metadata warnings do not produce this
+quota alert.
+
 If the complete article list was fetched before quota exhaustion during detail
 lookups, stop further detail requests for that profile and use article-list
 metadata. Other detail/DOI lookup failures retain available metadata and generate
@@ -148,13 +157,13 @@ copying registry type names. See [IFAC's proceedings description](https://ifac-c
 
 Search covers titles, full author lists, publication venues, dates, DOI and other
 identifiers, aliases, tags and keywords. Common research abbreviations (LLM,
-MPC, DES, PTA), full phrases and selected Chinese equivalents are generated in
+MPC, DES, PTA) and full English phrases are generated in
 `search_terms`. These expansions come from titles or explicit tags/keywords, not
 from the many unrelated topics listed in a proceedings volume title.
 
 All query words and quoted phrases must match. Case, accents, hyphens and extra
 whitespace are normalized. Examples: `IEEE Access`, `LLM manufacturing`,
-`"model predictive control" "energy aware"`, and `数字孪生`.
+`"model predictive control" "energy aware"`, and `digital twin`.
 Tag queries also accept `tag:resource`, `tag:"digital twin"`, and existing
 `"tag: digital-twin"` links. Clearing a search cancels pending input work and
 preserves unrelated URL parameters and anchors. Empty publication groups are

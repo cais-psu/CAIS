@@ -1,5 +1,35 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1109/ccta62090.2026.11684322
+  title: Exploration and Navigation in a Partially Observable Cluttered Environment
+    using Model Predictive Control and Heat Equation Driven Area Coverage
+  authors:
+  - Evan Watts
+  - Jonathon E. Slightam
+  - Herschel C. Pangborn
+  - Kathleen Fitzsimons
+  - Ilya Kovalenko
+  publisher: 2026 IEEE Conference on Control Technology and Applications (CCTA)
+  date: '2026-08-01'
+  link: https://doi.org/10.1109/CCTA62090.2026.11684322
+  type: paper-conference
+  scholar_id: secQmYUAAAAJ:yD5IFk8b50cC
+  aliases:
+  - secQmYUAAAAJ:yD5IFk8b50cC
+  pages: 544-549
+  plugin: sources.py
+  file: sources.yaml
+  doi: 10.1109/ccta62090.2026.11684322
+  DOI: 10.1109/ccta62090.2026.11684322
+  category: conference
+  classification:
+    basis: conference-doi
+    needs_review: false
+  search_terms:
+  - conference
+  - conference papers
+  - model predictive control
+  - MPC
 - id: doi:10.1016/j.rcim.2026.103245
   scholar_id: secQmYUAAAAJ:pqnbT2bcN3wC
   title: Adaptive task planning and coordination in multi-agent manufacturing systems
@@ -34,16 +64,13 @@
     needs_review: false
   search_terms:
   - journal
+  - journal papers
   - large language model
   - large language models
   - LLM
   - multi agent
   - multi-agent
   - multiagent
-  - 多智能体
-  - 大型语言模型
-  - 大语言模型
-  - 期刊论文
 - id: secQmYUAAAAJ:cFHS6HbyZ2cC
   scholar_id: secQmYUAAAAJ:cFHS6HbyZ2cC
   title: Leveraging Digital Twins for Industrial Automation and Robotics Education
@@ -66,10 +93,9 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - digital twin
   - digital twins
-  - 会议论文
-  - 数字孪生
 - id: secQmYUAAAAJ:4OULZ7Gr8RgC
   scholar_id: secQmYUAAAAJ:4OULZ7Gr8RgC
   title: NeuroSymbolic robustness analysis for discrete systems with respect to transition
@@ -93,7 +119,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: secQmYUAAAAJ:u_35RYKgDlwC
   scholar_id: secQmYUAAAAJ:u_35RYKgDlwC
   title: Logic-Based Verification of Task Allocation for LLM-Enabled Multi-Agent Manufacturing
@@ -117,16 +143,13 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - large language model
   - large language models
   - LLM
   - multi agent
   - multi-agent
   - multiagent
-  - 会议论文
-  - 多智能体
-  - 大型语言模型
-  - 大语言模型
 - id: secQmYUAAAAJ:dfsIfKJdRG4C
   scholar_id: secQmYUAAAAJ:dfsIfKJdRG4C
   title: Attack-Resilient Control of Finite-State Cyber-Physical Systems via Inspection
@@ -150,7 +173,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: secQmYUAAAAJ:3s1wT3WcHBgC
   scholar_id: secQmYUAAAAJ:3s1wT3WcHBgC
   title: Intelligent Navigation and Obstacle-Aware Fabrication for Mobile Additive
@@ -175,14 +198,10 @@
     needs_review: false
   search_terms:
   - 3D printing
-  - 3D打印
   - additive manufacturing
   - arxiv
   - other publications
   - preprint
-  - 其他出版物
-  - 增材制造
-  - 预印本
 - id: secQmYUAAAAJ:SeFeTyx0c_EC
   scholar_id: secQmYUAAAAJ:SeFeTyx0c_EC
   title: Energy-Aware Integrated Proactive Maintenance Planning and Production Scheduling
@@ -205,8 +224,6 @@
   - arxiv
   - other publications
   - preprint
-  - 其他出版物
-  - 预印本
 - id: secQmYUAAAAJ:HoB7MX3m0LUC
   scholar_id: secQmYUAAAAJ:HoB7MX3m0LUC
   title: 'CoViLLM: An Adaptive Human-Robot Collaborative Assembly Framework Using
@@ -231,16 +248,12 @@
   - arxiv
   - human robot
   - human-robot
+  - human-robot collaboration
   - large language model
   - large language models
   - LLM
   - other publications
   - preprint
-  - 人机协作
-  - 其他出版物
-  - 大型语言模型
-  - 大语言模型
-  - 预印本
 - id: doi:10.1109/tase.2026.3696221
   scholar_id: secQmYUAAAAJ:fPk4N6BV_jEC
   title: Online Model-Based Fault-Tolerant Control Using Finite State Automata
@@ -272,9 +285,9 @@
   search_terms:
   - fault tolerant
   - fault-tolerant
+  - fault-tolerant control
   - journal
-  - 容错控制
-  - 期刊论文
+  - journal papers
 - id: doi:10.1109/tase.2025.3636115
   scholar_id: secQmYUAAAAJ:M05iB0D1s5AC
   title: Hierarchical Model Predictive Control for Energy-Aware Scheduling of Digital
@@ -307,11 +320,9 @@
   - digital twin
   - digital twins
   - journal
+  - journal papers
   - model predictive control
   - MPC
-  - 数字孪生
-  - 期刊论文
-  - 模型预测控制
 - id: doi:10.1109/cdc57313.2025.11312935
   scholar_id: secQmYUAAAAJ:2P1L_qKh6hAC
   title: Robust Recovery and Control of Cyber-physical Discrete Event Systems under
@@ -344,11 +355,10 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - DES
   - discrete event system
   - discrete event systems
-  - 会议论文
-  - 离散事件系统
 - id: doi:10.1109/case58245.2025.11164034
   scholar_id: secQmYUAAAAJ:vV6vV6tmYwMC
   title: Energy-Aware Model Predictive Control for Batch Manufacturing System Scheduling
@@ -382,10 +392,9 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - model predictive control
   - MPC
-  - 会议论文
-  - 模型预测控制
 - id: doi:10.1109/case58245.2025.11163792
   scholar_id: secQmYUAAAAJ:lSLTfruPkqcC
   title: A Model Predictive Control Framework to Enhance Safety and Quality in Mobile
@@ -417,14 +426,11 @@
     needs_review: false
   search_terms:
   - 3D printing
-  - 3D打印
   - additive manufacturing
   - conference
+  - conference papers
   - model predictive control
   - MPC
-  - 会议论文
-  - 增材制造
-  - 模型预测控制
 - id: doi:10.1109/case58245.2025.11163802
   scholar_id: secQmYUAAAAJ:NaGl4SEjCO4C
   title: A Large Language Model-Enabled Control Architecture for Dynamic Resource
@@ -457,16 +463,13 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - large language model
   - large language models
   - LLM
   - multi agent
   - multi-agent
   - multiagent
-  - 会议论文
-  - 多智能体
-  - 大型语言模型
-  - 大语言模型
 - id: secQmYUAAAAJ:RGFaLdJalmkC
   scholar_id: secQmYUAAAAJ:RGFaLdJalmkC
   title: 'CAREER: Intelligent Products for Mass Individualization in Manufacturing
@@ -489,7 +492,6 @@
     needs_review: false
   search_terms:
   - other publications
-  - 其他出版物
 - id: doi:10.1115/msec2025-155848
   scholar_id: secQmYUAAAAJ:70eg2SAEIzsC
   title: 'A Digital Twin Framework for Computer Hardware Design and Assembly: A Risk-Prioritized
@@ -529,10 +531,9 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - digital twin
   - digital twins
-  - 会议论文
-  - 数字孪生
 - id: doi:10.1109/tase.2025.3550678
   scholar_id: secQmYUAAAAJ:ns9cj8rnVeAC
   title: 'Guest Editorial: Engineering and Operating Digital Twins for Automated Production
@@ -570,8 +571,7 @@
   - digital twin
   - digital twins
   - journal
-  - 数字孪生
-  - 期刊论文
+  - journal papers
 - id: wosuid:PPRN:123612420
   scholar_id: secQmYUAAAAJ:J_g5lzvAfSwC
   title: Dynamic Task Adaptation for Multi-Robot Manufacturing Systems with Large
@@ -603,10 +603,6 @@
   - LLM
   - other publications
   - preprint
-  - 其他出版物
-  - 大型语言模型
-  - 大语言模型
-  - 预印本
 - id: doi:10.1016/j.ifacol.2025.12.314
   scholar_id: secQmYUAAAAJ:35N4QoGY0k4C
   title: Bi-level Model Predictive Control for Energy-aware Integrated Product Pricing
@@ -640,10 +636,9 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - model predictive control
   - MPC
-  - 会议论文
-  - 模型预测控制
 - id: doi:10.1109/case59546.2024.10711432
   scholar_id: secQmYUAAAAJ:NMxIlDl6LWMC
   title: Large Language Model-Enabled Multi-Agent Manufacturing Systems
@@ -676,16 +671,13 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - large language model
   - large language models
   - LLM
   - multi agent
   - multi-agent
   - multiagent
-  - 会议论文
-  - 多智能体
-  - 大型语言模型
-  - 大语言模型
 - id: doi:10.1109/case59546.2024.10711843
   scholar_id: secQmYUAAAAJ:hMod-77fHWUC
   title: Enhancing Human-Robot Collaborative Assembly in Manufacturing Systems Using
@@ -722,15 +714,13 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - human robot
   - human-robot
+  - human-robot collaboration
   - large language model
   - large language models
   - LLM
-  - 人机协作
-  - 会议论文
-  - 大型语言模型
-  - 大语言模型
 - id: doi:10.1115/msec2024-125413
   scholar_id: secQmYUAAAAJ:JV2RwH3_ST0C
   title: A Mobile Additive Manufacturing Robot Framework for Smart Manufacturing Systems
@@ -767,11 +757,9 @@
     needs_review: false
   search_terms:
   - 3D printing
-  - 3D打印
   - additive manufacturing
   - conference
-  - 会议论文
-  - 增材制造
+  - conference papers
 - id: doi:10.3389/fbuil.2024.1384235
   title: Conditional adaptive time series compensation and control design for multi-axial
     real-time hybrid simulation
@@ -808,7 +796,7 @@
     needs_review: false
   search_terms:
   - journal
-  - 期刊论文
+  - journal papers
 - id: doi:10.26153/tsw/58287
   scholar_id: secQmYUAAAAJ:ldfaerwXgEUC
   title: Pros and Cons of Industrial Robots in Additive Manufacturing
@@ -836,11 +824,9 @@
     needs_review: false
   search_terms:
   - 3D printing
-  - 3D打印
   - additive manufacturing
   - conference
-  - 会议论文
-  - 增材制造
+  - conference papers
 - id: doi:10.1016/j.ifacol.2024.07.029
   scholar_id: secQmYUAAAAJ:YFjsv_pBGBYC
   title: Modeling and Mitigating Silent Faults in Coupled Discrete Event Systems
@@ -875,11 +861,10 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - DES
   - discrete event system
   - discrete event systems
-  - 会议论文
-  - 离散事件系统
 - id: doi:10.1016/j.ifacol.2025.01.139
   scholar_id: secQmYUAAAAJ:BqipwSGYUEgC
   title: Model-Based Control of Water Treatment with Pumped Water Storage
@@ -913,7 +898,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: doi:10.1016/b978-0-323-90386-8.00131-5
   scholar_id: secQmYUAAAAJ:GnPB-g6toBAC
   title: Harnessing Controls and Robotics for Sustainable Manufacturing
@@ -943,9 +928,6 @@
   - book
   - book chapter
   - other publications
-  - 书籍
-  - 书籍章节
-  - 其他出版物
 - id: doi:10.1002/bte2.20230023
   title: Multifunctional composite designs for structural energy storage
   authors:
@@ -983,7 +965,7 @@
     needs_review: false
   search_terms:
   - journal
-  - 期刊论文
+  - journal papers
 - id: doi:10.1109/case56687.2023.10260621
   scholar_id: secQmYUAAAAJ:maZDTaKrznsC
   title: Ontology-Based Feedback to Improve Runtime Control for Multi-Agent Manufacturing
@@ -1018,11 +1000,10 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - multi agent
   - multi-agent
   - multiagent
-  - 会议论文
-  - 多智能体
 - id: doi:10.1109/case56687.2023.10260642
   scholar_id: secQmYUAAAAJ:k_IJM867U9cC
   title: A System-Level Energy-Efficient Digital Twin Framework for Runtime Control
@@ -1055,10 +1036,9 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - digital twin
   - digital twins
-  - 会议论文
-  - 数字孪生
 - id: doi:10.1109/ccta54093.2023.10253433
   scholar_id: secQmYUAAAAJ:4JMBOYKVnBMC
   title: A Model Predictive Control Framework for Improving Risk-Tolerance of Manufacturing
@@ -1091,10 +1071,9 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - model predictive control
   - MPC
-  - 会议论文
-  - 模型预测控制
 - id: doi:10.22541/au.168787448.81156855/v1
   title: Multifunctional Composite Designs for Structural Energy Storage
   authors:
@@ -1121,8 +1100,6 @@
   search_terms:
   - other publications
   - preprint
-  - 其他出版物
-  - 预印本
 - id: doi:10.1109/mra.2023.3262464
   scholar_id: secQmYUAAAAJ:iH-uZ7U-co4C
   title: 'Opportunities and Challenges to Integrate Artificial Intelligence Into Manufacturing
@@ -1157,7 +1134,7 @@
     needs_review: false
   search_terms:
   - journal
-  - 期刊论文
+  - journal papers
 - id: doi:10.23919/acc55779.2023.10156587
   scholar_id: secQmYUAAAAJ:e5wmG9Sq2KIC
   title: Risk-Averse Model Predictive Control for Priced Timed Automata
@@ -1188,13 +1165,11 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - model predictive control
   - MPC
   - priced timed automata
   - PTA
-  - 会议论文
-  - 定价时间自动机
-  - 模型预测控制
 - id: doi:10.1080/00207543.2023.2200567
   title: Dynamic distributed decision-making for resilient resource reallocation in
     disrupted manufacturing systems
@@ -1230,7 +1205,7 @@
     needs_review: false
   search_terms:
   - journal
-  - 期刊论文
+  - journal papers
 - id: wosuid:PPRN:46940151
   title: 'Opportunities and Challenges to Integrate Artificial Intelligence into Manufacturing
     Systems: Thoughts from a Panel Discussion'
@@ -1253,8 +1228,6 @@
   - arxiv
   - other publications
   - preprint
-  - 其他出版物
-  - 预印本
 - id: doi:10.1109/case49997.2022.9926689
   scholar_id: secQmYUAAAAJ:_Qo2XoVZTnwC
   title: An Integrated Framework for Dynamic Manufacturing Planning to Obtain New
@@ -1294,7 +1267,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: doi:10.1109/tase.2022.3156384
   scholar_id: secQmYUAAAAJ:7PzlFSSx8tAC
   title: 'Cooperative Product Agents to Improve Manufacturing System Flexibility:
@@ -1329,7 +1302,7 @@
     needs_review: false
   search_terms:
   - journal
-  - 期刊论文
+  - journal papers
 - id: secQmYUAAAAJ:RYcK_YlVTxYC
   scholar_id: secQmYUAAAAJ:RYcK_YlVTxYC
   title: 'Details About Agent Response in “Cooperative Product Agents to Improve Manufacturing
@@ -1352,7 +1325,6 @@
     needs_review: false
   search_terms:
   - other publications
-  - 其他出版物
 - id: doi:10.1109/access.2022.3165551
   scholar_id: secQmYUAAAAJ:HDshCWvjkbEC
   title: Toward an Automated Learning Control Architecture for Cyber-Physical Manufacturing
@@ -1393,7 +1365,7 @@
     needs_review: false
   search_terms:
   - journal
-  - 期刊论文
+  - journal papers
 - id: doi:10.1109/tcst.2021.3054800
   scholar_id: secQmYUAAAAJ:4DMP91E08xMC
   title: Model Predictive Control of Priced Timed Automata Encoded With First-Order
@@ -1430,13 +1402,11 @@
     needs_review: false
   search_terms:
   - journal
+  - journal papers
   - model predictive control
   - MPC
   - priced timed automata
   - PTA
-  - 定价时间自动机
-  - 期刊论文
-  - 模型预测控制
 - id: doi:10.1109/case49439.2021.9551650
   scholar_id: secQmYUAAAAJ:QIV2ME_5wuYC
   title: Manufacturing Line Design Configuration with Optimized Resource Groups
@@ -1473,7 +1443,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: doi:10.1016/j.ifacol.2021.11.220
   scholar_id: secQmYUAAAAJ:dhFuZR0502QC
   title: Dynamic Resource Allocation Using Multi-Agent Control for Manufacturing Systems
@@ -1508,11 +1478,10 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - multi agent
   - multi-agent
   - multiagent
-  - 会议论文
-  - 多智能体
 - id: doi:10.1109/access.2021.3065971
   scholar_id: secQmYUAAAAJ:Wp0gIr-vW9MC
   title: A Methodology to Develop and Implement Digital Twin Solutions for Manufacturing
@@ -1553,8 +1522,7 @@
   - digital twin
   - digital twins
   - journal
-  - 数字孪生
-  - 期刊论文
+  - journal papers
 - id: doi:10.1520/ssms20200009
   scholar_id: secQmYUAAAAJ:qxL8FJ1GzNcC
   title: 'Developing the Workforce for Next-Generation Smart Manufacturing Systems:
@@ -1595,7 +1563,7 @@
     needs_review: false
   search_terms:
   - journal
-  - 期刊论文
+  - journal papers
 - id: doi:10.1016/j.ifacol.2021.04.051
   scholar_id: secQmYUAAAAJ:mVmsd5A6BfQC
   title: Priced Timed Automata Models for Control of Intelligent Product Agents in
@@ -1630,10 +1598,9 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - priced timed automata
   - PTA
-  - 会议论文
-  - 定价时间自动机
 - id: secQmYUAAAAJ:aqlVkmm33-oC
   scholar_id: secQmYUAAAAJ:aqlVkmm33-oC
   title: Intelligent Product Agents for Multi-Agent Control of Manufacturing Systems
@@ -1655,8 +1622,6 @@
   - multi-agent
   - multiagent
   - other publications
-  - 其他出版物
-  - 多智能体
 - id: secQmYUAAAAJ:hFOr9nPyWt4C
   scholar_id: secQmYUAAAAJ:hFOr9nPyWt4C
   title: Details of the first-order logic representation in ‘model predictive control
@@ -1686,9 +1651,6 @@
   - other publications
   - priced timed automata
   - PTA
-  - 其他出版物
-  - 定价时间自动机
-  - 模型预测控制
 - id: doi:10.1109/access.2020.3000437
   scholar_id: secQmYUAAAAJ:M3ejUd6NZC8C
   title: 'A Requirements Driven Digital Twin Framework: Specification and Opportunities'
@@ -1727,8 +1689,7 @@
   - digital twin
   - digital twins
   - journal
-  - 数字孪生
-  - 期刊论文
+  - journal papers
 - id: doi:10.1109/lra.2019.2931825
   scholar_id: secQmYUAAAAJ:Zph67rFs4hoC
   title: A Framework for Automatic Initialization of Multi-Agent Production Systems
@@ -1765,11 +1726,10 @@
     needs_review: false
   search_terms:
   - journal
+  - journal papers
   - multi agent
   - multi-agent
   - multiagent
-  - 多智能体
-  - 期刊论文
 - id: doi:10.1109/lra.2019.2921947
   scholar_id: secQmYUAAAAJ:MXK_kJrjxJIC
   title: Dynamic Resource Task Negotiation to Enable Product Agent Exploration in
@@ -1806,11 +1766,10 @@
     needs_review: false
   search_terms:
   - journal
+  - journal papers
   - multi agent
   - multi-agent
   - multiagent
-  - 多智能体
-  - 期刊论文
 - id: doi:10.1115/msec2019-2966
   scholar_id: secQmYUAAAAJ:_kc_bZDykSQC
   title: A Vision-Based Framework for Enhanced Quality Control in a Smart Manufacturing
@@ -1852,7 +1811,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: doi:10.1016/j.conengprac.2019.03.009
   scholar_id: secQmYUAAAAJ:_FxGoFyzp5QC
   title: 'The model-based product agent: A control oriented architecture for intelligent
@@ -1886,11 +1845,10 @@
     needs_review: false
   search_terms:
   - journal
+  - journal papers
   - multi agent
   - multi-agent
   - multiagent
-  - 多智能体
-  - 期刊论文
 - id: secQmYUAAAAJ:4TOpqqG69KYC
   scholar_id: secQmYUAAAAJ:4TOpqqG69KYC
   title: The digital twin in the manufacturing ecosystem of the future
@@ -1913,10 +1871,9 @@
     needs_review: false
   search_terms:
   - conference
+  - conference papers
   - digital twin
   - digital twins
-  - 会议论文
-  - 数字孪生
 - id: doi:10.1016/j.promfg.2018.10.053
   scholar_id: secQmYUAAAAJ:WF5omc3nYNoC
   title: 'Integrating Human Operators into Agent-based Manufacturing Systems: A Table-top
@@ -1951,7 +1908,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: doi:10.1520/ssms20170006
   scholar_id: secQmYUAAAAJ:YsMSGLbcyi4C
   title: 'SMART: A System-Level Manufacturing and Automation Research Testbed'
@@ -1986,7 +1943,7 @@
     needs_review: false
   search_terms:
   - journal
-  - 期刊论文
+  - journal papers
 - id: doi:10.1109/etfa.2017.8247652
   scholar_id: secQmYUAAAAJ:eQOLeE2rZwMC
   title: Design and implementation of an intelligent product agent architecture in
@@ -2022,7 +1979,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: doi:10.1109/ccta.2017.8062543
   scholar_id: secQmYUAAAAJ:Y0pCki6q_DkC
   title: Hybrid modeling and identification of jetting dynamics in electrohydrodynamic
@@ -2057,7 +2014,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: doi:10.1016/j.procir.2017.04.014
   scholar_id: secQmYUAAAAJ:Tyk-4Ss8FVUC
   title: 'Manufacturing Choices for Ankle-Foot Orthoses: A Multi-objective Optimization'
@@ -2091,7 +2048,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: doi:10.1109/lra.2016.2530866
   scholar_id: secQmYUAAAAJ:UeHWp8X0CEIC
   title: Timing Analysis of Robotic Neuromodulatory Rehabilitation System for Paired
@@ -2128,7 +2085,7 @@
     needs_review: false
   search_terms:
   - journal
-  - 期刊论文
+  - journal papers
 - id: doi:10.1115/dscc2015-9992
   scholar_id: secQmYUAAAAJ:qjMakFHDy7sC
   title: Analysis of a Tele-Operated MRI-Compatible Vane Actuator for Neuromuscular
@@ -2170,7 +2127,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: doi:10.1115/1.4030548
   title: Design and Testing of a Pneumatic Hemiparesis Rehabilitation Device for a
     Neurofacilitation Exercise1
@@ -2200,7 +2157,7 @@
     needs_review: false
   search_terms:
   - journal
-  - 期刊论文
+  - journal papers
 - id: secQmYUAAAAJ:9yKSN-GCB0IC
   scholar_id: secQmYUAAAAJ:9yKSN-GCB0IC
   title: Design and testing of a pneumatic hemiparesis rehabilitation device for a
@@ -2227,7 +2184,7 @@
     needs_review: false
   search_terms:
   - journal
-  - 期刊论文
+  - journal papers
 - id: doi:10.1115/detc2015-48085
   scholar_id: secQmYUAAAAJ:u-x6o8ySG0sC
   title: Robotic Neuromuscular Facilitation for Regaining Neural Activation in Hemiparetic
@@ -2267,7 +2224,7 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers
 - id: doi:10.1109/arso.2014.7020990
   scholar_id: secQmYUAAAAJ:d1gkVwhDpl0C
   title: Robotic rehabilitation exercise in hemiparetic limbs based on functional
@@ -2306,4 +2263,4 @@
     needs_review: false
   search_terms:
   - conference
-  - 会议论文
+  - conference papers

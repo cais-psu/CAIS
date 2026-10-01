@@ -29,15 +29,15 @@ JOURNALS = {
 # Search aliases are inferred only from titles and author-supplied keywords,
 # never from a proceedings volume's list of unrelated conference topics.
 TOPICS = [
-    ("LLM", "large language model", "large language models", "大语言模型", "大型语言模型"),
-    ("MPC", "model predictive control", "模型预测控制"),
-    ("digital twin", "digital twins", "数字孪生"),
-    ("multi-agent", "multiagent", "multi agent", "多智能体"),
-    ("additive manufacturing", "3D printing", "增材制造", "3D打印"),
-    ("human-robot", "human robot", "人机协作"),
-    ("DES", "discrete event systems", "discrete event system", "离散事件系统"),
-    ("PTA", "priced timed automata", "定价时间自动机"),
-    ("fault-tolerant", "fault tolerant", "容错控制"),
+    ("LLM", "large language model", "large language models"),
+    ("MPC", "model predictive control"),
+    ("digital twin", "digital twins"),
+    ("multi-agent", "multiagent", "multi agent"),
+    ("additive manufacturing", "3D printing"),
+    ("human-robot", "human robot", "human-robot collaboration"),
+    ("DES", "discrete event systems", "discrete event system"),
+    ("PTA", "priced timed automata"),
+    ("fault-tolerant", "fault tolerant", "fault-tolerant control"),
 ]
 
 
@@ -116,16 +116,16 @@ def search_terms(record):
             terms.update(aliases)
     category = record["category"]
     terms.update({
-        "journal": ("journal", "期刊论文"),
-        "conference": ("conference", "会议论文"),
-        "other": ("other publications", "其他出版物"),
+        "journal": ("journal", "journal papers"),
+        "conference": ("conference", "conference papers"),
+        "other": ("other publications",),
     }[category])
     if record["classification"]["basis"].startswith("preprint"):
-        terms.update(("preprint", "预印本"))
+        terms.add("preprint")
         if "arxiv" in words(record.get("publisher")) or "arxiv" in str(record.get("id")):
             terms.add("arxiv")
     if record.get("type") in {"book", "chapter", "book-chapter", "book-section"}:
-        terms.update(("book", "book chapter", "书籍", "书籍章节"))
+        terms.update(("book", "book chapter"))
     return sorted(terms, key=lambda term: (term.casefold(), term))
 
 

@@ -269,6 +269,12 @@ class OrcidTests(unittest.TestCase):
 
 
 class PipelineTests(unittest.TestCase):
+    def setUp(self):
+        # Mock quota failures must not annotate the real CI test job.
+        env = patch.dict(os.environ, {'GITHUB_ACTIONS': 'false', 'GITHUB_STEP_SUMMARY': ''})
+        env.start()
+        self.addCleanup(env.stop)
+
     def test_quota_preserves_scholar_and_updates_orcid_and_manual_sources(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory); (root / '_data').mkdir()
@@ -280,9 +286,13 @@ class PipelineTests(unittest.TestCase):
             (root / '_data/google-scholar.yaml').write_text('- gsid: author\n')
             (root / '_data/orcid.yaml').write_text('- orcid: test\n')
             (root / '_data/sources.yaml').write_text('- id: doi:10.1234/example\n  image: updated.png\n')
+            summary = root / 'summary.md'
+            summary.write_text('Existing step summary\n')
             with patch.object(scholar, 'main', side_effect=ScholarQuotaError('search credits exhausted')), \
                     patch.object(orcid, 'main', return_value=[new]), \
                     patch.object(cite, 'cite_with_manubot', side_effect=lambda identifier: new if identifier == new['id'] else paper()), \
+                    patch.dict(os.environ, {'GITHUB_ACTIONS': 'true', 'GITHUB_STEP_SUMMARY': str(summary)}), \
+                    patch('builtins.print') as printed, \
                     patch.object(cite, 'log') as log:
                 self.assertEqual(cite.run(root), 0)
             rows = {row['id']: row for row in util.load_data(output)}
@@ -291,6 +301,42 @@ class PipelineTests(unittest.TestCase):
             self.assertEqual(rows[old['id']]['image'], 'updated.png')
             self.assertEqual(rows[orphan['id']]['title'], orphan['title'])
             self.assertTrue(any('retaining saved Scholar records' in str(call) for call in log.call_args_list))
+            alerts = [call.args[0] for call in printed.call_args_list if '::warning' in str(call)]
+            self.assertEqual(len(alerts), 1)
+            self.assertIn('Google Scholar refresh skipped', alerts[0])
+            self.assertIn('author', alerts[0])
+            self.assertIn('new Scholar-only papers', alerts[0])
+            self.assertTrue(summary.read_text().startswith('Existing step summary\n'))
+            self.assertIn('Restore SerpApi search quota', summary.read_text())
+
+    def test_successful_or_intentionally_skipped_scholar_refresh_has_no_quota_alert(self):
+        for skip_scholar in (False, True):
+            with self.subTest(skip_scholar=skip_scholar), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory); (root / '_data').mkdir()
+                saved = paper('author:old', scholar_id='author:old')
+                util.save_data(root / '_data/citations.yaml', [saved])
+                (root / '_data/google-scholar.yaml').write_text('- gsid: author\n')
+                summary = root / 'summary.md'
+                with patch.object(scholar, 'main', return_value=[saved]), \
+                        patch.dict(os.environ, {'GITHUB_ACTIONS': 'true', 'GITHUB_STEP_SUMMARY': str(summary)}), \
+                        patch('builtins.print') as printed:
+                    self.assertEqual(cite.run(root, skip_scholar=skip_scholar), 0)
+                self.assertFalse(any('::warning' in str(call) for call in printed.call_args_list))
+                self.assertFalse(summary.exists())
+
+    def test_quota_alert_escapes_workflow_commands_and_deduplicates_profiles(self):
+        with tempfile.TemporaryDirectory() as directory:
+            summary = Path(directory) / 'summary.md'
+            profile = 'author%\r\n::error::<script>'
+            with patch.dict(os.environ, {'GITHUB_ACTIONS': 'true', 'GITHUB_STEP_SUMMARY': str(summary)}), \
+                    patch('builtins.print') as printed:
+                cite.report_scholar_quota_skips([profile, profile])
+            printed.assert_called_once()
+            alert = printed.call_args.args[0]
+            self.assertEqual(len(alert.splitlines()), 2)
+            self.assertEqual(alert.count('author%25%0D%0A::error::<script>'), 1)
+            self.assertIn('&lt;script&gt;', summary.read_text())
+            self.assertNotIn('<script>', summary.read_text())
 
     def test_quota_without_saved_profile_still_fails_atomically(self):
         for previous in ([], [paper(scholar_id='different-author:old')]):

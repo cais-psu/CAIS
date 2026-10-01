@@ -10,20 +10,20 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  pages: write            # ✅ 给 build/deploy Pages 的权限
-  id-token: write         # ✅ 部署到 Pages 需要
+  pages: write            # Allow building and deploying GitHub Pages
+  id-token: write         # Required for deployment to GitHub Pages
 
 jobs:
   update-citations:
-    # 复用工作流：更新 citations 并提交到 main（不走 PR）
+    # Reuse the workflow to update citations and commit directly to main.
     uses: ./.github/workflows/update-citations.yaml
-    secrets: inherit                 # ✅ 关键：把仓库 secrets 传递给被调用工作流
+    secrets: inherit                 # Pass repository secrets to the called workflow
     with:
-      open-pr: false                 # 直接提交到 main
+      open-pr: false                 # Commit directly to main
       # Routine website edits reuse Scholar data; scheduled/manual runs refresh it.
       refresh-scholar: ${{ github.event_name != 'push' }}
 
   build-site:
-    needs: update-citations          # 等 citations 更新完再构建
+    needs: update-citations          # Wait for citation updates before building
     uses: ./.github/workflows/build-site.yaml
-    secrets: inherit                 # ✅ 同样需要继承 secrets（若 build 里用到了）
+    secrets: inherit                 # Pass secrets needed by the build workflow

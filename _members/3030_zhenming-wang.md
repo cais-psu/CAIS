@@ -7,7 +7,7 @@ description: Undergraduate Student, PSU ME
 #aliases:
 #  - 
 links:
-  email: emailto: @psu.edu
+  email: mailto:05brucew@gmail.com
 ---
 
 Major: Mechanical Engineering

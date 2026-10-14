@@ -30,6 +30,7 @@
   - conference papers
   - model predictive control
   - MPC
+  image: /images/paper/2026.11684322.png
 - id: doi:10.1016/j.rcim.2026.103245
   scholar_id: secQmYUAAAAJ:pqnbT2bcN3wC
   title: Adaptive task planning and coordination in multi-agent manufacturing systems
@@ -85,8 +86,8 @@
   link: https://peer.asee.org/leveraging-digital-twins-for-industrial-automation-and-robotics-education
   citation_count: null
   gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources.yaml
   category: conference
   classification:
     basis: conference-venue
@@ -96,6 +97,7 @@
   - conference papers
   - digital twin
   - digital twins
+  image: /images/paper/cFHS6HbyZ2cC.png
 - id: secQmYUAAAAJ:4OULZ7Gr8RgC
   scholar_id: secQmYUAAAAJ:4OULZ7Gr8RgC
   title: NeuroSymbolic robustness analysis for discrete systems with respect to transition
@@ -111,8 +113,8 @@
   citation_count: 2
   pages: 151-156
   gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources.yaml
   category: conference
   classification:
     basis: conference-venue
@@ -120,6 +122,7 @@
   search_terms:
   - conference
   - conference papers
+  image: /images/paper/4OULZ7Gr8RgC.png
 - id: secQmYUAAAAJ:u_35RYKgDlwC
   scholar_id: secQmYUAAAAJ:u_35RYKgDlwC
   title: Logic-Based Verification of Task Allocation for LLM-Enabled Multi-Agent Manufacturing
@@ -135,8 +138,8 @@
   citation_count: null
   pages: 139-144
   gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources.yaml
   category: conference
   classification:
     basis: conference-venue
@@ -150,6 +153,7 @@
   - multi agent
   - multi-agent
   - multiagent
+  image: /images/paper/u_35RYKgDlwC.png
 - id: secQmYUAAAAJ:dfsIfKJdRG4C
   scholar_id: secQmYUAAAAJ:dfsIfKJdRG4C
   title: Attack-Resilient Control of Finite-State Cyber-Physical Systems via Inspection
@@ -165,8 +169,8 @@
   citation_count: 1
   pages: 7-12
   gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources.yaml
   category: conference
   classification:
     basis: conference-venue
@@ -174,6 +178,7 @@
   search_terms:
   - conference
   - conference papers
+  image: /images/paper/dfsIfKJdRG4C.png
 - id: secQmYUAAAAJ:3s1wT3WcHBgC
   scholar_id: secQmYUAAAAJ:3s1wT3WcHBgC
   title: Intelligent Navigation and Obstacle-Aware Fabrication for Mobile Additive
@@ -270,7 +275,7 @@
   plugin: sources.py
   file: sources.yaml
   orcid: 0000-0003-4764-9117
-  image: /images/paper/3696221.png
+  image: /images/paper/2026.3696221.png
   doi: 10.1109/tase.2026.3696221
   DOI: 10.1109/tase.2026.3696221
   orcid_work_id: orcid:0000-0003-4764-9117/215499939

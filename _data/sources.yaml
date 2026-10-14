@@ -195,5 +195,21 @@
 - id: doi:10.1109/CDC57313.2025.11312935
   image: /images/paper/11312935.gif
 
-- id: doi:10.1109/TASE.2026.3696221
-  image: /images/paper/3696221.png
+
+- id: secQmYUAAAAJ:4OULZ7Gr8RgC
+  image: /images/paper/4OULZ7Gr8RgC.png
+
+- id: secQmYUAAAAJ:u_35RYKgDlwC
+  image: /images/paper/u_35RYKgDlwC.png
+
+- id: secQmYUAAAAJ:dfsIfKJdRG4C
+  image: /images/paper/dfsIfKJdRG4C.png
+
+- id: secQmYUAAAAJ:cFHS6HbyZ2cC
+  image: /images/paper/cFHS6HbyZ2cC.png
+
+- id: doi:10.1109/ccta62090.2026.11684322
+  image: /images/paper/2026.11684322.png
+
+- id: doi:10.1109/tase.2026.3696221
+  image: /images/paper/2026.3696221.png

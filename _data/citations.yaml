@@ -1,5 +1,62 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: secQmYUAAAAJ:pyW8ca7W8N0C
+  scholar_id: secQmYUAAAAJ:pyW8ca7W8N0C
+  title: 'Speech-to-Trajectory: An LLM-Enabled Human-Robot Collaborative Framework
+    for Generating New Assembly Tasks From Verbal Guidance'
+  authors:
+  - Jiabao Zhao
+  - Hongliang Li
+  - Jonghan Lim
+  - Ilya Kovalenko
+  publisher: 2026 IEEE 22nd International Conference on Automation Science and Engineering
+    (CASE)
+  date: '2026-08-17'
+  link: https://ieeexplore.ieee.org/abstract/document/11704158/
+  pages: 936-941
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  category: conference
+  classification:
+    basis: conference-venue
+    needs_review: false
+  search_terms:
+  - conference
+  - conference papers
+  - human robot
+  - human-robot
+  - human-robot collaboration
+  - large language model
+  - large language models
+  - LLM
+- id: secQmYUAAAAJ:D03iK_w7-QYC
+  scholar_id: secQmYUAAAAJ:D03iK_w7-QYC
+  title: Runtime Dependability Certificates for Modular Multi-Agent Production Systems
+  authors:
+  - Isabel Fröhler
+  - Birgit Vogel-Heuser
+  - Josua Höfgen
+  - Joseph Daniel Alterbaum
+  - Ilya Kovalenko
+  publisher: 2026 IEEE 22nd International Conference on Automation Science and Engineering
+    (CASE)
+  date: '2026-08-17'
+  link: https://ieeexplore.ieee.org/abstract/document/11704118/
+  pages: 1775-1782
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  category: conference
+  classification:
+    basis: conference-venue
+    needs_review: false
+  search_terms:
+  - conference
+  - conference papers
+  - multi agent
+  - multi-agent
+  - multiagent
 - id: doi:10.1109/ccta62090.2026.11684322
   title: Exploration and Navigation in a Partially Observable Cluttered Environment
     using Model Predictive Control and Heat Equation Driven Area Coverage
@@ -31,6 +88,7 @@
   - model predictive control
   - MPC
   image: /images/paper/2026.11684322.png
+  gsid: secQmYUAAAAJ
 - id: doi:10.1016/j.rcim.2026.103245
   scholar_id: secQmYUAAAAJ:pqnbT2bcN3wC
   title: Adaptive task planning and coordination in multi-agent manufacturing systems
@@ -43,7 +101,7 @@
   publisher: Robotics and Computer-Integrated Manufacturing
   date: '2026-08-01'
   link: https://doi.org/hbqq4q
-  citation_count: 6
+  citation_count: 13
   volume: '100'
   pages: '103245'
   gsid: secQmYUAAAAJ
@@ -135,7 +193,7 @@
   publisher: 2026 18th International Workshop on Discrete Event Systems (WODES)
   date: '2026-06-08'
   link: https://ieeexplore.ieee.org/abstract/document/11598152/
-  citation_count: null
+  citation_count: 1
   pages: 139-144
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -166,7 +224,7 @@
   publisher: 2026 18th International Workshop on Discrete Event Systems (WODES)
   date: '2026-06-08'
   link: https://ieeexplore.ieee.org/abstract/document/11598126/
-  citation_count: 1
+  citation_count: 2
   pages: 7-12
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -270,7 +328,7 @@
   publisher: IEEE Transactions on Automation Science and Engineering
   date: '2026-01-01'
   link: https://doi.org/hb5gc7
-  citation_count: 2
+  citation_count: 3
   gsid: secQmYUAAAAJ
   plugin: sources.py
   file: sources.yaml
@@ -304,7 +362,7 @@
   publisher: IEEE Transactions on Automation Science and Engineering
   date: '2026-01-01'
   link: https://doi.org/hbgxjm
-  citation_count: 7
+  citation_count: 9
   gsid: secQmYUAAAAJ
   plugin: sources.py
   file: sources.yaml
@@ -328,6 +386,31 @@
   - journal papers
   - model predictive control
   - MPC
+- id: secQmYUAAAAJ:a0OBvERweLwC
+  scholar_id: secQmYUAAAAJ:a0OBvERweLwC
+  title: 'Control theory and artificial intelligence integration in manufacturing
+    and supply chain management: conceptual synthesis and perspectives'
+  authors:
+  - Alexandre Dolgui
+  - Dmitry Ivanov
+  - Ilya Kovalenko
+  - Anand Nair
+  - Suresh Sethi
+  publisher: Pergamon
+  date: '2026-01-01'
+  link: https://www.sciencedirect.com/science/article/pii/S1367578826000295
+  citation_count: 1
+  volume: '62'
+  pages: '101073'
+  gsid: secQmYUAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  category: other
+  classification:
+    basis: insufficient-metadata
+    needs_review: true
+  search_terms:
+  - other publications
 - id: doi:10.1109/cdc57313.2025.11312935
   scholar_id: secQmYUAAAAJ:2P1L_qKh6hAC
   title: Robust Recovery and Control of Cyber-physical Discrete Event Systems under
@@ -447,7 +530,7 @@
     (CASE)
   date: '2025-08-17'
   link: https://doi.org/g97zvn
-  citation_count: 16
+  citation_count: 20
   pages: 2088-2095
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -587,7 +670,7 @@
   publisher: Arxiv
   date: '2025-01-01'
   link: https://www.webofscience.com/wos/pprn/full-record/PPRN:123612420
-  citation_count: 2
+  citation_count: 3
   gsid: secQmYUAAAAJ
   plugin: orcid.py
   file: orcid.yaml
@@ -619,7 +702,7 @@
   publisher: IFAC-PapersOnLine
   date: '2025-01-01'
   link: https://doi.org/hbwvms
-  citation_count: null
+  citation_count: 1
   volume: '59'
   issue: '30'
   pages: 665-670
@@ -655,7 +738,7 @@
     (CASE)
   date: '2024-08-28'
   link: https://doi.org/g97zp4
-  citation_count: 77
+  citation_count: 87
   pages: 3940-3946
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -698,7 +781,7 @@
     (CASE)
   date: '2024-08-28'
   link: https://doi.org/g97zp3
-  citation_count: 51
+  citation_count: 56
   pages: 2581-2587
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -739,7 +822,7 @@
     Manufacturing Systems; Nano/Micro/Meso Manufacturing; Quality &amp; Reliability'
   date: '2024-06-17'
   link: https://doi.org/g97zp5
-  citation_count: 11
+  citation_count: 12
   volume: '88117'
   pages: V002T05A010
   gsid: secQmYUAAAAJ
@@ -814,7 +897,7 @@
   publisher: University of Texas at Austin
   date: '2024-01-01'
   link: https://doi.org/hb3q5h
-  citation_count: 1
+  citation_count: 2
   gsid: secQmYUAAAAJ
   plugin: sources.py
   file: sources.yaml
@@ -843,7 +926,7 @@
   publisher: IFAC-PapersOnLine
   date: '2024-01-01'
   link: https://doi.org/g97zvt
-  citation_count: 3
+  citation_count: 4
   volume: '58'
   issue: '1'
   pages: 168-173
@@ -985,7 +1068,7 @@
     (CASE)
   date: '2023-08-26'
   link: https://doi.org/g97zp9
-  citation_count: 14
+  citation_count: 15
   pages: 1-7
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -1056,7 +1139,7 @@
   publisher: 2023 IEEE Conference on Control Technology and Applications (CCTA)
   date: '2023-08-16'
   link: https://doi.org/g97zqb
-  citation_count: 3
+  citation_count: 4
   pages: 136-142
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -1117,7 +1200,7 @@
   publisher: IEEE Robotics &amp; Automation Magazine
   date: '2023-06-01'
   link: https://doi.org/g97zqc
-  citation_count: 40
+  citation_count: 41
   volume: '30'
   issue: '2'
   pages: 109-112
@@ -1151,7 +1234,7 @@
   publisher: 2023 American Control Conference (ACC)
   date: '2023-05-31'
   link: https://doi.org/g97zqd
-  citation_count: 8
+  citation_count: 9
   pages: 4332-4338
   gsid: secQmYUAAAAJ
   plugin: orcid.py
@@ -1187,7 +1270,7 @@
   date: '2023-04-18'
   link: https://doi.org/g97zp7
   scholar_id: secQmYUAAAAJ:TFP_iSt0sucC
-  citation_count: 51
+  citation_count: 52
   doi: 10.1080/00207543.2023.2200567
   DOI: 10.1080/00207543.2023.2200567
   volume: '62'
@@ -1349,7 +1432,7 @@
   publisher: IEEE Access
   date: '2022-01-01'
   link: https://doi.org/g97zqf
-  citation_count: 41
+  citation_count: 42
   volume: '10'
   pages: 38755-38773
   gsid: secQmYUAAAAJ
@@ -1385,7 +1468,7 @@
   publisher: IEEE Transactions on Control Systems Technology
   date: '2022-01-01'
   link: https://doi.org/gh67pw
-  citation_count: 19
+  citation_count: 20
   volume: '30'
   issue: '1'
   pages: 352-359
@@ -1504,7 +1587,7 @@
   publisher: IEEE Access
   date: '2021-01-01'
   link: https://doi.org/gndb9n
-  citation_count: 129
+  citation_count: 134
   volume: '9'
   pages: 44247-44265
   gsid: secQmYUAAAAJ
@@ -1671,7 +1754,7 @@
   publisher: IEEE Access
   date: '2020-01-01'
   link: https://doi.org/gndckt
-  citation_count: 314
+  citation_count: 319
   volume: '8'
   pages: 107781-107801
   gsid: secQmYUAAAAJ
@@ -1829,7 +1912,7 @@
   publisher: Control Engineering Practice
   date: '2019-05-01'
   link: https://doi.org/g97zqp
-  citation_count: 114
+  citation_count: 116
   volume: '86'
   pages: 105-117
   gsid: secQmYUAAAAJ
@@ -2032,7 +2115,7 @@
   publisher: Procedia CIRP
   date: '2017-01-01'
   link: https://doi.org/g97zqt
-  citation_count: 61
+  citation_count: 62
   volume: '65'
   pages: 145-150
   gsid: secQmYUAAAAJ
@@ -2068,7 +2151,7 @@
   publisher: IEEE Robotics and Automation Letters
   date: '2016-07-01'
   link: https://doi.org/g97zqw
-  citation_count: 14
+  citation_count: 15
   volume: '1'
   issue: '2'
   pages: 1028-1035

@@ -15,8 +15,8 @@
   link: https://ieeexplore.ieee.org/abstract/document/11704158/
   pages: 936-941
   gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources.yaml
   category: conference
   classification:
     basis: conference-venue
@@ -30,6 +30,7 @@
   - large language model
   - large language models
   - LLM
+  image: /images/paper/pyW8ca7W8N0C.png
 - id: secQmYUAAAAJ:D03iK_w7-QYC
   scholar_id: secQmYUAAAAJ:D03iK_w7-QYC
   title: Runtime Dependability Certificates for Modular Multi-Agent Production Systems
@@ -45,8 +46,8 @@
   link: https://ieeexplore.ieee.org/abstract/document/11704118/
   pages: 1775-1782
   gsid: secQmYUAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources.yaml
   category: conference
   classification:
     basis: conference-venue
@@ -57,6 +58,7 @@
   - multi agent
   - multi-agent
   - multiagent
+  image: /images/paper/D03iK_w7-QYC.png
 - id: doi:10.1109/ccta62090.2026.11684322
   title: Exploration and Navigation in a Partially Observable Cluttered Environment
     using Model Predictive Control and Heat Equation Driven Area Coverage

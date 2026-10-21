@@ -3,7 +3,7 @@ name: Yifei Li
 image: images/team/Yifei.png
 role: phd  # pi / phd / ms / visitor / undergrad
 alumni: false  
-description: PhD Student, PSU ME
+description: PhD Candidate, PSU ME
 #aliases:
 #  - Y
 links:

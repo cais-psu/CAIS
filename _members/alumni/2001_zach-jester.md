@@ -2,7 +2,9 @@
 name: Zach Jester
 image: images/team/Zach.png
 role: ms  # pi / phd / ms / visitor / undergrad
-alumni: true 
+alumni: true
+dates: "Dates TBD"
+# Dates for the master's research period are unconfirmed; the 2022 internship is a separate record.
 description: M.S. Student, PSU ME
 #aliases:
 #  - 

@@ -6,4 +6,4 @@ tags:
   - publications
 ---
 
-Congratulations, Jonghan! The paper titled “Adaptive task planning and coordination in multi-agent manufacturing systems using large language models” has been accepted for publication in Robotics and Computer-Integrated Manufacturing.
+Congratulations, [Jonghan]({{ '/members/1003_jonghan-lim.html' | relative_url }})! The paper titled “Adaptive task planning and coordination in multi-agent manufacturing systems using large language models” has been accepted for publication in Robotics and Computer-Integrated Manufacturing.

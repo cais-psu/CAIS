@@ -6,7 +6,7 @@ tags:
   - outreach
 ---
 
-Jonghan, Alex, Oscar, and Dr. Kovalenko attended Pittsburgh Robotics Discovery Day and showcased robotic assembly research.
+[Jonghan]({{ '/members/1003_jonghan-lim.html' | relative_url }}), [Alex]({{ '/members/alumni/3013_alex-evans.html' | relative_url }}), [Oscar]({{ '/members/alumni/3009_oscar-wu.html' | relative_url }}), and [Dr. Kovalenko]({{ '/members/0000_ilya-kovalenko.html' | relative_url }}) attended Pittsburgh Robotics Discovery Day and showcased robotic assembly research.
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; text-align:center;">

@@ -3,6 +3,8 @@ name: Cameron Clark
 image: images/team/Cameron.png
 role: undergrad  # pi / phd / ms / visitor / undergrad
 alumni: true
+dates: "Dates TBD"
+# Start and end dates are unconfirmed.
 description: Undergraduate Student, PSU ME<br>Shuman Scholar
 #aliases:
 #  - 

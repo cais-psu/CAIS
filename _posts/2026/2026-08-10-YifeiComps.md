@@ -6,4 +6,4 @@ tags:
   - people
 ---
 
-Congrats to Yifei for passing the ME Ph.D. Comprehensive Exam!
+Congrats to [Yifei]({{ '/members/1004_yifei-li.html' | relative_url }}) for passing the ME Ph.D. Comprehensive Exam!

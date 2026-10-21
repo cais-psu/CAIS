@@ -6,7 +6,7 @@ tags:
   - lab-life
 ---
 
-The CAIS Lab vs. Dr. Derek Hall’s Lab Basketball Game: What a game!
+The CAIS Lab vs. [Dr. Derek Hall](https://www.me.psu.edu/department/directory-detail-g.aspx?q=dmh5373){:target="_blank" rel="noopener noreferrer"}’s Lab Basketball Game: What a game!
 
 
 

@@ -6,7 +6,7 @@ tags:
   - outreach
 ---
 
-Dr. Kovalenko visited the Competence Center in Manufacturing at Instituto Tecnológico de Aeronáutica (ITA) in São José dos Campos, Brazil. He presented lab research and conducted a 3-day workshop on software tools.
+[Dr. Kovalenko]({{ '/members/0000_ilya-kovalenko.html' | relative_url }}) visited the Competence Center in Manufacturing at Instituto Tecnológico de Aeronáutica (ITA) in São José dos Campos, Brazil. He presented lab research and conducted a 3-day workshop on software tools.
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; text-align:center;">

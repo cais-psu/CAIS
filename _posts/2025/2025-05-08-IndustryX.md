@@ -6,7 +6,7 @@ tags:
   - awards
 ---
 
-Congratulations to Hongliang, winner of the poster competition at the 2025 industryXchange!
+Congratulations to [Hongliang]({{ '/members/1001_hongliang-li.html' | relative_url }}), winner of the poster competition at the 2025 industryXchange!
 
 
 <p style="text-align:center;">

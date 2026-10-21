@@ -6,7 +6,7 @@ tags:
   - people
 ---
 
-Congratulations to [Sujani Patel]({{ '/members/2006_sujani-patel.html' | relative_url }}) on graduating with her M.S. in Mechanical Engineering!
+Congratulations to [Sujani Patel]({{ '/members/alumni/2006_sujani-patel.html' | relative_url }}) on graduating with her M.S. in Mechanical Engineering!
 
 
 <p style="text-align:center;">

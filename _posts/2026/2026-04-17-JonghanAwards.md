@@ -6,4 +6,4 @@ tags:
   - awards
 ---
 
-Congratulations to Jonghan on receiving the IME Department Spring 26 Marcus-Niebel-Schall Graduate Student Scholarship!
+Congratulations to [Jonghan]({{ '/members/1003_jonghan-lim.html' | relative_url }}) on receiving the IME Department Spring 26 Marcus-Niebel-Schall Graduate Student Scholarship!

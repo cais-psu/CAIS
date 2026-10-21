@@ -6,7 +6,7 @@ tags:
   - people
 ---
 
-A big congratulations to Mostafa on passing his ME Ph.D. defense! This achievement marks the culmination of years of hard work and commitment. 
+A big congratulations to [Mostafa]({{ '/members/alumni/1002_mostafa-anbarani.html' | relative_url }}) on passing his ME Ph.D. defense! This achievement marks the culmination of years of hard work and commitment.
 
 Best wishes to him as he moves forward to new opportunities and exciting challenges!
 

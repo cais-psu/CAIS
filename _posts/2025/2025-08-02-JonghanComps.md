@@ -6,4 +6,4 @@ tags:
   - people
 ---
 
-Congrats to Jonghan for passing the IE Ph.D. Comprehensive Exam!
+Congrats to [Jonghan]({{ '/members/1003_jonghan-lim.html' | relative_url }}) for passing the IE Ph.D. Comprehensive Exam!

@@ -6,7 +6,7 @@ tags:
   - lab-life
 ---
 
-The lab celebrated the holidays with a White Elephant gift exchange and Christmas dinner with Dr. Fitzsimons's and Dr. Meira-Goes's labs.
+The lab celebrated the holidays with a White Elephant gift exchange and Christmas dinner with [Dr. Fitzsimons](https://www.me.psu.edu/department/directory-detail-g.aspx?q=kzf5356){:target="_blank" rel="noopener noreferrer"}'s and [Dr. Meira-Goes](https://www.eecs.psu.edu/departments/directory-detail-g.aspx?q=rzm5911){:target="_blank" rel="noopener noreferrer"}'s labs.
 
 
 <p style="text-align:center;">

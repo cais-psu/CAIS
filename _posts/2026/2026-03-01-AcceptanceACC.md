@@ -6,4 +6,4 @@ tags:
   - publications
 ---
 
-Congratulations, Hongliang! The paper "Energy-Aware Integrated Predictive Maintenance Planning and Production Scheduling" has been accepted to the 2026 American Control Conference (ACC).
+Congratulations, [Hongliang]({{ '/members/1001_hongliang-li.html' | relative_url }})! The paper "Energy-Aware Integrated Predictive Maintenance Planning and Production Scheduling" has been accepted to the 2026 American Control Conference (ACC).

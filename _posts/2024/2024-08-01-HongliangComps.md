@@ -6,4 +6,4 @@ tags:
   - people
 ---
 
-Congrats to Honglaing for passing the IE Ph.D. Comprehensive Exam!
+Congrats to [Hongliang]({{ '/members/1001_hongliang-li.html' | relative_url }}) for passing the IE Ph.D. Comprehensive Exam!

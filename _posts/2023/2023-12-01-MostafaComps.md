@@ -6,4 +6,4 @@ tags:
   - people
 ---
 
-Congratulations to [Mostafa]({{ '/members/1002_mostafa-anbarani.html' | relative_url }}) on passing his Mechanical Engineering Ph.D. Comprehensive Exam!
+Congratulations to [Mostafa]({{ '/members/alumni/1002_mostafa-anbarani.html' | relative_url }}) on passing his Mechanical Engineering Ph.D. Comprehensive Exam!

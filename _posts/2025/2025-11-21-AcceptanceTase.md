@@ -6,4 +6,4 @@ tags:
   - publications
 ---
 
-Congratulations, Hongliang! The paper titled “Hierarchical Model Predictive Control for Energy-Aware Scheduling of Digital Twin-Based Batch Manufacturing Systems” has been accepted for publication in IEEE Transactions on Automation Science and Engineering.
+Congratulations, [Hongliang]({{ '/members/1001_hongliang-li.html' | relative_url }})! The paper titled “Hierarchical Model Predictive Control for Energy-Aware Scheduling of Digital Twin-Based Batch Manufacturing Systems” has been accepted for publication in IEEE Transactions on Automation Science and Engineering.

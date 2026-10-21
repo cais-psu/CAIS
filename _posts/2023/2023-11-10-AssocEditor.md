@@ -6,4 +6,4 @@ tags:
   - people
 ---
 
-Dr. Kovalenko has been appointed as Associate Editor for IEEE Transactions on Automation Science and Engineering (T-ASE).
+[Dr. Kovalenko]({{ '/members/0000_ilya-kovalenko.html' | relative_url }}) has been appointed as Associate Editor for IEEE Transactions on Automation Science and Engineering (T-ASE).

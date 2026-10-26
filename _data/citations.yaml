@@ -195,7 +195,7 @@
   publisher: 2026 18th International Workshop on Discrete Event Systems (WODES)
   date: '2026-06-08'
   link: https://ieeexplore.ieee.org/abstract/document/11598152/
-  citation_count: 1
+  citation_count: 2
   pages: 139-144
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -364,7 +364,7 @@
   publisher: IEEE Transactions on Automation Science and Engineering
   date: '2026-01-01'
   link: https://doi.org/hbgxjm
-  citation_count: 9
+  citation_count: 10
   gsid: secQmYUAAAAJ
   plugin: sources.py
   file: sources.yaml
@@ -740,7 +740,7 @@
     (CASE)
   date: '2024-08-28'
   link: https://doi.org/g97zp4
-  citation_count: 87
+  citation_count: 88
   pages: 3940-3946
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -783,7 +783,7 @@
     (CASE)
   date: '2024-08-28'
   link: https://doi.org/g97zp3
-  citation_count: 56
+  citation_count: 59
   pages: 2581-2587
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -1589,7 +1589,7 @@
   publisher: IEEE Access
   date: '2021-01-01'
   link: https://doi.org/gndb9n
-  citation_count: 134
+  citation_count: 135
   volume: '9'
   pages: 44247-44265
   gsid: secQmYUAAAAJ
@@ -1914,7 +1914,7 @@
   publisher: Control Engineering Practice
   date: '2019-05-01'
   link: https://doi.org/g97zqp
-  citation_count: 116
+  citation_count: 117
   volume: '86'
   pages: 105-117
   gsid: secQmYUAAAAJ

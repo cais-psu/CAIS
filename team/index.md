@@ -21,6 +21,13 @@ nav:
    filter="role =~ /^phd$/i and !alumni"
 %}
 
+# D. Eng Students
+{% include list.html
+   data="members"
+   component="portrait"
+   filter="role =~ /^deng$/i and !alumni"
+%}
+
 # MS Students
 {% include list.html
    data="members"

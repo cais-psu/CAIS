@@ -1,7 +1,7 @@
 ---
 name: Vaibhav Shrivastav
 image: images/team/Vaibhav.png
-role: phd
+role: deng
 alumni: false
 description: D.Eng. Candidate, PSU IME
 links:

@@ -1,9 +1,9 @@
 ---
 name: Anthony Medlar
 image: images/team/Anthony.png
-role: phd  # pi / phd / ms / visitor / undergrad
+role: deng
 alumni: false  
-description: PhD Student, PSU ME
+description: D.Eng. Candidate, PSU ME
 #aliases:
 #  - 
 links:

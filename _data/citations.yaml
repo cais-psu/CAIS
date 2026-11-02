@@ -398,7 +398,8 @@
   - Ilya Kovalenko
   - Anand Nair
   - Suresh Sethi
-  publisher: Pergamon
+  publisher: Annual Reviews in Control
+  type: article-journal
   date: '2026-01-01'
   link: https://www.sciencedirect.com/science/article/pii/S1367578826000295
   citation_count: 1
@@ -407,12 +408,13 @@
   gsid: secQmYUAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-  category: other
+  category: journal
   classification:
-    basis: insufficient-metadata
-    needs_review: true
+    basis: publication-type
+    needs_review: false
   search_terms:
-  - other publications
+  - journal
+  - journal papers
 - id: doi:10.1109/cdc57313.2025.11312935
   scholar_id: secQmYUAAAAJ:2P1L_qKh6hAC
   title: Robust Recovery and Control of Cyber-physical Discrete Event Systems under
@@ -1310,14 +1312,13 @@
   type: journal-article
   aliases:
   - orcid:0000-0003-4764-9117/211331750
-  category: other
+  category: journal
   classification:
-    basis: preprint-identifier
+    basis: manual
     needs_review: false
   search_terms:
-  - arxiv
-  - other publications
-  - preprint
+  - journal
+  - journal papers
 - id: doi:10.1109/case49997.2022.9926689
   scholar_id: secQmYUAAAAJ:_Qo2XoVZTnwC
   title: An Integrated Framework for Dynamic Manufacturing Planning to Obtain New
@@ -1394,28 +1395,11 @@
   - journal
   - journal papers
   image: /images/paper/2022.3156384.png
-- id: secQmYUAAAAJ:RYcK_YlVTxYC
-  scholar_id: secQmYUAAAAJ:RYcK_YlVTxYC
-  title: 'Details About Agent Response in “Cooperative Product Agents to Improve Manufacturing
-    System Flexibility: A Model-Based Decision Framework”'
-  authors:
-  - Ilya Kovalenko
-  - Efe C Balta
-  - Dawn M Tilbury
-  - Kira Barton
-  publisher: ''
-  date: '2022-02-28'
-  link: https://brg.engin.umich.edu/wp-content/uploads/sites/131/2022/02/DA-PA-agentResponse.pdf
-  citation_count: null
-  gsid: secQmYUAAAAJ
-  plugin: sources.py
-  file: sources-categories.yaml
-  category: other
-  classification:
-    basis: manual
-    needs_review: false
-  search_terms:
-  - other publications
+  buttons:
+  - type: paper
+    text: Supplementary Material (PDF)
+    icon: fa-solid fa-file-pdf
+    link: https://brg.engin.umich.edu/wp-content/uploads/sites/131/2022/02/DA-PA-agentResponse.pdf
 - id: doi:10.1109/access.2022.3165551
   scholar_id: secQmYUAAAAJ:HDshCWvjkbEC
   title: Toward an Automated Learning Control Architecture for Cyber-Physical Manufacturing

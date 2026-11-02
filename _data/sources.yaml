@@ -18,6 +18,14 @@
   pages: 544-549
   link: https://doi.org/10.1109/CCTA62090.2026.11684322
 
+- id: secQmYUAAAAJ:a0OBvERweLwC
+  publisher: Annual Reviews in Control
+  type: article-journal
+
+- id: wosuid:PPRN:46940151
+  category: journal
+  link: https://www.webofscience.com/wos/pprn/full-record/PPRN:46940151
+
 - id: doi:10.1016/J.CONENGPRAC.2019.03.009
   image: https://ars.els-cdn.com/content/image/1-s2.0-S0967066118305057-gr1.jpg
 
@@ -158,6 +166,15 @@
   date: '2022-03-17'
   link: https://ieeexplore.ieee.org/abstract/document/9737280/
   citation_count: 42
+  buttons:
+    - type: paper
+      text: Supplementary Material (PDF)
+      icon: fa-solid fa-file-pdf
+      link: https://brg.engin.umich.edu/wp-content/uploads/sites/131/2022/02/DA-PA-agentResponse.pdf
+
+# Supplementary material is linked from the main paper, not listed separately.
+- id: secQmYUAAAAJ:RYcK_YlVTxYC
+  remove: true
 
 - id: doi:10.36227/techrxiv.17136680.v1
   remove: true

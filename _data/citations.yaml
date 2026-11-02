@@ -103,7 +103,7 @@
   publisher: Robotics and Computer-Integrated Manufacturing
   date: '2026-08-01'
   link: https://doi.org/hbqq4q
-  citation_count: 13
+  citation_count: 17
   volume: '100'
   pages: '103245'
   gsid: secQmYUAAAAJ
@@ -195,7 +195,7 @@
   publisher: 2026 18th International Workshop on Discrete Event Systems (WODES)
   date: '2026-06-08'
   link: https://ieeexplore.ieee.org/abstract/document/11598152/
-  citation_count: 2
+  citation_count: 3
   pages: 139-144
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -532,7 +532,7 @@
     (CASE)
   date: '2025-08-17'
   link: https://doi.org/g97zvn
-  citation_count: 20
+  citation_count: 22
   pages: 2088-2095
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -740,7 +740,7 @@
     (CASE)
   date: '2024-08-28'
   link: https://doi.org/g97zp4
-  citation_count: 88
+  citation_count: 92
   pages: 3940-3946
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -783,7 +783,7 @@
     (CASE)
   date: '2024-08-28'
   link: https://doi.org/g97zp3
-  citation_count: 59
+  citation_count: 61
   pages: 2581-2587
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -1756,7 +1756,7 @@
   publisher: IEEE Access
   date: '2020-01-01'
   link: https://doi.org/gndckt
-  citation_count: 319
+  citation_count: 320
   volume: '8'
   pages: 107781-107801
   gsid: secQmYUAAAAJ

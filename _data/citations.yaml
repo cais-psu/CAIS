@@ -103,7 +103,7 @@
   publisher: Robotics and Computer-Integrated Manufacturing
   date: '2026-08-01'
   link: https://doi.org/hbqq4q
-  citation_count: 17
+  citation_count: 18
   volume: '100'
   pages: '103245'
   gsid: secQmYUAAAAJ
@@ -364,7 +364,7 @@
   publisher: IEEE Transactions on Automation Science and Engineering
   date: '2026-01-01'
   link: https://doi.org/hbgxjm
-  citation_count: 10
+  citation_count: 11
   gsid: secQmYUAAAAJ
   plugin: sources.py
   file: sources.yaml
@@ -402,7 +402,7 @@
   type: article-journal
   date: '2026-01-01'
   link: https://www.sciencedirect.com/science/article/pii/S1367578826000295
-  citation_count: 1
+  citation_count: 2
   volume: '62'
   pages: '101073'
   gsid: secQmYUAAAAJ
@@ -534,7 +534,7 @@
     (CASE)
   date: '2025-08-17'
   link: https://doi.org/g97zvn
-  citation_count: 22
+  citation_count: 24
   pages: 2088-2095
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -742,7 +742,7 @@
     (CASE)
   date: '2024-08-28'
   link: https://doi.org/g97zp4
-  citation_count: 92
+  citation_count: 94
   pages: 3940-3946
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -1418,7 +1418,7 @@
   publisher: IEEE Access
   date: '2022-01-01'
   link: https://doi.org/g97zqf
-  citation_count: 42
+  citation_count: 43
   volume: '10'
   pages: 38755-38773
   gsid: secQmYUAAAAJ
@@ -1573,7 +1573,7 @@
   publisher: IEEE Access
   date: '2021-01-01'
   link: https://doi.org/gndb9n
-  citation_count: 135
+  citation_count: 137
   volume: '9'
   pages: 44247-44265
   gsid: secQmYUAAAAJ
@@ -1650,7 +1650,7 @@
   publisher: IFAC-PapersOnLine
   date: '2020-01-01'
   link: https://doi.org/g97zqk
-  citation_count: 8
+  citation_count: 9
   volume: '53'
   issue: '4'
   pages: 136-142
@@ -1740,7 +1740,7 @@
   publisher: IEEE Access
   date: '2020-01-01'
   link: https://doi.org/gndckt
-  citation_count: 320
+  citation_count: 323
   volume: '8'
   pages: 107781-107801
   gsid: secQmYUAAAAJ
@@ -1995,7 +1995,7 @@
   publisher: Smart and Sustainable Manufacturing Systems
   date: '2017-10-27'
   link: https://doi.org/g97zqv
-  citation_count: 39
+  citation_count: 40
   volume: '1'
   issue: '1'
   pages: 232-262

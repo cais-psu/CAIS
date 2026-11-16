@@ -103,7 +103,7 @@
   publisher: Robotics and Computer-Integrated Manufacturing
   date: '2026-08-01'
   link: https://doi.org/hbqq4q
-  citation_count: 18
+  citation_count: 19
   volume: '100'
   pages: '103245'
   gsid: secQmYUAAAAJ
@@ -534,7 +534,7 @@
     (CASE)
   date: '2025-08-17'
   link: https://doi.org/g97zvn
-  citation_count: 24
+  citation_count: 25
   pages: 2088-2095
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -742,7 +742,7 @@
     (CASE)
   date: '2024-08-28'
   link: https://doi.org/g97zp4
-  citation_count: 94
+  citation_count: 97
   pages: 3940-3946
   gsid: secQmYUAAAAJ
   plugin: sources.py
@@ -1035,7 +1035,7 @@
   date: '2023-10-13'
   link: https://doi.org/gtnt8g
   scholar_id: secQmYUAAAAJ:isC4tDSrTZIC
-  citation_count: 33
+  citation_count: 36
   doi: 10.1002/bte2.20230023
   DOI: 10.1002/bte2.20230023
   volume: '2'
@@ -1204,7 +1204,7 @@
   publisher: IEEE Robotics &amp; Automation Magazine
   date: '2023-06-01'
   link: https://doi.org/g97zqc
-  citation_count: 41
+  citation_count: 44
   volume: '30'
   issue: '2'
   pages: 109-112
@@ -1573,7 +1573,7 @@
   publisher: IEEE Access
   date: '2021-01-01'
   link: https://doi.org/gndb9n
-  citation_count: 137
+  citation_count: 138
   volume: '9'
   pages: 44247-44265
   gsid: secQmYUAAAAJ

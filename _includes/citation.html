@@ -30,7 +30,7 @@
         aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
       >
         <img
-          src="{{ citation.image | relative_url | uri_escape }}"
+          src="{{ citation.image | team_image | relative_url | uri_escape }}"
           alt="{{ citation.title | default: "citation image" | regex_strip }}"
           loading="lazy"
           {% include fallback.html %}

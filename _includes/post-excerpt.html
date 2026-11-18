@@ -12,7 +12,7 @@
   <div class="post-excerpt">
     {% assign url = post.url | relative_url | uri_escape %}
     {% assign title = post.title %}
-    {% assign image = post.image | relative_url | uri_escape %}
+    {% assign image = post.image | team_image | relative_url | uri_escape %}
 
     {% assign post_images = post.images %}
     {% if post_images.size > 0 %}
@@ -25,7 +25,7 @@
         {% for img_path in post_images %}
           {% assign img_top = img_height | times: forloop.index0 %}
           <img
-            src="{{ img_path | relative_url | uri_escape }}"
+            src="{{ img_path | team_image | relative_url | uri_escape }}"
             alt="{{ title | default: "excerpt image" | regex_strip }}"
             loading="lazy"
             style="position: absolute; top: {{ img_top }}%; height: {{ img_height }}%; width: 100%; object-fit: cover;"

@@ -25,7 +25,7 @@
     {% endif %}
 
     <img
-      src="{{ member.image | relative_url | uri_escape }}"
+      src="{{ member.image | team_image | relative_url | uri_escape }}"
       class="portrait-image"
       alt="member portrait"
       loading="lazy"

@@ -12,7 +12,7 @@
     aria-label="{{ include.title | default: "feature link" | regex_strip }}"
   >
     <img
-      src="{{ include.image | relative_url | uri_escape }}"
+      src="{{ include.image | team_image | relative_url | uri_escape }}"
       loading="lazy"
       alt="{{ include.title | default: "feature image" | regex_strip }}"
       {% include fallback.html %}
